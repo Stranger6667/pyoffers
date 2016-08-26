@@ -22,6 +22,12 @@ class HasOffersAPI:
         for name, manager in self.managers.items():
             setattr(self, name, manager(self))
 
+    @property
+    def session(self):
+        if not hasattr(self, '_session'):
+            self._session = requests.Session()
+        return self._session
+
     def _call(self, target, method, **kwargs):
         """
         Low-level call to HasOffers API.
@@ -34,7 +40,7 @@ class HasOffersAPI:
         }
         params.update(**kwargs)
         url = add_get_args(self.endpoint, **params)
-        response = requests.get(url, verify=False)
+        response = self.session.get(url, verify=False)
         response.raise_for_status()
         content = response.json()
         self.logger.debug('Response: %s', content)

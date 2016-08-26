@@ -1,0 +1,70 @@
+{
+  "http_interactions": [
+    {
+      "recorded_at": "2016-08-26T13:14:39",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.11.1"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Api/json?Method=test&NetworkToken=invalid&Target=test&NetworkId=id"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIALpPwFcC/xXKMQ6AIAxA0auQzkZ276AnYEGp0oiUtKiD4e7q9pL/HxDUwlkRhgdQhEV/lXNOtIyo6rcvwYT1ZtkNBUNqMldz+UQBWgeJ8v4dsdYyOOtswAsTFxTto1de118LH85Cay9OSc+BcAAAAA==",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "115"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Fri, 26 Aug 2016 13:14:39 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Api/json?Method=test&NetworkToken=invalid&Target=test&NetworkId=id"
+      }
+    }
+  ],
+  "recorded_with": "betamax/0.8.0"
+}
