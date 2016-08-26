@@ -60,11 +60,9 @@ class HasOffersAPI:
 
         if isinstance(data, bool) or data is None:
             return data
-        elif isinstance(data, dict):
-            if 'Advertiser' in data:
-                return Advertiser(manager=self.advertisers, **data['Advertiser'])
-            elif 'Offer' in data:
-                return Offer(manager=self.offers, **data['Offer'])
-            elif 'Goal' in data:
-                return Goal(manager=self.goals, **data['Goal'])
-        return content
+        if 'Advertiser' in data:
+            return Advertiser(manager=self.advertisers, **data['Advertiser'])
+        elif 'Offer' in data:
+            return Offer(manager=self.offers, **data['Offer'])
+        elif 'Goal' in data:
+            return Goal(manager=self.goals, **data['Goal'])
