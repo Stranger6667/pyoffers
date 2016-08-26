@@ -6,7 +6,7 @@ from .logging import get_logger
 from .models.advertiser import Advertiser, AdvertiserManager
 from .models.goal import Goal, GoalManager
 from .models.offer import Offer, OfferManager
-from .utils import add_get_args
+from .utils import add_query_params
 
 
 class HasOffersAPI:
@@ -41,7 +41,7 @@ class HasOffersAPI:
             'Method': method
         }
         params.update(**kwargs)
-        url = add_get_args(self.endpoint, **params)
+        url = add_query_params(self.endpoint, **params)
         response = self.session.get(url, verify=False)
         response.raise_for_status()
         content = response.json()
