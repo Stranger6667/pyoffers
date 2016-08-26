@@ -1,14 +1,14 @@
 # coding: utf-8
 import pytest
 
-from pyoffers.exceptions import InputError
+from pyoffers.exceptions import HasOffersException
 
 
 def test_invalid_network_id(api):
     old_token = api.network_token
     try:
         api.network_token = 'invalid'
-        with pytest.raises(InputError):
+        with pytest.raises(HasOffersException):
             api._call('test', 'test')
     finally:
         api.network_token = old_token

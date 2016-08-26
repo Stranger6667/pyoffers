@@ -1,7 +1,7 @@
 # coding: utf-8
 import pytest
 
-from pyoffers.exceptions import InputError
+from pyoffers.exceptions import HasOffersException
 from pyoffers.models import Advertiser
 
 
@@ -32,7 +32,7 @@ def test_update_success(advertiser):
 
 def test_update_fail(advertiser):
     advertiser['account_manager_id'] = 'string'
-    with pytest.raises(InputError):
+    with pytest.raises(HasOffersException):
         advertiser.update()
 
 

@@ -1,7 +1,7 @@
 # coding: utf-8
 import requests
 
-from .exceptions import check_errors
+from .exceptions import HasOffersException
 from .logging import get_logger
 from .models.advertiser import Advertiser, AdvertiserManager
 from .models.goal import Goal, GoalManager
@@ -54,7 +54,9 @@ class HasOffersAPI:
         """
         response = content['response']
 
-        check_errors(response.get('errors'))
+        errors = response.get('errors')
+        if errors:
+            raise HasOffersException(errors)
 
         data = response.get('data')
 

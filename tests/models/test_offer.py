@@ -1,7 +1,7 @@
 # coding: utf-8
 import pytest
 
-from pyoffers.exceptions import InputError
+from pyoffers.exceptions import HasOffersException
 from pyoffers.models import Offer
 
 
@@ -39,5 +39,5 @@ def test_add_category_success(offer):
 
 
 def test_add_category_fail(offer):
-    with pytest.raises(InputError):
+    with pytest.raises(HasOffersException):
         offer.add_category(-1)
