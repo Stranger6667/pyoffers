@@ -1,0 +1,13 @@
+language: python
+python:
+  - 3.5
+env:
+  - TOX_ENV=py33
+  - TOX_ENV=py34
+  - TOX_ENV=py35
+install:
+  - travis_retry pip install tox
+script:
+  - tox -e $TOX_ENV
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
