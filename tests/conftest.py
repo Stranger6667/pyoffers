@@ -1,4 +1,8 @@
 # coding: utf-8
+import base64
+import glob
+import gzip
+import json
 import os
 
 import pytest
@@ -19,8 +23,48 @@ NETWORK_TOKEN = os.environ.get('NETWORK_TOKEN', DEFAULT_NETWORK_TOKEN)
 NETWORK_ID = os.environ.get('NETWORK_ID', DEFAULT_NETWORK_ID)
 
 
+def decode(string):
+    return gzip.decompress(base64.b64decode(string.encode()))
+
+
+def encode(string):
+    return base64.b64encode(gzip.compress(string)).decode()
+
+
+def replace_real_credentials():
+    """
+    HasOffers response body contains NetworkId & NetworkToken and they should be replaced with test values.
+    """
+    cassettes = glob.glob(os.path.join(CASSETTE_DIR, '*.json'))
+    for cassette_path in cassettes:
+        with open(cassette_path) as fp:
+            data = json.load(fp)
+            for record in data['http_interactions']:
+                body = decode(record['response']['body']['base64_string'])
+                cleaned_body = body.replace(
+                    NETWORK_TOKEN.encode(), DEFAULT_NETWORK_TOKEN.encode()
+                ).replace(
+                    NETWORK_ID.encode(), DEFAULT_NETWORK_ID.encode()
+                )
+                record['response']['body']['base64_string'] = encode(cleaned_body)
+        with open(cassette_path, 'w') as fp:
+            json.dump(data, fp, sort_keys=True, indent=2, separators=(',', ': '))
+
+
+def pytest_addoption(parser):
+    parser.addoption('--record', action='store_true', help='Runs cleanup for recording session')
+
+
+def pytest_unconfigure(config):
+    if config.getoption('--record'):
+        replace_real_credentials()
+
+
 @pytest.yield_fixture(autouse=True, scope='module')
-def recorder(request, api):
+def betamax_recorder(request, api):
+    """
+    Session level Betamax recorder.
+    """
     cassette_name = getattr(request.node._obj, 'CASSETTE_NAME', 'default')
     vcr = Betamax(
         api.session,
