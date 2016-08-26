@@ -170,6 +170,77 @@ UPDATE_ADVERTISER_FAIL = {
         }
     }
 
+FIND_BY_ID_ADVERTISER_SUCCESS = {
+    'response': {
+        'httpStatus': 200,
+        'data': {
+            'Advertiser': {
+                'fax': None,
+                'conversion_security_token': None,
+                'AFFILIATE_NETWORK_Brands_id': None,
+                'phone': None,
+                'other': None,
+                'account_manager_id': None,
+                'signup_ip': None,
+                '_NETWORK_affiliate_id': None,
+                'date_added': '2016-08-25 13:00:06',
+                'status': 'blocked',
+                'ref_id': None,
+                'zipcode': '123456',
+                'website': None,
+                '_NETWORK_brand_active': '1',
+                'SHARED_Network_Map_id': None,
+                'tmp_token': None,
+                'company': 'Another',
+                'address1': None,
+                '_NETWORK_affiliate_status': None,
+                'country': 'CZ',
+                'wants_alerts': '1',
+                'address2': None,
+                'city': None,
+                'region': None,
+                'SHARED_Accounts_id': None,
+                'modified': 1472211500,
+                'expose_subs': '0',
+                'id': '72'
+                }
+            },
+        'status': 1,
+        'errorMessage': None,
+        'errors': []
+        },
+    'request': {
+        'NetworkToken': 'token',
+        'Target': 'Advertiser',
+        'NetworkId': 'id',
+        'id': '72',
+        'Version': '2',
+        'Format': 'json',
+        'Service': 'HasOffers',
+        'Method': 'findById'
+        }
+    }
+
+FIND_BY_ID_ADVERTISER_FAIL = {
+    'response': {
+        'httpStatus': 200,
+        'data': None,
+        'status': 1,
+        'errorMessage': None,
+        'errors': []
+        },
+    'request': {
+        'NetworkToken': 'token',
+        'Target': 'Advertiser',
+        'NetworkId': 'id',
+        'id': '1000',
+        'Version': '2',
+        'Format': 'json',
+        'Service': 'HasOffers',
+        'Method': 'findById'
+        }
+    }
+
 BLOCK_ADVERTISER_SUCCESS = {
     'request': {
         'NetworkToken': 'token',

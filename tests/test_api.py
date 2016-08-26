@@ -17,3 +17,8 @@ def test_invalid_path(api):
 def test_server_error(api):
     with pytest.raises(HTTPError):
         api._call('test', 'test')
+
+
+@pytest.mark.response({'response': {'data': 'unknown'}})
+def test_unknown_response(api):
+    assert api._call('test', 'test') == {'response': {'data': 'unknown'}}

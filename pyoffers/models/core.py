@@ -5,6 +5,7 @@ class Model:
     """
     Abstract model for HasOffers entity.
     """
+    non_model_fields = ()
 
     def __init__(self, manager, **kwargs):
         self._manager = manager
@@ -22,9 +23,12 @@ class Model:
     @property
     def instance_data(self):
         """
-        All data except for private fields.
+        All data except for private and non model fields.
         """
-        return {key: value for key, value in self._data.items() if not key.startswith('_')}
+        return {
+            key: value for key, value in self._data.items()
+            if not key.startswith('_') and key not in self.non_model_fields
+        }
 
 
 class ModelManager:
@@ -34,10 +38,8 @@ class ModelManager:
     """
     model = None
 
-    def __init__(self, api, model=None):
+    def __init__(self, api):
         self.api = api
-        if model is not None:
-            self.model = model
 
     def _call(self, method, **kwargs):
         return self.api._call(self.model, method, **kwargs)

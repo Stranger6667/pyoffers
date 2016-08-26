@@ -3,7 +3,7 @@ import pytest
 from httmock import HTTMock, all_requests, response
 
 from pyoffers.api import HasOffersAPI
-from pyoffers.models import Advertiser
+from pyoffers.models import Advertiser, Offer
 
 
 @pytest.fixture
@@ -14,6 +14,14 @@ def api():
 @pytest.fixture
 def advertiser(api):
     return Advertiser(manager=api.advertisers, id='1', status='pending', company='Test', country='CZ', zipcode='123456')
+
+
+@pytest.fixture
+def offer(api):
+    return Offer(
+        manager=api.offers, id='1', name='Test', offer_url='example.com', status='pending',
+        expiration_date='2030-12-12 23:59:59', preview_url='example.com'
+    )
 
 
 @pytest.yield_fixture(autouse=True)

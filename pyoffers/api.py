@@ -1,15 +1,17 @@
 # coding: utf-8
 import requests
 
-from .exceptions import InvalidPathError
+from .exceptions import check_errors
 from .logging import get_logger
 from .models.advertiser import Advertiser, AdvertiserManager
+from .models.offer import Offer, OfferManager
 from .utils import add_get_args
 
 
 class HasOffersAPI:
     managers = {
-        'advertisers': AdvertiserManager
+        'advertisers': AdvertiserManager,
+        'offers': OfferManager
     }
 
     def __init__(self, endpoint=None, network_token=None, network_id=None, verbosity=0):
@@ -42,13 +44,17 @@ class HasOffersAPI:
         """
         Parses response, checks it.
         """
-        data = content['response']
-        if data['errors']:
-            if data['errors']['publicMessage'] == 'Invalid path for URL':
-                raise InvalidPathError
-        elif isinstance(data['data'], bool):
-            return data['data']
-        elif isinstance(data['data'], dict):
-            if 'Advertiser' in data['data']:
-                return Advertiser(manager=self.advertisers, **data['data']['Advertiser'])
-        return data
+        response = content['response']
+
+        check_errors(response.get('errors'))
+
+        data = response.get('data')
+
+        if isinstance(data, bool) or data is None:
+            return data
+        elif isinstance(data, dict):
+            if 'Advertiser' in data:
+                return Advertiser(manager=self.advertisers, **data['Advertiser'])
+            elif 'Offer' in data:
+                return Offer(manager=self.offers, **data['Offer'])
+        return content
