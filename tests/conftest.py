@@ -55,3 +55,9 @@ def offer(api):
     return api.offers.create(
         name='Test', offer_url=URL, status='pending', expiration_date='2030-12-12 23:59:59', preview_url=URL
     )
+
+
+@pytest.fixture(scope='session')
+def goal(api):
+    offer_instance = offer(api)
+    return api.goals.create(name='Test', description='String', status='deleted', offer_id=offer_instance['id'])

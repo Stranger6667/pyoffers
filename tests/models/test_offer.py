@@ -16,7 +16,7 @@ def test_create_success(offer):
 def test_get_by_id_success(api, offer):
     instance = api.offers.find_by_id(offer['id'])
     assert isinstance(instance, Offer)
-    assert instance['offer_url'] == 'http://www.example.com'
+    assert instance['offer_url'] == offer['offer_url']
 
 
 def test_get_by_id_fail(api):

@@ -4,6 +4,7 @@ import requests
 from .exceptions import check_errors
 from .logging import get_logger
 from .models.advertiser import Advertiser, AdvertiserManager
+from .models.goal import Goal, GoalManager
 from .models.offer import Offer, OfferManager
 from .utils import add_get_args
 
@@ -11,7 +12,8 @@ from .utils import add_get_args
 class HasOffersAPI:
     managers = {
         'advertisers': AdvertiserManager,
-        'offers': OfferManager
+        'goals': GoalManager,
+        'offers': OfferManager,
     }
 
     def __init__(self, endpoint=None, network_token=None, network_id=None, verbosity=0):
@@ -63,4 +65,6 @@ class HasOffersAPI:
                 return Advertiser(manager=self.advertisers, **data['Advertiser'])
             elif 'Offer' in data:
                 return Offer(manager=self.offers, **data['Offer'])
+            elif 'Goal' in data:
+                return Goal(manager=self.goals, **data['Goal'])
         return content
