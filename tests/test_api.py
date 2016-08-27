@@ -12,3 +12,7 @@ def test_invalid_network_id(api):
             api._call('test', 'test')
     finally:
         api.network_token = old_token
+
+
+def test_handle_response(api):
+    assert api.handle_response({'response': {'data': {'unknown': ''}}}) is None
