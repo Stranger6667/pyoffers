@@ -10,6 +10,9 @@ from .utils import add_query_params
 
 
 class HasOffersAPI:
+    """
+    Client to communicate with HasOffers API.
+    """
     managers = {
         'advertisers': AdvertiserManager,
         'goals': GoalManager,
@@ -23,6 +26,12 @@ class HasOffersAPI:
         self.logger = get_logger(verbosity)
         for name, manager in self.managers.items():
             setattr(self, name, manager(self))
+
+    def __str__(self):
+        return '%s: %s / %s' % (self.__class__.__name__, self.network_token, self.network_id)
+
+    def __repr__(self):
+        return '<%s>' % self
 
     @property
     def session(self):

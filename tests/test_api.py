@@ -16,3 +16,11 @@ def test_invalid_network_id(api):
 
 def test_handle_response(api):
     assert api.handle_response({'response': {'data': {'unknown': ''}}}) is None
+
+
+def test_str(api):
+    assert str(api) == 'HasOffersAPI: token / id'
+
+
+def test_repr(api):
+    assert repr(api) == '<HasOffersAPI: token / id>'

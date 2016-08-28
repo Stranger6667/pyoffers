@@ -63,14 +63,13 @@ def pytest_unconfigure(config):
 @pytest.yield_fixture(autouse=True, scope='module')
 def betamax_recorder(request, api):
     """
-    Session level Betamax recorder.
+    Module level Betamax recorder.
     """
     cassette_name = getattr(request.node._obj, 'CASSETTE_NAME', 'default')
     vcr = Betamax(
         api.session,
         cassette_library_dir=CASSETTE_DIR,
         default_cassette_options={
-            'preserve_exact_body_bytes': False,
             'serialize_with': 'prettyjson',
             'match_requests_on': ['query', 'method'],
             'record_mode': RECORD_MODE
