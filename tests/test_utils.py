@@ -13,7 +13,7 @@ from pyoffers.utils import expand
         ),
         (
             ([1, 2, 3], 'key'),
-            {('key', 1), ('key', 2), ('key', 3)}
+            {('key[]', 1), ('key[]', 2), ('key[]', 3)}
         ),
         (
             ({'a': 1, 'b': 2}, 'key'),

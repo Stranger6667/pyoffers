@@ -29,4 +29,4 @@ def expand_dict(value, key):
 @expand.register(tuple)
 def expand_lists(value, key):
     for inner_value in value:
-        yield key, inner_value
+        yield '%s[]' % key, inner_value
