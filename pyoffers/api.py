@@ -6,7 +6,7 @@ from .logging import get_logger
 from .models.advertiser import Advertiser, AdvertiserManager
 from .models.goal import Goal, GoalManager
 from .models.offer import Offer, OfferManager
-from .utils import add_query_params
+from .utils import prepare_query_params
 
 
 class HasOffersAPI:
@@ -43,15 +43,14 @@ class HasOffersAPI:
         """
         Low-level call to HasOffers API.
         """
-        params = {
-            'NetworkToken': self.network_token,
-            'NetworkId': self.network_id,
-            'Target': target,
-            'Method': method
-        }
-        params.update(**kwargs)
-        url = add_query_params(self.endpoint, **params)
-        response = self.session.get(url, verify=False)
+        params = prepare_query_params(
+            NetworkToken=self.network_token,
+            NetworkId=self.network_id,
+            Target=target,
+            Method=method,
+            **kwargs
+        )
+        response = self.session.get(self.endpoint, params=params, verify=False)
         response.raise_for_status()
         content = response.json()
         self.logger.debug('Response: %s', content)
