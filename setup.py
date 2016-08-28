@@ -8,7 +8,7 @@ setup(
     name='pyoffers',
     url='https://github.com/Stranger6667/pyoffers',
     version=pyoffers.__version__,
-    packages=['pyoffers'],
+    packages=['pyoffers', 'pyoffers.models'],
     license='MIT',
     author='Dmitry Dygalo',
     author_email='dadygalo@gmail.com',
