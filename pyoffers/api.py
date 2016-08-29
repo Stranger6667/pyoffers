@@ -70,7 +70,18 @@ class HasOffersAPI:
 
         if isinstance(data, bool) or data is None:
             return data
-        if 'Advertiser' in data:
+        if 'pageCount' in data:
+            inner_data = data['data']
+            result = []
+            for item in inner_data.values():
+                if 'Advertiser' in item:
+                    result.append(Advertiser(manager=self.advertisers, **item['Advertiser']))
+                elif 'Offer' in item:
+                    result.append(Offer(manager=self.offers, **item['Offer']))
+                elif 'Goal' in item:
+                    result.append(Goal(manager=self.goals, **item['Goal']))
+            return result
+        elif 'Advertiser' in data:
             return Advertiser(manager=self.advertisers, **data['Advertiser'])
         elif 'Offer' in data:
             return Offer(manager=self.offers, **data['Offer'])

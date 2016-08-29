@@ -1,3 +1,8 @@
+0.2.0
+=====
+
+* Added support for returning multiple objects. (`#7`_)
+
 0.1.2
 =====
 
@@ -14,4 +19,5 @@
 * Initial release.
 
 
+.. _#7: https://github.com/Stranger6667/pyoffers/issues/7
 .. _#5: https://github.com/Stranger6667/pyoffers/issues/5
