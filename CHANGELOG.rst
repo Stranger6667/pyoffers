@@ -1,3 +1,8 @@
+0.2.1
+=====
+
+* Don't touch cassette if it contains no production credentials. (`#12`_)
+
 0.2.0
 =====
 
@@ -23,6 +28,7 @@
 * Initial release.
 
 
+.. _#12: https://github.com/Stranger6667/pyoffers/issues/12
 .. _#11: https://github.com/Stranger6667/pyoffers/issues/11
 .. _#9: https://github.com/Stranger6667/pyoffers/issues/9
 .. _#8: https://github.com/Stranger6667/pyoffers/issues/8

@@ -1,8 +1,4 @@
 # coding: utf-8
-import base64
-import glob
-import gzip
-import json
 import os
 
 import pytest
@@ -10,6 +6,8 @@ import pytest
 from betamax import Betamax
 from betamax_serializers import pretty_json
 from pyoffers.api import HasOffersAPI
+
+from .helpers import replace_real_credentials
 
 
 Betamax.register_serializer(pretty_json.PrettyJSONSerializer)
@@ -23,47 +21,13 @@ NETWORK_TOKEN = os.environ.get('NETWORK_TOKEN', DEFAULT_NETWORK_TOKEN)
 NETWORK_ID = os.environ.get('NETWORK_ID', DEFAULT_NETWORK_ID)
 
 
-def decode(string):
-    return gzip.decompress(base64.b64decode(string.encode()))
-
-
-def encode(string):
-    return base64.b64encode(gzip.compress(string)).decode()
-
-
-def clean_string(string):
-    return string.replace(
-        NETWORK_TOKEN.encode(), DEFAULT_NETWORK_TOKEN.encode()
-    ).replace(
-        NETWORK_ID.encode(), DEFAULT_NETWORK_ID.encode()
-    )
-
-
-def replace_real_credentials():
-    """
-    HasOffers response body contains NetworkId & NetworkToken and they should be replaced with test values.
-    """
-    cassettes = glob.glob(os.path.join(CASSETTE_DIR, '*.json'))
-    for cassette_path in cassettes:
-        with open(cassette_path) as fp:
-            data = json.load(fp)
-            for record in data['http_interactions']:
-                body = decode(record['response']['body']['base64_string'])
-                cleaned_body = clean_string(body)
-                record['response']['body']['base64_string'] = encode(cleaned_body)
-                record['request']['uri'] = clean_string(record['request']['uri'].encode()).decode()
-                record['response']['url'] = clean_string(record['response']['url'].encode()).decode()
-        with open(cassette_path, 'w') as fp:
-            json.dump(data, fp, sort_keys=True, indent=2, separators=(',', ': '))
-
-
 def pytest_addoption(parser):
     parser.addoption('--record', action='store_true', help='Runs cleanup for recording session')
 
 
 def pytest_unconfigure(config):
     if config.getoption('--record'):
-        replace_real_credentials()
+        replace_real_credentials(CASSETTE_DIR, NETWORK_TOKEN, DEFAULT_NETWORK_TOKEN, NETWORK_ID, DEFAULT_NETWORK_ID)
 
 
 @pytest.yield_fixture(autouse=True, scope='module')
