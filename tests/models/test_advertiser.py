@@ -13,13 +13,13 @@ def test_create_success(advertiser):
     assert advertiser['country'] == 'CZ'
 
 
-def test_get_by_id_success(api, advertiser):
+def test_find_by_id_success(api, advertiser):
     instance = api.advertisers.find_by_id(advertiser['id'])
     assert isinstance(instance, Advertiser)
     assert instance['country'] == 'CZ'
 
 
-def test_get_by_id_fail(api):
+def test_find_by_id_fail(api):
     assert api.advertisers.find_by_id(100000) is None
 
 

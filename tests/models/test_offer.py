@@ -13,13 +13,13 @@ def test_create_success(offer):
     assert offer['offer_url'] == 'http://www.example.com'
 
 
-def test_get_by_id_success(api, offer):
+def test_find_by_id_success(api, offer):
     instance = api.offers.find_by_id(offer['id'])
     assert isinstance(instance, Offer)
     assert instance['offer_url'] == offer['offer_url']
 
 
-def test_get_by_id_fail(api):
+def test_find_by_id_fail(api):
     assert api.offers.find_by_id(1000) is None
 
 
