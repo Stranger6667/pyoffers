@@ -1,3 +1,8 @@
+0.3.0.dev
+=========
+
+* Fixed invalid queries building. (`#16`_)
+
 0.2.2
 =====
 
@@ -34,6 +39,7 @@
 * Initial release.
 
 
+.. _#16: https://github.com/Stranger6667/pyoffers/issues/16
 .. _#14: https://github.com/Stranger6667/pyoffers/issues/14
 .. _#13: https://github.com/Stranger6667/pyoffers/issues/13
 .. _#12: https://github.com/Stranger6667/pyoffers/issues/12

@@ -6,12 +6,12 @@ def prepare_query_params(**kwargs):
     """
     Adds extra querystring parameters to given URL.
     """
-    return {
-        sub_key: sub_value
+    return [
+        (sub_key, sub_value)
         for key, value in kwargs.items()
         for sub_key, sub_value in expand(value, key)
         if sub_value is not None
-    }
+    ]
 
 
 @singledispatch
@@ -27,6 +27,7 @@ def expand_dict(value, key):
 
 @expand.register(list)
 @expand.register(tuple)
+@expand.register(set)
 def expand_lists(value, key):
     for inner_value in value:
         yield '%s[]' % key, inner_value
