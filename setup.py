@@ -17,7 +17,7 @@ setup(
     keywords=['hasoffers', 'api', 'client'],
     description='Python client library for HasOffers API',
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
