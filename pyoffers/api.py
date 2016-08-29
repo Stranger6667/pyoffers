@@ -3,7 +3,7 @@ import requests
 
 from .exceptions import HasOffersException
 from .logging import get_logger
-from .models import AdvertiserManager, GoalManager, ModelManager, OfferManager
+from .models import AdvertiserManager, ConversionManager, GoalManager, ModelManager, OfferManager
 from .utils import prepare_query_params
 
 
@@ -28,6 +28,7 @@ class HasOffersAPI(metaclass=APIMeta):
     """
     _managers = None
     advertisers = AdvertiserManager()
+    conversions = ConversionManager()
     goals = GoalManager()
     offers = OfferManager()
 

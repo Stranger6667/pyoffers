@@ -101,6 +101,13 @@ def offer(api):
 
 
 @pytest.fixture(scope='session')
+def conversion(api):
+    return api.conversions.create(
+        status='pending', payout='1', revenue='1', affiliate_id='1', offer_id='1', status_code='22'
+    )
+
+
+@pytest.fixture(scope='session')
 def goal(api):
     offer_instance = offer(api)
     return api.goals.create(name='Test', description='String', status='deleted', offer_id=offer_instance['id'])
