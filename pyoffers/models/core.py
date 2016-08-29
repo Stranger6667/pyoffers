@@ -11,6 +11,12 @@ class Model:
         self._manager = manager
         self._data = kwargs
 
+    def __str__(self):
+        return '%s: %s' % (self.__class__.__name__, self._data.get('id'))
+
+    def __repr__(self):
+        return '<%s>' % self
+
     def __getitem__(self, item):
         return self._data[item]
 
