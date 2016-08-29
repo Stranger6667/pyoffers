@@ -38,8 +38,11 @@ class ModelManager:
     """
     model = None
 
-    def __init__(self, api):
+    def bind(self, api):
         self.api = api
 
+    def init_instance(self, data):
+        return self.model(manager=self, **data)
+
     def _call(self, method, **kwargs):
-        return self.api._call(self.model, method, **kwargs)
+        return self.api._call(self.model.__name__, method, **kwargs)

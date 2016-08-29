@@ -1,4 +1,5 @@
 # coding: utf-8
-from .advertiser import Advertiser
-from .goal import Goal
-from .offer import Offer
+from .advertiser import Advertiser, AdvertiserManager
+from .core import ModelManager
+from .goal import Goal, GoalManager
+from .offer import Offer, OfferManager

@@ -19,7 +19,7 @@ class Offer(Model):
 
 
 class OfferManager(ModelManager):
-    model = 'Offer'
+    model = Offer
 
     def create(self, **kwargs):
         return self._call('create', data=kwargs)

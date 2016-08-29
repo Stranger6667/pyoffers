@@ -3,29 +3,47 @@ import requests
 
 from .exceptions import HasOffersException
 from .logging import get_logger
-from .models.advertiser import Advertiser, AdvertiserManager
-from .models.goal import Goal, GoalManager
-from .models.offer import Offer, OfferManager
+from .models import AdvertiserManager, GoalManager, ModelManager, OfferManager
 from .utils import prepare_query_params
 
 
-class HasOffersAPI:
+class APIMeta(type):
+    """
+    Adds managers cache to API class.
+    Allows to access manager by model name - it is convenient, because HasOffers returns model names in responses.
+    """
+
+    def __new__(mcs, name, bases, members):
+        members['_managers'] = {
+            member.model.__name__: member
+            for name, member in members.items()
+            if isinstance(member, ModelManager)
+        }
+        return super().__new__(mcs, name, bases, members)
+
+
+class HasOffersAPI(metaclass=APIMeta):
     """
     Client to communicate with HasOffers API.
     """
-    managers = {
-        'advertisers': AdvertiserManager,
-        'goals': GoalManager,
-        'offers': OfferManager,
-    }
+    _managers = None
+    advertisers = AdvertiserManager()
+    goals = GoalManager()
+    offers = OfferManager()
 
     def __init__(self, endpoint=None, network_token=None, network_id=None, verbosity=0):
         self.endpoint = endpoint
         self.network_token = network_token
         self.network_id = network_id
         self.logger = get_logger(verbosity)
-        for name, manager in self.managers.items():
-            setattr(self, name, manager(self))
+        self.bind_managers()
+
+    def bind_managers(self):
+        """
+        Binds API instance to manager instance.
+        """
+        for manager in self._managers.values():
+            manager.bind(self)
 
     def __str__(self):
         return '%s: %s / %s' % (self.__class__.__name__, self.network_token, self.network_id)
@@ -71,19 +89,19 @@ class HasOffersAPI:
         if isinstance(data, bool) or data is None:
             return data
         if 'pageCount' in data:
-            inner_data = data['data']
-            result = []
-            for item in inner_data.values():
-                if 'Advertiser' in item:
-                    result.append(Advertiser(manager=self.advertisers, **item['Advertiser']))
-                elif 'Offer' in item:
-                    result.append(Offer(manager=self.offers, **item['Offer']))
-                elif 'Goal' in item:
-                    result.append(Goal(manager=self.goals, **item['Goal']))
-            return result
-        elif 'Advertiser' in data:
-            return Advertiser(manager=self.advertisers, **data['Advertiser'])
-        elif 'Offer' in data:
-            return Offer(manager=self.offers, **data['Offer'])
-        elif 'Goal' in data:
-            return Goal(manager=self.goals, **data['Goal'])
+            return self.init_objects(*data['data'].values())
+        return self.init_objects(data, single=True)
+
+    def init_objects(self, *data, single=False):
+        """
+        Initializes model instances from given data.
+        Returns single instance if it is possible and single=False.
+        """
+        initialized = [
+            self._managers[key].init_instance(item)
+            for chunk in data
+            for key, item in chunk.items()
+        ]
+        if len(initialized) == 1 and single:
+            return initialized[0]
+        return initialized

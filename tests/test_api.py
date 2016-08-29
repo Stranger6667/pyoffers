@@ -17,9 +17,6 @@ def test_invalid_network_id(api):
 
 class TestHandleResponse:
 
-    def test_unknown_response(self, api):
-        assert api.handle_response({'response': {'data': {'unknown': ''}}}) is None
-
     def test_multiple_objects(self, api):
         data = {
             'response': {
