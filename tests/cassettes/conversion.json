@@ -454,6 +454,71 @@
         },
         "url": "https://api.hasoffers.com/Api/json?Method=findAll&Target=Conversion&NetworkId=id&filters%5Boffer_id%5D=9&NetworkToken=token"
       }
+    },
+    {
+      "recorded_at": "2016-08-29T17:00:08",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.11.1"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Api/json?Target=Conversion&NetworkToken=token&filters%5Boffer_id%5D=11&Method=findAll&NetworkId=id"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIABhqxFcC/0WNMQ7CMAxF7+I5Q9uxG0JCMAADiAUhFFEXQkMMtgsD6t1xKgRT/J9fvt/A+OhRFOo3bD2f0SaYUnoiS6AEDmbEN5/pVca8QX6GExqYe1m3rYlGd1+/hsrSCvVF3G2pw4x0fB20IWrW7Rblj8fQ2LYsYXCwRL1Qjm1IzSTGf8siUzNNYpQ7JcHcIOq1t67SwUX1vvnGqigcNF491PuDA2SmfPE3L1HEn60h9TEOwwd052BZAQEAAA==",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "226"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Mon, 29 Aug 2016 17:00:08 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Api/json?Target=Conversion&NetworkToken=token&filters%5Boffer_id%5D=11&Method=findAll&NetworkId=id"
+      }
     }
   ],
   "recorded_with": "betamax/0.8.0"

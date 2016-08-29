@@ -2,6 +2,7 @@
 =========
 
 * Fixed invalid queries building. (`#16`_)
+* Fixed error on empty not paginated results. (`#17`_)
 
 0.2.2
 =====
@@ -39,6 +40,7 @@
 * Initial release.
 
 
+.. _#17: https://github.com/Stranger6667/pyoffers/issues/17
 .. _#16: https://github.com/Stranger6667/pyoffers/issues/16
 .. _#14: https://github.com/Stranger6667/pyoffers/issues/14
 .. _#13: https://github.com/Stranger6667/pyoffers/issues/13

@@ -23,7 +23,7 @@ class APIMeta(type):
 
 
 def is_empty(data):
-    return isinstance(data, bool) or data is None
+    return isinstance(data, bool) or not data
 
 
 def is_paginated(data):
