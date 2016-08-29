@@ -90,6 +90,8 @@ class HasOffersAPI(metaclass=APIMeta):
         if isinstance(data, bool) or data is None:
             return data
         if 'pageCount' in data:
+            if not data['count']:
+                return data['data']
             return self.init_objects(*data['data'].values())
         return self.init_objects(data, single=True)
 

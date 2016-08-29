@@ -324,6 +324,71 @@
         },
         "url": "https://api.hasoffers.com/Api/json?Method=update&NetworkId=id&data%5Bcurrency%5D=CZK&data%5Bcreative_url_id%5D=0&data%5Bbrowser_id%5D=0&data%5Bcountry_code%5D=INT&data%5Bis_adjustment%5D=0&data%5Bstatus%5D=pending&data%5Brevenue%5D=2&NetworkToken=token&data%5Bcustomer_id%5D=0&data%5Boffer_file_id%5D=0&data%5Baffiliate_manager_id%5D=0&data%5Badvertiser_manager_id%5D=0&data%5Bstatus_code%5D=22&data%5Bad_campaign_id%5D=0&data%5Bad_id%5D=&data%5Bad_campaign_creative_id%5D=0&data%5Baffiliate_id%5D=1&data%5Bdatetime%5D=2016-08-29+05%3A54%3A43&data%5Bpayout%5D=1.00000&data%5Bgoal_id%5D=0&id=99630&data%5Bpayout_type%5D=cpa_flat&Target=Conversion&data%5Brevenue_type%5D=cpa_flat&data%5Boffer_id%5D=1&data%5Badvertiser_id%5D=0"
       }
+    },
+    {
+      "recorded_at": "2016-08-29T11:46:09",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.11.1"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Api/json?NetworkId=id&Target=Conversion&filters%5Bgoal_id%5D=100000&Method=findAll&NetworkToken=token&limit=1"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAIEgxFcC/0VOPY/CMAz9L54ztIxsJ6QTN8ANIBaEUNS6JRDinuPAgPrfsXvVXZb4ffg9v4Dxp2AWWL5g77lHnWBF6YGcAyVw8El898Ze84R3yI/QoBJrn7+7To3KHmb/EhaKtihP4ttXqzi0SnQhihm1pScfz8GUurIHo4MNyoWM6kJqP2L8j9jTDS1Vpt9BDPdgx9S2xpgHShktNouXogW1g4vIsJvhoqoctF68eQbf4+RoCjMmzVGxoTJPJq/+0O/S8aQ9yEx2/PE0zxvMecpKJcZxfAPYCxGGRgEAAA==",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "256"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Mon, 29 Aug 2016 11:46:09 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Api/json?NetworkId=id&Target=Conversion&filters%5Bgoal_id%5D=100000&Method=findAll&NetworkToken=token&limit=1"
+      }
     }
   ],
   "recorded_with": "betamax/0.8.0"

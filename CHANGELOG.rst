@@ -2,6 +2,7 @@
 =====
 
 * Don't touch cassette if it contains no production credentials. (`#12`_)
+* Fixed exception if no results were found. (`#13`_)
 
 0.2.0
 =====
@@ -28,6 +29,7 @@
 * Initial release.
 
 
+.. _#13: https://github.com/Stranger6667/pyoffers/issues/13
 .. _#12: https://github.com/Stranger6667/pyoffers/issues/12
 .. _#11: https://github.com/Stranger6667/pyoffers/issues/11
 .. _#9: https://github.com/Stranger6667/pyoffers/issues/9
