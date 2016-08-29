@@ -31,6 +31,14 @@ def encode(string):
     return base64.b64encode(gzip.compress(string)).decode()
 
 
+def clean_string(string):
+    return string.replace(
+        NETWORK_TOKEN.encode(), DEFAULT_NETWORK_TOKEN.encode()
+    ).replace(
+        NETWORK_ID.encode(), DEFAULT_NETWORK_ID.encode()
+    )
+
+
 def replace_real_credentials():
     """
     HasOffers response body contains NetworkId & NetworkToken and they should be replaced with test values.
@@ -41,12 +49,10 @@ def replace_real_credentials():
             data = json.load(fp)
             for record in data['http_interactions']:
                 body = decode(record['response']['body']['base64_string'])
-                cleaned_body = body.replace(
-                    NETWORK_TOKEN.encode(), DEFAULT_NETWORK_TOKEN.encode()
-                ).replace(
-                    NETWORK_ID.encode(), DEFAULT_NETWORK_ID.encode()
-                )
+                cleaned_body = clean_string(body)
                 record['response']['body']['base64_string'] = encode(cleaned_body)
+                record['request']['uri'] = clean_string(record['request']['uri'].encode()).decode()
+                record['response']['url'] = clean_string(record['response']['url'].encode()).decode()
         with open(cassette_path, 'w') as fp:
             json.dump(data, fp, sort_keys=True, indent=2, separators=(',', ': '))
 

@@ -5,6 +5,7 @@
 * Refactored models instantiation. (`#9`_)
 * Added `Conversion` model. (`#3`_)
 * Better models representation. (`#8`_)
+* Fixed credentials leak. (`#11`_)
 
 0.1.2
 =====
@@ -22,6 +23,7 @@
 * Initial release.
 
 
+.. _#11: https://github.com/Stranger6667/pyoffers/issues/11
 .. _#9: https://github.com/Stranger6667/pyoffers/issues/9
 .. _#8: https://github.com/Stranger6667/pyoffers/issues/8
 .. _#7: https://github.com/Stranger6667/pyoffers/issues/7
