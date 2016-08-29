@@ -1,3 +1,8 @@
+0.2.2
+=====
+
+* Fixed error on not paginated results. (`#14`_)
+
 0.2.1
 =====
 
@@ -29,6 +34,7 @@
 * Initial release.
 
 
+.. _#14: https://github.com/Stranger6667/pyoffers/issues/14
 .. _#13: https://github.com/Stranger6667/pyoffers/issues/13
 .. _#12: https://github.com/Stranger6667/pyoffers/issues/12
 .. _#11: https://github.com/Stranger6667/pyoffers/issues/11

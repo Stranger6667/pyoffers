@@ -26,6 +26,12 @@ def test_find_all(api):
     assert all(isinstance(item, Conversion) for item in result)
 
 
+def test_find_all_not_paginated(api):
+    result = api.conversions.find_all(filters={'offer_id': 9})
+    assert len(result) == 2
+    assert all(isinstance(item, Conversion) for item in result)
+
+
 def test_find_all_not_found(api):
     assert api.conversions.find_all(filters={'goal_id': 100000}, limit=1) == []
 

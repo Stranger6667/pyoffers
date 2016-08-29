@@ -22,6 +22,18 @@ class APIMeta(type):
         return super().__new__(mcs, name, bases, members)
 
 
+def is_empty(data):
+    return isinstance(data, bool) or data is None
+
+
+def is_paginated(data):
+    return 'pageCount' in data
+
+
+def is_multiple_objects(data):
+    return len(data) > 1
+
+
 class HasOffersAPI(metaclass=APIMeta):
     """
     Client to communicate with HasOffers API.
@@ -87,12 +99,14 @@ class HasOffersAPI(metaclass=APIMeta):
 
         data = response.get('data')
 
-        if isinstance(data, bool) or data is None:
+        if is_empty(data):
             return data
-        if 'pageCount' in data:
+        elif is_paginated(data):
             if not data['count']:
                 return data['data']
             return self.init_objects(*data['data'].values())
+        elif is_multiple_objects(data):
+            return self.init_objects(*data.values())
         return self.init_objects(data, single=True)
 
     def init_objects(self, *data, single=False):
