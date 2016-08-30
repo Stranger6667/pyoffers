@@ -23,6 +23,12 @@ def test_find_by_id_fail(api):
     assert api.advertisers.find_by_id(100000) is None
 
 
+def test_find_all(api):
+    result = api.advertisers.find_all(limit=2)
+    assert len(result) == 2
+    assert all(isinstance(item, Advertiser) for item in result)
+
+
 def test_update_success(advertiser):
     advertiser['company'] = 'Another'
     new_instance = advertiser.update()

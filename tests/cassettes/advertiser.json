@@ -389,6 +389,74 @@
         },
         "url": "https://api.hasoffers.com/Api/json?NetworkToken=token&NetworkId=id&id=114&Target=Advertiser&Method=block&reason=reason+text"
       }
+    },
+    {
+      "recorded_at": "2016-08-30T12:31:38",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.11.1"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Api/json?Method=findAll&limit=2&NetworkId=id&NetworkToken=token&Target=Advertiser"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAKt8xVcC/+1U247TMBD9FeTnrpSkF6q8haXVVtBdabcCCYQsN560poltbKfdZdV/35lcSuABwSviyTNzxsdnLvIzc/CtBh9Y+sw2wu0ALZbJI7igPDg2YkvjKkHRr95o9B/AHVUOGLgR/q4owHmMfsBDIZ6yBL01hL2R6BRKy6wsMVSqSoUOvoVwMu6wogwlfwQ25gBEEZrzPEJx3hrtgdT5IELtWRqP2D4E+9C5SRSNmBRBUI4VO2gy8to50PgegrmpyZqhSfh1644H1+J4QsegbPQQBC6kBFKZRPHsKppfJbNX0TydjvFZlN1LYtvS5AegShRlEx+9W1mhn6if2oR900zkw5p8zFJdl+XFT3o/V+Gptx3smo52CMl2xHb9CYlawg77rmxuJI0kTsaT6QxxuzcaerwQj715gq1X4YKchA6eixLrpjriRrY+tsPkHrCPqIi3A+nuhMr+HBB5I45XQmN/HacetIhXO11brmwfqIxUhaKWxpPXSTKOJhFO6+Emu1+85d0W8LWwA44OzNpH/ABxUAy8bLlcvV9lmwW/XWw+3t2/42+c0HJ44YKIolClogH/Fuzn+0vClni5yIM6Qtc0eLTG44V6S22M2BmXN47mf7dVcRpNh1sloYQw2Crk+79Vf7RV43j6b24V7RU4Z/DPTT9/6ew1zrr5+IjxfH4BGHOCSNQFAAA=",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "558"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 30 Aug 2016 12:31:38 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "2265d296-4890-4293-bba2-9d436a61969a"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Api/json?Method=findAll&limit=2&NetworkId=id&NetworkToken=token&Target=Advertiser"
+      }
     }
   ],
   "recorded_with": "betamax/0.8.0"

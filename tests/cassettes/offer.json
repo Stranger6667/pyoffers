@@ -454,6 +454,74 @@
         },
         "url": "https://api.hasoffers.com/Api/json?Method=addCategory&NetworkId=id&id=196&NetworkToken=token&Target=Offer&category_id=-1"
       }
+    },
+    {
+      "recorded_at": "2016-08-30T12:31:39",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.11.1"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Api/json?Method=findAll&limit=2&NetworkId=id&NetworkToken=token&Target=Offer"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAKt8xVcC/+1YbW/jNgz+Kwd/2Ke0ld00awMUw3DAsGHoNuAO+7B1EFSZTtTIlqeXuLki/32kLCdOm97dMOC2Gy4IGpsPRVHkQ4roY2bhzwDOZ/PH7K2wC8Cn7OeqAptNsu+MrQUJ7p1p8P0N2LWSgILvhYtKDqW/4o9CfJ4V+HYDfmlKfKlUU36rNYq0qpVP8E/gO2NXP5CGKveCt2YFZMLH3+0E/XKtaRyQY84LH1w2zyfZ0vv2TXotGJtkpfCCdFqxgKghg7XQ4H4IShPoKWfTSVR43b9fFPt1Of3pD4wPivzK0a1SuVaLDRflGqxXjuCMIbAXcFJugtaTrBE1ReUXsBVIf2Ma2JANcNKq1vfBySYx1soCF21rzVroZHIQe7C146IpuTRNqWidi8c4DvRbtxbWCjoeLJmj8Mxvz27Puq47bXt3anLnVL7DnQyd8+NU+zDKDWq+/u3HeJpKBO15KzYmUDqvGDtl9EGwFg97IGcjBE/qjTTDjigZsokWNXggEsBDq6ygc3HMC4WyYEV+woqT/PJVUcwvrvCLesrx1qp1rxKtxz2537Qkka3glUbGYsgUWCj3PrG9DAMGTdhZACuRLuNjnbI+K1HtiO142KfLcrZbV2Iyped9sPckwdwRddCDHkmGs+fIy2ti6sYQVR6PoeN+iTWzNHq3uAIMNLozvGP0XLgbc5L8HYt4Gfo0DEsOwCr2isiJ5EJw3tTollbOj7y2UMW3yHm01ywGBMtK3GngUiu54rWQ1iQ3RpIXTilFm3SRpn6pN/womCiRBH1OhgXHsCHPRxccBX3sk/zOms5RC0yNIRY1jJza1ajQ2nS8xupRrX6i0a+NCh3cOeUBo9msDpHEqDGAme54nwC+FlZRWHcYuBiUpQnRvWI6EqoaW8ZR3PNB50AtGSX2gEESKGhKDM05y8eu1ELpyIMkLBt4SguIOqpx3gbpR8d/DuA2pn55HfH4HiOy02gqg/XIF+hgn53Iud54whxgS8NytkKuEI3BTCpL4zy18JGvS+H4wgjtODQU2nI4VuqChPHU9kebYHXYTev3u7TqAbTb8bZUlSJb+XQ2ZVdsdj6ltbEk+gLvlsiAURgb49MWwUE6G7dhn2sSJ1ovrAntWD6w9wA4YBlysd1w6shKohkr6kFNWuweENsxD16SFD8n8fuKsXn8xsu9wmjXcLxUdujzUn2icKw0kXLxZthHH0lVmq7RRpTjLkHy0KRmdQdPIb9Ulu4C6zeJohVmFrY4Zpw/v/7P/8b1n01pqBmu/9vA8ll1Tz+sXImv/wszQLiX6MmHrv+d1u3ZN8HX3GFnkHC9NtoZ+xVJarzWQn0tqkpphaSIQinqVqhFMygi7RsnYo1ieK4fD9+3HzdWXLw0VlxeHB0rMBfrOK7uBgvacQ3vnSvY+aeeKy4/7VxxHPs/ThZDwX4ZLD67wYL9s7HiheHhQ1NFlr1/phhf6J/TRDGbXV7MiuLLRPEvThQ0U4C1huj/+x/p+Qb5Hv89QQa2278AMCbRSnURAAA=",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "1181"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 30 Aug 2016 12:31:39 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "1e8b935e-2920-4ff5-9808-fdaab8464fac"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Api/json?Method=findAll&limit=2&NetworkId=id&NetworkToken=token&Target=Offer"
+      }
     }
   ],
   "recorded_with": "betamax/0.8.0"

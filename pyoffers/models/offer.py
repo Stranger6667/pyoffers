@@ -30,6 +30,9 @@ class OfferManager(ModelManager):
     def find_by_id(self, id):
         return self._call('findById', id=id)
 
+    def find_all(self, sort=None, limit=None, page=None, **kwargs):
+        return self._call('findAll', filters=kwargs, sort=sort, limit=limit, page=page, single_result=False)
+
     def add_target_country(self, id, country_code):
         return self._call('addTargetCountry', id=id, country_code=country_code)
 
