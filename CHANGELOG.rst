@@ -2,6 +2,7 @@
 =========
 
 * Added `find_all` methods for all defined models. (`#23`_)
+* Initial support for `contain` in `find_all` queries. (`#22`_)
 
 0.3.0
 =====
@@ -48,6 +49,7 @@
 
 
 .. _#23: https://github.com/Stranger6667/pyoffers/issues/23
+.. _#22: https://github.com/Stranger6667/pyoffers/issues/22
 .. _#18: https://github.com/Stranger6667/pyoffers/issues/18
 .. _#17: https://github.com/Stranger6667/pyoffers/issues/17
 .. _#16: https://github.com/Stranger6667/pyoffers/issues/16

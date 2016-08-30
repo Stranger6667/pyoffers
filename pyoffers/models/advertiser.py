@@ -26,8 +26,10 @@ class AdvertiserManager(ModelManager):
     def find_by_id(self, id):
         return self._call('findById', id=id)
 
-    def find_all(self, sort=None, limit=None, page=None, **kwargs):
-        return self._call('findAll', filters=kwargs, sort=sort, limit=limit, page=page, single_result=False)
+    def find_all(self, sort=None, limit=None, page=None, contain=None, **kwargs):
+        return self._call(
+            'findAll', filters=kwargs, sort=sort, limit=limit, page=page, contain=contain, single_result=False
+        )
 
     def block(self, id, reason=''):
         return self._call('block', id=id, reason=reason)
