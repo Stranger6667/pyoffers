@@ -1,5 +1,5 @@
-0.3.2.dev
-=========
+0.3.2
+=====
 
 * Added `Country` model . (`#24`_)
 * Added `get_target_countries` method to `Offer` model. (`#25`_)
