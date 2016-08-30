@@ -1,5 +1,5 @@
-0.3.1.dev
-=========
+0.3.1
+=====
 
 * Added `find_all` methods for all defined models. (`#23`_)
 * Initial support for `contain` in `find_all` queries. (`#22`_)
