@@ -18,7 +18,15 @@ from pyoffers.utils import expand
         (
             ({'a': 1, 'b': 2}, 'key'),
             {('key[a]', 1), ('key[b]', 2)}
-        )
+        ),
+        (
+            ({'status': ('active', 'paused'), 'currency': 'USD'}, 'filters'),
+            {('filters[status][]', 'active'), ('filters[status][]', 'paused'), ('filters[currency]', 'USD')}
+        ),
+        (
+            ({'id__lt': 25}, 'filters'),
+            {('filters[id][LESS_THAN]', 25)}
+        ),
     )
 )
 def test_expand(value, expected):

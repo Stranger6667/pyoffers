@@ -94,9 +94,7 @@ class HasOffersAPI(metaclass=APIMeta):
         """
         response = content['response']
 
-        errors = response.get('errors')
-        if errors:
-            raise HasOffersException(errors)
+        self.check_errors(response)
 
         data = response.get('data')
 
@@ -110,6 +108,11 @@ class HasOffersAPI(metaclass=APIMeta):
             data = data.values()
 
         return self.init_objects(data, single_result=single_result)
+
+    def check_errors(self, response):
+        errors = response.get('errors')
+        if errors:
+            raise HasOffersException(errors)
 
     def init_objects(self, data, single_result=True):
         """

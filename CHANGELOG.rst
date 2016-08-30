@@ -4,6 +4,7 @@
 * Fixed invalid queries building. (`#16`_)
 * Fixed error on empty not paginated results. (`#17`_)
 * Fixed error on single result in `find_all` call. (`#18`_)
+* Filters implementation. (`#6`_)
 
 0.2.2
 =====
@@ -51,5 +52,6 @@
 .. _#9: https://github.com/Stranger6667/pyoffers/issues/9
 .. _#8: https://github.com/Stranger6667/pyoffers/issues/8
 .. _#7: https://github.com/Stranger6667/pyoffers/issues/7
+.. _#6: https://github.com/Stranger6667/pyoffers/issues/6
 .. _#5: https://github.com/Stranger6667/pyoffers/issues/5
 .. _#3: https://github.com/Stranger6667/pyoffers/issues/3
