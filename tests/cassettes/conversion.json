@@ -519,6 +519,71 @@
         },
         "url": "https://api.hasoffers.com/Api/json?Target=Conversion&NetworkToken=token&filters%5Boffer_id%5D=11&Method=findAll&NetworkId=id"
       }
+    },
+    {
+      "recorded_at": "2016-08-29T17:08:44",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.11.1"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Api/json?Method=findAll&NetworkId=id&filters%5Bstatus%5D=approved&filters%5Bsource%5D=FP&filters%5Boffer_id%5D=7&filters%5Bsession_ip%5D=127.0.0.1&Target=Conversion&NetworkToken=token"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAJ88xVcC/31UTY/aMBD9K8jnBvIFSbhVVKttq21X2lUPrarIOBPWS2KntgOLUP97xw6EhNLmEvuNZ+a9mbGPRIFupNBAlpMjAaWk0rj88fPdhGhDTWt3AW5ejGmezkDo+wi50w+gNd1Yd9FWFaIFNdQFSyL3W0mxA6W5FG5Li5zRuqF8I3KmgBq+g5wXaCM+QfdWg8oxoDAW+kS3VBk6Wcm6RpbePbJYVRyts2ga2PPDeIMwDT3I1oVArlPffqSXlDNZWMYkjiyoYAeihdwcGoeyhuZlRY21cWFACVrlmKcLn0bpIqRp6bHUT7x4vlh7WZCFXgiQJmzth9m86IihbMOtnAEvWZY9kJBhkQltGiV30DmXJa84NZDXVGA1zi5OMm/cMkymqKyrwkYixUGatZJ7PfZishVGHXrtq++dduRjt7a/y9lsv99P4Q0LWsGUyfpKyJiMfy1TlNLipJsCMLyGrgPBwvOxQtEk8JdxtAw6Qufut2rEnbXayHqcReOU4QTlN6Q3/A2qvNdxaf7NfmrZKubQu8dxoS376BxhDAeX81zjJLwiw/o0oY7eqZ/R366hNTx+uDK44zdOx7fzz3v4PISBHxZlEhVBFCbxHOYZK5IoK4KEZWi4DBpGgXFtlQLBDt0AfB5Mv2tUHA2uCkVXWtupce4Dy6kZ/+5xkC7DhPzGzyX41YI27vZ/618CEtpQT6B2vOvHPdVfLWdt8WeqNuDyDp4PxO+kqqnDX3WHfAGzl2r70WnkxQB6lltwmYxboAGrYcC9b8f/TdTtK3k9OeObbIU+gHmRbl9yUbyvKqzAHzTylUthBQAA",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "659"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Mon, 29 Aug 2016 17:08:44 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Api/json?Method=findAll&NetworkId=id&filters%5Bstatus%5D=approved&filters%5Bsource%5D=FP&filters%5Boffer_id%5D=7&filters%5Bsession_ip%5D=127.0.0.1&Target=Conversion&NetworkToken=token"
+      }
     }
   ],
   "recorded_with": "betamax/0.8.0"

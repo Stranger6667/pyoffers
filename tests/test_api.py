@@ -36,7 +36,7 @@ class TestHandleResponse:
                 'errorMessage': None
             },
         }
-        cz_adv, pl_adv = sorted(api.handle_response(data), key=lambda x: x['country'])
+        cz_adv, pl_adv = sorted(api.handle_response(data, single_result=False), key=lambda x: x['country'])
         assert isinstance(cz_adv, Advertiser)
         assert cz_adv['id'] == '114'
         assert cz_adv['country'] == 'CZ'

@@ -3,6 +3,7 @@
 
 * Fixed invalid queries building. (`#16`_)
 * Fixed error on empty not paginated results. (`#17`_)
+* Fixed error on single result in `find_all` call. (`#18`_)
 
 0.2.2
 =====
@@ -40,6 +41,7 @@
 * Initial release.
 
 
+.. _#18: https://github.com/Stranger6667/pyoffers/issues/18
 .. _#17: https://github.com/Stranger6667/pyoffers/issues/17
 .. _#16: https://github.com/Stranger6667/pyoffers/issues/16
 .. _#14: https://github.com/Stranger6667/pyoffers/issues/14

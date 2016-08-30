@@ -32,6 +32,14 @@ def test_find_all_not_paginated(api):
     assert all(isinstance(item, Conversion) for item in result)
 
 
+def test_find_all_single_result(api):
+    result = api.conversions.find_all(
+        filters={'offer_id': [7], 'source': 'FP', 'status': 'approved', 'session_ip': '127.0.0.1'}
+    )
+    assert len(result) == 1
+    assert isinstance(result[0], Conversion)
+
+
 def test_find_all_not_paginated_not_found(api):
     assert api.conversions.find_all(filters={'offer_id': 11}) == []
 

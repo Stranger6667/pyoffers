@@ -70,7 +70,7 @@ class HasOffersAPI(metaclass=APIMeta):
             self._session = requests.Session()
         return self._session
 
-    def _call(self, target, method, **kwargs):
+    def _call(self, target, method, single_result=True, **kwargs):
         """
         Low-level call to HasOffers API.
         """
@@ -86,9 +86,9 @@ class HasOffersAPI(metaclass=APIMeta):
         content = response.json()
         self.logger.debug('Request parameters: %s', params)
         self.logger.debug('Response: %s', content)
-        return self.handle_response(content)
+        return self.handle_response(content, single_result=single_result)
 
-    def handle_response(self, content):
+    def handle_response(self, content, single_result=True):
         """
         Parses response, checks it.
         """
@@ -105,21 +105,22 @@ class HasOffersAPI(metaclass=APIMeta):
         elif is_paginated(data):
             if not data['count']:
                 return data['data']
-            return self.init_objects(*data['data'].values())
-        elif is_multiple_objects(data):
-            return self.init_objects(*data.values())
-        return self.init_objects(data, single=True)
+            data = data['data'].values()
+        elif is_multiple_objects(data) or not single_result:
+            data = data.values()
 
-    def init_objects(self, *data, single=False):
+        return self.init_objects(data, single_result=single_result)
+
+    def init_objects(self, data, single_result=True):
         """
         Initializes model instances from given data.
         Returns single instance if it is possible and single=False.
         """
-        initialized = [
+        if single_result:
+            key, value = list(data.items())[0]
+            return self._managers[key].init_instance(value)
+        return [
             self._managers[key].init_instance(item)
             for chunk in data
             for key, item in chunk.items()
         ]
-        if len(initialized) == 1 and single:
-            return initialized[0]
-        return initialized

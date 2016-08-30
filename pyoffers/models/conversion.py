@@ -25,4 +25,4 @@ class ConversionManager(ModelManager):
         return self._call('findById', id=id)
 
     def find_all(self, filters=None, sort=None, limit=None, page=None):
-        return self._call('findAll', filters=filters, sort=sort, limit=limit, page=page)
+        return self._call('findAll', filters=filters, sort=sort, limit=limit, page=page, single_result=False)
