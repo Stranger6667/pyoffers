@@ -82,10 +82,10 @@ class HasOffersAPI(metaclass=APIMeta):
             **kwargs
         )
         response = self.session.get(self.endpoint, params=params, verify=False)
+        self.logger.debug('Request parameters: %s', params)
+        self.logger.debug('Response [%s]: %s', response.status_code, response.text)
         response.raise_for_status()
         content = response.json()
-        self.logger.debug('Request parameters: %s', params)
-        self.logger.debug('Response: %s', content)
         return self.handle_response(content, single_result=single_result)
 
     def handle_response(self, content, single_result=True):
