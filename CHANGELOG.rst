@@ -1,5 +1,5 @@
-0.3.0.dev
-=========
+0.3.0
+=====
 
 * Fixed invalid queries building. (`#16`_)
 * Fixed error on empty not paginated results. (`#17`_)
