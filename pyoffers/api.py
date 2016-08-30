@@ -3,7 +3,7 @@ import requests
 
 from .exceptions import HasOffersException
 from .logging import get_logger
-from .models import AdvertiserManager, ConversionManager, CountryManager, GoalManager, ModelManager, OfferManager
+from .models import AdvertiserManager, ConversionManager, GoalManager, ModelManager, OfferManager, CountryManager
 from .utils import prepare_query_params
 
 
@@ -105,7 +105,7 @@ class HasOffersAPI(metaclass=APIMeta):
             if not data['count']:
                 return data['data']
             data = data['data'].values()
-        elif is_multiple_objects(data) or not single_result:
+        elif is_multiple_objects(data) or not single_result and isinstance(data, dict):
             data = data.values()
 
         return self.init_objects(data, single_result=single_result)

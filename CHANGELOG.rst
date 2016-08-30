@@ -2,6 +2,7 @@
 =========
 
 * Added `Country` model . (`#24`_)
+* Added `get_target_countries` method to `Offer` model. (`#25`_)
 
 0.3.1
 =====
@@ -54,6 +55,7 @@
 * Initial release.
 
 
+.. _#25: https://github.com/Stranger6667/pyoffers/issues/25
 .. _#24: https://github.com/Stranger6667/pyoffers/issues/24
 .. _#23: https://github.com/Stranger6667/pyoffers/issues/23
 .. _#22: https://github.com/Stranger6667/pyoffers/issues/22

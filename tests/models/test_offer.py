@@ -2,7 +2,7 @@
 import pytest
 
 from pyoffers.exceptions import HasOffersException
-from pyoffers.models import Offer
+from pyoffers.models import Country, Offer
 
 
 CASSETTE_NAME = 'offer'
@@ -27,6 +27,16 @@ def test_find_all(api):
     result = api.offers.find_all(limit=2)
     assert len(result) == 2
     assert all(isinstance(item, Offer) for item in result)
+
+
+def test_get_target_countries(api):
+    result = api.offers.get_target_countries(id=46)
+    assert len(result) == 1
+    assert all(isinstance(item, Country) for item in result)
+
+
+def test_get_target_countries_empty(offer):
+    assert offer.get_target_countries() == []
 
 
 def test_update_success(offer):
