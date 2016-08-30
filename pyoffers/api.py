@@ -3,7 +3,7 @@ import requests
 
 from .exceptions import HasOffersException
 from .logging import get_logger
-from .models import AdvertiserManager, ConversionManager, GoalManager, ModelManager, OfferManager
+from .models import AdvertiserManager, ConversionManager, CountryManager, GoalManager, ModelManager, OfferManager
 from .utils import prepare_query_params
 
 
@@ -43,6 +43,7 @@ class HasOffersAPI(metaclass=APIMeta):
     conversions = ConversionManager()
     goals = GoalManager()
     offers = OfferManager()
+    countries = CountryManager()
 
     def __init__(self, endpoint=None, network_token=None, network_id=None, verbosity=0):
         self.endpoint = endpoint

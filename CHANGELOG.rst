@@ -1,3 +1,8 @@
+0.3.2.dev
+=========
+
+* Added `Country` model . (`#24`_)
+
 0.3.1
 =====
 
@@ -49,6 +54,7 @@
 * Initial release.
 
 
+.. _#24: https://github.com/Stranger6667/pyoffers/issues/24
 .. _#23: https://github.com/Stranger6667/pyoffers/issues/23
 .. _#22: https://github.com/Stranger6667/pyoffers/issues/22
 .. _#21: https://github.com/Stranger6667/pyoffers/issues/21
