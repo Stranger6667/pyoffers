@@ -117,7 +117,7 @@ class HasOffersAPI(metaclass=APIMeta):
     def init_objects(self, data, single_result=True):
         """
         Initializes model instances from given data.
-        Returns single instance if it is possible and single=False.
+        Returns single instance if single_result=True.
         """
         if single_result:
             key, value = list(data.items())[0]

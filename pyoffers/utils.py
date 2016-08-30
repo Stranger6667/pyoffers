@@ -4,7 +4,7 @@ from functools import singledispatch
 
 def prepare_query_params(**kwargs):
     """
-    Adds extra querystring parameters to given URL.
+    Prepares given parameters to be used in querystring.
     """
     return [
         (sub_key, sub_value)
