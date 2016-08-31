@@ -1,4 +1,6 @@
 # coding: utf-8
+from collections import OrderedDict
+
 import requests
 
 from .exceptions import HasOffersException
@@ -64,7 +66,8 @@ class HasOffersAPI:
         self.logger.debug('Request parameters: %s', params)
         self.logger.debug('Response [%s]: %s', response.status_code, response.text)
         response.raise_for_status()
-        return self.handle_response(response.json(), target=target, single_result=single_result)
+        data = response.json(object_pairs_hook=OrderedDict)
+        return self.handle_response(data, target=target, single_result=single_result)
 
     def handle_response(self, content, target=None, single_result=True):
         """

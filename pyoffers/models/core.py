@@ -1,7 +1,7 @@
 # coding: utf-8
 from collections import defaultdict
 
-from ..utils import Filter
+from ..utils import Filter, Sort
 
 
 class SelectiveInheritanceMeta(type):
@@ -87,7 +87,8 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
         return self._call('findById', id=id, contain=contain)
 
     @generic_method
-    def find_all(self, sort=None, limit=None, page=None, contain=None, **kwargs):
+    def find_all(self, sort=(), limit=None, page=None, contain=None, **kwargs):
         return self._call(
-            'findAll', filters=Filter(**kwargs), sort=sort, limit=limit, page=page, contain=contain, single_result=False
+            'findAll',
+            filters=Filter(**kwargs), sort=Sort(sort), limit=limit, page=page, contain=contain, single_result=False
         )

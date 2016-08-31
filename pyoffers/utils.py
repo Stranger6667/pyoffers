@@ -24,6 +24,14 @@ class Filter(dict):
         super().__init__(**kwargs)
 
 
+class Sort(list):
+
+    def __init__(self, args):
+        if not isinstance(args, (list, tuple, set)):
+            args = [args]
+        super().__init__(args)
+
+
 OPERATORS = {
     'ne': 'NOT_EQUAL_TO',
     'lt': 'LESS_THAN',
@@ -66,6 +74,16 @@ def expand_filter(value, key):
                 else:
                     param_name = '%s[%s]' % (key, dict_key)
             yield param_name, dict_value
+
+
+@expand.register(Sort)
+def expand_sort(value, key):
+    for field_name in value:
+        order = 'asc'
+        if field_name.startswith('-'):
+            order = 'desc'
+            field_name = field_name[1:]
+        yield '%s[%s]' % (key, field_name), order
 
 
 @expand.register(list)

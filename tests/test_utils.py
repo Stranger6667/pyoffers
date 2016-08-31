@@ -1,7 +1,7 @@
 # coding: utf-8
 import pytest
 
-from pyoffers.utils import expand, Filter
+from pyoffers.utils import expand, Filter, Sort
 
 
 @pytest.mark.parametrize(
@@ -30,6 +30,14 @@ from pyoffers.utils import expand, Filter
         (
             (Filter(status='active', currency='USD', connector='OR'), 'filters'),
             {('filters[OR][status]', 'active'), ('filters[OR][currency]', 'USD')}
+        ),
+        (
+            (Sort('-key'), 'sort'),
+            {('sort[key]', 'desc')}
+        ),
+        (
+            (Sort(['-key1', 'key2']), 'sort'),
+            {('sort[key1]', 'desc'), ('sort[key2]', 'asc')}
         ),
     )
 )
