@@ -1,6 +1,7 @@
 # coding: utf-8
 import pytest
 
+from pyoffers.api import HasOffersAPI
 from pyoffers.exceptions import HasOffersException
 from pyoffers.models import Advertiser
 
@@ -51,3 +52,10 @@ def test_str(api):
 
 def test_repr(api):
     assert repr(api) == '<HasOffersAPI: token / id>'
+
+
+def test_multiple_api_instances():
+    first = HasOffersAPI()
+    second = HasOffersAPI()
+    assert all(manager.api is first for manager in first._managers.values())
+    assert all(manager.api is second for manager in second._managers.values())

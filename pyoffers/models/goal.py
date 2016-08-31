@@ -13,6 +13,7 @@ class Goal(Model):
 
 class GoalManager(ModelManager):
     model = Goal
+    name = 'goals'
 
     def create(self, **kwargs):
         return self._call('create', data=kwargs)

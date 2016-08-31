@@ -3,23 +3,8 @@ import requests
 
 from .exceptions import HasOffersException
 from .logging import get_logger
-from .models import AdvertiserManager, ConversionManager, GoalManager, ModelManager, OfferManager, CountryManager
+from .models import MODEL_MANAGERS
 from .utils import prepare_query_params
-
-
-class APIMeta(type):
-    """
-    Adds managers cache to API class.
-    Allows to access manager by model name - it is convenient, because HasOffers returns model names in responses.
-    """
-
-    def __new__(mcs, name, bases, members):
-        members['_managers'] = {
-            member.model.__name__: member
-            for name, member in members.items()
-            if isinstance(member, ModelManager)
-        }
-        return super().__new__(mcs, name, bases, members)
 
 
 def is_empty(data):
@@ -34,30 +19,27 @@ def is_multiple_objects(data):
     return len(data) > 1
 
 
-class HasOffersAPI(metaclass=APIMeta):
+class HasOffersAPI:
     """
     Client to communicate with HasOffers API.
     """
-    _managers = None
-    advertisers = AdvertiserManager()
-    conversions = ConversionManager()
-    goals = GoalManager()
-    offers = OfferManager()
-    countries = CountryManager()
 
     def __init__(self, endpoint=None, network_token=None, network_id=None, verbosity=0):
         self.endpoint = endpoint
         self.network_token = network_token
         self.network_id = network_id
         self.logger = get_logger(verbosity)
-        self.bind_managers()
+        self.setup_managers()
 
-    def bind_managers(self):
+    def setup_managers(self):
         """
-        Binds API instance to manager instance.
+        Allows to access manager by model name - it is convenient, because HasOffers returns model names in responses.
         """
-        for manager in self._managers.values():
-            manager.bind(self)
+        self._managers = {}
+        for manager_class in MODEL_MANAGERS:
+            instance = manager_class(self)
+            setattr(self, instance.name, instance)
+            self._managers[instance.model.__name__] = instance
 
     def __str__(self):
         return '%s: %s / %s' % (self.__class__.__name__, self.network_token, self.network_id)

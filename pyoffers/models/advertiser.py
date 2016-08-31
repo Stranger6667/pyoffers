@@ -16,6 +16,7 @@ class Advertiser(Model):
 
 class AdvertiserManager(ModelManager):
     model = Advertiser
+    name = 'advertisers'
 
     def create(self, **kwargs):
         return self._call('create', data=kwargs)

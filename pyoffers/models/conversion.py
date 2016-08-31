@@ -14,6 +14,7 @@ class Conversion(Model):
 
 class ConversionManager(ModelManager):
     model = Conversion
+    name = 'conversions'
 
     def create(self, **kwargs):
         return self._call('create', data=kwargs)

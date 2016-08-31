@@ -1,7 +1,12 @@
+0.4.0.dev
+=========
+
+* Fixed managers sharing between API instances. (`#26`_)
+
 0.3.2
 =====
 
-* Added `Country` model . (`#24`_)
+* Added `Country` model. (`#24`_)
 * Added `get_target_countries` method to `Offer` model. (`#25`_)
 
 0.3.1
@@ -55,6 +60,7 @@
 * Initial release.
 
 
+.. _#26: https://github.com/Stranger6667/pyoffers/issues/26
 .. _#25: https://github.com/Stranger6667/pyoffers/issues/25
 .. _#24: https://github.com/Stranger6667/pyoffers/issues/24
 .. _#23: https://github.com/Stranger6667/pyoffers/issues/23

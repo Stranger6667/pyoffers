@@ -43,8 +43,9 @@ class ModelManager:
     Used to structure API. Every manager works only with single model methods.
     """
     model = None
+    name = None
 
-    def bind(self, api):
+    def __init__(self, api):
         self.api = api
 
     def init_instance(self, data):

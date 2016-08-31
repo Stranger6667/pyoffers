@@ -8,3 +8,4 @@ class Country(Model):
 
 class CountryManager(ModelManager):
     model = Country
+    name = 'countries'

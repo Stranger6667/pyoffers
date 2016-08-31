@@ -23,6 +23,7 @@ class Offer(Model):
 
 class OfferManager(ModelManager):
     model = Offer
+    name = 'offers'
 
     def create(self, **kwargs):
         return self._call('create', data=kwargs)
