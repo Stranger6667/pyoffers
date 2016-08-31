@@ -3,7 +3,7 @@ import pytest
 
 from pyoffers.api import HasOffersAPI
 from pyoffers.exceptions import HasOffersException
-from pyoffers.models import Advertiser
+from pyoffers.models import Advertiser, Country
 
 
 def test_invalid_network_id(api):
@@ -62,3 +62,12 @@ def test_multiple_api_instances():
     second = HasOffersAPI()
     assert all(manager.api is first for manager in first._managers.values())
     assert all(manager.api is second for manager in second._managers.values())
+
+
+class TestGenericMethod:
+
+    def test_manager(self, api):
+        assert not hasattr(api.countries, 'create')
+
+    def test_model(self):
+        assert not hasattr(Country({}), 'update')
