@@ -1,7 +1,7 @@
 # coding: utf-8
 import pytest
 
-from pyoffers.utils import expand
+from pyoffers.utils import expand, Filter
 
 
 @pytest.mark.parametrize(
@@ -20,12 +20,16 @@ from pyoffers.utils import expand
             {('key[a]', 1), ('key[b]', 2)}
         ),
         (
-            ({'status': ('active', 'paused'), 'currency': 'USD'}, 'filters'),
+            (Filter(status=('active', 'paused'), currency='USD'), 'filters'),
             {('filters[status][]', 'active'), ('filters[status][]', 'paused'), ('filters[currency]', 'USD')}
         ),
         (
-            ({'id__lt': 25}, 'filters'),
+            (Filter(id__lt=25), 'filters'),
             {('filters[id][LESS_THAN]', 25)}
+        ),
+        (
+            (Filter(status='active', currency='USD', connector='OR'), 'filters'),
+            {('filters[OR][status]', 'active'), ('filters[OR][currency]', 'USD')}
         ),
     )
 )

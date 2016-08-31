@@ -1,6 +1,8 @@
 # coding: utf-8
 from collections import defaultdict
 
+from ..utils import Filter
+
 
 class SelectiveInheritanceMeta(type):
     """
@@ -87,5 +89,5 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
     @generic_method
     def find_all(self, sort=None, limit=None, page=None, contain=None, **kwargs):
         return self._call(
-            'findAll', filters=kwargs, sort=sort, limit=limit, page=page, contain=contain, single_result=False
+            'findAll', filters=Filter(**kwargs), sort=sort, limit=limit, page=page, contain=contain, single_result=False
         )

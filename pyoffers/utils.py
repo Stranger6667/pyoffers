@@ -13,6 +13,17 @@ def prepare_query_params(**kwargs):
         if sub_value is not None
     ]
 
+
+class Filter(dict):
+    """
+    Custom subtype to apply special behaviour.
+    """
+
+    def __init__(self, connector='AND', **kwargs):
+        self.connector = connector
+        super().__init__(**kwargs)
+
+
 OPERATORS = {
     'ne': 'NOT_EQUAL_TO',
     'lt': 'LESS_THAN',
@@ -36,15 +47,25 @@ def expand(value, key):
 @expand.register(dict)
 def expand_dict(value, key):
     for dict_key, dict_value in value.items():
+        yield '%s[%s]' % (key, dict_key), dict_value
+
+
+@expand.register(Filter)
+def expand_filter(value, key):
+    for dict_key, dict_value in value.items():
         if isinstance(dict_value, (list, tuple, set)):
             for sub_value in dict_value:
                 yield '%s[%s][]' % (key, dict_key), sub_value
         else:
             try:
                 field_name, operator = dict_key.split('__')
-                yield '%s[%s][%s]' % (key, field_name, OPERATORS[operator]), dict_value
+                param_name = '%s[%s][%s]' % (key, field_name, OPERATORS[operator])
             except ValueError:
-                yield '%s[%s]' % (key, dict_key), dict_value
+                if value.connector == 'OR':
+                    param_name = '%s[%s][%s]' % (key, value.connector, dict_key)
+                else:
+                    param_name = '%s[%s]' % (key, dict_key)
+            yield param_name, dict_value
 
 
 @expand.register(list)

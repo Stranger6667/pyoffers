@@ -5,6 +5,7 @@
 * Better interface for `update` method. (`#28`_)
 * Improved `contain`. Added `contain` support to `find_by_id` method. (`#27`_)
 * Implemented generic methods. (`#10`_)
+* Implemented `OR` queries. (`#19`_)
 
 0.3.2
 =====
@@ -72,6 +73,7 @@
 .. _#22: https://github.com/Stranger6667/pyoffers/issues/22
 .. _#21: https://github.com/Stranger6667/pyoffers/issues/21
 .. _#20: https://github.com/Stranger6667/pyoffers/issues/20
+.. _#19: https://github.com/Stranger6667/pyoffers/issues/19
 .. _#18: https://github.com/Stranger6667/pyoffers/issues/18
 .. _#17: https://github.com/Stranger6667/pyoffers/issues/17
 .. _#16: https://github.com/Stranger6667/pyoffers/issues/16
