@@ -1,5 +1,5 @@
-0.4.0.dev
-=========
+0.4.0
+=====
 
 * Fixed managers sharing between API instances. (`#26`_)
 * Better interface for `update` method. (`#28`_)
