@@ -282,7 +282,7 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Method=update&NetworkId=id&data%5Bcurrency%5D=CZK&data%5Bcreative_url_id%5D=0&data%5Bbrowser_id%5D=0&data%5Bcountry_code%5D=INT&data%5Bis_adjustment%5D=0&data%5Bstatus%5D=pending&data%5Brevenue%5D=2&NetworkToken=token&data%5Bcustomer_id%5D=0&data%5Boffer_file_id%5D=0&data%5Baffiliate_manager_id%5D=0&data%5Badvertiser_manager_id%5D=0&data%5Bstatus_code%5D=22&data%5Bad_campaign_id%5D=0&data%5Bad_id%5D=&data%5Bad_campaign_creative_id%5D=0&data%5Baffiliate_id%5D=1&data%5Bdatetime%5D=2016-08-29+05%3A54%3A43&data%5Bpayout%5D=1.00000&data%5Bgoal_id%5D=0&id=99630&data%5Bpayout_type%5D=cpa_flat&Target=Conversion&data%5Brevenue_type%5D=cpa_flat&data%5Boffer_id%5D=1&data%5Badvertiser_id%5D=0"
+        "uri": "https://api.hasoffers.com/Api/json?NetworkId=id&Method=update&id=99630&NetworkToken=token&data%5Brevenue%5D=2&Target=Conversion"
       },
       "response": {
         "body": {
@@ -322,7 +322,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?Method=update&NetworkId=id&data%5Bcurrency%5D=CZK&data%5Bcreative_url_id%5D=0&data%5Bbrowser_id%5D=0&data%5Bcountry_code%5D=INT&data%5Bis_adjustment%5D=0&data%5Bstatus%5D=pending&data%5Brevenue%5D=2&NetworkToken=token&data%5Bcustomer_id%5D=0&data%5Boffer_file_id%5D=0&data%5Baffiliate_manager_id%5D=0&data%5Badvertiser_manager_id%5D=0&data%5Bstatus_code%5D=22&data%5Bad_campaign_id%5D=0&data%5Bad_id%5D=&data%5Bad_campaign_creative_id%5D=0&data%5Baffiliate_id%5D=1&data%5Bdatetime%5D=2016-08-29+05%3A54%3A43&data%5Bpayout%5D=1.00000&data%5Bgoal_id%5D=0&id=99630&data%5Bpayout_type%5D=cpa_flat&Target=Conversion&data%5Brevenue_type%5D=cpa_flat&data%5Boffer_id%5D=1&data%5Badvertiser_id%5D=0"
+        "url": "https://api.hasoffers.com/Api/json?NetworkId=id&Method=update&id=99630&NetworkToken=token&data%5Brevenue%5D=2&Target=Conversion"
       }
     },
     {

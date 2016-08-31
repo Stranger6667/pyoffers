@@ -8,8 +8,8 @@ class Conversion(Model):
     """
     non_model_fields = ('internal_ad_id', )
 
-    def update(self):
-        return self._manager.update(**self.instance_data)
+    def update(self, **kwargs):
+        return self._manager.update(self['id'], **kwargs)
 
 
 class ConversionManager(ModelManager):

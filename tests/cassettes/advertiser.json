@@ -217,7 +217,7 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?data%5Bstatus%5D=pending&data%5Bexpose_subs%5D=0&data%5Bwants_alerts%5D=1&data%5Bdate_added%5D=2016-08-26+08%3A53%3A20&data%5Bcountry%5D=CZ&data%5Bcompany%5D=Another&data%5Bmodified%5D=-62169966000&data%5Bzipcode%5D=123456&NetworkToken=token&NetworkId=id&id=114&Target=Advertiser&Method=update"
+        "uri": "https://api.hasoffers.com/Api/json?NetworkId=id&Method=update&id=114&NetworkToken=token&data%5Bcompany%5D=Another&Target=Advertiser"
       },
       "response": {
         "body": {
@@ -257,7 +257,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?data%5Bstatus%5D=pending&data%5Bexpose_subs%5D=0&data%5Bwants_alerts%5D=1&data%5Bdate_added%5D=2016-08-26+08%3A53%3A20&data%5Bcountry%5D=CZ&data%5Bcompany%5D=Another&data%5Bmodified%5D=-62169966000&data%5Bzipcode%5D=123456&NetworkToken=token&NetworkId=id&id=114&Target=Advertiser&Method=update"
+        "url": "https://api.hasoffers.com/Api/json?NetworkId=id&Method=update&id=114&NetworkToken=token&data%5Bcompany%5D=Another&Target=Advertiser"
       }
     },
     {
@@ -282,7 +282,7 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?data%5Bstatus%5D=pending&data%5Bexpose_subs%5D=0&data%5Baccount_manager_id%5D=string&data%5Bwants_alerts%5D=1&data%5Bdate_added%5D=2016-08-26+08%3A53%3A20&data%5Bcountry%5D=CZ&data%5Bcompany%5D=Another&data%5Bmodified%5D=-62169966000&data%5Bzipcode%5D=123456&NetworkToken=token&NetworkId=id&id=114&Target=Advertiser&Method=update"
+        "uri": "https://api.hasoffers.com/Api/json?NetworkId=id&Method=update&id=114&NetworkToken=token&data%5Baccount_manager_id%5D=string&Target=Advertiser"
       },
       "response": {
         "body": {
@@ -322,7 +322,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?data%5Bstatus%5D=pending&data%5Bexpose_subs%5D=0&data%5Baccount_manager_id%5D=string&data%5Bwants_alerts%5D=1&data%5Bdate_added%5D=2016-08-26+08%3A53%3A20&data%5Bcountry%5D=CZ&data%5Bcompany%5D=Another&data%5Bmodified%5D=-62169966000&data%5Bzipcode%5D=123456&NetworkToken=token&NetworkId=id&id=114&Target=Advertiser&Method=update"
+        "url": "https://api.hasoffers.com/Api/json?NetworkId=id&Method=update&id=114&NetworkToken=token&data%5Baccount_manager_id%5D=string&Target=Advertiser"
       }
     },
     {

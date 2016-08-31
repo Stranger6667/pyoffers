@@ -7,8 +7,8 @@ class Goal(Model):
     A Goal for an Offer.
     """
 
-    def update(self):
-        return self._manager.update(**self.instance_data)
+    def update(self, **kwargs):
+        return self._manager.update(self['id'], **kwargs)
 
 
 class GoalManager(ModelManager):

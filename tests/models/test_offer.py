@@ -40,8 +40,7 @@ def test_get_target_countries_empty(offer):
 
 
 def test_update_success(offer):
-    offer['offer_url'] = 'test.com'
-    new_instance = offer.update()
+    new_instance = offer.update(offer_url='test.com')
     assert new_instance['offer_url'] == 'http://test.com'
     assert new_instance == offer
 

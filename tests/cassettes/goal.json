@@ -282,7 +282,7 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Target=Goal&NetworkId=id&NetworkToken=token&Method=update&id=118&data%5Bstatus%5D=deleted&data%5Bmax_payout%5D=0.00000&data%5Bis_end_point%5D=0&data%5Btiered_payout%5D=0&data%5Bpayout_type%5D=cpa_flat&data%5Bis_private%5D=0&data%5Bdisplay_advertiser%5D=0&data%5Bmodified%5D=1472237150&data%5Btiered_revenue%5D=0&data%5Bapprove_conversions%5D=0&data%5Buse_payout_groups%5D=0&data%5Brevenue_type%5D=cpa_flat&data%5Bdefault_payout%5D=0.00000&data%5Boffer_id%5D=204&data%5Ballow_multiple_conversions%5D=0&data%5Benforce_encrypt_tracking_pixels%5D=0&data%5Buse_revenue_groups%5D=0&data%5Bdescription%5D=Another&data%5Bprotocol%5D=http&data%5Bname%5D=Test"
+        "uri": "https://api.hasoffers.com/Api/json?NetworkId=id&Method=update&id=118&NetworkToken=token&data%5Bdescription%5D=Another&Target=Goal"
       },
       "response": {
         "body": {
@@ -322,7 +322,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?Target=Goal&NetworkId=id&NetworkToken=token&Method=update&id=118&data%5Bstatus%5D=deleted&data%5Bmax_payout%5D=0.00000&data%5Bis_end_point%5D=0&data%5Btiered_payout%5D=0&data%5Bpayout_type%5D=cpa_flat&data%5Bis_private%5D=0&data%5Bdisplay_advertiser%5D=0&data%5Bmodified%5D=1472237150&data%5Btiered_revenue%5D=0&data%5Bapprove_conversions%5D=0&data%5Buse_payout_groups%5D=0&data%5Brevenue_type%5D=cpa_flat&data%5Bdefault_payout%5D=0.00000&data%5Boffer_id%5D=204&data%5Ballow_multiple_conversions%5D=0&data%5Benforce_encrypt_tracking_pixels%5D=0&data%5Buse_revenue_groups%5D=0&data%5Bdescription%5D=Another&data%5Bprotocol%5D=http&data%5Bname%5D=Test"
+        "url": "https://api.hasoffers.com/Api/json?NetworkId=id&Method=update&id=118&NetworkToken=token&data%5Bdescription%5D=Another&Target=Goal"
       }
     },
     {

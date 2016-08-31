@@ -7,8 +7,8 @@ class Advertiser(Model):
     An Advertiser account.
     """
 
-    def update(self):
-        return self._manager.update(**self.instance_data)
+    def update(self, **kwargs):
+        return self._manager.update(self['id'], **kwargs)
 
     def block(self, reason=''):
         return self._manager.block(self['id'], reason)

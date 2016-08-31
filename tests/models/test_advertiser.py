@@ -30,16 +30,14 @@ def test_find_all(api):
 
 
 def test_update_success(advertiser):
-    advertiser['company'] = 'Another'
-    new_instance = advertiser.update()
+    new_instance = advertiser.update(company='Another')
     assert new_instance['company'] == 'Another'
     assert new_instance == advertiser
 
 
 def test_update_fail(advertiser):
-    advertiser['account_manager_id'] = 'string'
     with pytest.raises(HasOffersException):
-        advertiser.update()
+        advertiser.update(account_manager_id='string')
 
 
 def test_block_success(advertiser):

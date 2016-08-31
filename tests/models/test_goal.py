@@ -27,7 +27,6 @@ def test_find_all(api):
 
 
 def test_update_success(goal):
-    goal['description'] = 'Another'
-    new_instance = goal.update()
+    new_instance = goal.update(description='Another')
     assert new_instance['description'] == 'Another'
     assert new_instance == goal

@@ -8,8 +8,8 @@ class Offer(Model):
     """
     non_model_fields = ('dne_third_party_list', )
 
-    def update(self):
-        return self._manager.update(**self.instance_data)
+    def update(self, **kwargs):
+        return self._manager.update(self['id'], **kwargs)
 
     def add_target_country(self, country_code):
         return self._manager.add_target_country(self['id'], country_code)

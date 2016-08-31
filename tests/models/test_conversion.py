@@ -47,7 +47,6 @@ def test_find_all_not_found(api):
 
 
 def test_update_success(conversion):
-    conversion['revenue'] = '2'
-    new_instance = conversion.update()
+    new_instance = conversion.update(revenue=2)
     assert new_instance['revenue'] == '2.00000'
     assert new_instance == conversion

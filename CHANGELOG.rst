@@ -2,6 +2,7 @@
 =========
 
 * Fixed managers sharing between API instances. (`#26`_)
+* Better interface for `update` method. (`#28`_)
 
 0.3.2
 =====
@@ -60,6 +61,7 @@
 * Initial release.
 
 
+.. _#28: https://github.com/Stranger6667/pyoffers/issues/28
 .. _#26: https://github.com/Stranger6667/pyoffers/issues/26
 .. _#25: https://github.com/Stranger6667/pyoffers/issues/25
 .. _#24: https://github.com/Stranger6667/pyoffers/issues/24
