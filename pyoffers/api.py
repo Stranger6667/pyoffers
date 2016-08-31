@@ -62,8 +62,8 @@ class HasOffersAPI:
             Method=method,
             **kwargs
         )
-        response = self.session.get(self.endpoint, params=params, verify=False)
         self.logger.debug('Request parameters: %s', params)
+        response = self.session.get(self.endpoint, params=params, verify=False)
         self.logger.debug('Response [%s]: %s', response.status_code, response.text)
         response.raise_for_status()
         data = response.json(object_pairs_hook=OrderedDict)
