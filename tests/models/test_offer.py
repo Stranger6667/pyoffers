@@ -56,3 +56,15 @@ def test_add_category_success(offer):
 def test_add_category_fail(offer):
     with pytest.raises(HasOffersException):
         offer.add_category(-1)
+
+
+def test_find_all_contain(api):
+    offer = api.offers.find_all(id=62, contain=['Country'])[0]
+    assert isinstance(offer, Offer)
+    assert offer.country['id'] == '724'
+
+
+def test_find_by_id_contain(api):
+    offer = api.offers.find_by_id(id=62, contain=['Country'])
+    assert isinstance(offer, Offer)
+    assert offer.country['id'] == '724'

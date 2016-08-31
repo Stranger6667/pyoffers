@@ -21,8 +21,8 @@ class GoalManager(ModelManager):
     def update(self, id, **kwargs):
         return self._call('update', id=id, data=kwargs)
 
-    def find_by_id(self, id):
-        return self._call('findById', id=id)
+    def find_by_id(self, id, contain=None):
+        return self._call('findById', id=id, contain=contain)
 
     def find_all(self, sort=None, limit=None, page=None, contain=None, **kwargs):
         return self._call(

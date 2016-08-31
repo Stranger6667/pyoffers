@@ -3,6 +3,7 @@
 
 * Fixed managers sharing between API instances. (`#26`_)
 * Better interface for `update` method. (`#28`_)
+* Improved `contain`. Added `contain` support to `find_by_id` method. (`#27`_)
 
 0.3.2
 =====
@@ -62,6 +63,7 @@
 
 
 .. _#28: https://github.com/Stranger6667/pyoffers/issues/28
+.. _#27: https://github.com/Stranger6667/pyoffers/issues/27
 .. _#26: https://github.com/Stranger6667/pyoffers/issues/26
 .. _#25: https://github.com/Stranger6667/pyoffers/issues/25
 .. _#24: https://github.com/Stranger6667/pyoffers/issues/24

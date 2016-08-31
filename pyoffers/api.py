@@ -15,10 +15,6 @@ def is_paginated(data):
     return 'pageCount' in data
 
 
-def is_multiple_objects(data):
-    return len(data) > 1
-
-
 class HasOffersAPI:
     """
     Client to communicate with HasOffers API.
@@ -68,10 +64,9 @@ class HasOffersAPI:
         self.logger.debug('Request parameters: %s', params)
         self.logger.debug('Response [%s]: %s', response.status_code, response.text)
         response.raise_for_status()
-        content = response.json()
-        return self.handle_response(content, single_result=single_result)
+        return self.handle_response(response.json(), target=target, single_result=single_result)
 
-    def handle_response(self, content, single_result=True):
+    def handle_response(self, content, target=None, single_result=True):
         """
         Parses response, checks it.
         """
@@ -86,27 +81,45 @@ class HasOffersAPI:
         elif is_paginated(data):
             if not data['count']:
                 return data['data']
-            data = data['data'].values()
-        elif is_multiple_objects(data) or not single_result and isinstance(data, dict):
-            data = data.values()
+            data = data['data']
 
-        return self.init_objects(data, single_result=single_result)
+        return self.init_all_objects(data, target=target, single_result=single_result)
 
     def check_errors(self, response):
         errors = response.get('errors')
         if errors:
             raise HasOffersException(errors)
 
-    def init_objects(self, data, single_result=True):
+    def init_all_objects(self, data, target=None, single_result=True):
         """
         Initializes model instances from given data.
         Returns single instance if single_result=True.
         """
         if single_result:
-            key, value = list(data.items())[0]
-            return self._managers[key].init_instance(value)
-        return [
-            self._managers[key].init_instance(item)
-            for chunk in data
-            for key, item in chunk.items()
-        ]
+            return self.init_target_object(target, data)
+        return list(self.expand_models(target, data))
+
+    def init_target_object(self, target, data):
+        """
+        Initializes target object and assign extra objects to target as attributes
+        """
+        target_object = self.init_single_object(target, data.pop(target))
+        for key, item in data.items():
+            setattr(target_object, key.lower(), self.init_single_object(key, item))
+        return target_object
+
+    def init_single_object(self, target, data):
+        return self._managers[target].init_instance(data)
+
+    def expand_models(self, target, data):
+        """
+        Generates all objects from given data.
+        """
+        if isinstance(data, dict):
+            data = data.values()
+        for chunk in data:
+            if target in chunk:
+                yield self.init_target_object(target, chunk)
+            else:
+                for key, item in chunk.items():
+                    yield self.init_single_object(key, item)
