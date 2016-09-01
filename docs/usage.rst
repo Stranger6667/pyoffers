@@ -111,6 +111,14 @@ To get all offers with **active** status OR with **USD** currency:
 
     >>> hasoffers.offers.find_all(status='active', currency='USD', connector='OR')
 
+To skip models instantiation you can pass ``raw=True`` to underlying ``_call`` method.
+This makes it possible to perform queries without instantiation of model instances.
+
+.. code:: python
+
+    >>> hasoffers.advertisers._call('findAllIds', raw=True)
+    ['1', '2', '3', '4']
+
 Managers
 ~~~~~~~~
 
