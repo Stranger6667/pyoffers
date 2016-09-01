@@ -14,7 +14,6 @@ Betamax.register_serializer(pretty_json.PrettyJSONSerializer)
 
 URL = 'http://www.example.com'
 CASSETTE_DIR = 'tests/cassettes/'
-RECORD_MODE = 'none' if os.environ.get('TRAVIS') else 'once'
 DEFAULT_NETWORK_TOKEN = 'token'
 DEFAULT_NETWORK_ID = 'id'
 NETWORK_TOKEN = os.environ.get('NETWORK_TOKEN', DEFAULT_NETWORK_TOKEN)
@@ -35,6 +34,10 @@ def betamax_recorder(request, api):
     """
     Module level Betamax recorder.
     """
+    if request.config.getoption('--record'):
+        record_mode = 'new_episodes'
+    else:
+        record_mode = 'none' if os.environ.get('TRAVIS') else 'once'
     cassette_name = getattr(request.node._obj, 'CASSETTE_NAME', 'default')
     vcr = Betamax(
         api.session,
@@ -42,7 +45,7 @@ def betamax_recorder(request, api):
         default_cassette_options={
             'serialize_with': 'prettyjson',
             'match_requests_on': ['query', 'method'],
-            'record_mode': RECORD_MODE
+            'record_mode': record_mode
         }
     )
     with vcr.use_cassette(cassette_name):
