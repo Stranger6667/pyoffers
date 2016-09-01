@@ -64,6 +64,74 @@
         },
         "url": "https://api.hasoffers.com/Api/json?Method=test&NetworkToken=invalid&Target=test&NetworkId=id"
       }
+    },
+    {
+      "recorded_at": "2016-09-01T12:30:06",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.11.1"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Api/json?Target=Advertiser&Method=findAllIds&NetworkToken=token&NetworkId=id"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAE4fyFcC/z3RPXPCMAwG4P+iOYPtfGdj6cFAO8B14Tr4GgEpaUxthw4c/716nbaDEkuPLycpd/L8NXOI1N1pb/2J5USr/sY+DoE9ZfTk/KdF9SO4SfId+9vwzlJY2/ByPLIPUn2V1yDekZFsy/HsekmOw9SvxnHT484zx2/nL3t3YVyM6f1f3uD+0NMjk57C1U2B0VSINs6BOp3ROcbr7jc1SmXU22ipO5CWr+QShUQl0UhohQea0Shr1DXAAAzAAAzAAHJADsgBOSAHFIACUAAKQAEoASWgBJSAElABKkCVegJUgBpQA2pADagBDaABNIAmjQFoAS2gBbSAdhkwTajSiCrNqNKQKuky/7KAZQPLCtIOtCzhLSP23snf6w5/5y2HYE+y92kex8fjB7B2KSceAgAA",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "344"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Thu, 01 Sep 2016 12:30:06 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "6e20aca6-fed4-48e6-aa7e-1acf1337467b"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Api/json?Target=Advertiser&Method=findAllIds&NetworkToken=token&NetworkId=id"
+      }
     }
   ],
   "recorded_with": "betamax/0.8.0"

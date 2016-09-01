@@ -51,7 +51,7 @@ class HasOffersAPI:
             self._session = requests.Session()
         return self._session
 
-    def _call(self, target, method, single_result=True, **kwargs):
+    def _call(self, target, method, single_result=True, raw=False, **kwargs):
         """
         Low-level call to HasOffers API.
         """
@@ -67,9 +67,9 @@ class HasOffersAPI:
         self.logger.debug('Response [%s]: %s', response.status_code, response.text)
         response.raise_for_status()
         data = response.json(object_pairs_hook=OrderedDict)
-        return self.handle_response(data, target=target, single_result=single_result)
+        return self.handle_response(data, target=target, single_result=single_result, raw=raw)
 
-    def handle_response(self, content, target=None, single_result=True):
+    def handle_response(self, content, target=None, single_result=True, raw=False):
         """
         Parses response, checks it.
         """
@@ -86,6 +86,8 @@ class HasOffersAPI:
                 return data['data']
             data = data['data']
 
+        if raw:
+            return data
         return self.init_all_objects(data, target=target, single_result=single_result)
 
     def check_errors(self, response):

@@ -71,3 +71,7 @@ class TestGenericMethod:
 
     def test_model(self):
         assert not hasattr(Country({}), 'update')
+
+
+def test_raw(api):
+    assert isinstance(api.advertisers._call('findAllIds', raw=True), list)
