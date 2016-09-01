@@ -22,10 +22,11 @@ class HasOffersAPI:
     Client to communicate with HasOffers API.
     """
 
-    def __init__(self, endpoint=None, network_token=None, network_id=None, verbosity=0):
+    def __init__(self, endpoint=None, network_token=None, network_id=None, verify=True, verbosity=0):
         self.endpoint = endpoint
         self.network_token = network_token
         self.network_id = network_id
+        self.verify = verify
         self.logger = get_logger(verbosity)
         self.setup_managers()
 
@@ -63,7 +64,7 @@ class HasOffersAPI:
             **kwargs
         )
         self.logger.debug('Request parameters: %s', params)
-        response = self.session.get(self.endpoint, params=params, verify=False)
+        response = self.session.get(self.endpoint, params=params, verify=self.verify)
         self.logger.debug('Response [%s]: %s', response.status_code, response.text)
         response.raise_for_status()
         data = response.json(object_pairs_hook=OrderedDict)

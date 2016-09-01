@@ -8,6 +8,7 @@ Changelog
 
 - Added ``raw`` argument to ``HasOffersAPI._call``. `#36`_
 - Implemented ``findAllIds`` method. `#35`_
+- Made SSL certificate verification optional. `#33`_
 
 0.4.1 (2016-09-01)
 ------------------
@@ -84,6 +85,7 @@ Changelog
 
 .. _#36: https://github.com/Stranger6667/pyoffers/issues/36
 .. _#35: https://github.com/Stranger6667/pyoffers/issues/35
+.. _#33: https://github.com/Stranger6667/pyoffers/issues/33
 .. _#32: https://github.com/Stranger6667/pyoffers/issues/32
 .. _#31: https://github.com/Stranger6667/pyoffers/issues/31
 .. _#29: https://github.com/Stranger6667/pyoffers/issues/29

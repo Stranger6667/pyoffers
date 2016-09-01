@@ -17,6 +17,7 @@ PyOffers provide ``HasOffersAPI`` class to interact with HasOffers API.
         endpoint='https://api.hasoffers.com/Apiv3/json',
         network_token='<your_network_token>',
         network_id='<your_network_id>',
+        verify=True,
         verbosity=3
     )
 
@@ -29,6 +30,9 @@ Possible options:
     Your NetworkToken.
 ``network_id``
     Your NetworkId.
+``verify``
+    Whether to verify SSL certificate or not. HasOffers SSL cert doesn't cover subdomains like mentioned above.
+    Only ``*.hasoffers.com`` and ``hasoffers.com``.
 ``verbosity``
     Controls library's verbosity level. With **3** the request params and raw response will be printed to console.
 
