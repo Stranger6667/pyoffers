@@ -3,8 +3,8 @@
 Changelog
 =========
 
-0.4.2.dev (2016-09-01)
-----------------------
+0.4.2 (2016-09-01)
+------------------
 
 - Added ``raw`` argument to ``HasOffersAPI._call``. `#36`_
 - Implemented ``findAllIds`` method. `#35`_
