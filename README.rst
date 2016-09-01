@@ -15,6 +15,13 @@ PyOffers
 
 Python client library for `HasOffers API <http://developers.hasoffers.com/>`_.
 
+Installation
+============
+
+PyOffers can be obtained with ``pip``::
+
+    $ pip install pyoffers
+
 Documentation
 =============
 
@@ -23,3 +30,8 @@ You can view documentation online at:
 - https://pyoffers.readthedocs.io
 
 Or you can look at the docs/ directory in the repository.
+
+Python support
+==============
+
+PyOffers supports Python 3.4+.
