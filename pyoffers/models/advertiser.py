@@ -20,6 +20,7 @@ class AdvertiserManager(ModelManager):
         'update',
         'find_by_id',
         'find_all',
+        'find_all_ids',
     )
 
     def block(self, id, reason=''):

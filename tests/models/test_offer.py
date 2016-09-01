@@ -74,3 +74,9 @@ class TestContain:
         offer = api.offers.find_by_id(id=62, contain=['Country'])
         assert isinstance(offer, Offer)
         assert offer.country['id'] == '724'
+
+
+def test_find_all_ids(api):
+    results = api.offers.find_all_ids()
+    assert isinstance(results, list)
+    assert all(result.isdigit() for result in results)

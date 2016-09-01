@@ -26,6 +26,7 @@ class OfferManager(ModelManager):
         'update',
         'find_by_id',
         'find_all',
+        'find_all_ids',
     )
 
     def add_target_country(self, id, country_code):

@@ -94,3 +94,7 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
             sort=Sort(sort, self.model.__name__),
             limit=limit, page=page, contain=contain, single_result=False
         )
+
+    @generic_method
+    def find_all_ids(self, **kwargs):
+        return self._call('findAllIds', filters=Filter(**kwargs), single_result=False, raw=True)
