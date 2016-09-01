@@ -1,5 +1,5 @@
-0.4.1.dev
-=========
+0.4.1
+=====
 
 * Fixed `contain` behaviour. (`#32`_)
 * Improved sorting. (`#31`_)
