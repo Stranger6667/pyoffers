@@ -112,7 +112,8 @@ class HasOffersAPI:
         return target_object
 
     def init_single_object(self, target, data):
-        return self._managers[target].init_instance(data)
+        if data:
+            return self._managers[target].init_instance(data)
 
     def expand_models(self, target, data):
         """

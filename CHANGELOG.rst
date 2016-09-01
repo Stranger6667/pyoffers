@@ -1,3 +1,8 @@
+0.4.1.dev
+=========
+
+* Fixed `contain` behaviour. (`#32`_)
+
 0.4.0
 =====
 
@@ -65,6 +70,7 @@
 * Initial release.
 
 
+.. _#32: https://github.com/Stranger6667/pyoffers/issues/32
 .. _#29: https://github.com/Stranger6667/pyoffers/issues/29
 .. _#28: https://github.com/Stranger6667/pyoffers/issues/28
 .. _#27: https://github.com/Stranger6667/pyoffers/issues/27

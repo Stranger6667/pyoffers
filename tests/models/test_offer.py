@@ -58,13 +58,19 @@ def test_add_category_fail(offer):
         offer.add_category(-1)
 
 
-def test_find_all_contain(api):
-    offer = api.offers.find_all(id=62, contain=['Country'])[0]
-    assert isinstance(offer, Offer)
-    assert offer.country['id'] == '724'
+class TestContain:
 
+    def test_find_all(self, api):
+        offer = api.offers.find_all(id=62, contain=['Country'])[0]
+        assert isinstance(offer, Offer)
+        assert offer.country['id'] == '724'
 
-def test_find_by_id_contain(api):
-    offer = api.offers.find_by_id(id=62, contain=['Country'])
-    assert isinstance(offer, Offer)
-    assert offer.country['id'] == '724'
+    def test_find_all_empty_related(self, api):
+        offers = api.offers.find_all(currency='CZK', contain=['Country'])
+        assert offers[0].country is None
+        assert offers[1].country['id'] == '203'
+
+    def test_find_by_id(self, api):
+        offer = api.offers.find_by_id(id=62, contain=['Country'])
+        assert isinstance(offer, Offer)
+        assert offer.country['id'] == '724'
