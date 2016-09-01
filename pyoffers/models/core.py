@@ -90,5 +90,7 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
     def find_all(self, sort=(), limit=None, page=None, contain=None, **kwargs):
         return self._call(
             'findAll',
-            filters=Filter(**kwargs), sort=Sort(sort), limit=limit, page=page, contain=contain, single_result=False
+            filters=Filter(**kwargs),
+            sort=Sort(sort, self.model.__name__),
+            limit=limit, page=page, contain=contain, single_result=False
         )

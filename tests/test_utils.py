@@ -32,12 +32,12 @@ from pyoffers.utils import expand, Filter, Sort
             {('filters[OR][status]', 'active'), ('filters[OR][currency]', 'USD')}
         ),
         (
-            (Sort('-key'), 'sort'),
-            {('sort[key]', 'desc')}
+            (Sort('-key', 'Offer'), 'sort'),
+            {('sort[Offer.key]', 'desc')}
         ),
         (
-            (Sort(['-key1', 'key2']), 'sort'),
-            {('sort[key1]', 'desc'), ('sort[key2]', 'asc')}
+            (Sort(['-key1', 'key2'], 'Offer'), 'sort'),
+            {('sort[Offer.key1]', 'desc'), ('sort[Offer.key2]', 'asc')}
         ),
     )
 )
