@@ -3,8 +3,8 @@
 Changelog
 =========
 
-0.4.3.dev (TBA)
----------------
+0.4.3 (2016-09-09)
+------------------
 
 - Added caching for raw logs. `#41`_
 - Added `RawLog` model. `#40`_
