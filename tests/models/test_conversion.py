@@ -7,13 +7,13 @@ CASSETTE_NAME = 'conversion'
 
 def test_create_success(conversion):
     assert isinstance(conversion, Conversion)
-    assert conversion['revenue'] == '1.00000'
+    assert conversion.revenue == '1.00000'
 
 
 def test_find_by_id_success(api, conversion):
-    instance = api.conversions.find_by_id(conversion['id'])
+    instance = api.conversions.find_by_id(conversion.id)
     assert isinstance(instance, Conversion)
-    assert instance['revenue'] == conversion['revenue']
+    assert instance.revenue == conversion.revenue
 
 
 def test_find_by_id_fail(api):
@@ -48,5 +48,5 @@ def test_find_all_not_found(api):
 
 def test_update_success(conversion):
     new_instance = conversion.update(revenue=2)
-    assert new_instance['revenue'] == '2.00000'
+    assert new_instance.revenue == '2.00000'
     assert new_instance == conversion

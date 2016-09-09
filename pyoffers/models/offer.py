@@ -9,13 +9,13 @@ class Offer(Model):
     generic_methods = ('update',)
 
     def add_target_country(self, country_code):
-        return self._manager.add_target_country(self['id'], country_code)
+        return self._manager.add_target_country(self.id, country_code)
 
     def get_target_countries(self):
-        return self._manager.get_target_countries(self['id'])
+        return self._manager.get_target_countries(self.id)
 
     def add_category(self, category_id):
-        return self._manager.add_category(self['id'], category_id)
+        return self._manager.add_category(self.id, category_id)
 
 
 class OfferManager(ModelManager):

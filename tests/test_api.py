@@ -39,14 +39,14 @@ class TestHandleResponse:
         }
         cz_adv, pl_adv = sorted(
             api.handle_response(data, target='Advertiser', single_result=False),
-            key=lambda x: x['country']
+            key=lambda x: x.country
         )
         assert isinstance(cz_adv, Advertiser)
-        assert cz_adv['id'] == '114'
-        assert cz_adv['country'] == 'CZ'
+        assert cz_adv.id == '114'
+        assert cz_adv.country == 'CZ'
         assert isinstance(pl_adv, Advertiser)
-        assert pl_adv['id'] == '108'
-        assert pl_adv['country'] == 'PL'
+        assert pl_adv.id == '108'
+        assert pl_adv.country == 'PL'
 
 
 def test_str(api):

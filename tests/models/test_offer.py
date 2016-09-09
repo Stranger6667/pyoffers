@@ -10,13 +10,13 @@ CASSETTE_NAME = 'offer'
 
 def test_create_success(offer):
     assert isinstance(offer, Offer)
-    assert offer['offer_url'] == 'http://www.example.com'
+    assert offer.offer_url == 'http://www.example.com'
 
 
 def test_find_by_id_success(api, offer):
-    instance = api.offers.find_by_id(offer['id'])
+    instance = api.offers.find_by_id(offer.id)
     assert isinstance(instance, Offer)
-    assert instance['offer_url'] == offer['offer_url']
+    assert instance.offer_url == offer.offer_url
 
 
 def test_find_by_id_fail(api):
@@ -41,7 +41,7 @@ def test_get_target_countries_empty(offer):
 
 def test_update_success(offer):
     new_instance = offer.update(offer_url='test.com')
-    assert new_instance['offer_url'] == 'http://test.com'
+    assert new_instance.offer_url == 'http://test.com'
     assert new_instance == offer
 
 
@@ -63,17 +63,17 @@ class TestContain:
     def test_find_all(self, api):
         offer = api.offers.find_all(id=62, contain=['Country'])[0]
         assert isinstance(offer, Offer)
-        assert offer.country['id'] == '724'
+        assert offer.country.id == '724'
 
     def test_find_all_empty_related(self, api):
         offers = api.offers.find_all(currency='CZK', contain=['Country'])
         assert offers[0].country is None
-        assert offers[1].country['id'] == '203'
+        assert offers[1].country.id == '203'
 
     def test_find_by_id(self, api):
         offer = api.offers.find_by_id(id=62, contain=['Country'])
         assert isinstance(offer, Offer)
-        assert offer.country['id'] == '724'
+        assert offer.country.id == '724'
 
 
 def test_find_all_ids(api):

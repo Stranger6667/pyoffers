@@ -10,13 +10,13 @@ CASSETTE_NAME = 'advertiser'
 
 def test_create_success(advertiser):
     assert isinstance(advertiser, Advertiser)
-    assert advertiser['country'] == 'CZ'
+    assert advertiser.country == 'CZ'
 
 
 def test_find_by_id_success(api, advertiser):
-    instance = api.advertisers.find_by_id(advertiser['id'])
+    instance = api.advertisers.find_by_id(advertiser.id)
     assert isinstance(instance, Advertiser)
-    assert instance['country'] == 'CZ'
+    assert instance.country == 'CZ'
 
 
 def test_find_by_id_fail(api):
@@ -31,7 +31,7 @@ def test_find_all(api):
 
 def test_update_success(advertiser):
     new_instance = advertiser.update(company='Another')
-    assert new_instance['company'] == 'Another'
+    assert new_instance.company == 'Another'
     assert new_instance == advertiser
 
 

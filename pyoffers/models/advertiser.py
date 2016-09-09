@@ -9,7 +9,7 @@ class Advertiser(Model):
     generic_methods = ('update',)
 
     def block(self, reason=''):
-        return self._manager.block(self['id'], reason)
+        return self._manager.block(self.id, reason)
 
 
 class AdvertiserManager(ModelManager):

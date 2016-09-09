@@ -3,6 +3,11 @@
 Changelog
 =========
 
+0.4.3.dev (TBA)
+---------------
+
+- Better interface for models. `#38`_
+
 0.4.2 (2016-09-01)
 ------------------
 
@@ -83,6 +88,7 @@ Changelog
 - Initial release.
 
 
+.. _#38: https://github.com/Stranger6667/pyoffers/issues/38
 .. _#36: https://github.com/Stranger6667/pyoffers/issues/36
 .. _#35: https://github.com/Stranger6667/pyoffers/issues/35
 .. _#33: https://github.com/Stranger6667/pyoffers/issues/33
