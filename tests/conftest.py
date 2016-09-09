@@ -84,3 +84,13 @@ def conversion(api):
 def goal(api):
     offer_instance = offer(api)
     return api.goals.create(name='Test', description='String', status='deleted', offer_id=offer_instance.id)
+
+
+@pytest.fixture(scope='session')
+def date_dirs(api):
+    return api.raw_logs.clicks.list_date_dirs()
+
+
+@pytest.fixture(scope='session')
+def log_file(api):
+    return api.raw_logs.clicks.list_logs('20160909')[0]

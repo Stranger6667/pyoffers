@@ -38,7 +38,8 @@ class HasOffersAPI:
         for manager_class in MODEL_MANAGERS:
             instance = manager_class(self)
             setattr(self, instance.name, instance)
-            self._managers[instance.model.__name__] = instance
+            if instance.model:
+                self._managers[instance.model.__name__] = instance
 
     def __str__(self):
         return '%s: %s / %s' % (self.__class__.__name__, self.network_token, self.network_id)

@@ -6,6 +6,7 @@ Changelog
 0.4.3.dev (TBA)
 ---------------
 
+- Added `RawLog` model. `#40`_
 - Added `as_dict` method to models. `#39`_
 - Better interface for models. `#38`_
 
@@ -89,6 +90,7 @@ Changelog
 - Initial release.
 
 
+.. _#40: https://github.com/Stranger6667/pyoffers/issues/40
 .. _#39: https://github.com/Stranger6667/pyoffers/issues/39
 .. _#38: https://github.com/Stranger6667/pyoffers/issues/38
 .. _#36: https://github.com/Stranger6667/pyoffers/issues/36
