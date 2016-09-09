@@ -7,8 +7,8 @@ Changelog
 ------------------
 
 - Added caching for raw logs. `#41`_
-- Added `RawLog` model. `#40`_
-- Added `as_dict` method to models. `#39`_
+- Added ``RawLog`` model. `#40`_
+- Added ``as_dict`` method to models. `#39`_
 - Better interface for models. `#38`_
 
 0.4.2 (2016-09-01)
