@@ -43,6 +43,7 @@ def betamax_recorder(request, api):
         api.session,
         cassette_library_dir=CASSETTE_DIR,
         default_cassette_options={
+            'preserve_exact_body_bytes': True,
             'serialize_with': 'prettyjson',
             'match_requests_on': ['query', 'method'],
             'record_mode': record_mode

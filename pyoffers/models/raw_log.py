@@ -1,4 +1,8 @@
 # coding: utf-8
+from csv import DictReader
+from io import BytesIO, StringIO
+from zipfile import ZipFile
+
 from .core import Model, ModelManager
 
 
@@ -34,6 +38,31 @@ class LogFile(LogItem):
     @property
     def download_link(self):
         return self._manager.get_download_link(log_filename=self.filename)
+
+    @property
+    def content(self):
+        """
+        Returns raw CSV content of the log file.
+        """
+        raw_content = self._manager.api.session.get(self.download_link).content
+        data = BytesIO(raw_content)
+        archive = ZipFile(data)
+        filename = archive.filelist[0]  # Always 1 file in the archive
+        return archive.read(filename)
+
+    @property
+    def records(self):
+        data = StringIO(self.content.decode())
+        return [LogRecord(manager=self._manager, **kwargs) for kwargs in DictReader(data)]
+
+
+class LogRecord(LogItem):
+    """
+    Log record with all data about clicks / conversions / impressions.
+    """
+
+    def __str__(self):
+        return '%s: %s (%s)' % (self.__class__.__name__, self.offer_id, self.transaction_id)
 
 
 class LogItemManager(ModelManager):

@@ -1,7 +1,7 @@
 # coding: utf-8
 import pytest
 
-from pyoffers.utils import expand, Filter, Sort
+from pyoffers.utils import Filter, Sort, expand
 
 
 @pytest.mark.parametrize(
