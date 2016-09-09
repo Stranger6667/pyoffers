@@ -6,6 +6,7 @@ Changelog
 0.4.3.dev (TBA)
 ---------------
 
+- Added `as_dict` method to models. `#39`_
 - Better interface for models. `#38`_
 
 0.4.2 (2016-09-01)
@@ -88,6 +89,7 @@ Changelog
 - Initial release.
 
 
+.. _#39: https://github.com/Stranger6667/pyoffers/issues/39
 .. _#38: https://github.com/Stranger6667/pyoffers/issues/38
 .. _#36: https://github.com/Stranger6667/pyoffers/issues/36
 .. _#35: https://github.com/Stranger6667/pyoffers/issues/35

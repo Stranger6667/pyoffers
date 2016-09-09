@@ -49,6 +49,9 @@ class Model(metaclass=SelectiveInheritanceMeta):
     def __eq__(self, other):
         return isinstance(other, self.__class__) and self.id == other.id
 
+    def as_dict(self):
+        return self._data
+
     @generic_method
     def update(self, **kwargs):
         return self._manager.update(self.id, **kwargs)
