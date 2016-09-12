@@ -71,3 +71,9 @@ def test_log_records(log_file):
     assert len(records) == 2
     assert all(isinstance(item, LogRecord) for item in records)
     assert str(records[0]) == 'LogRecord: 13 (1020f1afc9b6af45c4efe622938512)'
+
+
+def test_find_all(api):
+    records = api.raw_logs.clicks.find_all('20160912')
+    assert len(records) == 4
+    assert all(isinstance(item, LogRecord) for item in records)

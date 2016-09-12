@@ -3,6 +3,11 @@
 Changelog
 =========
 
+0.4.4.dev (TBA)
+---------------
+
+- Improved logs filtration. `#42`_
+
 0.4.3 (2016-09-09)
 ------------------
 
@@ -91,6 +96,7 @@ Changelog
 - Initial release.
 
 
+.. _#42: https://github.com/Stranger6667/pyoffers/issues/42
 .. _#41: https://github.com/Stranger6667/pyoffers/issues/41
 .. _#40: https://github.com/Stranger6667/pyoffers/issues/40
 .. _#39: https://github.com/Stranger6667/pyoffers/issues/39

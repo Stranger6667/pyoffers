@@ -90,6 +90,9 @@ class LogItemManager(ModelManager):
     def get_download_link(self, log_filename):
         return self._call('getDownloadLink', log_filename=log_filename, raw=True)['link']
 
+    def find_all(self, date):
+        return sum([log_file.records for log_file in self.list_logs(date)], [])
+
 
 class RawLogManager(ModelManager):
     """

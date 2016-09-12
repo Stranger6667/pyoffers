@@ -605,6 +605,340 @@
         },
         "url": "https://s3.amazonaws.com/ho-adserverlogs-prod/qproc/raw-logs/clicks/blabla"
       }
+    },
+    {
+      "recorded_at": "2016-09-12T10:41:23",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.11.1"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Api/json?NetworkId=id&date_dir=20160912&log_type=clicks&Method=listLogs&Target=RawLog&NetworkToken=token"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAC2H1lcC/42RUU/CMBSF/8rSZ4bdkG3wbIgmAolMHySENNvdqGzraDsRCP/d3hZijA/41p577r1fe05Ewq4DpcnYO5EZ6L2Q21RsoTEC0fbQ88gbSMWF1UK8V6Jc60MLKGQVz7YK1Uv7U44yz1FagPzkmfU9MjUvCjMI9ZxpWOdc2ok0iOgosIOnoDfC9ldc6WdRWvdEyJohIvlQwgKlTJZglRe2NzZyNqIE1YpGgX3LRut2oZnulLmGlLqlzNYM/oRXgJXlieRctRU7zFhtORfQekHY8xDL8z06GlPqsRq3Ks2kTnlt/ovVLZqD+3gQxTShFOuFGdpcxlxfdef+x/9x+u9f3X6X94+8ReybAMlNgCgO/wlgnf5rPj8chw5g5eJM/6RZgM42uMvItB8Y8GiYxDRMhnTgeh5MiL8CxBBASiHtz64csEsguJamoBQrsa/pqup8/gawpQB+ggIAAA==",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "521"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Mon, 12 Sep 2016 10:41:22 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "505d7334-0d84-48dd-90f6-2543919270a3"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Api/json?NetworkId=id&date_dir=20160912&log_type=clicks&Method=listLogs&Target=RawLog&NetworkToken=token"
+      }
+    },
+    {
+      "recorded_at": "2016-09-12T10:41:23",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.11.1"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Api/json?log_type=clicks&NetworkId=id&Method=getDownloadLink&Target=RawLog&log_filename=20160912%2Fclicks-1473670800-Zxuwqd.zip&NetworkToken=token"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAP+H1lcC/41PwU7DMAz9lSlnurQd2mBnhEDaQGITBxBCVut1pWncxSmFTft34rAduJGDFb/n9+x3UA53PbJX89FBPaAfyDVratAGQPn4uRipZ3RcU8Ry6Q1V7/67QwEKUxcNC3qS35d/tCt0n3URR++AHzeb4HX22NQGLbSRzNNsml5nuf41TLLL2WQ6S6/SNHn56oddOd7XnQiX6LcUd1Tob2iwhqBc1LYR8pZcC5JGfTDF/WtwYU6QJxgWVKljAB1yR5Yxxt563608+J5Dm6dp4EvwEDkjvkErMzzXmidjaGFPFgYeF9TqLSVQcsiILiTipHNU6l2ohXYwJIKdEulMnv5fTjkSnSMnN72+hY7PF2ZnaonMUEkG2xtzPP4AaCAWUs0BAAA=",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "417"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Mon, 12 Sep 2016 10:41:22 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "32c1bfd8-4c23-4422-9f27-5fbbbfea11a8"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Api/json?log_type=clicks&NetworkId=id&Method=getDownloadLink&Target=RawLog&log_filename=20160912%2Fclicks-1473670800-Zxuwqd.zip&NetworkToken=token"
+      }
+    },
+    {
+      "recorded_at": "2016-09-12T10:41:27",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.11.1"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://s3.amazonaws.com/ho-adserverlogs-prod/qproc/raw-logs/clicks/11111/20160912/clicks-1473670800-Zxuwqd.zip"
+      },
+      "response": {
+        "body": {
+          "base64_string": "UEsDBBQAAAAAALODKUlvNuK/YgcAAGIHAAAcAAAAY2xpY2tzLTE0NzM0MTg4MDAtU2xZOVVPLmNzdnRyYW5zYWN0aW9uX2lkLGFmZmlsaWF0ZV9pZCxhZmZpbGlhdGVfbWFuYWdlcl9pZCxhZHZlcnRpc2VyX2lkLGFkdmVydGlzZXJfbWFuYWdlcl9pZCxvZmZlcl9pZCxjcmVhdGl2ZV91cmxfaWQsYWZmaWxpYXRlX3NvdXJjZSxhZmZpbGlhdGVfc3ViMSxhZmZpbGlhdGVfc3ViMixhZmZpbGlhdGVfc3ViMyxhZmZpbGlhdGVfc3ViNCxhZmZpbGlhdGVfc3ViNSxkYXRldGltZSxyZXZlbnVlX2NlbnRzLHBheW91dF9jZW50cyxyZWZlcix1cmwscGl4ZWxfcmVmZXIsaXAsdXNlcl9hZ2VudCxjb3VudHJ5X2NvZGUsYnJvd3Nlcl9pZCxpc19jbGlja191bmlxdWUsYWRfY2FtcGFpZ25faWQsYWRfY2FtcGFpZ25fY3JlYXRpdmVfaWQsb2ZmZXJfZmlsZV9pZCxzdGF0dXMsb2ZmZXJfZmlsZV9zaXplLGN1cnJlbmN5LHBheW91dF90eXBlLHJldmVudWVfdHlwZSxkZXZpY2VfYnJhbmQsZGV2aWNlX21vZGVsLGRldmljZV9vcyxkZXZpY2Vfb3NfdmVyc2lvbixkZXZpY2VfaWQsZGV2aWNlX2lkX21kNSxkZXZpY2VfaWRfc2hhMSxhbmRyb2lkX2lkLGFuZHJvaWRfaWRfbWQ1LGFuZHJvaWRfaWRfc2hhMSxtYWNfYWRkcmVzcyxtYWNfYWRkcmVzc19tZDUsbWFjX2FkZHJlc3Nfc2hhMSxvZGluLG9wZW5fdWRpZCxpb3NfaWZhLGlvc19pZmFfbWQ1LGlvc19pZmFfc2hhMSxpb3NfaWZ2LHVzZXJfaWQsdW5rbm93bl9pZCxwYXlvdXRfZ3JvdXBfaWQscmV2ZW51ZV9ncm91cF9pZCxyZXFfY29ubmVjdGlvbl9zcGVlZCxnb29nbGVfYWlkCiIxMDIwZjFhZmM5YjZhZjQ1YzRlZmU2MjI5Mzg1MTIiLDMsMTIsNDQsMTIsMTMsIiIsIk5FWCIsIlVOVVNFIiwiUEQiLCIiLCJkM2JhNDUyYy02YWJiLTQ4N2YtYTlmNy0xMGE1MTM3NjVmMzYiLCIiLCIyMDE2LTA5LTA5IDE0OjAwOjI4IiwiIiwiIiwiIiwiaHR0cDovL2V4YW1wbGUuY29tL2FmZl9jP29mZmVyX2lkPTEzJmFmZl9pZD0zJnNvdXJjZT1ORVgmYWZmX3N1Yj1VTlVTRSZhZmZfc3ViMj1QRCZhZmZfc3ViND1kM2JhNDUyYy02YWJiLTQ4N2YtYTlmNy0xMGE1MTM3NjVmMzYiLCIiLCIxMjcuMC4wLjEiLCJNb3ppbGxhLzUuMCAoTGludXg7IEFuZHJvaWQgNC4xLjI7IEdULVM2MzEwTiBCdWlsZC9KWk81NEspIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIExpa2UgR2Vja28pIENocm9tZS81MC4wLjI2NjEuODkgTW9iaWxlIFNhZmFyaS81MzcuMzYiLCJDWiIsOCwwLCIiLCIiLCIiLCIiLCIiLCJDWksiLCJjcGFfZmxhdCIsImNwYV9mbGF0IiwiU2Ftc3VuZyIsIkdULVM2MzEwTiIsIkFuZHJvaWQiLCI0LjEiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLDAsMCwibW9iaWxlIiwiIgoiMTAyZjE0OTAxNGM1ZmFlNDU3NmM1NzdjMjYzNDdjIiwxMCw0LDE4LDQsODQsIiIsIk5FWCIsIlRITSIsIkFEIiwiIiwiOTRiZTY0ZDgtNWMzZS00YmFkLThkNmEtYWQ0ZTlhOWEwMWNiIiwiIiwiMjAxNi0wOS0wOSAxNDowMDo0NCIsIjI1MCIsIiIsIiIsImh0dHA6Ly9leGFtcGxlLmNvbS9hZmZfYz9vZmZlcl9pZD04NCZhZmZfaWQ9MTAmc291cmNlPU5FWCZhZmZfc3ViPVRITSZhZmZfc3ViMj1BRCZhZmZfc3ViND05NGJlNjRkOC01YzNlLTRiYWQtOGQ2YS1hZDRlOWE5YTAxY2IiLCIiLCIxMjcuMC4wLjEiLCJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wKSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBMaWtlIEdlY2tvKSBDaHJvbWUvNDYuMC4yNDg2LjAgU2FmYXJpLzUzNy4zNiBFZGdlLzEzLjEwNTg2IiwiRVMiLDYsMCwiIiwiIiwiIiwiIiwiIiwiRVVSIiwiY3BhX2ZsYXQiLCJjcGMiLCJNaWNyb3NvZnQiLCJFZGdlIiwiRGVza3RvcCIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsMCwwLCJicm9hZGJhbmQiLCIiClBLAQIUAxQAAAAAALODKUlvNuK/YgcAAGIHAAAcAAAAAAAAAAAAAACAAQAAAABjbGlja3MtMTQ3MzQxODgwMC1TbFk5VU8uY3N2UEsFBgAAAAABAAEASgAAAJwHAAAAAA==",
+          "encoding": null
+        },
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "97366"
+          ],
+          "Content-Type": [
+            "application/octet-stream"
+          ],
+          "Date": [
+            "Mon, 12 Sep 2016 10:41:25 GMT"
+          ],
+          "ETag": [
+            "\"3030bc53db5fc63722159fb7a79e03e4\""
+          ],
+          "Last-Modified": [
+            "Mon, 12 Sep 2016 10:15:47 GMT"
+          ],
+          "Server": [
+            "AmazonS3"
+          ],
+          "x-amz-id-2": [
+            "Ijwb6X5Oe7okOWG965YPzdVRXk8f4g4iW2SPXquebVFReit7nLDOVe2kERZRp2rVCl0sJBlKL7c="
+          ],
+          "x-amz-request-id": [
+            "9C9C6299BF92E590"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://s3.amazonaws.com/ho-adserverlogs-prod/qproc/raw-logs/clicks/11111/20160912/clicks-1473670800-Zxuwqd.zip"
+      }
+    },
+    {
+      "recorded_at": "2016-09-12T10:41:27",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.11.1"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Api/json?log_type=clicks&NetworkId=id&Method=getDownloadLink&Target=RawLog&log_filename=20160912%2Fclicks-1473667200-UdOyz5.zip&NetworkToken=token"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAGeJ1lcC/42PQU/DMAyF/8rUM13aDjaxM0IgbUxigwtCyGq8rjSNuzij2qb9d+Kw3skhir9nv/idE4f7A7JP5qNz8oK+J9dsqEEbQOLj42aUvKPjmiIrpDZUffljhwJKU5cNC72OP2vBtRa0RvdTl7HvCXi13QajwWBbG7TQRrHI8ml2nxfqzy3Nb2eT6XRWZFn6plfH0934VHcyuES/o/hBhf6BemsI9KK2jYiP5FqQKMk3U1x8Ay70CXmFfkFVcgnQIXdkGWPmnffd2oM/cCjDf0HX4CFqRnzDrPTwXCmejKGFE1noeVxSq3aUguaQEV1IxGnnSKt9uEvloE+FXROpXI76X05ZEp0jJzt9fIaKhw3zQVoiM1SSwR6MuVx+AV0PaMTKAQAA",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "417"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Mon, 12 Sep 2016 10:41:26 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "c2b500f1-dec2-4679-9827-7a90588c3b43"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Api/json?log_type=clicks&NetworkId=id&Method=getDownloadLink&Target=RawLog&log_filename=20160912%2Fclicks-1473667200-UdOyz5.zip&NetworkToken=token"
+      }
+    },
+    {
+      "recorded_at": "2016-09-12T10:41:28",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.11.1"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://s3.amazonaws.com/ho-adserverlogs-prod/qproc/raw-logs/clicks/11111/20160912/clicks-1473667200-UdOyz5.zip"
+      },
+      "response": {
+        "body": {
+          "base64_string": "UEsDBBQAAAAAALODKUlvNuK/YgcAAGIHAAAcAAAAY2xpY2tzLTE0NzM0MTg4MDAtU2xZOVVPLmNzdnRyYW5zYWN0aW9uX2lkLGFmZmlsaWF0ZV9pZCxhZmZpbGlhdGVfbWFuYWdlcl9pZCxhZHZlcnRpc2VyX2lkLGFkdmVydGlzZXJfbWFuYWdlcl9pZCxvZmZlcl9pZCxjcmVhdGl2ZV91cmxfaWQsYWZmaWxpYXRlX3NvdXJjZSxhZmZpbGlhdGVfc3ViMSxhZmZpbGlhdGVfc3ViMixhZmZpbGlhdGVfc3ViMyxhZmZpbGlhdGVfc3ViNCxhZmZpbGlhdGVfc3ViNSxkYXRldGltZSxyZXZlbnVlX2NlbnRzLHBheW91dF9jZW50cyxyZWZlcix1cmwscGl4ZWxfcmVmZXIsaXAsdXNlcl9hZ2VudCxjb3VudHJ5X2NvZGUsYnJvd3Nlcl9pZCxpc19jbGlja191bmlxdWUsYWRfY2FtcGFpZ25faWQsYWRfY2FtcGFpZ25fY3JlYXRpdmVfaWQsb2ZmZXJfZmlsZV9pZCxzdGF0dXMsb2ZmZXJfZmlsZV9zaXplLGN1cnJlbmN5LHBheW91dF90eXBlLHJldmVudWVfdHlwZSxkZXZpY2VfYnJhbmQsZGV2aWNlX21vZGVsLGRldmljZV9vcyxkZXZpY2Vfb3NfdmVyc2lvbixkZXZpY2VfaWQsZGV2aWNlX2lkX21kNSxkZXZpY2VfaWRfc2hhMSxhbmRyb2lkX2lkLGFuZHJvaWRfaWRfbWQ1LGFuZHJvaWRfaWRfc2hhMSxtYWNfYWRkcmVzcyxtYWNfYWRkcmVzc19tZDUsbWFjX2FkZHJlc3Nfc2hhMSxvZGluLG9wZW5fdWRpZCxpb3NfaWZhLGlvc19pZmFfbWQ1LGlvc19pZmFfc2hhMSxpb3NfaWZ2LHVzZXJfaWQsdW5rbm93bl9pZCxwYXlvdXRfZ3JvdXBfaWQscmV2ZW51ZV9ncm91cF9pZCxyZXFfY29ubmVjdGlvbl9zcGVlZCxnb29nbGVfYWlkCiIxMDIwZjFhZmM5YjZhZjQ1YzRlZmU2MjI5Mzg1MTIiLDMsMTIsNDQsMTIsMTMsIiIsIk5FWCIsIlVOVVNFIiwiUEQiLCIiLCJkM2JhNDUyYy02YWJiLTQ4N2YtYTlmNy0xMGE1MTM3NjVmMzYiLCIiLCIyMDE2LTA5LTA5IDE0OjAwOjI4IiwiIiwiIiwiIiwiaHR0cDovL2V4YW1wbGUuY29tL2FmZl9jP29mZmVyX2lkPTEzJmFmZl9pZD0zJnNvdXJjZT1ORVgmYWZmX3N1Yj1VTlVTRSZhZmZfc3ViMj1QRCZhZmZfc3ViND1kM2JhNDUyYy02YWJiLTQ4N2YtYTlmNy0xMGE1MTM3NjVmMzYiLCIiLCIxMjcuMC4wLjEiLCJNb3ppbGxhLzUuMCAoTGludXg7IEFuZHJvaWQgNC4xLjI7IEdULVM2MzEwTiBCdWlsZC9KWk81NEspIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIExpa2UgR2Vja28pIENocm9tZS81MC4wLjI2NjEuODkgTW9iaWxlIFNhZmFyaS81MzcuMzYiLCJDWiIsOCwwLCIiLCIiLCIiLCIiLCIiLCJDWksiLCJjcGFfZmxhdCIsImNwYV9mbGF0IiwiU2Ftc3VuZyIsIkdULVM2MzEwTiIsIkFuZHJvaWQiLCI0LjEiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLCIiLDAsMCwibW9iaWxlIiwiIgoiMTAyZjE0OTAxNGM1ZmFlNDU3NmM1NzdjMjYzNDdjIiwxMCw0LDE4LDQsODQsIiIsIk5FWCIsIlRITSIsIkFEIiwiIiwiOTRiZTY0ZDgtNWMzZS00YmFkLThkNmEtYWQ0ZTlhOWEwMWNiIiwiIiwiMjAxNi0wOS0wOSAxNDowMDo0NCIsIjI1MCIsIiIsIiIsImh0dHA6Ly9leGFtcGxlLmNvbS9hZmZfYz9vZmZlcl9pZD04NCZhZmZfaWQ9MTAmc291cmNlPU5FWCZhZmZfc3ViPVRITSZhZmZfc3ViMj1BRCZhZmZfc3ViND05NGJlNjRkOC01YzNlLTRiYWQtOGQ2YS1hZDRlOWE5YTAxY2IiLCIiLCIxMjcuMC4wLjEiLCJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wKSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBMaWtlIEdlY2tvKSBDaHJvbWUvNDYuMC4yNDg2LjAgU2FmYXJpLzUzNy4zNiBFZGdlLzEzLjEwNTg2IiwiRVMiLDYsMCwiIiwiIiwiIiwiIiwiIiwiRVVSIiwiY3BhX2ZsYXQiLCJjcGMiLCJNaWNyb3NvZnQiLCJFZGdlIiwiRGVza3RvcCIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsIiIsMCwwLCJicm9hZGJhbmQiLCIiClBLAQIUAxQAAAAAALODKUlvNuK/YgcAAGIHAAAcAAAAAAAAAAAAAACAAQAAAABjbGlja3MtMTQ3MzQxODgwMC1TbFk5VU8uY3N2UEsFBgAAAAABAAEASgAAAJwHAAAAAA==",
+          "encoding": null
+        },
+        "headers": {
+          "Accept-Ranges": [
+            "bytes"
+          ],
+          "Content-Length": [
+            "98158"
+          ],
+          "Content-Type": [
+            "application/octet-stream"
+          ],
+          "Date": [
+            "Mon, 12 Sep 2016 10:41:27 GMT"
+          ],
+          "ETag": [
+            "\"eb743e15d9e05d247170706721b46ecb\""
+          ],
+          "Last-Modified": [
+            "Mon, 12 Sep 2016 09:15:48 GMT"
+          ],
+          "Server": [
+            "AmazonS3"
+          ],
+          "x-amz-id-2": [
+            "p7xqG7iNTdKJeXgZpsbqoThTzpNxDboZNbKyCv15BtrTHF9oD4CNBqAJq30oVZxnvcl+94yq6vs="
+          ],
+          "x-amz-request-id": [
+            "B2C535BCDE0D5EF1"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://s3.amazonaws.com/ho-adserverlogs-prod/qproc/raw-logs/clicks/11111/20160912/clicks-1473667200-UdOyz5.zip"
+      }
     }
   ],
   "recorded_with": "betamax/0.8.0"
