@@ -85,10 +85,14 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
 
     @generic_method
     def find_by_id(self, id, fields=None, contain=None):
+        assert fields is None or isinstance(fields, (tuple, list)), 'Fields should be a tuple or list'
         return self._call('findById', id=id, fields=fields, contain=contain)
 
     @generic_method
     def find_all(self, sort=(), limit=None, page=None, fields=None, contain=None, **kwargs):
+        assert limit is None or isinstance(limit, int), 'Limit should be an integer'
+        assert page is None or isinstance(page, int), 'Page should be an integer'
+        assert fields is None or isinstance(fields, (tuple, list)), 'Fields should be a tuple or list'
         return self._call(
             'findAll',
             filters=Filter(**kwargs),

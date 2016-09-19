@@ -3,6 +3,8 @@ from unittest.mock import patch
 
 import pytest
 
+from pyoffers.exceptions import HasOffersException
+
 
 def test_str(advertiser):
     assert str(advertiser) == 'Advertiser: 114'
@@ -61,3 +63,20 @@ def test_as_dict(advertiser):
         'website': None,
         'zipcode': '123456'
     }
+
+
+@pytest.mark.parametrize('value, expected', (
+    (
+        {'limit': 'a'}, 'Limit should be an integer'
+    ),
+    (
+        {'page': 'a'}, 'Page should be an integer'
+    ),
+    (
+        {'fields': 1}, 'Fields should be a tuple or list'
+    ),
+))
+def test_type_checks(api, value, expected):
+    with pytest.raises(AssertionError) as exc:
+        api.offers.find_all(**value)
+    assert str(exc.value) == expected
