@@ -74,6 +74,7 @@ class TestRateLimit:
         sleep.assert_called_once_with(3)
 
     def test_limit_exceeded(self, api, sleep):
-        with pytest.raises(MaxRetriesExceeded):
+        with pytest.raises(MaxRetriesExceeded) as exc:
             api.conversions.find_all(offer_id=14, fields=['datetime', 'country_code'], limit=1)
+        assert str(exc.value) == 'Max retries exceeded'
         assert sleep.call_count == 2

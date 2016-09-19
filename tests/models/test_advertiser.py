@@ -36,8 +36,9 @@ def test_update_success(advertiser):
 
 
 def test_update_fail(advertiser):
-    with pytest.raises(HasOffersException):
+    with pytest.raises(HasOffersException) as exc:
         advertiser.update(account_manager_id='string')
+    assert str(exc.value) == 'Error code: 3. Could not update advertiser. Account_manager_id is not valid.'
 
 
 def test_block_success(advertiser):

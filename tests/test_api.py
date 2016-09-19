@@ -10,8 +10,9 @@ def test_invalid_network_id(api):
     old_token = api.network_token
     try:
         api.network_token = 'invalid'
-        with pytest.raises(HasOffersException):
+        with pytest.raises(HasOffersException) as exc:
             api._call('test', 'test')
+        assert str(exc.value) == 'Network id is not valid'
     finally:
         api.network_token = old_token
 

@@ -54,8 +54,9 @@ def test_add_category_success(offer):
 
 
 def test_add_category_fail(offer):
-    with pytest.raises(HasOffersException):
+    with pytest.raises(HasOffersException) as exc:
         offer.add_category(-1)
+    assert str(exc.value) == 'Row id is negative'
 
 
 class TestContain:
