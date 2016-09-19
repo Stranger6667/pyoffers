@@ -6,26 +6,27 @@ import json
 import os
 
 
-def decode(value):
-    return gzip.decompress(base64.b64decode(value.encode()))
-
-
-def encode(value):
-    return base64.b64encode(gzip.compress(value)).decode()
-
-
 class Record:
 
     def __init__(self, data):
         self.data = data
 
     @property
+    def is_gzip(self):
+        return self.data['response']['headers'].get('Content-Encoding') == ['gzip']
+
+    @property
     def body(self):
-        return decode(self.data['response']['body']['base64_string'])
+        value = base64.b64decode(self.data['response']['body']['base64_string'].encode())
+        if self.is_gzip:
+            value = gzip.decompress(value)
+        return value
 
     @body.setter
     def body(self, value):
-        self.data['response']['body']['base64_string'] = encode(value)
+        if self.is_gzip:
+            value = gzip.compress(value)
+        self.data['response']['body']['base64_string'] = base64.b64encode(value).decode()
 
     @property
     def request_uri(self):

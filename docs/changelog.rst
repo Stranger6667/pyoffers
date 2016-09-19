@@ -3,6 +3,11 @@
 Changelog
 =========
 
+0.5.0.dev (TBA)
+---------------
+
+- Fixed credentials cleaning for non gzipped content. `#45`_
+
 0.4.4 (2016-09-09)
 ------------------
 
@@ -96,6 +101,7 @@ Changelog
 - Initial release.
 
 
+.. _#45: https://github.com/Stranger6667/pyoffers/issues/45
 .. _#42: https://github.com/Stranger6667/pyoffers/issues/42
 .. _#41: https://github.com/Stranger6667/pyoffers/issues/41
 .. _#40: https://github.com/Stranger6667/pyoffers/issues/40
