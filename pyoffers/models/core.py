@@ -84,16 +84,16 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
         return self._call('update', id=id, data=kwargs)
 
     @generic_method
-    def find_by_id(self, id, contain=None):
-        return self._call('findById', id=id, contain=contain)
+    def find_by_id(self, id, fields=None, contain=None):
+        return self._call('findById', id=id, fields=fields, contain=contain)
 
     @generic_method
-    def find_all(self, sort=(), limit=None, page=None, contain=None, **kwargs):
+    def find_all(self, sort=(), limit=None, page=None, fields=None, contain=None, **kwargs):
         return self._call(
             'findAll',
             filters=Filter(**kwargs),
             sort=Sort(sort, self.model.__name__),
-            limit=limit, page=page, contain=contain, single_result=False
+            limit=limit, page=page, fields=fields, contain=contain, single_result=False
         )
 
     @generic_method

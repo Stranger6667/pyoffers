@@ -25,7 +25,8 @@ def test_sort_prepend_model(api, sort, expected):
     with patch.object(api, '_call') as patched:
         api.offers.find_all(sort=sort)
         patched.assert_called_with(
-            'Offer', 'findAll', contain=None, filters={}, limit=None, page=None, single_result=False, sort=expected
+            'Offer', 'findAll', contain=None, fields=None, filters={}, limit=None,
+            page=None, single_result=False, sort=expected
         )
 
 

@@ -7,6 +7,7 @@ Changelog
 ---------------
 
 - Fixed credentials cleaning for non gzipped content. `#45`_
+- Added ``fields`` parameter. `#34`_
 
 0.4.4 (2016-09-09)
 ------------------
@@ -109,6 +110,7 @@ Changelog
 .. _#38: https://github.com/Stranger6667/pyoffers/issues/38
 .. _#36: https://github.com/Stranger6667/pyoffers/issues/36
 .. _#35: https://github.com/Stranger6667/pyoffers/issues/35
+.. _#34: https://github.com/Stranger6667/pyoffers/issues/34
 .. _#33: https://github.com/Stranger6667/pyoffers/issues/33
 .. _#32: https://github.com/Stranger6667/pyoffers/issues/32
 .. _#31: https://github.com/Stranger6667/pyoffers/issues/31

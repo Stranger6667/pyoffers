@@ -50,3 +50,8 @@ def test_update_success(conversion):
     new_instance = conversion.update(revenue=2)
     assert new_instance.revenue == '2.00000'
     assert new_instance == conversion
+
+
+def test_find_all_fields(api):
+    conversion = api.conversions.find_all(offer_id=7, fields=['datetime', 'country_code'], limit=1)[0]
+    assert conversion.as_dict() == {'country_code': 'CZ', 'datetime': '2016-02-22 04:29:09'}
