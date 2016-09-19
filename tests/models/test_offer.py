@@ -2,7 +2,7 @@
 import pytest
 
 from pyoffers.exceptions import HasOffersException
-from pyoffers.models import Country, Offer
+from pyoffers.models import Conversion, Country, Offer
 
 
 CASSETTE_NAME = 'offer'
@@ -81,3 +81,10 @@ def test_find_all_ids(api):
     results = api.offers.find_all_ids()
     assert isinstance(results, list)
     assert all(result.isdigit() for result in results)
+
+
+def test_conversions_manager(offer):
+    conversions = offer.conversions.find_all()
+    assert len(conversions) == 1
+    assert isinstance(conversions[0], Conversion)
+    assert conversions[0].offer_id == offer.id

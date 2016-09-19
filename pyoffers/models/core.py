@@ -103,3 +103,15 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
     @generic_method
     def find_all_ids(self, **kwargs):
         return self._call('findAllIds', filters=Filter(**kwargs), single_result=False, raw=True)
+
+
+class RelatedManager:
+    related_object_name = None
+
+    def __init__(self, api, base_manager_class, id):
+        self.base_manager = base_manager_class(api)
+        self.id = id
+
+    def find_all(self, **kwargs):
+        kwargs[self.related_object_name] = self.id
+        return self.base_manager.find_all(**kwargs)

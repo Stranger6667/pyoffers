@@ -11,6 +11,7 @@ Changelog
 - Added retrying support on rate limit exceeding. `#43`_
 - Better exceptions representation. `#52`_
 - Added type checks for calls parameters. `#51`_
+- Added ``conversions`` manager for ``Offer`` instances. `#48`_
 
 0.4.4 (2016-09-09)
 ------------------
@@ -107,6 +108,7 @@ Changelog
 
 .. _#52: https://github.com/Stranger6667/pyoffers/issues/52
 .. _#51: https://github.com/Stranger6667/pyoffers/issues/51
+.. _#48: https://github.com/Stranger6667/pyoffers/issues/48
 .. _#45: https://github.com/Stranger6667/pyoffers/issues/45
 .. _#43: https://github.com/Stranger6667/pyoffers/issues/43
 .. _#42: https://github.com/Stranger6667/pyoffers/issues/42
