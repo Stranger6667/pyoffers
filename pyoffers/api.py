@@ -2,8 +2,9 @@
 from collections import OrderedDict
 
 import requests
+import time
 
-from .exceptions import HasOffersException
+from .exceptions import HasOffersException, MaxRetriesExceeded
 from .logging import get_logger
 from .models import MODEL_MANAGERS
 from .utils import prepare_query_params
@@ -17,16 +18,40 @@ def is_paginated(data):
     return 'pageCount' in data
 
 
+def retry(method):
+    """
+    Allows to retry method execution few times.
+    """
+
+    def inner(self, *args, **kwargs):
+        attempt_number = 1
+        while attempt_number < self.retries:
+            try:
+                return method(self, *args, **kwargs)
+            except HasOffersException as exc:
+                if not 'API usage exceeded rate limit' in str(exc):
+                    raise exc
+                self.logger.debug('Retrying due: %s', exc)
+            time.sleep(self.retry_timeout)
+            attempt_number += 1
+        raise MaxRetriesExceeded
+
+    return inner
+
+
 class HasOffersAPI:
     """
     Client to communicate with HasOffers API.
     """
 
-    def __init__(self, endpoint=None, network_token=None, network_id=None, verify=True, verbosity=0):
+    def __init__(self, endpoint=None, network_token=None, network_id=None, verify=True, retries=3, retry_timeout=3,
+                 verbosity=0):
         self.endpoint = endpoint
         self.network_token = network_token
         self.network_id = network_id
         self.verify = verify
+        self.retries = retries
+        self.retry_timeout = retry_timeout
         self.logger = get_logger(verbosity)
         self.setup_managers()
 
@@ -53,6 +78,7 @@ class HasOffersAPI:
             self._session = requests.Session()
         return self._session
 
+    @retry
     def _call(self, target, method, single_result=True, raw=False, **kwargs):
         """
         Low-level call to HasOffers API.

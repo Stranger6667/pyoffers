@@ -8,6 +8,7 @@ Changelog
 
 - Fixed credentials cleaning for non gzipped content. `#45`_
 - Added ``fields`` parameter. `#34`_
+- Added retrying support on rate limit exceeding. `#43`_
 
 0.4.4 (2016-09-09)
 ------------------
@@ -103,6 +104,7 @@ Changelog
 
 
 .. _#45: https://github.com/Stranger6667/pyoffers/issues/45
+.. _#43: https://github.com/Stranger6667/pyoffers/issues/43
 .. _#42: https://github.com/Stranger6667/pyoffers/issues/42
 .. _#41: https://github.com/Stranger6667/pyoffers/issues/41
 .. _#40: https://github.com/Stranger6667/pyoffers/issues/40

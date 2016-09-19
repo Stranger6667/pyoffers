@@ -1,4 +1,9 @@
 # coding: utf-8
+from unittest.mock import patch
+
+import pytest
+
+from pyoffers.exceptions import MaxRetriesExceeded
 from pyoffers.models import Conversion
 
 
@@ -55,3 +60,20 @@ def test_update_success(conversion):
 def test_find_all_fields(api):
     conversion = api.conversions.find_all(offer_id=7, fields=['datetime', 'country_code'], limit=1)[0]
     assert conversion.as_dict() == {'country_code': 'CZ', 'datetime': '2016-02-22 04:29:09'}
+
+
+class TestRateLimit:
+
+    @pytest.yield_fixture
+    def sleep(self):
+        with patch('pyoffers.api.time.sleep') as patched:
+            yield patched
+
+    def test_single_retry(self, api, sleep):
+        api.conversions.find_all(offer_id=13, fields=['datetime', 'country_code'], limit=1)
+        sleep.assert_called_once_with(3)
+
+    def test_limit_exceeded(self, api, sleep):
+        with pytest.raises(MaxRetriesExceeded):
+            api.conversions.find_all(offer_id=14, fields=['datetime', 'country_code'], limit=1)
+        assert sleep.call_count == 2
