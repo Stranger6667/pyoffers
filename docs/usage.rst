@@ -181,7 +181,7 @@ And ``list_logs`` method:
 
 Each log file has:
 
-- ``download_link`` - link to `ip archive at Amazon S3.
+- ``download_link`` - link to ZIP archive at Amazon S3.
 - ``content`` - raw CSV content of this archive.
 - ``records`` - all data from CSV wrapped as ``LogRecord`` instances.
 
