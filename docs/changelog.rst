@@ -3,8 +3,8 @@
 Changelog
 =========
 
-0.5.0.dev (TBA)
----------------
+0.5.0 (2016-09-20)
+------------------
 
 - Fixed credentials cleaning for non gzipped content. `#45`_
 - Added ``fields`` parameter. `#34`_
