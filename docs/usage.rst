@@ -18,6 +18,8 @@ PyOffers provide ``HasOffersAPI`` class to interact with HasOffers API.
         network_token='<your_network_token>',
         network_id='<your_network_id>',
         verify=True,
+        retries=4,
+        retry_timeout=4,
         verbosity=3
     )
 
@@ -33,6 +35,10 @@ Possible options:
 ``verify``
     Whether to verify SSL certificate or not. HasOffers SSL cert doesn't cover subdomains like mentioned above.
     Only ``*.hasoffers.com`` and ``hasoffers.com``.
+``retries``
+    Number of retries to make a request in case of exceeding HasOffers API rate limit.
+``retry_timeout``
+    Seconds to wait between retries.
 ``verbosity``
     Controls library's verbosity level. With **3** the request params and raw response will be printed to console.
 
@@ -131,3 +137,65 @@ Managers
 - **Country** - As the model has no methods then ``hasoffers.countries`` manager has no methods too.
 - **Goal** - ``hasoffers.goals``
 - **Offer** - ``hasoffers.offers``
+
+
+Related managers
+~~~~~~~~~~~~~~~~
+
+``Offer`` model has ``conversions`` manager, which allows to perform queries on conversions related to concrete offer.
+
+.. code:: python
+
+    >>> offer = hasoffers.offers.find_by_id(7)
+    >>> conversions = offer.conversions.find_all()
+
+
+Raw logs
+~~~~~~~~
+
+``pyoffers`` provides ``RawLog`` model with 3 managers for different types of logs. They behave identically:
+
+- ``hasoffers.raw_logs.clicks`` - logs about clicks.
+- ``hasoffers.raw_logs.conversions`` - about conversions.
+- ``hasoffers.raw_logs.impressions`` - about impressions.
+
+To get all logs directories:
+
+.. code:: python
+
+    >>> hasoffers.raw_logs.clicks.list_date_dirs()
+    [<DateDir: Sep 20, 2016 (20160920)>, <DateDir: Sep 19, 2016 (20160919)>, ...]
+
+Every directory has 2 attributes:
+
+- ``displayName``
+- ``dirName``
+
+And ``list_logs`` method:
+
+.. code:: python
+
+    >>> directory = hasoffers.raw_logs.clicks.list_date_dirs()[0]
+    >>> directory.list_logs()
+    [<LogFile: Sep 20, 2016 - 11:00 am (20160920/clicks-1474369200-ewU6Y1.zip)>, ...]
+
+Each log file has:
+
+- ``download_link`` - link to `ip archive at Amazon S3.
+- ``content`` - raw CSV content of this archive.
+- ``records`` - all data from CSV wrapped as ``LogRecord`` instances.
+
+All these attributes are cached on ``LogFile`` instance level.
+For convenience it is possible to get all records for some date:
+
+.. code:: python
+
+    >>> hasoffers.raw_logs.clicks.find_all('20160920')
+    [<LogRecord: 7 (1027a606128bd067105f0b0921840f)>, ...]
+
+Also it is possible to get records for month or even for year. But it will take some time to download all data.
+
+.. code:: python
+
+    >>> september_clicks = hasoffers.raw_logs.clicks.find_all('201609')
+    >>> year_clicks = hasoffers.raw_logs.clicks.find_all('2016')
