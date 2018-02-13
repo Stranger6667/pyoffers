@@ -59,6 +59,16 @@ def test_add_category_fail(offer):
     assert str(exc.value) == 'Row id is negative'
 
 
+def test_block_affiliate_success(offer):
+    assert offer.block_affiliate(1) is True
+
+
+def test_block_affiliate_fail(offer):
+    with pytest.raises(HasOffersException) as exc:
+        offer.block_affiliate(21)
+    assert str(exc.value) == 'Failed to hydrate rows: 21'
+
+
 class TestContain:
 
     def test_find_all(self, api):

@@ -26,6 +26,9 @@ class Offer(Model):
     def add_category(self, category_id):
         return self._manager.add_category(self.id, category_id)
 
+    def block_affiliate(self, affiliate_id):
+        return self._manager.block_affiliate(self.id, affiliate_id)
+
 
 class OfferManager(ModelManager):
     model = Offer
@@ -46,3 +49,6 @@ class OfferManager(ModelManager):
 
     def add_category(self, id, category_id):
         return self._call('addCategory', id=id, category_id=category_id)
+
+    def block_affiliate(self, id, affiliate_id):
+        return self._call('blockAffiliate', id=id, affiliate_id=affiliate_id)

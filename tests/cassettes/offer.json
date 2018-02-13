@@ -1066,6 +1066,142 @@
         },
         "url": "https://api.hasoffers.com/Api/json?NetworkToken=token&filters%5Boffer_id%5D=196&Target=Conversion&Method=findAll&NetworkId=id"
       }
+    },
+    {
+      "recorded_at": "2018-02-13T16:14:07",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=blockAffiliate&id=196&affiliate_id=1"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAAAAAAAAA0WPS2vDMBCE/8uedVDsQ6luLX2kFCeBuA8opajOKlGsWI527R6C/3tXIaWnnflmWJgTJDwOSAzmBLVNWxQFS+cwgYKHmA42gz3FTvwa0+gbFDC3dC6R0Fc5XnIDhbgF8k9MbR1bzGhxXx/xrX1/HHF1Hdzh+ba/aqq+XI0vd3P933/aSHmMgWKaCa2QdzGj7xCb9sY5H7xllMRnWupSpP3DX2dYaJiU7KE+doR5ELHlgcDMFOyY+/XFFlor2Fi2YDgNqABTijLFfHxedIVEdis/uiGEafoF2v9I1iYBAAA=",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "233"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 13 Feb 2018 16:14:07 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "6ab0c033-547b-4ec4-9e68-6009c907db5a"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&&NetworkId=id&Target=Offer&Method=blockAffiliate&id=196&affiliate_id=1"
+      }
+    },
+    {
+      "recorded_at": "2018-02-13T16:40:52",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&&NetworkId=id&Target=Offer&Method=blockAffiliate&id=196&affiliate_id=21"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAAAAAAAAA42PW0vDQBCF/0qY5wi5PIh5U7RWJLXQeAER2SaTZs22s93ZpEjof3e2VHz1aeZ8c2aGM4HD/YDsoZigUm6D0sFT26KDGGbktiqAL6ad6BW6UdcoYK74ZGKhL1K0zAvIRC3QH8j1FfUY0OKu2uNr/3Y/4vLKtNvHG3tZlzZfjs+38+TP/9CIeSTD5FKhJfqOAlobqvvrttVGK48y0YHmSS6t+sWfJ5ilcIwlD1vaMYZA7JUfGIqLNIbOe7s66yxJYmiUV7Ild9A5kiTF+wR2WBtdl8isNiHnTGmDTeQp6r4bJ68iRwcuovDr47z5P/fxB0UEA+FrAQAA",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "258"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 13 Feb 2018 16:40:52 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "f1db027f-a5ae-46c8-9010-2d8ad0bb9f1d"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&&NetworkId=id&Target=Offer&Method=blockAffiliate&id=196&affiliate_id=21"
+      }
     }
   ],
   "recorded_with": "betamax/0.8.0"
