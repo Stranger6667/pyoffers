@@ -3,8 +3,8 @@
 Changelog
 =========
 
-0.5.1 (2018-01-13)
-------------------
+Unreleased
+----------
 
 - Support blockAffiliate method.
 - Recreate session in case of ConnectionReset errors.
