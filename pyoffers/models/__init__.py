@@ -1,11 +1,11 @@
 # coding: utf-8
-from .advertiser import Advertiser, AdvertiserManager
-from .conversion import Conversion, ConversionManager
-from .core import ModelManager
-from .country import Country, CountryManager
-from .goal import Goal, GoalManager
-from .offer import Offer, OfferManager
-from .raw_log import RawLogManager
+from .advertiser import Advertiser, AdvertiserManager  # noqa
+from .conversion import Conversion, ConversionManager  # noqa
+from .core import ModelManager  # noqa
+from .country import Country, CountryManager  # noqa
+from .goal import Goal, GoalManager  # noqa
+from .offer import Offer, OfferManager  # noqa
+from .raw_log import RawLogManager  # noqa
 
 
 MODEL_MANAGERS = (

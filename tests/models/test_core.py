@@ -3,8 +3,6 @@ from unittest.mock import patch
 
 import pytest
 
-from pyoffers.exceptions import HasOffersException
-
 
 def test_str(advertiser):
     assert str(advertiser) == 'Advertiser: 114'

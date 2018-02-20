@@ -1,11 +1,12 @@
 # coding: utf-8
+from unittest.mock import patch
+
 import pytest
 import requests
 
 from pyoffers.api import HasOffersAPI
 from pyoffers.exceptions import HasOffersException, MaxRetriesExceeded
 from pyoffers.models import Advertiser, Country
-from unittest.mock import patch
 
 
 def test_invalid_network_id(api):

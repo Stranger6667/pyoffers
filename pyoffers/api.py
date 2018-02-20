@@ -1,8 +1,8 @@
 # coding: utf-8
+import time
 from collections import OrderedDict
 
 import requests
-import time
 
 from .exceptions import HasOffersException, MaxRetriesExceeded
 from .logging import get_logger
