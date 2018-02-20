@@ -1,9 +1,11 @@
 # coding: utf-8
 import pytest
+import requests
 
 from pyoffers.api import HasOffersAPI
-from pyoffers.exceptions import HasOffersException
+from pyoffers.exceptions import HasOffersException, MaxRetriesExceeded
 from pyoffers.models import Advertiser, Country
+from unittest.mock import patch
 
 
 def test_invalid_network_id(api):
@@ -76,3 +78,12 @@ class TestGenericMethod:
 
 def test_raw(api):
     assert isinstance(api.advertisers._call('findAllIds', raw=True), list)
+
+
+def test_session_recreation(api):
+    session = api.session
+    with pytest.raises(MaxRetriesExceeded), \
+            patch('requests.sessions.Session.get', side_effect=requests.exceptions.ConnectionError) as get:
+        isinstance(api.advertisers._call('findAllIds', raw=True), list)
+        assert get.call_count == 3
+        assert api.session is not session

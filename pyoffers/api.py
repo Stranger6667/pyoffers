@@ -29,10 +29,14 @@ def retry(method):
             try:
                 return method(self, *args, **kwargs)
             except HasOffersException as exc:
-                if not 'API usage exceeded rate limit' in str(exc):
+                if 'API usage exceeded rate limit' not in str(exc):
                     raise exc
                 self.logger.debug('Retrying due: %s', exc)
-            time.sleep(self.retry_timeout)
+                time.sleep(self.retry_timeout)
+            except requests.exceptions.ConnectionError:
+                # This happens when the session gets expired
+                self.logger.debug('Recreating session due to ConnectionError')
+                self._session = requests.Session()
             attempt_number += 1
         raise MaxRetriesExceeded
 
@@ -53,6 +57,7 @@ class HasOffersAPI:
         self.retries = retries
         self.retry_timeout = retry_timeout
         self.logger = get_logger(verbosity)
+        self._session = None
         self.setup_managers()
 
     def setup_managers(self):
@@ -74,7 +79,7 @@ class HasOffersAPI:
 
     @property
     def session(self):
-        if not hasattr(self, '_session'):
+        if not self._session:
             self._session = requests.Session()
         return self._session
 
