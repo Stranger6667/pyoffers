@@ -6,6 +6,11 @@ Changelog
 `Unreleased`_
 -------------
 
+...
+
+`0.6.0`_ - 2018-02-20
+---------------------
+
 Added
 ~~~~~
 
@@ -200,7 +205,8 @@ Fixed
 
 - Initial release.
 
-.. _Unreleased: https://github.com/Stranger6667/pyoffers/compare/0.5.0...HEAD
+.. _Unreleased: https://github.com/Stranger6667/pyoffers/compare/0.6.0...HEAD
+.. _0.6.0: https://github.com/Stranger6667/pyoffers/compare/0.5.0...0.6.0
 .. _0.5.0: https://github.com/Stranger6667/pyoffers/compare/0.4.4...0.5.0
 .. _0.4.4: https://github.com/Stranger6667/pyoffers/compare/0.4.3...0.4.4
 .. _0.4.3: https://github.com/Stranger6667/pyoffers/compare/0.4.2...0.4.3
