@@ -3,115 +3,217 @@
 Changelog
 =========
 
-Unreleased
-----------
+`Unreleased`_
+-------------
 
-- Support blockAffiliate method.
-- Recreate session in case of ConnectionReset errors.
+Added
+~~~~~
 
+- Support blockAffiliate method. (`iamanikeev`_)
+- Recreate session in case of ConnectionReset errors. (`iamanikeev`_)
 
-0.5.0 (2016-09-20)
-------------------
+`0.5.0`_ 2016-09-20
+-------------------
 
-- Fixed credentials cleaning for non gzipped content. `#45`_
+Added
+~~~~~
 - Added ``fields`` parameter. `#34`_
 - Added retrying support on rate limit exceeding. `#43`_
-- Better exceptions representation. `#52`_
 - Added type checks for calls parameters. `#51`_
 - Added ``conversions`` manager for ``Offer`` instances. `#48`_
 
-0.4.4 (2016-09-09)
-------------------
+Changed
+~~~~~~~
+
+- Better exceptions representation. `#52`_
+
+Fixed
+~~~~~
+
+- Fixed credentials cleaning for non gzipped content. `#45`_
+
+`0.4.4`_ 2016-09-09
+-------------------
+
+Changed
+~~~~~~~
 
 - Improved logs filtration. `#42`_
 
-0.4.3 (2016-09-09)
-------------------
+`0.4.3`_ 2016-09-09
+-------------------
+
+Added
+~~~~~
 
 - Added caching for raw logs. `#41`_
 - Added ``RawLog`` model. `#40`_
 - Added ``as_dict`` method to models. `#39`_
+
+Changed
+~~~~~~~
 - Better interface for models. `#38`_
 
-0.4.2 (2016-09-01)
-------------------
+`0.4.2`_ 2016-09-01
+-------------------
+
+Added
+~~~~~
 
 - Added ``raw`` argument to ``HasOffersAPI._call``. `#36`_
 - Implemented ``findAllIds`` method. `#35`_
+
+Changed
+~~~~~~~
+
 - Made SSL certificate verification optional. `#33`_
 
-0.4.1 (2016-09-01)
-------------------
+`0.4.1`_ 2016-09-01
+-------------------
 
-- Fixed ``contain`` behaviour. `#32`_
+Changed
+~~~~~~~
+
 - Improved sorting. `#31`_
 
-0.4.0 (2016-08-31)
-------------------
 
-- Fixed managers sharing between API instances. `#26`_
-- Better interface for ``update`` method. `#28`_
-- Improved ``contain``. Added ``contain`` support to ``find_by_id`` method. `#27`_
+Fixed
+~~~~~
+
+- Fixed ``contain`` behaviour. `#32`_
+
+`0.4.0`_ 2016-08-31
+-------------------
+
+Added
+~~~~~
+
 - Implemented generic methods. `#10`_
 - Implemented ``OR`` queries. `#19`_
 - Implemented ``sort`` in queries. `#29`_
 
-0.3.2 (2016-08-30)
-------------------
+Changed
+~~~~~~~
+
+- Better interface for ``update`` method. `#28`_
+- Improved ``contain``. Added ``contain`` support to ``find_by_id`` method. `#27`_
+
+Fixed
+~~~~~
+
+- Fixed managers sharing between API instances. `#26`_
+
+`0.3.2`_ 2016-08-30
+-------------------
+
+Added
+~~~~~
 
 - Added ``Country`` model. `#24`_
 - Added ``get_target_countries`` method to ``Offer`` model. `#25`_
 
-0.3.1 (2016-08-30)
-------------------
+`0.3.1`_ 2016-08-30
+-------------------
+
+Added
+~~~~~
 
 - Added ``find_all`` methods for all defined models. `#23`_
 - Initial support for ``contain`` in ``find_all`` queries. `#22`_
+
+Changed
+~~~~~~~
+
 - Improved logging. `#20`_, `#21`_
 
-0.3.0 (2016-08-30)
-------------------
+`0.3.0`_ 2016-08-30
+-------------------
+
+Added
+~~~~~
+
+- Filters implementation. `#6`_
+
+Fixed
+~~~~~
 
 - Fixed invalid queries building. `#16`_
 - Fixed error on empty not paginated results. `#17`_
 - Fixed error on single result in ``find_all`` call. `#18`_
-- Filters implementation. `#6`_
 
-0.2.2 (2016-08-29)
-------------------
+`0.2.2`_ 2016-08-29
+-------------------
+
+Fixed
+~~~~~
 
 - Fixed error on not paginated results. `#14`_
 
-0.2.1 (2016-08-29)
-------------------
+`0.2.1`_ 2016-08-29
+-------------------
+
+Fixed
+~~~~~
 
 - Don't touch cassette if it contains no production credentials. `#12`_
 - Fixed exception if no results were found. `#13`_
 
-0.2.0 (2016-08-29)
-------------------
+`0.2.0`_ 2016-08-29
+-------------------
+
+Added
+~~~~~
 
 - Added support for returning multiple objects. `#7`_
-- Refactored models instantiation. `#9`_
 - Added ``Conversion`` model. `#3`_
 - Better models representation. `#8`_
+
+Changed
+~~~~~~~
+
+- Refactored models instantiation. `#9`_
+
+Fixed
+~~~~~
+
 - Fixed credentials leak. `#11`_
 
-0.1.2 (2016-08-29)
-------------------
+`0.1.2`_ 2016-08-29
+-------------------
+
+Fixed
+~~~~~
 
 - Fixed query building for lists and tuples. `#5`_
 
-0.1.1 (2016-08-28)
-------------------
+`0.1.1`_ 2016-08-28
+-------------------
+
+Fixed
+~~~~~
 
 - Fixed packaging issue.
 
-0.1.0 (2016-08-28)
-------------------
+`0.1.0`_ 2016-08-28
+-------------------
 
 - Initial release.
 
+.. _Unreleased: https://github.com/Stranger6667/pyoffers/compare/0.5.0...HEAD
+.. _0.5.0: https://github.com/Stranger6667/pyoffers/compare/0.4.4...0.5.0
+.. _0.4.4: https://github.com/Stranger6667/pyoffers/compare/0.4.3...0.4.4
+.. _0.4.3: https://github.com/Stranger6667/pyoffers/compare/0.4.2...0.4.3
+.. _0.4.2: https://github.com/Stranger6667/pyoffers/compare/0.4.1...0.4.2
+.. _0.4.1: https://github.com/Stranger6667/pyoffers/compare/0.4.0...0.4.1
+.. _0.4.0: https://github.com/Stranger6667/pyoffers/compare/0.3.2...0.4.0
+.. _0.3.2: https://github.com/Stranger6667/pyoffers/compare/0.3.1...0.3.2
+.. _0.3.1: https://github.com/Stranger6667/pyoffers/compare/0.3.0...0.3.1
+.. _0.3.0: https://github.com/Stranger6667/pyoffers/compare/0.2.2...0.3.0
+.. _0.2.2: https://github.com/Stranger6667/pyoffers/compare/0.2.1...0.2.2
+.. _0.2.1: https://github.com/Stranger6667/pyoffers/compare/0.2.0...0.2.1
+.. _0.2.0: https://github.com/Stranger6667/pyoffers/compare/0.1.2...0.2.0
+.. _0.1.2: https://github.com/Stranger6667/pyoffers/compare/0.1.1...0.1.2
+.. _0.1.1: https://github.com/Stranger6667/pyoffers/compare/0.1.0...0.1.1
 
 .. _#52: https://github.com/Stranger6667/pyoffers/issues/52
 .. _#51: https://github.com/Stranger6667/pyoffers/issues/51
@@ -154,3 +256,6 @@ Unreleased
 .. _#6: https://github.com/Stranger6667/pyoffers/issues/6
 .. _#5: https://github.com/Stranger6667/pyoffers/issues/5
 .. _#3: https://github.com/Stranger6667/pyoffers/issues/3
+
+.. _Stranger6667: https://github.com/Stranger6667
+.. _iamanikeev: https://github.com/iamanikeev
