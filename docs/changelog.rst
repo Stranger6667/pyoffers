@@ -12,7 +12,7 @@ Added
 - Support blockAffiliate method. (`iamanikeev`_)
 - Recreate session in case of ConnectionReset errors. (`iamanikeev`_)
 
-`0.5.0`_ 2016-09-20
+`0.5.0`_ - 2016-09-20
 -------------------
 
 Added
@@ -32,7 +32,7 @@ Fixed
 
 - Fixed credentials cleaning for non gzipped content. `#45`_
 
-`0.4.4`_ 2016-09-09
+`0.4.4`_ - 2016-09-09
 -------------------
 
 Changed
@@ -40,7 +40,7 @@ Changed
 
 - Improved logs filtration. `#42`_
 
-`0.4.3`_ 2016-09-09
+`0.4.3`_ - 2016-09-09
 -------------------
 
 Added
@@ -54,7 +54,7 @@ Changed
 ~~~~~~~
 - Better interface for models. `#38`_
 
-`0.4.2`_ 2016-09-01
+`0.4.2`_ - 2016-09-01
 -------------------
 
 Added
@@ -68,7 +68,7 @@ Changed
 
 - Made SSL certificate verification optional. `#33`_
 
-`0.4.1`_ 2016-09-01
+`0.4.1`_ - 2016-09-01
 -------------------
 
 Changed
@@ -82,7 +82,7 @@ Fixed
 
 - Fixed ``contain`` behaviour. `#32`_
 
-`0.4.0`_ 2016-08-31
+`0.4.0`_ - 2016-08-31
 -------------------
 
 Added
@@ -103,7 +103,7 @@ Fixed
 
 - Fixed managers sharing between API instances. `#26`_
 
-`0.3.2`_ 2016-08-30
+`0.3.2`_ - 2016-08-30
 -------------------
 
 Added
@@ -112,7 +112,7 @@ Added
 - Added ``Country`` model. `#24`_
 - Added ``get_target_countries`` method to ``Offer`` model. `#25`_
 
-`0.3.1`_ 2016-08-30
+`0.3.1`_ - 2016-08-30
 -------------------
 
 Added
@@ -126,7 +126,7 @@ Changed
 
 - Improved logging. `#20`_, `#21`_
 
-`0.3.0`_ 2016-08-30
+`0.3.0`_ - 2016-08-30
 -------------------
 
 Added
@@ -141,7 +141,7 @@ Fixed
 - Fixed error on empty not paginated results. `#17`_
 - Fixed error on single result in ``find_all`` call. `#18`_
 
-`0.2.2`_ 2016-08-29
+`0.2.2`_ - 2016-08-29
 -------------------
 
 Fixed
@@ -149,7 +149,7 @@ Fixed
 
 - Fixed error on not paginated results. `#14`_
 
-`0.2.1`_ 2016-08-29
+`0.2.1`_ - 2016-08-29
 -------------------
 
 Fixed
@@ -158,7 +158,7 @@ Fixed
 - Don't touch cassette if it contains no production credentials. `#12`_
 - Fixed exception if no results were found. `#13`_
 
-`0.2.0`_ 2016-08-29
+`0.2.0`_ - 2016-08-29
 -------------------
 
 Added
@@ -178,7 +178,7 @@ Fixed
 
 - Fixed credentials leak. `#11`_
 
-`0.1.2`_ 2016-08-29
+`0.1.2`_ - 2016-08-29
 -------------------
 
 Fixed
@@ -186,7 +186,7 @@ Fixed
 
 - Fixed query building for lists and tuples. `#5`_
 
-`0.1.1`_ 2016-08-28
+`0.1.1`_ - 2016-08-28
 -------------------
 
 Fixed
@@ -194,7 +194,7 @@ Fixed
 
 - Fixed packaging issue.
 
-`0.1.0`_ 2016-08-28
+`0.1.0`_ - 2016-08-28
 -------------------
 
 - Initial release.
