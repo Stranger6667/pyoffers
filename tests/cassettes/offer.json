@@ -22,11 +22,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Method=create&NetworkToken=token&Target=Offer&NetworkId=id&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com&data%5Bname%5D=Test&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Method=create&NetworkToken=token&Target=Offer&NetworkId=id&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com&data%5Bname%5D=Test&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIALpPwFcC/41W227bOBD9lULPSSo7XaPJByx2H9o+NNiX7YKgyZHFmiK5vFgxivz7zlCUTTsKNoYBizNnhnM5M/KvxsO/CUJsHn81T9zvAJ+ab10Hvrlpfrd+4CT4GazB83fwByUABX/wkEEBpX/hj0L9Y7PG0xeIvZV4EB54BJR8hThav3+yeyBQzL8n8Z+EVRIFkkdOYTgPBwUjS16jqo/RPf74+OPjOI538MwHp+FO2AENDB8olicK/6aBZ6c8jxgJk3QxhtPet7erNX4/rO8ff3vAL+Isxf3/zkPkMQXEODBSmV3z8nKDxQrOmgAU5gxY3WQ338tx3bbnVKZC4oOiLFcPG0pTBaf5kXF5AB9VIEDTouIsYAQ3SevrHCUE4ZWLudwTgPqnPDDunLcHrouzWRzBD4FxI5mwmAdZYpAY4rJi8vnuDryzliJ5D0YcZ/8SOp50ZI4fbSJ+tXctfRA68OclMeYWrbDzPUv9eT8DVGDOq8MEyd7zhSweHUmE46zTnOodFXiQVUBnGZYITDp5AC/AnDOae5MxC45zmm/YSOybiGyq7ZkJ2CbiB149aYrT5rXmbZvcqVpFg8tyzVjskd291SfjDuc3YTjzGcsW0rYiYM68FjGZpvrPJhfKLq+aigYihWgHDEurEKuoPXT1CT1ie2fqqMC3GpjQSuzZwIW3JZBK8kaegruCHayJvT6yRWVhQxHctbXBkm7u8qLBojLmRcu23o6BdmiZ/zzBUAV1GkiutR3ZgDOjnL5CTLYZMMI2qAhYT7O/1BRO1Qrs9cimFrAD94rKetJByEXpbcrhrT9VQjXgfljURzZjLmDFKfEHLNJA4cRiae7bVR3KwJXOTChCaeCaGJAxyoTok4hV+q8VeA2unjftiMk/sSInhOksTiPbYYBTdzLnJudFFwD3GA6z52KP2lzMAultiLSpq1h7HtjOch0YGCqtnNMqu490bNrulyHghPiji+d7nHoGHU7MlapT5O12s15tHh42m5beONMlZczHHllQldLYWFZFClDyYz6d+03iQu2dt8nV8pnBF4oLpiEf3ZHRQlYC3Xg+zLDpP0DexixFkTfyanPbfr5dbz6s1rSRP31GnFYdVnyA5XE5aV+P6xVgaTyRdvnFcO4AEkva0WjLZb0pSJ5MWVlbuFbFXnl6Ffh4LDTtsLtAfwvAe0tz8Pc/5fkLEp/vSmtfXv4DNC3/KWYJAAA=",
+          "base64_string": "H4sIAAWxhloC/41W227bOBD9lULPSSo7XaPJByx2H9o+NNiX7YKgyZHFmiK5vFgxivz7zlCUTTsKNoYBizNnhnM5M/KvxsO/CUJsHn81T9zvAJ+ab10Hvrlpfrd+4CT4GazB83fwByUABX/wkEEBpX/hj0L9Y7PG0xeIvZV4EB54BJR8hThav3+yeyBQzL8n8Z+EVRIFkkdOYTgPBwUjS16jqo/RPf74+OPjOI538MwHp+FO2AENDB8olicK/6aBZ6c8jxgJk3QxhtPet7erNX4/rO8ff3vAL+Isxf3/zkPkMQXEODBSmV3z8nKDxQrOmgAU5gxY3WQ338tx3bbnVKZC4oOiLFcPG0pTBaf5kXF5AB9VIEDTouIsYAQ3SevrHCUE4ZWLudwTgPqnPDDunLcHrouzWRzBD4FxI5mwmAdZYpAY4rJi8vnuDryzliJ5D0YcZ/8SOp50ZI4fbSJ+tXctfRA68OclMeYWrbDzPUv9eT8DVGDOq8MEyd7zhSweHUmE46zTnOodFXiQVUBnGZYITDp5AC/AnDOae5MxC45zmm/YSOybiGyq7ZkJ2CbiB149aYrT5rXmbZvcqVpFg8tyzVjskd291SfjDuc3YTjzGcsW0rYiYM68FjGZpvrPJhfKLq+aigYihWgHDEurEKuoPXT1CT1ie2fqqMC3GpjQSuzZwIW3JZBK8kaegruCHayJvT6yRWVhQxHctbXBkm7u8qLBojLmRcu23o6BdmiZ/zzBUAV1GkiutR3ZgDOjnL5CTLYZMMI2qAhYT7O/1BRO1Qrs9cimFrAD94rKetJByEXpbcrhrT9VQjXgfljURzZjLmDFKfEHLNJA4cRiae7bVR3KwJXOTChCaeCaGJAxyoTok4hV+q8VeA2unjftiMk/sSInhOksTiPbYYBTdzLnJudFFwD3GA6z52KP2lzMAultiLSpq1h7HtjOch0YGCqtnNMqu490bNrulyHghPiji+d7nHoGHU7MlapT5O12s15tHh42m5beONMlZczHHllQldLYWFZFClDyYz6d+03iQu2dt8nV8pnBF4oLpiEf3ZHRQlYC3Xg+zLDpP0DexixFkTfyanPbfr5dbz6s1rSRP31GnFYdVnyA5XE5aV+P6xVgaTyRdvnFcO4AEkva0WjLZb0pSJ5MWVlbuFbFXnl6Ffh4LDTtsLtAfwvAe0tz8Pc/5fkLEp/vSmtfXv4DNC3/KWYJAAA=",
           "encoding": null
         },
         "headers": {
@@ -62,7 +62,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?Method=create&NetworkToken=token&Target=Offer&NetworkId=id&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com&data%5Bname%5D=Test&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending"
+        "url": "https://api.hasoffers.com/Apiv3/json?Method=create&NetworkToken=token&Target=Offer&NetworkId=id&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com&data%5Bname%5D=Test&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending"
       }
     },
     {
@@ -87,11 +87,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Method=findById&NetworkToken=token&Target=Offer&NetworkId=id&id=196"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Method=findById&NetworkToken=token&Target=Offer&NetworkId=id&id=196"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIALpPwFcC/4VWTW/jNhD9KwudnaysbI2Njz0U3cO2hw166RYETY0srimS5YcVYZH/3hmKsulEQQMDluY9DufjzTg/Kwf/RvCh2v+snrg7Aj5Vf3YduGpT/WbcwMnwwxuN79/AnaUANPzOfSJ5tP6FXxLxfdXg21cIvWnxpZO6/XX60qLtDwijcacncwKihfR9MX8htiSepKft46562WBc3hrtgQLzgYfoq/12U/Uh2G/5tanrTdXywIkzx4wPFyeISW8Vnxhvz+CC9ESoagSuBkZ0HZXaVJoPlNoTVQPPghdO2pAymwlUKumAcWudOXOVnS3mAG7wjOuWCaNbSScxSAxxHZh9WgdnCSOLjtxRdvvvH79/HMfxHp75YBXcCzPgLYby+3+aiM6BFtPiv4WORxWY5ZOJ1Mr6vqY/pA78ec2MuQUjzHIPWpbyVxYwfH1EEzxb6ThlwrABVLamfqjvtg1+PjQP+18e8UMd9cw6eZ4pyXu6kIXJkkVYzjrFqd5BgoO2COhqwxKBjhcP4AToa0ZLbxJnxXFK850zLfZNBDbX9qoEbBPpA6+ekey0eou8fyZ1qoRoRliqGQs9qrs36nK4A6wwhrO8Y9l8PBQCTJmXJtbGuf7LkRuwS1NdyEBEH8yAYSnpQxG1g658Q4/Y3kU60vODAiaUFCc2cOFMDqSwvJOn4DZzB6NDrya2CmY1ZMN9XR5Yw5Yurx5YBUPaaezgzOhpXeX5TxMMRVCXgeRKmZENODPSqleM+WwijHDwMgDWU59ukaypEsBej2xuATtzJ6msFwx8KkpvYgqv+VQY5YD7YRUPbOHc0LJT0g8YlIHEicXSPNTbMpSBS5WUkI2thtfCgMSR2gcXRSjSfwvgNbh63j1HSv6BFbkwdGdwGtkRA5y7kzQ3O8+YB9xjOMyOixOiqZiZ0hsfaFMXsfbcs6PhyjPQVNp2SSvvPsLYvN1vQ8AJcZMN13usfAblL8ptZSfJ292u2e4eH3e7mn5x5kvymI89qqAopTYhr4roIefHXLz2m8xZ2kdnoi3ti4JvgBuloR7txGghS4FuHB8WmnC4QyBtYxaDSBt5u7urP981uw/bhjbyp8/IU7LDig+wPi4X9O24viKsjSfKLv0wXDuAwmrNqJXhbbkpyB51XlkHeA2FXjr6KXBhyjLtsLvwgv8WgHOG5uDvf/LzVxQ+P+bWvrz8B4f2AfLRCAAA",
+          "base64_string": "H4sIAAWxhloC/4VWTW/jNhD9KwudnaysbI2Njz0U3cO2hw166RYETY0srimS5YcVYZH/3hmKsulEQQMDluY9DufjzTg/Kwf/RvCh2v+snrg7Aj5Vf3YduGpT/WbcwMnwwxuN79/AnaUANPzOfSJ5tP6FXxLxfdXg21cIvWnxpZO6/XX60qLtDwijcacncwKihfR9MX8htiSepKft46562WBc3hrtgQLzgYfoq/12U/Uh2G/5tanrTdXywIkzx4wPFyeISW8Vnxhvz+CC9ESoagSuBkZ0HZXaVJoPlNoTVQPPghdO2pAymwlUKumAcWudOXOVnS3mAG7wjOuWCaNbSScxSAxxHZh9WgdnCSOLjtxRdvvvH79/HMfxHp75YBXcCzPgLYby+3+aiM6BFtPiv4WORxWY5ZOJ1Mr6vqY/pA78ec2MuQUjzHIPWpbyVxYwfH1EEzxb6ThlwrABVLamfqjvtg1+PjQP+18e8UMd9cw6eZ4pyXu6kIXJkkVYzjrFqd5BgoO2COhqwxKBjhcP4AToa0ZLbxJnxXFK850zLfZNBDbX9qoEbBPpA6+ekey0eou8fyZ1qoRoRliqGQs9qrs36nK4A6wwhrO8Y9l8PBQCTJmXJtbGuf7LkRuwS1NdyEBEH8yAYSnpQxG1g658Q4/Y3kU60vODAiaUFCc2cOFMDqSwvJOn4DZzB6NDrya2CmY1ZMN9XR5Yw5Yurx5YBUPaaezgzOhpXeX5TxMMRVCXgeRKmZENODPSqleM+WwijHDwMgDWU59ukaypEsBej2xuATtzJ6msFwx8KkpvYgqv+VQY5YD7YRUPbOHc0LJT0g8YlIHEicXSPNTbMpSBS5WUkI2thtfCgMSR2gcXRSjSfwvgNbh63j1HSv6BFbkwdGdwGtkRA5y7kzQ3O8+YB9xjOMyOixOiqZiZ0hsfaFMXsfbcs6PhyjPQVNp2SSvvPsLYvN1vQ8AJcZMN13usfAblL8ptZSfJ292u2e4eH3e7mn5x5kvymI89qqAopTYhr4roIefHXLz2m8xZ2kdnoi3ti4JvgBuloR7txGghS4FuHB8WmnC4QyBtYxaDSBt5u7urP981uw/bhjbyp8/IU7LDig+wPi4X9O24viKsjSfKLv0wXDuAwmrNqJXhbbkpyB51XlkHeA2FXjr6KXBhyjLtsLvwgv8WgHOG5uDvf/LzVxQ+P+bWvrz8B4f2AfLRCAAA",
           "encoding": null
         },
         "headers": {
@@ -127,7 +127,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?Method=findById&NetworkToken=token&Target=Offer&NetworkId=id&id=196"
+        "url": "https://api.hasoffers.com/Apiv3/json?Method=findById&NetworkToken=token&Target=Offer&NetworkId=id&id=196"
       }
     },
     {
@@ -152,11 +152,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Method=findById&NetworkToken=token&Target=Offer&NetworkId=id&id=1000"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Method=findById&NetworkToken=token&Target=Offer&NetworkId=id&id=1000"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIALpPwFcC/z2OsQ6CQBBE/2XrKw7KKy2MFGgBsTEWF1ngBDm8XTSG8O/uIbGamTdTzAwBnxMSg5mhtKFBcXCqawygYO/Dw0ZwJz9ILjC83A0FHCytIxJ6FnHSG0gl5citryTUbqh2n6wSdkR++9CVvsM441X/OItrF3cuukRrDYuSYzT6gTA+I7Y8EZhEQcs8FltMtVZQWbZghqnvFWAIXj6Zy3XzORLZBn/9snwBWhVzYu8AAAA=",
+          "base64_string": "H4sIAAWxhloC/z2OsQ6CQBBE/2XrKw7KKy2MFGgBsTEWF1ngBDm8XTSG8O/uIbGamTdTzAwBnxMSg5mhtKFBcXCqawygYO/Dw0ZwJz9ILjC83A0FHCytIxJ6FnHSG0gl5citryTUbqh2n6wSdkR++9CVvsM441X/OItrF3cuukRrDYuSYzT6gTA+I7Y8EZhEQcs8FltMtVZQWbZghqnvFWAIXj6Zy3XzORLZBn/9snwBWhVzYu8AAAA=",
           "encoding": null
         },
         "headers": {
@@ -192,7 +192,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?Method=findById&NetworkToken=token&Target=Offer&NetworkId=id&id=1000"
+        "url": "https://api.hasoffers.com/Apiv3/json?Method=findById&NetworkToken=token&Target=Offer&NetworkId=id&id=1000"
       }
     },
     {
@@ -217,11 +217,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?NetworkId=id&Method=update&id=196&NetworkToken=token&data%5Boffer_url%5D=test.com&Target=Offer"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkId=id&Method=update&id=196&NetworkToken=token&data%5Boffer_url%5D=test.com&Target=Offer"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIALpPwFcC/41X247bOAz9lSLPnamT6Qad+YDF7kN3HzrYl+1CUGQ6ViNbqi7xBEX+famLYyWxMgEGGIuUKIo8PGR+LTT8dGDs4uXX4pXqLeDX4u+mAb34uPhd6o56wQ8je1x/A73nDFDwBzVhk0HpP/iPo/5lscLVV7CtrHHhVE0toOQvsIPUuz+9kNco4P5r+bzGT9xC/dVM9vtohjCqUF2h0gZ/yEbLwfirolTwBizvgFyfeaz8hpobJeiB0BrVluPRdFLRg3T2fHNPO/+eVx8CXEnrV/ilYQ+9g/PNVAg5kJprYJYI3u9Gn5wBkrzVTsCVq7PWTto5v+JVA2wMt3B2l9LSSiYFLltrFUoMmBAF3imdPlvpQsBWn328DTFuY5jmysZEVdkL7UH5NzNFSSOoj0INDXXCJr+ST1VwS/qkE6f97RZj9shkF2z9dBgVQhV6t6ciXQFvimvq7yQBC+hP9VQ9LFf492H19PLbM/75fT3dCCDR+NDiiwU3Novt6OtWS6fGQEBHuSC8N1Y75i85KfpGagbEAHPolNWU7Xi/DVHMjKawn9k0LUadOWNlR/ZUc+/XmS7cmXkXQWihTt6naKKmkzVvOHisP6xXy/Xz83pdjQAN72WCsx1aZFqOiOeg0VR6bhJ2sretOJD5GoknplSh7Aw1eEwdiLGYBobbNO3MCQAxaRZ0Zwjta39DzfNIjlfP4tfbdH6nAjzWb0+o7RA8XIm8QkeDHoogSaM5nkHDT9Vy0gS4hIDlWdzi/lhb/o6UijmYj87OlZPByhwPnVVKMthSQ7aSCnQiYLGevFKa7yN4Q0To21xdoLk9hyFVhq/Ll++fvn8ahuER3miHwUiVMr4KeqYPyk7gVPwNxBgmpgGvDEVDnGWhcJbrh+rLw2r9YbnyhfP5y8RolyV8PJHuq9yBf6MN/48+6UZhOsCT7pjA5cfg8be0XFXVRMyxFeBHTtolgp0ExG/vnRCXDFtDxkNxQ4E8bsMTXZxXRJt35yMntNO2jNmQQTTm6jAavsGNRWhc8fV14dzLlFd4LCBgnhhm6UUB4rGfXjQmpdQdwjMLZ1JrjEGdIFAmyUtN+UxIUa4KtRxiRmyLsG6lOB1usHxcoJK4nu+AuYjULsZ/PHKmbMKUlMEgtgh0y7eCzGsNTb6ikbMSdIq0n0kK75wI/2Y3mKO+W7Q4y+s3SX9+Joule0H48RHvtoTypFMct2526bnW8N6E9F57KLet2aGg7uESGOVh5UqB1yD1FM95JP/AiJx23OiTd0xCrTTWU3Tma6kZjtzndSTS+rkLt5vaNBDl89A70980kRdm7NIkVxwb75yO7m3Bd874pR8rN38EXM1EHli1HHohaZ0zhZe7PlHWBi5VtuXatwJtDwmmDWYXjjgPgNbS18G//6Xvrwh8uk2pPR7/B2SwSGIhDgAA",
+          "base64_string": "H4sIAAWxhloC/41X247bOAz9lSLPnamT6Qad+YDF7kN3HzrYl+1CUGQ6ViNbqi7xBEX+famLYyWxMgEGGIuUKIo8PGR+LTT8dGDs4uXX4pXqLeDX4u+mAb34uPhd6o56wQ8je1x/A73nDFDwBzVhk0HpP/iPo/5lscLVV7CtrHHhVE0toOQvsIPUuz+9kNco4P5r+bzGT9xC/dVM9vtohjCqUF2h0gZ/yEbLwfirolTwBizvgFyfeaz8hpobJeiB0BrVluPRdFLRg3T2fHNPO/+eVx8CXEnrV/ilYQ+9g/PNVAg5kJprYJYI3u9Gn5wBkrzVTsCVq7PWTto5v+JVA2wMt3B2l9LSSiYFLltrFUoMmBAF3imdPlvpQsBWn328DTFuY5jmysZEVdkL7UH5NzNFSSOoj0INDXXCJr+ST1VwS/qkE6f97RZj9shkF2z9dBgVQhV6t6ciXQFvimvq7yQBC+hP9VQ9LFf492H19PLbM/75fT3dCCDR+NDiiwU3Novt6OtWS6fGQEBHuSC8N1Y75i85KfpGagbEAHPolNWU7Xi/DVHMjKawn9k0LUadOWNlR/ZUc+/XmS7cmXkXQWihTt6naKKmkzVvOHisP6xXy/Xz83pdjQAN72WCsx1aZFqOiOeg0VR6bhJ2sretOJD5GoknplSh7Aw1eEwdiLGYBobbNO3MCQAxaRZ0Zwjta39DzfNIjlfP4tfbdH6nAjzWb0+o7RA8XIm8QkeDHoogSaM5nkHDT9Vy0gS4hIDlWdzi/lhb/o6UijmYj87OlZPByhwPnVVKMthSQ7aSCnQiYLGevFKa7yN4Q0To21xdoLk9hyFVhq/Ll++fvn8ahuER3miHwUiVMr4KeqYPyk7gVPwNxBgmpgGvDEVDnGWhcJbrh+rLw2r9YbnyhfP5y8RolyV8PJHuq9yBf6MN/48+6UZhOsCT7pjA5cfg8be0XFXVRMyxFeBHTtolgp0ExG/vnRCXDFtDxkNxQ4E8bsMTXZxXRJt35yMntNO2jNmQQTTm6jAavsGNRWhc8fV14dzLlFd4LCBgnhhm6UUB4rGfXjQmpdQdwjMLZ1JrjEGdIFAmyUtN+UxIUa4KtRxiRmyLsG6lOB1usHxcoJK4nu+AuYjULsZ/PHKmbMKUlMEgtgh0y7eCzGsNTb6ikbMSdIq0n0kK75wI/2Y3mKO+W7Q4y+s3SX9+Joule0H48RHvtoTypFMct2526bnW8N6E9F57KLet2aGg7uESGOVh5UqB1yD1FM95JP/AiJx23OiTd0xCrTTWU3Tma6kZjtzndSTS+rkLt5vaNBDl89A70980kRdm7NIkVxwb75yO7m3Bd874pR8rN38EXM1EHli1HHohaZ0zhZe7PlHWBi5VtuXatwJtDwmmDWYXjjgPgNbS18G//6Xvrwh8uk2pPR7/B2SwSGIhDgAA",
           "encoding": null
         },
         "headers": {
@@ -257,7 +257,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?NetworkId=id&Method=update&id=196&NetworkToken=token&data%5Boffer_url%5D=test.com&Target=Offer"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkId=id&Method=update&id=196&NetworkToken=token&data%5Boffer_url%5D=test.com&Target=Offer"
       }
     },
     {
@@ -282,11 +282,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Method=addTargetCountry&NetworkId=id&id=196&NetworkToken=token&Target=Offer&country_code=ES"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Method=addTargetCountry&NetworkId=id&id=196&NetworkToken=token&Target=Offer&country_code=ES"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIALpPwFcC/0VOTQ8BQQz9Lz3Pwe5BYq5COOCw4iIik51ifWxpO0Rk/7sOEqe+j/b1vYDxllAU/AuWgfdoCBa7HTI4GBNfQhaOQq3xCvne1GjCJMhnSUxd2WjM91Aam6EeKBoJMX4Dh5Ra5ad5c9QH8Wma7Saa0GRUDPp/b0knzFH6mQ7q7/G2ppj/jironHWWK7WCubRo0CTgCwcH1Wv1o2Wv5yAGDeCVEzpAZrK6fr354RmKhL1ltOl87ro3awX+0AoBAAA=",
+          "base64_string": "H4sIAAWxhloC/0VOTQ8BQQz9Lz3Pwe5BYq5COOCw4iIik51ifWxpO0Rk/7sOEqe+j/b1vYDxllAU/AuWgfdoCBa7HTI4GBNfQhaOQq3xCvne1GjCJMhnSUxd2WjM91Aam6EeKBoJMX4Dh5Ra5ad5c9QH8Wma7Saa0GRUDPp/b0knzFH6mQ7q7/G2ppj/jironHWWK7WCubRo0CTgCwcH1Wv1o2Wv5yAGDeCVEzpAZrK6fr354RmKhL1ltOl87ro3awX+0AoBAAA=",
           "encoding": null
         },
         "headers": {
@@ -322,7 +322,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?Method=addTargetCountry&NetworkId=id&id=196&NetworkToken=token&Target=Offer&country_code=ES"
+        "url": "https://api.hasoffers.com/Apiv3/json?Method=addTargetCountry&NetworkId=id&id=196&NetworkToken=token&Target=Offer&country_code=ES"
       }
     },
     {
@@ -347,11 +347,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Method=addCategory&NetworkId=id&id=196&NetworkToken=token&Target=Offer&category_id=1"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Method=addCategory&NetworkId=id&id=196&NetworkToken=token&Target=Offer&category_id=1"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIALpPwFcC/0WOMQvCQAyF/0vmG7SD4K2C6KAOLS4iErxYq7WnSaqI9L+bqwWnvPe9JLwPMD1aEgX/gQK5JFOwOZ2IwcE88g0TuEhszOfEz+pIBhYo/ZIY3dqoLPeQmVuRnmMwgyHMUKmM/Da8Jn1Fvi5TUgUDVVLj6eSfFfFK6Yv208FxuD78VqFzVlbusRFKbUVRWwE/dnBWveeDzUYjBwEVwSu35ICYo/X0u/2gVySCpf1o2rruui9vfWTXAwEAAA==",
+          "base64_string": "H4sIAAWxhloC/0WOMQvCQAyF/0vmG7SD4K2C6KAOLS4iErxYq7WnSaqI9L+bqwWnvPe9JLwPMD1aEgX/gQK5JFOwOZ2IwcE88g0TuEhszOfEz+pIBhYo/ZIY3dqoLPeQmVuRnmMwgyHMUKmM/Da8Jn1Fvi5TUgUDVVLj6eSfFfFK6Yv208FxuD78VqFzVlbusRFKbUVRWwE/dnBWveeDzUYjBwEVwSu35ICYo/X0u/2gVySCpf1o2rruui9vfWTXAwEAAA==",
           "encoding": null
         },
         "headers": {
@@ -387,7 +387,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?Method=addCategory&NetworkId=id&id=196&NetworkToken=token&Target=Offer&category_id=1"
+        "url": "https://api.hasoffers.com/Apiv3/json?Method=addCategory&NetworkId=id&id=196&NetworkToken=token&Target=Offer&category_id=1"
       }
     },
     {
@@ -412,11 +412,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Method=addCategory&NetworkId=id&id=196&NetworkToken=token&Target=Offer&category_id=-1"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Method=addCategory&NetworkId=id&id=196&NetworkToken=token&Target=Offer&category_id=-1"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIALpPwFcC/31Pz0vDUAz+V0rOb7DuINjrQPQwBTe8jCGxL+ue06Ym6cYo/d/NKwVvnpLvV/gygNBPT2pQDbBDacg3eDkeSSDAA8s3ZuJTuXW8Jbmkmpx4RJ1M6uybj+R6BStHG7ITRwcY4xqNGpab089kV5bzU1ZSdCLlrby/+9N2fKZ8xaYZoJ7T75N1UcIYvK123CrlumpovUK1KAOczLrtjFfLZYCIhp7yMyTC3rPaD9D1H1+p3pAqNvmLV74WKRZJi5YatHQhGA9z4n/X+AsvcamwOQEAAA==",
+          "base64_string": "H4sIAAWxhloC/31Pz0vDUAz+V0rOb7DuINjrQPQwBTe8jCGxL+ue06Ym6cYo/d/NKwVvnpLvV/gygNBPT2pQDbBDacg3eDkeSSDAA8s3ZuJTuXW8Jbmkmpx4RJ1M6uybj+R6BStHG7ITRwcY4xqNGpab089kV5bzU1ZSdCLlrby/+9N2fKZ8xaYZoJ7T75N1UcIYvK123CrlumpovUK1KAOczLrtjFfLZYCIhp7yMyTC3rPaD9D1H1+p3pAqNvmLV74WKRZJi5YatHQhGA9z4n/X+AsvcamwOQEAAA==",
           "encoding": null
         },
         "headers": {
@@ -452,7 +452,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?Method=addCategory&NetworkId=id&id=196&NetworkToken=token&Target=Offer&category_id=-1"
+        "url": "https://api.hasoffers.com/Apiv3/json?Method=addCategory&NetworkId=id&id=196&NetworkToken=token&Target=Offer&category_id=-1"
       }
     },
     {
@@ -477,11 +477,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Method=findAll&limit=2&NetworkId=id&NetworkToken=token&Target=Offer"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Method=findAll&limit=2&NetworkId=id&NetworkToken=token&Target=Offer"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAKt8xVcC/+1YbW/jNgz+Kwd/2Ke0ld00awMUw3DAsGHoNuAO+7B1EFSZTtTIlqeXuLki/32kLCdOm97dMOC2Gy4IGpsPRVHkQ4roY2bhzwDOZ/PH7K2wC8Cn7OeqAptNsu+MrQUJ7p1p8P0N2LWSgILvhYtKDqW/4o9CfJ4V+HYDfmlKfKlUU36rNYq0qpVP8E/gO2NXP5CGKveCt2YFZMLH3+0E/XKtaRyQY84LH1w2zyfZ0vv2TXotGJtkpfCCdFqxgKghg7XQ4H4IShPoKWfTSVR43b9fFPt1Of3pD4wPivzK0a1SuVaLDRflGqxXjuCMIbAXcFJugtaTrBE1ReUXsBVIf2Ma2JANcNKq1vfBySYx1soCF21rzVroZHIQe7C146IpuTRNqWidi8c4DvRbtxbWCjoeLJmj8Mxvz27Puq47bXt3anLnVL7DnQyd8+NU+zDKDWq+/u3HeJpKBO15KzYmUDqvGDtl9EGwFg97IGcjBE/qjTTDjigZsokWNXggEsBDq6ygc3HMC4WyYEV+woqT/PJVUcwvrvCLesrx1qp1rxKtxz2537Qkka3glUbGYsgUWCj3PrG9DAMGTdhZACuRLuNjnbI+K1HtiO142KfLcrZbV2Iyped9sPckwdwRddCDHkmGs+fIy2ti6sYQVR6PoeN+iTWzNHq3uAIMNLozvGP0XLgbc5L8HYt4Gfo0DEsOwCr2isiJ5EJw3tTollbOj7y2UMW3yHm01ywGBMtK3GngUiu54rWQ1iQ3RpIXTilFm3SRpn6pN/womCiRBH1OhgXHsCHPRxccBX3sk/zOms5RC0yNIRY1jJza1ajQ2nS8xupRrX6i0a+NCh3cOeUBo9msDpHEqDGAme54nwC+FlZRWHcYuBiUpQnRvWI6EqoaW8ZR3PNB50AtGSX2gEESKGhKDM05y8eu1ELpyIMkLBt4SguIOqpx3gbpR8d/DuA2pn55HfH4HiOy02gqg/XIF+hgn53Iud54whxgS8NytkKuEI3BTCpL4zy18JGvS+H4wgjtODQU2nI4VuqChPHU9kebYHXYTev3u7TqAbTb8bZUlSJb+XQ2ZVdsdj6ltbEk+gLvlsiAURgb49MWwUE6G7dhn2sSJ1ovrAntWD6w9wA4YBlysd1w6shKohkr6kFNWuweENsxD16SFD8n8fuKsXn8xsu9wmjXcLxUdujzUn2icKw0kXLxZthHH0lVmq7RRpTjLkHy0KRmdQdPIb9Ulu4C6zeJohVmFrY4Zpw/v/7P/8b1n01pqBmu/9vA8ll1Tz+sXImv/wszQLiX6MmHrv+d1u3ZN8HX3GFnkHC9NtoZ+xVJarzWQn0tqkpphaSIQinqVqhFMygi7RsnYo1ieK4fD9+3HzdWXLw0VlxeHB0rMBfrOK7uBgvacQ3vnSvY+aeeKy4/7VxxHPs/ThZDwX4ZLD67wYL9s7HiheHhQ1NFlr1/phhf6J/TRDGbXV7MiuLLRPEvThQ0U4C1huj/+x/p+Qb5Hv89QQa2278AMCbRSnURAAA=",
+          "base64_string": "H4sIAAWxhloC/+1YbW/jNgz+Kwd/2Ke0ld00awMUw3DAsGHoNuAO+7B1EFSZTtTIlqeXuLki/32kLCdOm97dMOC2Gy4IGpsPRVHkQ4roY2bhzwDOZ/PH7K2wC8Cn7OeqAptNsu+MrQUJ7p1p8P0N2LWSgILvhYtKDqW/4o9CfJ4V+HYDfmlKfKlUU36rNYq0qpVP8E/gO2NXP5CGKveCt2YFZMLH3+0E/XKtaRyQY84LH1w2zyfZ0vv2TXotGJtkpfCCdFqxgKghg7XQ4H4IShPoKWfTSVR43b9fFPt1Of3pD4wPivzK0a1SuVaLDRflGqxXjuCMIbAXcFJugtaTrBE1ReUXsBVIf2Ma2JANcNKq1vfBySYx1soCF21rzVroZHIQe7C146IpuTRNqWidi8c4DvRbtxbWCjoeLJmj8Mxvz27Puq47bXt3anLnVL7DnQyd8+NU+zDKDWq+/u3HeJpKBO15KzYmUDqvGDtl9EGwFg97IGcjBE/qjTTDjigZsokWNXggEsBDq6ygc3HMC4WyYEV+woqT/PJVUcwvrvCLesrx1qp1rxKtxz2537Qkka3glUbGYsgUWCj3PrG9DAMGTdhZACuRLuNjnbI+K1HtiO142KfLcrZbV2Iyped9sPckwdwRddCDHkmGs+fIy2ti6sYQVR6PoeN+iTWzNHq3uAIMNLozvGP0XLgbc5L8HYt4Gfo0DEsOwCr2isiJ5EJw3tTollbOj7y2UMW3yHm01ywGBMtK3GngUiu54rWQ1iQ3RpIXTilFm3SRpn6pN/womCiRBH1OhgXHsCHPRxccBX3sk/zOms5RC0yNIRY1jJza1ajQ2nS8xupRrX6i0a+NCh3cOeUBo9msDpHEqDGAme54nwC+FlZRWHcYuBiUpQnRvWI6EqoaW8ZR3PNB50AtGSX2gEESKGhKDM05y8eu1ELpyIMkLBt4SguIOqpx3gbpR8d/DuA2pn55HfH4HiOy02gqg/XIF+hgn53Iud54whxgS8NytkKuEI3BTCpL4zy18JGvS+H4wgjtODQU2nI4VuqChPHU9kebYHXYTev3u7TqAbTb8bZUlSJb+XQ2ZVdsdj6ltbEk+gLvlsiAURgb49MWwUE6G7dhn2sSJ1ovrAntWD6w9wA4YBlysd1w6shKohkr6kFNWuweENsxD16SFD8n8fuKsXn8xsu9wmjXcLxUdujzUn2icKw0kXLxZthHH0lVmq7RRpTjLkHy0KRmdQdPIb9Ulu4C6zeJohVmFrY4Zpw/v/7P/8b1n01pqBmu/9vA8ll1Tz+sXImv/wszQLiX6MmHrv+d1u3ZN8HX3GFnkHC9NtoZ+xVJarzWQn0tqkpphaSIQinqVqhFMygi7RsnYo1ieK4fD9+3HzdWXLw0VlxeHB0rMBfrOK7uBgvacQ3vnSvY+aeeKy4/7VxxHPs/ThZDwX4ZLD67wYL9s7HiheHhQ1NFlr1/phhf6J/TRDGbXV7MiuLLRPEvThQ0U4C1huj/+x/p+Qb5Hv89QQa2278AMCbRSnURAAA=",
           "encoding": null
         },
         "headers": {
@@ -520,7 +520,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?Method=findAll&limit=2&NetworkId=id&NetworkToken=token&Target=Offer"
+        "url": "https://api.hasoffers.com/Apiv3/json?Method=findAll&limit=2&NetworkId=id&NetworkToken=token&Target=Offer"
       }
     },
     {
@@ -545,11 +545,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Target=Offer&id=46&Method=getTargetCountries&NetworkId=id&NetworkToken=token"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Target=Offer&id=46&Method=getTargetCountries&NetworkId=id&NetworkToken=token"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAIiLxVcC/z1PsU7DQAz9FeT5hhAQQ9ZKCIbC0IqBqsORuMm16V2wfSCI7t+x04rJ7717fn43A+FnRhZoZth66lERvB4OSODgMdHZm3DkFJVvkL5Ciyo8eV5MrOqbjqDvDdTKQqfg/kHRGmVIxjT0Er1KOQoFtK0XlO9Ep2cz6M6/sE0ntCxZZnFakKcUGa0hi5fM0Nw6GESmzZXWVeWg8+Kh2c1wufJj/qVMXd1pfJs6K756Vxz92XD7i+1wQzjljzG0YKd6/YgG7val7B0gUaKFXvEamX2vuzGPYyl/BTFb0j4BAAA=",
+          "base64_string": "H4sIAAWxhloC/z1PsU7DQAz9FeT5hhAQQ9ZKCIbC0IqBqsORuMm16V2wfSCI7t+x04rJ7717fn43A+FnRhZoZth66lERvB4OSODgMdHZm3DkFJVvkL5Ciyo8eV5MrOqbjqDvDdTKQqfg/kHRGmVIxjT0Er1KOQoFtK0XlO9Ep2cz6M6/sE0ntCxZZnFakKcUGa0hi5fM0Nw6GESmzZXWVeWg8+Kh2c1wufJj/qVMXd1pfJs6K756Vxz92XD7i+1wQzjljzG0YKd6/YgG7val7B0gUaKFXvEamX2vuzGPYyl/BTFb0j4BAAA=",
           "encoding": null
         },
         "headers": {
@@ -588,7 +588,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?Target=Offer&id=46&Method=getTargetCountries&NetworkId=id&NetworkToken=token"
+        "url": "https://api.hasoffers.com/Apiv3/json?Target=Offer&id=46&Method=getTargetCountries&NetworkId=id&NetworkToken=token"
       }
     },
     {
@@ -613,11 +613,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Target=Offer&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bname%5D=Test&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&Method=create&NetworkId=id&NetworkToken=token"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Target=Offer&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bname%5D=Test&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&Method=create&NetworkId=id&NetworkToken=token"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAIiLxVcC/41W227bOBD9lULPTirbW6PxBxTtQ7sPDfZlWxA0NbJYUySXFytGkX/fGYqyaUdBExiwNedwOJczo/yuHPwXwYdq+7t65G4P+Kv6u23BVYvqk3E9J8MvbzQ+fwd3lALQ8Jn7RPJo/Qe/JOLbaoVPDQ+cnBmCWXQK7V0Idvvj/Y/3wzDcwxPvrYJ7YXqkWwdHCcOfiT7wED1yLOhG6j2aNO8plkcKf1HBk5WOB4yEYQwErOp1fbdc4efdar398ICf6nlRfYXQmQZx4YCIi+obhMG4wxcyyuZieDQHoLxC+sajDrw12gMlOAW0XKSwv+fHVV1fijAWEn9Icr1apgJJbxU/Md4cwQXpiVDVCFwMjOg6KnWbYwNeOGlDKvdIoP5JB4xb68yRq+xsMgdwvWdcN0wYrBudxCAxxHlg9PnmpryxySI6B1qcJv8NtDyqwCw/mUj6qu9r+kNqz5/mzJhbMMJM98zr4W0KWFTSM+vkcaQk7+lCFk6WLMJy1ipO9Q4SHDRFQBcblgh0PHsAJ0BfMpp6kzgzjlOar5xpsG8isLG2FyVgm0gfePWIZKfVS+T1M6lTJUSDy1LNWOhQ3Z1R58MtTkfEcKZnLJuPu0KAKfPSxJo41n86cgW2adUUMhDRB9NjWEr6UETtoC2f0CO2d5KO9HyngAklxYH1XDiTAyksr+QpuM3c3ujQqRObBbMasuG+Lg/MYVOXZw/MgiEtWrZzZvC0Q/P8pwmGIqjzQHKlzMB6nBlp1Q1jPJsIA+y8DID11IdrJGuqBLDXAxtbwI7cSSrrGQOfitKZmMJb/VUYZY/7YRYPbOJc0bJT0g8YlIHEicXSrOtlGUrPpUpKyMZGw60wIHGk9sFFEYr0XwJ4Da6eV8+Rkn9hRc4M3RqcRrbHAMfuJM2NzjPmAfcYDrPj4oBoKmamdMYH2tRFrB33bG+48gw0lbaZ0sq7jzA2bvfrEHBC3MmGyz1WPoHyZ+U2spXk7W6zWm4eHjabmt444yV5zIcOVVCUUpuQV0X0kPNjLl76TeYs7b0z0Zb2ScFXwJXSUI/2xGghS4FuHO8n2viGTduYxSDSRl5u7uqPd+v63XK9XX/Y1iQdJVuseA/z43JGX47rDWFuPFF26cVw6QAKqzGDVoY35aYge9R5Ze3gFgqddPQqcOGUZdpid+EZ/y0A5wzNwb8/8++vKHy+z619fv4fzGLyeWYJAAA=",
+          "base64_string": "H4sIAAWxhloC/41W227bOBD9lULPTirbW6PxBxTtQ7sPDfZlWxA0NbJYUySXFytGkX/fGYqyaUdBExiwNedwOJczo/yuHPwXwYdq+7t65G4P+Kv6u23BVYvqk3E9J8MvbzQ+fwd3lALQ8Jn7RPJo/Qe/JOLbaoVPDQ+cnBmCWXQK7V0Idvvj/Y/3wzDcwxPvrYJ7YXqkWwdHCcOfiT7wED1yLOhG6j2aNO8plkcKf1HBk5WOB4yEYQwErOp1fbdc4efdar398ICf6nlRfYXQmQZx4YCIi+obhMG4wxcyyuZieDQHoLxC+sajDrw12gMlOAW0XKSwv+fHVV1fijAWEn9Icr1apgJJbxU/Md4cwQXpiVDVCFwMjOg6KnWbYwNeOGlDKvdIoP5JB4xb68yRq+xsMgdwvWdcN0wYrBudxCAxxHlg9PnmpryxySI6B1qcJv8NtDyqwCw/mUj6qu9r+kNqz5/mzJhbMMJM98zr4W0KWFTSM+vkcaQk7+lCFk6WLMJy1ipO9Q4SHDRFQBcblgh0PHsAJ0BfMpp6kzgzjlOar5xpsG8isLG2FyVgm0gfePWIZKfVS+T1M6lTJUSDy1LNWOhQ3Z1R58MtTkfEcKZnLJuPu0KAKfPSxJo41n86cgW2adUUMhDRB9NjWEr6UETtoC2f0CO2d5KO9HyngAklxYH1XDiTAyksr+QpuM3c3ujQqRObBbMasuG+Lg/MYVOXZw/MgiEtWrZzZvC0Q/P8pwmGIqjzQHKlzMB6nBlp1Q1jPJsIA+y8DID11IdrJGuqBLDXAxtbwI7cSSrrGQOfitKZmMJb/VUYZY/7YRYPbOJc0bJT0g8YlIHEicXSrOtlGUrPpUpKyMZGw60wIHGk9sFFEYr0XwJ4Da6eV8+Rkn9hRc4M3RqcRrbHAMfuJM2NzjPmAfcYDrPj4oBoKmamdMYH2tRFrB33bG+48gw0lbaZ0sq7jzA2bvfrEHBC3MmGyz1WPoHyZ+U2spXk7W6zWm4eHjabmt444yV5zIcOVVCUUpuQV0X0kPNjLl76TeYs7b0z0Zb2ScFXwJXSUI/2xGghS4FuHO8n2viGTduYxSDSRl5u7uqPd+v63XK9XX/Y1iQdJVuseA/z43JGX47rDWFuPFF26cVw6QAKqzGDVoY35aYge9R5Ze3gFgqddPQqcOGUZdpid+EZ/y0A5wzNwb8/8++vKHy+z619fv4fzGLyeWYJAAA=",
           "encoding": null
         },
         "headers": {
@@ -656,7 +656,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?Target=Offer&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bname%5D=Test&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&Method=create&NetworkId=id&NetworkToken=token"
+        "url": "https://api.hasoffers.com/Apiv3/json?Target=Offer&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bname%5D=Test&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&Method=create&NetworkId=id&NetworkToken=token"
       }
     },
     {
@@ -681,11 +681,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Target=Offer&id=196&Method=getTargetCountries&NetworkId=id&NetworkToken=token"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Target=Offer&id=196&Method=getTargetCountries&NetworkId=id&NetworkToken=token"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAIiLxVcC/0VOuw6CQBD8l62vAMprTYwWaAGxMRYXWR6Cd7i7aEH4d/fQaDWPnZ3MDISPCVnAzlA6alAZHOsaCQxsA91dNG4cvOoC6dldUY2d4zXE6p4UOr1byFR1VSRppDlKG6LU1k/3JkxeqMP4dkB5Ber3MaBPP6MMPcYyWXExupDH4BnjRBYnE4NNDbQiY/GVWZIYqJw4sOeLASQKOu3Pc2R2jTb4aRiW5Q0hnpVC9gAAAA==",
+          "base64_string": "H4sIAAWxhloC/0VOuw6CQBD8l62vAMprTYwWaAGxMRYXWR6Cd7i7aEH4d/fQaDWPnZ3MDISPCVnAzlA6alAZHOsaCQxsA91dNG4cvOoC6dldUY2d4zXE6p4UOr1byFR1VSRppDlKG6LU1k/3JkxeqMP4dkB5Ber3MaBPP6MMPcYyWXExupDH4BnjRBYnE4NNDbQiY/GVWZIYqJw4sOeLASQKOu3Pc2R2jTb4aRiW5Q0hnpVC9gAAAA==",
           "encoding": null
         },
         "headers": {
@@ -724,7 +724,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?Target=Offer&id=196&Method=getTargetCountries&NetworkId=id&NetworkToken=token"
+        "url": "https://api.hasoffers.com/Apiv3/json?Target=Offer&id=196&Method=getTargetCountries&NetworkId=id&NetworkToken=token"
       }
     },
     {
@@ -749,11 +749,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Method=findAll&contain%5B%5D=Country&filters%5Bid%5D=62&Target=Offer&NetworkToken=token&NetworkId=id"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Method=findAll&contain%5B%5D=Country&filters%5Bid%5D=62&Target=Offer&NetworkToken=token&NetworkId=id"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAO6TxlcC/3VW32/bNhD+Vwo95MlxZMe1GwPGMAwrOgzdHlL0pSkImjpZrCmSIykrXuD/vXekZMmpIwi2eN/xeD++O+klc/BfAz5k65fsC3c7wKfs37IEl02yj8bVnAQ/vNG4fgR3kAJQ8In7qORR+hX/JOLrbI6rzxAqU+CilLr4XSkUCaMDl6jwLfvDNDq4Y/Z9grgKZAAPlqS/nGenSfYPhNa4/RezB7IY4v9Z/BcpojYqOvDWaA+03wceGrQ0m2RVCPaxW87zfJIVPHDSQfP4myIbHYkK0lvFj4wXB3BBesKzHIFBwKL2bIFCzWuK/+/j/8bQZvDCSRtS/NkkplM6YNxaZw5cdbZ6MUZce8Z1wTAphaR96Ci6eR3QjVKTzDo4SGhZ48gcRbh+unu625MPU6ASGArrNd627VQfnLBTYeqnOwW88E93OzO1lf1NbGar+w837eZ+MZ/flJsAz0FJvb8xm69GeeNuguPac0GeYPybl8v1ieraOAdaHHs/Cyh5owKz/Ggaos0in+Z0oW7Nnwf5IMYkBSNM77dnst6huC9oRucdACXwbKXj8XCsKJVgns9Wt/nyNl+9m8/W7x/wRj3pmXXykFTiCfFQFo6WJMJyVirkNGZcgoNi5NQgw3yDbs4WwAnQQ1gp2E7niuEY6ht7CiSBCCzVK7IqTw1CVMOTE9DZvIK8uSXV/gxQQ7KYLxYqbJXKqKL3ogRMLrrSrzFlvtmOeUwHjEWsaFLu+y0XYBlHyIgHovHB1OiUkj4MLjso04Ke0Zze4fP71IF8q4AJJcWe1Vw400c5SFKE3QFDjILbTrfGKVOpI7sKdizoBNN8vOEa1lf36oarYIjDk22daX0ca2mGxDEAI6fOiFKmZTX2i7TqbYUWtl4GYNSbl0hHpTGAZW5Zyj47cCcpq2cMfMxJZZro3XI1H0lljUPmUmG+iHhgvc6FWmeVuAMGKSBBF5ia+3w29qXmUkUWdMJCwytSQFSR2gfXiDAK/1cATzF1os8VECn5A/PR4bo02IBsh76lwiS25SPMA84v7F/HxR7RmMhOpTI+0KCPbibKVdyzneHKM9CU1vhCyIaZRxjrXg6PXMHoIGwNd7RhOMnKZ1D+TNtClpLszRbLD8vl/OHhnvbGjki93VbIgFEWtQndeGg8dPEx1wy1JnHH6p0zjR3Le/JeABcsQy7aI6MRLAWacbzu1YTD0QFxALMmCJLidRvvd3m+jjfqKVlixmu43iln9NdOfaVwrTORcfFdAMWIU4VptTK8GA8Jkje6m1RbeA2FSjqa/i4cO4aWWF3AL4v+GwW/Ev58PH8rrGI/CFNQ6lF+/hTwlr5taGTsEn2/fT/hhTV0zri47p4/Y+vwHSQvTqefiZQouHwJAAA=",
+          "base64_string": "H4sIAAWxhloC/3VW32/bNhD+Vwo95MlxZMe1GwPGMAwrOgzdHlL0pSkImjpZrCmSIykrXuD/vXekZMmpIwi2eN/xeD++O+klc/BfAz5k65fsC3c7wKfs37IEl02yj8bVnAQ/vNG4fgR3kAJQ8In7qORR+hX/JOLrbI6rzxAqU+CilLr4XSkUCaMDl6jwLfvDNDq4Y/Z9grgKZAAPlqS/nGenSfYPhNa4/RezB7IY4v9Z/BcpojYqOvDWaA+03wceGrQ0m2RVCPaxW87zfJIVPHDSQfP4myIbHYkK0lvFj4wXB3BBesKzHIFBwKL2bIFCzWuK/+/j/8bQZvDCSRtS/NkkplM6YNxaZw5cdbZ6MUZce8Z1wTAphaR96Ci6eR3QjVKTzDo4SGhZ48gcRbh+unu625MPU6ASGArrNd627VQfnLBTYeqnOwW88E93OzO1lf1NbGar+w837eZ+MZ/flJsAz0FJvb8xm69GeeNuguPac0GeYPybl8v1ieraOAdaHHs/Cyh5owKz/Ggaos0in+Z0oW7Nnwf5IMYkBSNM77dnst6huC9oRucdACXwbKXj8XCsKJVgns9Wt/nyNl+9m8/W7x/wRj3pmXXykFTiCfFQFo6WJMJyVirkNGZcgoNi5NQgw3yDbs4WwAnQQ1gp2E7niuEY6ht7CiSBCCzVK7IqTw1CVMOTE9DZvIK8uSXV/gxQQ7KYLxYqbJXKqKL3ogRMLrrSrzFlvtmOeUwHjEWsaFLu+y0XYBlHyIgHovHB1OiUkj4MLjso04Ke0Zze4fP71IF8q4AJJcWe1Vw400c5SFKE3QFDjILbTrfGKVOpI7sKdizoBNN8vOEa1lf36oarYIjDk22daX0ca2mGxDEAI6fOiFKmZTX2i7TqbYUWtl4GYNSbl0hHpTGAZW5Zyj47cCcpq2cMfMxJZZro3XI1H0lljUPmUmG+iHhgvc6FWmeVuAMGKSBBF5ia+3w29qXmUkUWdMJCwytSQFSR2gfXiDAK/1cATzF1os8VECn5A/PR4bo02IBsh76lwiS25SPMA84v7F/HxR7RmMhOpTI+0KCPbibKVdyzneHKM9CU1vhCyIaZRxjrXg6PXMHoIGwNd7RhOMnKZ1D+TNtClpLszRbLD8vl/OHhnvbGjki93VbIgFEWtQndeGg8dPEx1wy1JnHH6p0zjR3Le/JeABcsQy7aI6MRLAWacbzu1YTD0QFxALMmCJLidRvvd3m+jjfqKVlixmu43iln9NdOfaVwrTORcfFdAMWIU4VptTK8GA8Jkje6m1RbeA2FSjqa/i4cO4aWWF3AL4v+GwW/Ev58PH8rrGI/CFNQ6lF+/hTwlr5taGTsEn2/fT/hhTV0zri47p4/Y+vwHSQvTqefiZQouHwJAAA=",
           "encoding": null
         },
         "headers": {
@@ -792,7 +792,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?Method=findAll&contain%5B%5D=Country&filters%5Bid%5D=62&Target=Offer&NetworkToken=token&NetworkId=id"
+        "url": "https://api.hasoffers.com/Apiv3/json?Method=findAll&contain%5B%5D=Country&filters%5Bid%5D=62&Target=Offer&NetworkToken=token&NetworkId=id"
       }
     },
     {
@@ -817,11 +817,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?contain%5B%5D=Country&NetworkToken=token&id=62&NetworkId=id&Target=Offer&Method=findById"
+        "uri": "https://api.hasoffers.com/Apiv3/json?contain%5B%5D=Country&NetworkToken=token&id=62&NetworkId=id&Target=Offer&Method=findById"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAJ2cxlcC/3VWUW/bNhD+K4Ue8uQ4spM6jQFjwIYVHYZuDyn60hQETZ0s1hTJkZQVLfB/7x1FWXLqGAIsft+RvDt+d+JL5uC/BnzI1i/ZF+52gG/Zv2UJLptlH42rOQE/vNE4fgR3kAIQ+MR9NPKIfsU/ifw6W+JIGB24xNG37A/T6OC67Pss+wdCa9z+i9kDGYb4P8tkgYMVTUsGfxGA6Cz7DKEyNCqlLn7vkDjO0FlvjfZA3vrAQ+Oz9WKWVSHYxzRc5vksK3jgZNMHgi/jRoX0VvGO8eIALkhPfJYjMQIsWi/uENS8pnD/7v43hiaDF07a0IebzWL2pAPGrXXmwFVaa4ADuNozrguGaSkkzUMX0cHLhG6UmmXWwUFCyxpHy1Fs66ebp5s9+TAHyrihsF7zbdvO9cEJOxemfrpRwAv/dLMzc1vZ38RmcX/74ard3N4tl1flJsBzUFLvr8zmq1HeuKvguPZckCcY/+blfHykk22cAy26wc8CSt6owCzvTEMqucvnOf3QtubPIz7CmKRghBn89kzWO4SHo8xovwMgAs9WOh43x7OkI1jmi/vrfHWd379bLtbvH/AhAXlmnTz0JnGHuCkLnSVEWM5KhRLGjEtwUEycGjHMN+jmtAI4AXoMqw822VxYOIb6xpwCRSAC688rqirvS4Skhjv3RFrzAvPmlP7sTwTVH4v5YqHCIqmMKgYvSsDkoivDGFPmm+1Ux7TBFGJF0+d+mHJGlrFjTHQgGh9MjU4p6cPosoOyH9A7Lqd3+P6+r0C+VcCEkmLPai6cGaIckT7CtMEYo+A22dbYZyrVsYtkUkEC5vl0wiVuON2LEy6SIfZKtnWm9dQGUw+JbQAmTp0YpUzLaqwXadXbBi1svQzAqDbPmSSlKYHH3LI+++zAnaSsnjjwMSeVaaJ3q/vlBJU1Nplzg+Vd5AMbbM7M0qqkHTAoAQm6wNTc5oupLzWXKqoggYWGV6KAaCK1D64RYRL+rwTuYupePhdIlOQPzEfidWmwANkOfesPpldbPuE8YP/C+nVc7JGNiUwmlfGBGn10s5dcxT3bGa48A01pjR+EbOx5xLH0cXjkCiYbYWm4zoZxJyufQfmTbAtZSlpvcbf6sFotHx5uaW6siL622woVMMmiNiG1h8ZDio+5ZjxrgpOqd840dooP4j0jzlSGWrQdoxYsBS7jeD2YCYetA2IDZk0QhOLvOj7v8nwdH7RTssSM13C5Uk7sr5X6yuBSZaLi4rcAiommCtNqZXgxbRKENzp1qi28pkIlHXV/F7qk0BJPF/BOMdxS8Jbw5+PprnAf60GYglKP+Okq4C3dbqhl7Hr5fvt+POIy4JxxcZjeP2Pl8B30ThyPPwFXDlKragkAAA==",
+          "base64_string": "H4sIAAWxhloC/3VWUW/bNhD+K4Ue8uQ4spM6jQFjwIYVHYZuDyn60hQETZ0s1hTJkZQVLfB/7x1FWXLqGAIsft+RvDt+d+JL5uC/BnzI1i/ZF+52gG/Zv2UJLptlH42rOQE/vNE4fgR3kAIQ+MR9NPKIfsU/ifw6W+JIGB24xNG37A/T6OC67Pss+wdCa9z+i9kDGYb4P8tkgYMVTUsGfxGA6Cz7DKEyNCqlLn7vkDjO0FlvjfZA3vrAQ+Oz9WKWVSHYxzRc5vksK3jgZNMHgi/jRoX0VvGO8eIALkhPfJYjMQIsWi/uENS8pnD/7v43hiaDF07a0IebzWL2pAPGrXXmwFVaa4ADuNozrguGaSkkzUMX0cHLhG6UmmXWwUFCyxpHy1Fs66ebp5s9+TAHyrihsF7zbdvO9cEJOxemfrpRwAv/dLMzc1vZ38RmcX/74ard3N4tl1flJsBzUFLvr8zmq1HeuKvguPZckCcY/+blfHykk22cAy26wc8CSt6owCzvTEMqucvnOf3QtubPIz7CmKRghBn89kzWO4SHo8xovwMgAs9WOh43x7OkI1jmi/vrfHWd379bLtbvH/AhAXlmnTz0JnGHuCkLnSVEWM5KhRLGjEtwUEycGjHMN+jmtAI4AXoMqw822VxYOIb6xpwCRSAC688rqirvS4Skhjv3RFrzAvPmlP7sTwTVH4v5YqHCIqmMKgYvSsDkoivDGFPmm+1Ux7TBFGJF0+d+mHJGlrFjTHQgGh9MjU4p6cPosoOyH9A7Lqd3+P6+r0C+VcCEkmLPai6cGaIckT7CtMEYo+A22dbYZyrVsYtkUkEC5vl0wiVuON2LEy6SIfZKtnWm9dQGUw+JbQAmTp0YpUzLaqwXadXbBi1svQzAqDbPmSSlKYHH3LI+++zAnaSsnjjwMSeVaaJ3q/vlBJU1Nplzg+Vd5AMbbM7M0qqkHTAoAQm6wNTc5oupLzWXKqoggYWGV6KAaCK1D64RYRL+rwTuYupePhdIlOQPzEfidWmwANkOfesPpldbPuE8YP/C+nVc7JGNiUwmlfGBGn10s5dcxT3bGa48A01pjR+EbOx5xLH0cXjkCiYbYWm4zoZxJyufQfmTbAtZSlpvcbf6sFotHx5uaW6siL622woVMMmiNiG1h8ZDio+5ZjxrgpOqd840dooP4j0jzlSGWrQdoxYsBS7jeD2YCYetA2IDZk0QhOLvOj7v8nwdH7RTssSM13C5Uk7sr5X6yuBSZaLi4rcAiommCtNqZXgxbRKENzp1qi28pkIlHXV/F7qk0BJPF/BOMdxS8Jbw5+PprnAf60GYglKP+Okq4C3dbqhl7Hr5fvt+POIy4JxxcZjeP2Pl8B30ThyPPwFXDlKragkAAA==",
           "encoding": null
         },
         "headers": {
@@ -860,7 +860,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?contain%5B%5D=Country&NetworkToken=token&id=62&NetworkId=id&Target=Offer&Method=findById"
+        "url": "https://api.hasoffers.com/Apiv3/json?contain%5B%5D=Country&NetworkToken=token&id=62&NetworkId=id&Target=Offer&Method=findById"
       }
     },
     {
@@ -885,11 +885,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?filters%5Bcurrency%5D=CZK&contain%5B%5D=Country&Method=findAll&Target=Offer&NetworkId=id&NetworkToken=token"
+        "uri": "https://api.hasoffers.com/Apiv3/json?filters%5Bcurrency%5D=CZK&contain%5B%5D=Country&Method=findAll&Target=Offer&NetworkId=id&NetworkToken=token"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIALbWx1cC/+1WbW/bNhD+KwY/N6lk56UxMAxDgWHDkG1Ai31oEBC0eLLYUKJGUna8wP+9dxRlSY7coQPaYUMCIZZI3vtzx+eJWfizAefZcvbE/gDrlKnwnc3Zqxm7BV8YSZ+5quQPWtPij8aWgs6zjw7P4sqv4LfGPrw3DxBkfXjBjXdgNyoDWvtJuN/yHPXTeq60p1eymTXWQpXt6NDbD7+wfa/w52BaSRJ5L+wagtWghpYyU3mhyOIde2uaytsduydxC642lYOgH6w1wdTdPW6Fr1twTqxpu2q0xlUpvAiH0yQJv526KNWapA0JLrOq9jFL5EYpHnktdqYJ3s3PE/qjDSu8qta9Fcq0ssAx9NJxUUmOEUhFusi/BI848Nyhd7jE8VFlbduvuI8CG7AeJDfkEve7ehCGK8yWl0JprlWoKAt+KIc6Dc+tgkrqHV8k6WHPeeEbso6RaUDFtAhVbmwGKIXFQX+tyB4wEtRaPRwks8Z5U6IPZIsr2bshtEY/JIaa+SDjDkKNA25hA1UDfG1NU/dbbQq7iFhWZ7RaCMfXRmjHoRIrDQERachuVHMkICvg0mwrbYTkjdW9WyXCpcDwO8FM1MH4eazW9DJ57AP2uG009P5mWmUPmO3MmrEdTHdt1UZ4GORqjHFasoAnuKR/jc8CdJL06ix5c5a+maXJcp4sF9chMYC1qHyPsWinMM5XooRR7il8Xygr8bj1uw4IOWYQqNzN6oBfBAS1fuvWqHRbWDmFfo1r1+GyByUvTBNai80v6IRWOXiFHrUwDUeO0inq2prN8ITrrU+IsQ7WLdz4RlhFOOjdCu13IkUQmkFVztsm6/qsFWsjLRvtVa2P/YmIREgo2MbqssL7evn6NTyKEiXOM1MGvEEuUMlgAqT9BIjAWVmzde28azXDY61oOmCgMuLkUPybWZouL2/w6eAXO+OoX9p+iHNgW2C9Rk3vFViQA7fC6qiyGHS94zQBVEZwEeUgq7FZou2jKhLKnrV9ZdpIRkiYlqeJNEDiM6sngGAhby0GGyMsy6bN56D2cYitcfS1dWiHcczeM2SQRx9xYh3DsR+2oy4fuBgsY9dhVxRGy+HAj0OwlR8m65CgE2Mnli/uHtymfg83LN7Ys63yxSwMRzbh7dDaiRsn7k7XaBjzBPa/x1uhciLkDm199zT+3scyB6QPprZULsB2MD0/V5PcYpf199v02CmNVLkKRtKL6/RycZ1cLF4F4kBm4+CRlB3lusywy6vARHAKN62DR7d0O6mEPriHrtda7Hivqd/CfmiqCMgVjJHSTQiqFI8FPMIoDmG7q31/09bqEfRwEhlvMhN8Qbton+2J6KRHZAXfP7SkykhoL5sharK/ICtmFupmhelnhxTNk0XbXusIjLv7oP4LaA9mOflqzCdeotPch7H/HfMRPNfIsE/Rn2Sa/vRS/2EORAg6C88sSZbhmeRA7KZz7oUGnaZB1JbR4tegQtvt9vxv6dDNcDB8ESGap2fJnNjwfP5CiF4I0WcJ0e9gc1R8ayrYfSs2NAH/MeNJvgnjubpIbpKrxUXPeKb4TlT4L/Edxv4h26FUI9chNkKv77pLe54kwzs83e8/ARBPuWrKEgAA",
+          "base64_string": "H4sIAAWxhloC/+1WbW/bNhD+KwY/N6lk56UxMAxDgWHDkG1Ai31oEBC0eLLYUKJGUna8wP+9dxRlSY7coQPaYUMCIZZI3vtzx+eJWfizAefZcvbE/gDrlKnwnc3Zqxm7BV8YSZ+5quQPWtPij8aWgs6zjw7P4sqv4LfGPrw3DxBkfXjBjXdgNyoDWvtJuN/yHPXTeq60p1eymTXWQpXt6NDbD7+wfa/w52BaSRJ5L+wagtWghpYyU3mhyOIde2uaytsduydxC642lYOgH6w1wdTdPW6Fr1twTqxpu2q0xlUpvAiH0yQJv526KNWapA0JLrOq9jFL5EYpHnktdqYJ3s3PE/qjDSu8qta9Fcq0ssAx9NJxUUmOEUhFusi/BI848Nyhd7jE8VFlbduvuI8CG7AeJDfkEve7ehCGK8yWl0JprlWoKAt+KIc6Dc+tgkrqHV8k6WHPeeEbso6RaUDFtAhVbmwGKIXFQX+tyB4wEtRaPRwks8Z5U6IPZIsr2bshtEY/JIaa+SDjDkKNA25hA1UDfG1NU/dbbQq7iFhWZ7RaCMfXRmjHoRIrDQERachuVHMkICvg0mwrbYTkjdW9WyXCpcDwO8FM1MH4eazW9DJ57AP2uG009P5mWmUPmO3MmrEdTHdt1UZ4GORqjHFasoAnuKR/jc8CdJL06ix5c5a+maXJcp4sF9chMYC1qHyPsWinMM5XooRR7il8Xygr8bj1uw4IOWYQqNzN6oBfBAS1fuvWqHRbWDmFfo1r1+GyByUvTBNai80v6IRWOXiFHrUwDUeO0inq2prN8ITrrU+IsQ7WLdz4RlhFOOjdCu13IkUQmkFVztsm6/qsFWsjLRvtVa2P/YmIREgo2MbqssL7evn6NTyKEiXOM1MGvEEuUMlgAqT9BIjAWVmzde28azXDY61oOmCgMuLkUPybWZouL2/w6eAXO+OoX9p+iHNgW2C9Rk3vFViQA7fC6qiyGHS94zQBVEZwEeUgq7FZou2jKhLKnrV9ZdpIRkiYlqeJNEDiM6sngGAhby0GGyMsy6bN56D2cYitcfS1dWiHcczeM2SQRx9xYh3DsR+2oy4fuBgsY9dhVxRGy+HAj0OwlR8m65CgE2Mnli/uHtymfg83LN7Ys63yxSwMRzbh7dDaiRsn7k7XaBjzBPa/x1uhciLkDm199zT+3scyB6QPprZULsB2MD0/V5PcYpf199v02CmNVLkKRtKL6/RycZ1cLF4F4kBm4+CRlB3lusywy6vARHAKN62DR7d0O6mEPriHrtda7Hivqd/CfmiqCMgVjJHSTQiqFI8FPMIoDmG7q31/09bqEfRwEhlvMhN8Qbton+2J6KRHZAXfP7SkykhoL5sharK/ICtmFupmhelnhxTNk0XbXusIjLv7oP4LaA9mOflqzCdeotPch7H/HfMRPNfIsE/Rn2Sa/vRS/2EORAg6C88sSZbhmeRA7KZz7oUGnaZB1JbR4tegQtvt9vxv6dDNcDB8ESGap2fJnNjwfP5CiF4I0WcJ0e9gc1R8ayrYfSs2NAH/MeNJvgnjubpIbpKrxUXPeKb4TlT4L/Edxv4h26FUI9chNkKv77pLe54kwzs83e8/ARBPuWrKEgAA",
           "encoding": null
         },
         "headers": {
@@ -928,7 +928,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?filters%5Bcurrency%5D=CZK&contain%5B%5D=Country&Method=findAll&Target=Offer&NetworkId=id&NetworkToken=token"
+        "url": "https://api.hasoffers.com/Apiv3/json?filters%5Bcurrency%5D=CZK&contain%5B%5D=Country&Method=findAll&Target=Offer&NetworkId=id&NetworkToken=token"
       }
     },
     {
@@ -953,11 +953,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?NetworkToken=token&Method=findAllIds&Target=Offer&NetworkId=id"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&Method=findAllIds&Target=Offer&NetworkId=id"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIACohyFcC/0XSu07rQBSF4XeZ2oXXHse37jRHUAAFiAZRWHgCgRCDZwIFyruz1xKIYsb2/izH+eWvsKb3Y8oljF/hZlofk5+Fq+02raEK/5f1deLgOS8Hv75O68fuIfngbMq6Kfv01g879zGYX12m8rmsLzfLS+Ko6FiFi1SeltkH291h/rffn8/57+Zzwm4Op8pfJ78th5z4PrlM5ZjDiCo8lfJ2/XNpdV2FeSpTGO8C/CnR18ZX52vwBQ7BKTgG5yAYwQhGMIIRoh5DiIRIiISG0PB/NQ23llvP36u5ETaEDWFDaAktoSW0hJbQETpCR+gIHaEn9ISe0BN6wkAYCANhIAwE1LV2095ob7VLIYUUUkghNalJTWpSk0ZplEZplEZpI1UPKAhUBEoCNYGiQFWgLFAXKAxUBkoDtYHiQHWgPFAfKBBUCEoENYIiQZWgTFAnKBRUCkoFtTK1MrUytTK1MrUytTK1MrUyb3VfhbSui3/d493v+UXKeXr07/Jw3O9Pp2/0WWvUOQMAAA==",
+          "base64_string": "H4sIAAWxhloC/0XSu07rQBSF4XeZ2oXXHse37jRHUAAFiAZRWHgCgRCDZwIFyruz1xKIYsb2/izH+eWvsKb3Y8oljF/hZlofk5+Fq+02raEK/5f1deLgOS8Hv75O68fuIfngbMq6Kfv01g879zGYX12m8rmsLzfLS+Ko6FiFi1SeltkH291h/rffn8/57+Zzwm4Op8pfJ78th5z4PrlM5ZjDiCo8lfJ2/XNpdV2FeSpTGO8C/CnR18ZX52vwBQ7BKTgG5yAYwQhGMIIRoh5DiIRIiISG0PB/NQ23llvP36u5ETaEDWFDaAktoSW0hJbQETpCR+gIHaEn9ISe0BN6wkAYCANhIAwE1LV2095ob7VLIYUUUkghNalJTWpSk0ZplEZplEZpI1UPKAhUBEoCNYGiQFWgLFAXKAxUBkoDtYHiQHWgPFAfKBBUCEoENYIiQZWgTFAnKBRUCkoFtTK1MrUytTK1MrUytTK1MrUyb3VfhbSui3/d493v+UXKeXr07/Jw3O9Pp2/0WWvUOQMAAA==",
           "encoding": null
         },
         "headers": {
@@ -996,7 +996,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?NetworkToken=token&Method=findAllIds&Target=Offer&NetworkId=id"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&Method=findAllIds&Target=Offer&NetworkId=id"
       }
     },
     {
@@ -1021,11 +1021,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?NetworkToken=token&filters%5Boffer_id%5D=196&Target=Conversion&Method=findAll&NetworkId=id"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&filters%5Boffer_id%5D=196&Target=Conversion&Method=findAll&NetworkId=id"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIALD131cC/31UUW+bMBD+K5GfRwKYhJC3KVPVbepWqdUeNk3IMUfqBmxmm6RRtf++s2kIZNl4wf7Od/fd3We/Eg2mUdIAWU1eCWittMHlj5/vJsRYZlu3i3DzZG3zcALiMETIn74DY9jWucu2qhAtmGU+WEr9b63kHrQRSvotK3LO6oaJrcy5BmbFHnJRoI2EBN1bAzrHgNI66BPbMW3ZZK3qGlkGt8hiXQm0zug0cueH8QZhGnZUrQ+BXKeh+0hfUs5V4RiThDpQwx5kC7k9Nh7lDcvLillnE9KClqzKMU8XfkmXi5gty4AvwzRI5otNkEVZHMQAy5RvwjibFx0xLNsKV86AlyrLHoiyBRm2mbCm0WoPnXtZikowC3nNJPajd/KsGr+M0ynW1vVhq5DkINFGq4MZe3HVSquPffXr7131yMht3YRXs9nhcJjCC7a0gilX9UUpYzLhZaGyVA4nnQ7Aihq6GUSLIMQe0UkUrhK6ijpCp/m3esSdt8aqepzFoM5QQ/mV0hvxAlXe13Ee/9WJGtVq7tGb+3GjHXt6ijCGo/N5YVALz8iwftOop9cxTenfrrEz3H+4MPjjV04n1/PPe/gkwyiMizKlRUTjNJnDPONFSrMiSnmGhrPUMAqMe6s1SH7sBPB5oH8/qIQOLgtDV1Y71Xj3geVtGP+ecbRcxSn5jZ9P8KsFY/39/9a/BSR2oR5A70U3j1tmvjrOxuGPTG/B5x08IIjfKF0zjz+bDvkC9qD07qOvURQD6FHtwGeyfoEG7IYF/8K9/k9R16/kpXIu77Ir9Q7sk/JIKWTxvqqwB38ADNypiWUFAAA=",
+          "base64_string": "H4sIAAWxhloC/31UUW+bMBD+K5GfRwKYhJC3KVPVbepWqdUeNk3IMUfqBmxmm6RRtf++s2kIZNl4wf7Od/fd3We/Eg2mUdIAWU1eCWittMHlj5/vJsRYZlu3i3DzZG3zcALiMETIn74DY9jWucu2qhAtmGU+WEr9b63kHrQRSvotK3LO6oaJrcy5BmbFHnJRoI2EBN1bAzrHgNI66BPbMW3ZZK3qGlkGt8hiXQm0zug0cueH8QZhGnZUrQ+BXKeh+0hfUs5V4RiThDpQwx5kC7k9Nh7lDcvLillnE9KClqzKMU8XfkmXi5gty4AvwzRI5otNkEVZHMQAy5RvwjibFx0xLNsKV86AlyrLHoiyBRm2mbCm0WoPnXtZikowC3nNJPajd/KsGr+M0ynW1vVhq5DkINFGq4MZe3HVSquPffXr7131yMht3YRXs9nhcJjCC7a0gilX9UUpYzLhZaGyVA4nnQ7Aihq6GUSLIMQe0UkUrhK6ijpCp/m3esSdt8aqepzFoM5QQ/mV0hvxAlXe13Ee/9WJGtVq7tGb+3GjHXt6ijCGo/N5YVALz8iwftOop9cxTenfrrEz3H+4MPjjV04n1/PPe/gkwyiMizKlRUTjNJnDPONFSrMiSnmGhrPUMAqMe6s1SH7sBPB5oH8/qIQOLgtDV1Y71Xj3geVtGP+ecbRcxSn5jZ9P8KsFY/39/9a/BSR2oR5A70U3j1tmvjrOxuGPTG/B5x08IIjfKF0zjz+bDvkC9qD07qOvURQD6FHtwGeyfoEG7IYF/8K9/k9R16/kpXIu77Ir9Q7sk/JIKWTxvqqwB38ADNypiWUFAAA=",
           "encoding": null
         },
         "headers": {
@@ -1064,7 +1064,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?NetworkToken=token&filters%5Boffer_id%5D=196&Target=Conversion&Method=findAll&NetworkId=id"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&filters%5Boffer_id%5D=196&Target=Conversion&Method=findAll&NetworkId=id"
       }
     },
     {
@@ -1093,7 +1093,7 @@
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAAAAAAAAA0WPS2vDMBCE/8uedVDsQ6luLX2kFCeBuA8opajOKlGsWI527R6C/3tXIaWnnflmWJgTJDwOSAzmBLVNWxQFS+cwgYKHmA42gz3FTvwa0+gbFDC3dC6R0Fc5XnIDhbgF8k9MbR1bzGhxXx/xrX1/HHF1Hdzh+ba/aqq+XI0vd3P933/aSHmMgWKaCa2QdzGj7xCb9sY5H7xllMRnWupSpP3DX2dYaJiU7KE+doR5ELHlgcDMFOyY+/XFFlor2Fi2YDgNqABTijLFfHxedIVEdis/uiGEafoF2v9I1iYBAAA=",
+          "base64_string": "H4sIAAWxhloC/z3OMQ7CMAwF0Lt4zlDKlo0FwVAYQCwIIUNdCC0N2C4MqHfHqQqT/Z+j6H+A6dmRKPgPbJEvZBusq4oYHMwj3zHBTWJreUP8CmcyWKAMj8R0ZyPY3UNuaUX6jlxvY02JdJh/XpZmoTQoSK8xpVMTz/WsqkITUMkuIek0m9qKPz4OmGfQO2ssj9gKpcqiqJ2Anzi4qj42Y8yzzEGJiuCVO3JAzNHK+v1h3AsSwYv90XZN0/dfLxYwEAgBAAA=",
           "encoding": null
         },
         "headers": {
@@ -1161,7 +1161,7 @@
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAAAAAAAAA42PW0vDQBCF/0qY5wi5PIh5U7RWJLXQeAER2SaTZs22s93ZpEjof3e2VHz1aeZ8c2aGM4HD/YDsoZigUm6D0sFT26KDGGbktiqAL6ad6BW6UdcoYK74ZGKhL1K0zAvIRC3QH8j1FfUY0OKu2uNr/3Y/4vLKtNvHG3tZlzZfjs+38+TP/9CIeSTD5FKhJfqOAlobqvvrttVGK48y0YHmSS6t+sWfJ5ilcIwlD1vaMYZA7JUfGIqLNIbOe7s66yxJYmiUV7Ild9A5kiTF+wR2WBtdl8isNiHnTGmDTeQp6r4bJ68iRwcuovDr47z5P/fxB0UEA+FrAQAA",
+          "base64_string": "H4sIAAWxhloC/42PvU7DUAyFXyXyHKQ03e7GUsFQGFqxIITcXKe5TaiD7VChqO+Ob1SYmezz+e94BqHPidQgzLBHOZJn8Ny2JFDChuUDMzgpn13vSL5SQw4eUJcmdfriIXk9QO3qiezC0u+5p4xsiX/4MTpL0cGWrOOsDgM3/X3bpiGhkVdSputq7Sn+4vcF1iu4lu5YRz4rZctqaJNCuFuV0JmNu5uuq6qEiIY+5XtIhN1reJ1hnA5Darakisf8yQbTQLEwLrrvKH6qEL5oKPKtt9vk/7qvP+OyZRNNAQAA",
           "encoding": null
         },
         "headers": {

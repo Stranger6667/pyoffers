@@ -22,11 +22,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?NetworkToken=token&NetworkId=id&log_type=clicks&Method=listDateDirs&Target=RawLog"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&log_type=clicks&Method=listDateDirs&Target=RawLog"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIACqU0lcC/32PQU/DMAyF/0qV8w5dD2zdeUIgbUOiFRc0Iav1utCsKbHLNE3978SGnoDdnO+9Fz9fTcCPAYnNKrmaEkKDMppnOG98Y2aJKTB82goFPgA9HQ4YSLjzzRtfehUqZ6tW6UtUre8EZvK+9+EE+uM7RRzJDvnsQ1v6FtXGOkRhi3z0tSBnidfAuLbfq34ijyra2oyRBaTed4TauwYGHWKp8lenevpqlbxGr6XewWUHJ7UV2Cf5LMnS+Z16bZgUQWme5rLuz9jyVmz5b2xxK7Yw417OOzL3BQMP0jpL04gwBB+2SASNJLrBuUhpMs0ni965H8cvEu9lYtsBAAA=",
+          "base64_string": "H4sIAAWxhloC/32PQU/DMAyF/0qV8w5dD2zdeUIgbUOiFRc0Iav1utCsKbHLNE3978SGnoDdnO+9Fz9fTcCPAYnNKrmaEkKDMppnOG98Y2aJKTB82goFPgA9HQ4YSLjzzRtfehUqZ6tW6UtUre8EZvK+9+EE+uM7RRzJDvnsQ1v6FtXGOkRhi3z0tSBnidfAuLbfq34ijyra2oyRBaTed4TauwYGHWKp8lenevpqlbxGr6XewWUHJ7UV2Cf5LMnS+Z16bZgUQWme5rLuz9jyVmz5b2xxK7Yw417OOzL3BQMP0jpL04gwBB+2SASNJLrBuUhpMs0ni965H8cvEu9lYtsBAAA=",
           "encoding": null
         },
         "headers": {
@@ -65,7 +65,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?NetworkToken=token&NetworkId=id&log_type=clicks&Method=listDateDirs&Target=RawLog"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&log_type=clicks&Method=listDateDirs&Target=RawLog"
       }
     },
     {
@@ -90,11 +90,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Target=RawLog&NetworkToken=token&NetworkId=id&log_type=clicks&Method=listLogs&date_dir=20160909"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Target=RawLog&NetworkToken=token&NetworkId=id&log_type=clicks&Method=listLogs&date_dir=20160909"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAMiZ0lcC/42SW0/CQBCF/0rTZ4rbUoHyrMQLFwPVaAwhm3Za1rZs3V0kSPjvzmwlGn2At+l3zu6Z6ezeVfC+AW3cgbN3Y65yoNKd8e1I5m7LceegPkQCBG+4nmYZKE28lPnS7GorJKVICkufUBVyTTCg75QbWKZCWcD8LotYRHwoVcVt0ptGO5IJmK1URSwLsMeNLVAYg1nJlFAptMGu9C/7rRVE6h6QKdC1XGuws2AytwU2Gv/rE+FQlKCRvqJX6LrkuwmvrG0OtRO1HOrX8RwWDRhzeEXHtOHKxKLCH8armrx+2OuEPg7GSM/wzvX3LcdxL5pU78fpzcuX6HHa/hQ19X0qv38yn/XZmfnW6T0XD7Pr0bn5vdP5YXhuPjm9aae+vxs2+YtmG1f4UP4+kgxMsqI0FFjbD1iv22c9FgQsuqR9r4yp54abDa0xYAwRKCXVGLTmOZ1ab8qyabsx+UeLXfzicPgCSs6uJwADAAA=",
+          "base64_string": "H4sIAAWxhloC/42SW0/CQBCF/0rTZ4rbUoHyrMQLFwPVaAwhm3Za1rZs3V0kSPjvzmwlGn2At+l3zu6Z6ezeVfC+AW3cgbN3Y65yoNKd8e1I5m7LceegPkQCBG+4nmYZKE28lPnS7GorJKVICkufUBVyTTCg75QbWKZCWcD8LotYRHwoVcVt0ptGO5IJmK1URSwLsMeNLVAYg1nJlFAptMGu9C/7rRVE6h6QKdC1XGuws2AytwU2Gv/rE+FQlKCRvqJX6LrkuwmvrG0OtRO1HOrX8RwWDRhzeEXHtOHKxKLCH8armrx+2OuEPg7GSM/wzvX3LcdxL5pU78fpzcuX6HHa/hQ19X0qv38yn/XZmfnW6T0XD7Pr0bn5vdP5YXhuPjm9aae+vxs2+YtmG1f4UP4+kgxMsqI0FFjbD1iv22c9FgQsuqR9r4yp54abDa0xYAwRKCXVGLTmOZ1ab8qyabsx+UeLXfzicPgCSs6uJwADAAA=",
           "encoding": null
         },
         "headers": {
@@ -133,7 +133,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?Target=RawLog&NetworkToken=token&NetworkId=id&log_type=clicks&Method=listLogs&date_dir=20160909"
+        "url": "https://api.hasoffers.com/Apiv3/json?Target=RawLog&NetworkToken=token&NetworkId=id&log_type=clicks&Method=listLogs&date_dir=20160909"
       }
     },
     {
@@ -158,11 +158,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?NetworkId=id&Target=RawLog&NetworkToken=token&Method=listLogs&date_dir=20160909&log_type=clicks"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkId=id&Target=RawLog&NetworkToken=token&Method=listLogs&date_dir=20160909&log_type=clicks"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAMiZ0lcC/42SW0/CQBCF/0rTZ4rbUoHyrMQLFwPVaAwhm3Za1rZs3V0kSPjvzmwlGn2At+l3zu6Z6ezeVfC+AW3cgbN3Y65yoNKd8e1I5m7LceegPkQCBG+4nmYZKE28lPnS7GorJKVICkufUBVyTTCg75QbWKZCWcD8LotYRHwoVcVt0ptGO5IJmK1URSwLsMeNLVAYg1nJlFAptMGu9C/7rRVE6h6QKdC1XGuws2AytwU2Gv/rE+FQlKCRvqJX6LrkuwmvrG0OtRO1HOrX8RwWDRhzeEXHtOHKxKLCH8armrx+2OuEPg7GSM/wzvX3LcdxL5pU78fpzcuX6HHa/hQ19X0qv38yn/XZmfnW6T0XD7Pr0bn5vdP5YXhuPjm9aae+vxs2+YtmG1f4UP4+kgxMsqI0FFjbD1iv22c9FgQsuqR9r4yp54abDa0xYAwRKCXVGLTmOZ1ab8qyabsx+UeLXfzicPgCSs6uJwADAAA=",
+          "base64_string": "H4sIAAWxhloC/42SW0/CQBCF/0rTZ4rbUoHyrMQLFwPVaAwhm3Za1rZs3V0kSPjvzmwlGn2At+l3zu6Z6ezeVfC+AW3cgbN3Y65yoNKd8e1I5m7LceegPkQCBG+4nmYZKE28lPnS7GorJKVICkufUBVyTTCg75QbWKZCWcD8LotYRHwoVcVt0ptGO5IJmK1URSwLsMeNLVAYg1nJlFAptMGu9C/7rRVE6h6QKdC1XGuws2AytwU2Gv/rE+FQlKCRvqJX6LrkuwmvrG0OtRO1HOrX8RwWDRhzeEXHtOHKxKLCH8armrx+2OuEPg7GSM/wzvX3LcdxL5pU78fpzcuX6HHa/hQ19X0qv38yn/XZmfnW6T0XD7Pr0bn5vdP5YXhuPjm9aae+vxs2+YtmG1f4UP4+kgxMsqI0FFjbD1iv22c9FgQsuqR9r4yp54abDa0xYAwRKCXVGLTmOZ1ab8qyabsx+UeLXfzicPgCSs6uJwADAAA=",
           "encoding": null
         },
         "headers": {
@@ -201,7 +201,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?NetworkId=id&Target=RawLog&NetworkToken=token&Method=listLogs&date_dir=20160909&log_type=clicks"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkId=id&Target=RawLog&NetworkToken=token&Method=listLogs&date_dir=20160909&log_type=clicks"
       }
     },
     {
@@ -226,11 +226,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?NetworkId=id&date_dir=20160909&NetworkToken=token&Target=RawLog&log_type=clicks&Method=listLogs"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkId=id&date_dir=20160909&NetworkToken=token&Target=RawLog&log_type=clicks&Method=listLogs"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAMiZ0lcC/42SW0/CQBCF/0rTZ4rbUoHyrMQLFwPVaAwhm3Za1rZs3V0kSPjvzmwlGn2At+l3zu6Z6ezeVfC+AW3cgbN3Y65yoNKd8e1I5m7LceegPkQCBG+4nmYZKE28lPnS7GorJKVICkufUBVyTTCg75QbWKZCWcD8LotYRHwoVcVt0ptGO5IJmK1URSwLsMeNLVAYg1nJlFAptMGu9C/7rRVE6h6QKdC1XGuws2AytwU2Gv/rE+FQlKCRvqJX6LrkuwmvrG0OtRO1HOrX8RwWDRhzeEXHtOHKxKLCH8armrx+2OuEPg7GSM/wzvX3LcdxL5pU78fpzcuX6HHa/hQ19X0qv38yn/XZmfnW6T0XD7Pr0bn5vdP5YXhuPjm9aae+vxs2+YtmG1f4UP4+kgxMsqI0FFjbD1iv22c9FgQsuqR9r4yp54abDa0xYAwRKCXVGLTmOZ1ab8qyabsx+UeLXfzicPgCSs6uJwADAAA=",
+          "base64_string": "H4sIAAWxhloC/42SW0/CQBCF/0rTZ4rbUoHyrMQLFwPVaAwhm3Za1rZs3V0kSPjvzmwlGn2At+l3zu6Z6ezeVfC+AW3cgbN3Y65yoNKd8e1I5m7LceegPkQCBG+4nmYZKE28lPnS7GorJKVICkufUBVyTTCg75QbWKZCWcD8LotYRHwoVcVt0ptGO5IJmK1URSwLsMeNLVAYg1nJlFAptMGu9C/7rRVE6h6QKdC1XGuws2AytwU2Gv/rE+FQlKCRvqJX6LrkuwmvrG0OtRO1HOrX8RwWDRhzeEXHtOHKxKLCH8armrx+2OuEPg7GSM/wzvX3LcdxL5pU78fpzcuX6HHa/hQ19X0qv38yn/XZmfnW6T0XD7Pr0bn5vdP5YXhuPjm9aae+vxs2+YtmG1f4UP4+kgxMsqI0FFjbD1iv22c9FgQsuqR9r4yp54abDa0xYAwRKCXVGLTmOZ1ab8qyabsx+UeLXfzicPgCSs6uJwADAAA=",
           "encoding": null
         },
         "headers": {
@@ -269,7 +269,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?NetworkId=id&date_dir=20160909&NetworkToken=token&Target=RawLog&log_type=clicks&Method=listLogs"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkId=id&date_dir=20160909&NetworkToken=token&Target=RawLog&log_type=clicks&Method=listLogs"
       }
     },
     {
@@ -294,11 +294,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Target=RawLog&log_type=clicks&Method=getDownloadLink&log_filename=20160909%2Fclicks-1473411600-SlY9UO.zip&NetworkId=id&NetworkToken=token"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Target=RawLog&log_type=clicks&Method=getDownloadLink&log_filename=20160909%2Fclicks-1473411600-SlY9UO.zip&NetworkId=id&NetworkToken=token"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIANef0lcC/zVQYU/CMBD9K6SfHd0ANfDZGE1AEyF+0BhyrsdW1/VGr7gI2X+3LZA07b3Xe/fu7iQcckeWUSxGJ1F73609+AMHOMnzm5HgKywCUOAhJRptmxAkAS+k5OkYWjiShZ7HJbWypgwUo/tFZ6jirHOk5D7cpXTQZ5GTpdFlw/LbQDhiCPXROXLR7PPrilbIDFVszx6MiUkO9wdkn/p4Qd+TazbUoI39+BSEpGCw9X9d1ImzT2RX6GtSkavQP1BvDYFaxlnC5yO5FmJZ8cOUilyqPyeFVpHagAvSiN+gX1J19dppgxba5DfJi7t8ns8vA2bF7H46K27DPjPV2u3HcXzUXRSuw350mTRPwK+7HbrU5nt4NaWBJmIY/gEwaX5ipQEAAA==",
+          "base64_string": "H4sIAAWxhloC/zVQYU/CMBD9K6SfHd0ANfDZGE1AEyF+0BhyrsdW1/VGr7gI2X+3LZA07b3Xe/fu7iQcckeWUSxGJ1F73609+AMHOMnzm5HgKywCUOAhJRptmxAkAS+k5OkYWjiShZ7HJbWypgwUo/tFZ6jirHOk5D7cpXTQZ5GTpdFlw/LbQDhiCPXROXLR7PPrilbIDFVszx6MiUkO9wdkn/p4Qd+TazbUoI39+BSEpGCw9X9d1ImzT2RX6GtSkavQP1BvDYFaxlnC5yO5FmJZ8cOUilyqPyeFVpHagAvSiN+gX1J19dppgxba5DfJi7t8ns8vA2bF7H46K27DPjPV2u3HcXzUXRSuw350mTRPwK+7HbrU5nt4NaWBJmIY/gEwaX5ipQEAAA==",
           "encoding": null
         },
         "headers": {
@@ -337,7 +337,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?NetworkId=id&log_filename=20160909%2Fclicks-1473415200-SlY9UO.zip&NetworkToken=token&Target=RawLog&log_type=clicks&Method=getDownloadLink"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkId=id&log_filename=20160909%2Fclicks-1473415200-SlY9UO.zip&NetworkToken=token&Target=RawLog&log_type=clicks&Method=getDownloadLink"
       }
     },
     {
@@ -362,11 +362,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Target=RawLog&log_type=clicks&Method=getDownloadLink&log_filename=20160909%2Fclicks-1473411600-SlY9UO.zip&NetworkId=id&NetworkToken=token"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Target=RawLog&log_type=clicks&Method=getDownloadLink&log_filename=20160909%2Fclicks-1473411600-SlY9UO.zip&NetworkId=id&NetworkToken=token"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIANef0lcC/zVQYU/CMBD9K6SfHd0ANfDZGE1AEyF+0BhyrsdW1/VGr7gI2X+3LZA07b3Xe/fu7iQcckeWUSxGJ1F73609+AMHOMnzm5HgKywCUOAhJRptmxAkAS+k5OkYWjiShZ7HJbWypgwUo/tFZ6jirHOk5D7cpXTQZ5GTpdFlw/LbQDhiCPXROXLR7PPrilbIDFVszx6MiUkO9wdkn/p4Qd+TazbUoI39+BSEpGCw9X9d1ImzT2RX6GtSkavQP1BvDYFaxlnC5yO5FmJZ8cOUilyqPyeFVpHagAvSiN+gX1J19dppgxba5DfJi7t8ns8vA2bF7H46K27DPjPV2u3HcXzUXRSuw350mTRPwK+7HbrU5nt4NaWBJmIY/gEwaX5ipQEAAA==",
+          "base64_string": "H4sIAAWxhloC/zVQYU/CMBD9K6SfHd0ANfDZGE1AEyF+0BhyrsdW1/VGr7gI2X+3LZA07b3Xe/fu7iQcckeWUSxGJ1F73609+AMHOMnzm5HgKywCUOAhJRptmxAkAS+k5OkYWjiShZ7HJbWypgwUo/tFZ6jirHOk5D7cpXTQZ5GTpdFlw/LbQDhiCPXROXLR7PPrilbIDFVszx6MiUkO9wdkn/p4Qd+TazbUoI39+BSEpGCw9X9d1ImzT2RX6GtSkavQP1BvDYFaxlnC5yO5FmJZ8cOUilyqPyeFVpHagAvSiN+gX1J19dppgxba5DfJi7t8ns8vA2bF7H46K27DPjPV2u3HcXzUXRSuw350mTRPwK+7HbrU5nt4NaWBJmIY/gEwaX5ipQEAAA==",
           "encoding": null
         },
         "headers": {
@@ -405,7 +405,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?NetworkId=id&log_filename=20160909%2Fclicks-1473415200-SlY9UO.zip&NetworkToken=token&Target=RawLog&log_type=clicks&Method=getDownloadLink"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkId=id&log_filename=20160909%2Fclicks-1473415200-SlY9UO.zip&NetworkToken=token&Target=RawLog&log_type=clicks&Method=getDownloadLink"
       }
     },
     {
@@ -495,11 +495,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?Target=RawLog&log_type=clicks&Method=getDownloadLink&log_filename=20160909%2Fclicks-1473411600-SlY9UO.zip&NetworkId=id&NetworkToken=token"
+        "uri": "https://api.hasoffers.com/Apiv3/json?Target=RawLog&log_type=clicks&Method=getDownloadLink&log_filename=20160909%2Fclicks-1473411600-SlY9UO.zip&NetworkId=id&NetworkToken=token"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIANef0lcC/zVQYU/CMBD9K6SfHd0ANfDZGE1AEyF+0BhyrsdW1/VGr7gI2X+3LZA07b3Xe/fu7iQcckeWUSxGJ1F73609+AMHOMnzm5HgKywCUOAhJRptmxAkAS+k5OkYWjiShZ7HJbWypgwUo/tFZ6jirHOk5D7cpXTQZ5GTpdFlw/LbQDhiCPXROXLR7PPrilbIDFVszx6MiUkO9wdkn/p4Qd+TazbUoI39+BSEpGCw9X9d1ImzT2RX6GtSkavQP1BvDYFaxlnC5yO5FmJZ8cOUilyqPyeFVpHagAvSiN+gX1J19dppgxba5DfJi7t8ns8vA2bF7H46K27DPjPV2u3HcXzUXRSuw350mTRPwK+7HbrU5nt4NaWBJmIY/gEwaX5ipQEAAA==",
+          "base64_string": "H4sIAAWxhloC/zVQYU/CMBD9K6SfHd0ANfDZGE1AEyF+0BhyrsdW1/VGr7gI2X+3LZA07b3Xe/fu7iQcckeWUSxGJ1F73609+AMHOMnzm5HgKywCUOAhJRptmxAkAS+k5OkYWjiShZ7HJbWypgwUo/tFZ6jirHOk5D7cpXTQZ5GTpdFlw/LbQDhiCPXROXLR7PPrilbIDFVszx6MiUkO9wdkn/p4Qd+TazbUoI39+BSEpGCw9X9d1ImzT2RX6GtSkavQP1BvDYFaxlnC5yO5FmJZ8cOUilyqPyeFVpHagAvSiN+gX1J19dppgxba5DfJi7t8ns8vA2bF7H46K27DPjPV2u3HcXzUXRSuw350mTRPwK+7HbrU5nt4NaWBJmIY/gEwaX5ipQEAAA==",
           "encoding": null
         },
         "headers": {
@@ -538,7 +538,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?NetworkId=id&log_filename=20160909%2Fclicks-1473415200-SlY9UO.zip&NetworkToken=token&Target=RawLog&log_type=clicks&Method=getDownloadLink"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkId=id&log_filename=20160909%2Fclicks-1473415200-SlY9UO.zip&NetworkToken=token&Target=RawLog&log_type=clicks&Method=getDownloadLink"
       }
     },
     {
@@ -628,11 +628,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?NetworkId=id&date_dir=20160912&log_type=clicks&Method=listLogs&Target=RawLog&NetworkToken=token"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkId=id&date_dir=20160912&log_type=clicks&Method=listLogs&Target=RawLog&NetworkToken=token"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAC2H1lcC/42RUU/CMBSF/8rSZ4bdkG3wbIgmAolMHySENNvdqGzraDsRCP/d3hZijA/41p577r1fe05Ewq4DpcnYO5EZ6L2Q21RsoTEC0fbQ88gbSMWF1UK8V6Jc60MLKGQVz7YK1Uv7U44yz1FagPzkmfU9MjUvCjMI9ZxpWOdc2ok0iOgosIOnoDfC9ldc6WdRWvdEyJohIvlQwgKlTJZglRe2NzZyNqIE1YpGgX3LRut2oZnulLmGlLqlzNYM/oRXgJXlieRctRU7zFhtORfQekHY8xDL8z06GlPqsRq3Ks2kTnlt/ovVLZqD+3gQxTShFOuFGdpcxlxfdef+x/9x+u9f3X6X94+8ReybAMlNgCgO/wlgnf5rPj8chw5g5eJM/6RZgM42uMvItB8Y8GiYxDRMhnTgeh5MiL8CxBBASiHtz64csEsguJamoBQrsa/pqup8/gawpQB+ggIAAA==",
+          "base64_string": "H4sIAAWxhloC/42RUU/CMBSF/8rSZ4bdkG3wbIgmAolMHySENNvdqGzraDsRCP/d3hZijA/41p577r1fe05Ewq4DpcnYO5EZ6L2Q21RsoTEC0fbQ88gbSMWF1UK8V6Jc60MLKGQVz7YK1Uv7U44yz1FagPzkmfU9MjUvCjMI9ZxpWOdc2ok0iOgosIOnoDfC9ldc6WdRWvdEyJohIvlQwgKlTJZglRe2NzZyNqIE1YpGgX3LRut2oZnulLmGlLqlzNYM/oRXgJXlieRctRU7zFhtORfQekHY8xDL8z06GlPqsRq3Ks2kTnlt/ovVLZqD+3gQxTShFOuFGdpcxlxfdef+x/9x+u9f3X6X94+8ReybAMlNgCgO/wlgnf5rPj8chw5g5eJM/6RZgM42uMvItB8Y8GiYxDRMhnTgeh5MiL8CxBBASiHtz64csEsguJamoBQrsa/pqup8/gawpQB+ggIAAA==",
           "encoding": null
         },
         "headers": {
@@ -671,7 +671,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?NetworkId=id&date_dir=20160912&log_type=clicks&Method=listLogs&Target=RawLog&NetworkToken=token"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkId=id&date_dir=20160912&log_type=clicks&Method=listLogs&Target=RawLog&NetworkToken=token"
       }
     },
     {
@@ -696,11 +696,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?log_type=clicks&NetworkId=id&Method=getDownloadLink&Target=RawLog&log_filename=20160912%2Fclicks-1473670800-Zxuwqd.zip&NetworkToken=token"
+        "uri": "https://api.hasoffers.com/Apiv3/json?log_type=clicks&NetworkId=id&Method=getDownloadLink&Target=RawLog&log_filename=20160912%2Fclicks-1473670800-Zxuwqd.zip&NetworkToken=token"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAP+H1lcC/41PwU7DMAz9lSlnurQd2mBnhEDaQGITBxBCVut1pWncxSmFTft34rAduJGDFb/n9+x3UA53PbJX89FBPaAfyDVratAGQPn4uRipZ3RcU8Ry6Q1V7/67QwEKUxcNC3qS35d/tCt0n3URR++AHzeb4HX22NQGLbSRzNNsml5nuf41TLLL2WQ6S6/SNHn56oddOd7XnQiX6LcUd1Tob2iwhqBc1LYR8pZcC5JGfTDF/WtwYU6QJxgWVKljAB1yR5Yxxt563608+J5Dm6dp4EvwEDkjvkErMzzXmidjaGFPFgYeF9TqLSVQcsiILiTipHNU6l2ohXYwJIKdEulMnv5fTjkSnSMnN72+hY7PF2ZnaonMUEkG2xtzPP4AaCAWUs0BAAA=",
+          "base64_string": "H4sIAAWxhloC/41PwU7DMAz9lSlnurQd2mBnhEDaQGITBxBCVut1pWncxSmFTft34rAduJGDFb/n9+x3UA53PbJX89FBPaAfyDVratAGQPn4uRipZ3RcU8Ry6Q1V7/67QwEKUxcNC3qS35d/tCt0n3URR++AHzeb4HX22NQGLbSRzNNsml5nuf41TLLL2WQ6S6/SNHn56oddOd7XnQiX6LcUd1Tob2iwhqBc1LYR8pZcC5JGfTDF/WtwYU6QJxgWVKljAB1yR5Yxxt563608+J5Dm6dp4EvwEDkjvkErMzzXmidjaGFPFgYeF9TqLSVQcsiILiTipHNU6l2ohXYwJIKdEulMnv5fTjkSnSMnN72+hY7PF2ZnaonMUEkG2xtzPP4AaCAWUs0BAAA=",
           "encoding": null
         },
         "headers": {
@@ -739,7 +739,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?log_type=clicks&NetworkId=id&Method=getDownloadLink&Target=RawLog&log_filename=20160912%2Fclicks-1473670800-Zxuwqd.zip&NetworkToken=token"
+        "url": "https://api.hasoffers.com/Apiv3/json?log_type=clicks&NetworkId=id&Method=getDownloadLink&Target=RawLog&log_filename=20160912%2Fclicks-1473670800-Zxuwqd.zip&NetworkToken=token"
       }
     },
     {
@@ -829,11 +829,11 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Api/json?log_type=clicks&NetworkId=id&Method=getDownloadLink&Target=RawLog&log_filename=20160912%2Fclicks-1473667200-UdOyz5.zip&NetworkToken=token"
+        "uri": "https://api.hasoffers.com/Apiv3/json?log_type=clicks&NetworkId=id&Method=getDownloadLink&Target=RawLog&log_filename=20160912%2Fclicks-1473667200-UdOyz5.zip&NetworkToken=token"
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAGeJ1lcC/42PQU/DMAyF/8rUM13aDjaxM0IgbUxigwtCyGq8rjSNuzij2qb9d+Kw3skhir9nv/idE4f7A7JP5qNz8oK+J9dsqEEbQOLj42aUvKPjmiIrpDZUffljhwJKU5cNC72OP2vBtRa0RvdTl7HvCXi13QajwWBbG7TQRrHI8ml2nxfqzy3Nb2eT6XRWZFn6plfH0934VHcyuES/o/hBhf6BemsI9KK2jYiP5FqQKMk3U1x8Ay70CXmFfkFVcgnQIXdkGWPmnffd2oM/cCjDf0HX4CFqRnzDrPTwXCmejKGFE1noeVxSq3aUguaQEV1IxGnnSKt9uEvloE+FXROpXI76X05ZEp0jJzt9fIaKhw3zQVoiM1SSwR6MuVx+AV0PaMTKAQAA",
+          "base64_string": "H4sIAAWxhloC/42PQU/DMAyF/8rUM13aDjaxM0IgbUxigwtCyGq8rjSNuzij2qb9d+Kw3skhir9nv/idE4f7A7JP5qNz8oK+J9dsqEEbQOLj42aUvKPjmiIrpDZUffljhwJKU5cNC72OP2vBtRa0RvdTl7HvCXi13QajwWBbG7TQRrHI8ml2nxfqzy3Nb2eT6XRWZFn6plfH0934VHcyuES/o/hBhf6BemsI9KK2jYiP5FqQKMk3U1x8Ay70CXmFfkFVcgnQIXdkGWPmnffd2oM/cCjDf0HX4CFqRnzDrPTwXCmejKGFE1noeVxSq3aUguaQEV1IxGnnSKt9uEvloE+FXROpXI76X05ZEp0jJzt9fIaKhw3zQVoiM1SSwR6MuVx+AV0PaMTKAQAA",
           "encoding": null
         },
         "headers": {
@@ -872,7 +872,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Api/json?log_type=clicks&NetworkId=id&Method=getDownloadLink&Target=RawLog&log_filename=20160912%2Fclicks-1473667200-UdOyz5.zip&NetworkToken=token"
+        "url": "https://api.hasoffers.com/Apiv3/json?log_type=clicks&NetworkId=id&Method=getDownloadLink&Target=RawLog&log_filename=20160912%2Fclicks-1473667200-UdOyz5.zip&NetworkToken=token"
       }
     },
     {

@@ -56,6 +56,10 @@ class Model(metaclass=SelectiveInheritanceMeta):
     def update(self, **kwargs):
         return self._manager.update(self.id, **kwargs)
 
+    @generic_method
+    def delete(self, **kwargs):
+        return self._manager.delete(self.id, status='deleted')
+
 
 class ModelManager(metaclass=SelectiveInheritanceMeta):
     """
@@ -82,6 +86,10 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
     @generic_method
     def update(self, id, **kwargs):
         return self._call('update', id=id, data=kwargs)
+
+    @generic_method
+    def delete(self, id, **kwargs):
+        return self.update(id=id, status='deleted')
 
     @generic_method
     def find_by_id(self, id, fields=None, contain=None):

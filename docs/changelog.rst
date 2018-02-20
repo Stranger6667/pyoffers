@@ -10,6 +10,7 @@ Added
 ~~~~~
 
 - Support blockAffiliate method. (`iamanikeev`_)
+- Add Affiliate and AffiliateUser models. (`iamanikeev`_)
 - Recreate session in case of ConnectionReset errors. (`iamanikeev`_)
 
 `0.5.0`_ - 2016-09-20

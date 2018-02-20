@@ -137,6 +137,8 @@ Managers
 - **Country** - As the model has no methods then ``hasoffers.countries`` manager has no methods too.
 - **Goal** - ``hasoffers.goals``
 - **Offer** - ``hasoffers.offers``
+- **Affiliate** - ``hasoffers.affiliates``
+- **AffiliateUser** - ``hasoffers.affiliate_users``
 
 
 Related managers

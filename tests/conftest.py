@@ -56,7 +56,7 @@ def betamax_recorder(request, api):
 @pytest.fixture(scope='session')
 def api():
     return HasOffersAPI(
-        endpoint='https://api.hasoffers.com/Api/json',
+        endpoint='https://api.hasoffers.com/Apiv3/json',
         network_token=NETWORK_TOKEN,
         network_id=NETWORK_ID
     )
@@ -95,3 +95,33 @@ def date_dirs(api):
 @pytest.fixture(scope='session')
 def log_file(api):
     return api.raw_logs.clicks.list_logs('20160909')[0]
+
+
+AFFILIATE_KWARGS = {
+    'company': 'Test Company',
+    'country': 'USA',
+    'region': 'Ohio',
+    'zipcode': '12345',
+}
+
+
+@pytest.fixture(scope='session')
+def affiliate(api):
+    return api.affiliates.create(**AFFILIATE_KWARGS)
+
+
+@pytest.fixture(scope='session')
+def affiliate_with_user(api):
+    """
+    Returns fixture method in order to call it explicitly in tests
+    :return: affiliate fixture method
+    """
+    user_params = {
+        'phone': '+78912345678',
+        'first_name': 'TestName',
+        'last_name': 'TestLastName',
+        'email': 'test7@test.com',
+        'password': '123qwe',
+        'password_confirmation': '123qwe'
+    }
+    return api.affiliates.create_with_user(user_params, **AFFILIATE_KWARGS)
