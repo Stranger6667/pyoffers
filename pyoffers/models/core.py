@@ -58,7 +58,7 @@ class Model(metaclass=SelectiveInheritanceMeta):
 
     @generic_method
     def delete(self, **kwargs):
-        return self._manager.delete(self.id, status='deleted')
+        return self._manager.delete(self.id)
 
 
 class ModelManager(metaclass=SelectiveInheritanceMeta):
