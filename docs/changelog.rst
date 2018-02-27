@@ -6,6 +6,12 @@ Changelog
 `Unreleased`_
 -------------
 
+
+Fixed
+~~~~~
+
+- Initialization of array of objects from API calls
+
 ...
 
 `0.6.0`_ - 2018-02-20

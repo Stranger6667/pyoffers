@@ -143,7 +143,15 @@ class HasOffersAPI:
         """
         target_object = self.init_single_object(target, data.pop(target))
         for key, item in data.items():
-            setattr(target_object, key.lower(), self.init_single_object(key, item))
+            if item:
+                instances = item.values()
+                if len(instances) > 1:
+                    children = [self.init_single_object(key, instance) for instance in instances]
+                else:
+                    children = self.init_single_object(key, list(instances)[0])
+                setattr(target_object, key.lower(), children)
+            else:
+                setattr(target_object, key.lower(), None)
         return target_object
 
     def init_single_object(self, target, data):

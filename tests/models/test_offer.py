@@ -86,6 +86,12 @@ class TestContain:
         assert isinstance(offer, Offer)
         assert offer.country.id == '724'
 
+    def test_find_by_id_array_related(self, api):
+        offer = api.offers.find_by_id(438, contain=['Country'])
+        assert isinstance(offer, Offer)
+        assert isinstance(offer.country, list)
+        assert isinstance(offer.country[0], Country)
+
 
 def test_find_all_ids(api):
     results = api.offers.find_all_ids()

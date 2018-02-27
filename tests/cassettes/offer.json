@@ -1202,6 +1202,74 @@
         },
         "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&&NetworkId=id&Target=Offer&Method=blockAffiliate&id=196&affiliate_id=21"
       }
+    },
+    {
+      "recorded_at": "2018-02-27T14:51:45",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=findById&id=438&contain%5B%5D=Country"
+      },
+      "response": {
+        "body": {
+          "base64_string": "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",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "1677"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 27 Feb 2018 14:51:44 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "9ed3989e-e4f9-402f-bbb1-79d0dc77ea8c"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=findById&id=438&contain%5B%5D=Country"
+      }
     }
   ],
   "recorded_with": "betamax/0.8.0"
