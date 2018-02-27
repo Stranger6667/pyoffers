@@ -9,15 +9,13 @@ Changelog
 Added
 ~~~~~
 
-- Introduce Application model
-- Support managing of OfferCategory objects
+- Introduce Application model. (`iamanikeev`_)
+- Support managing of OfferCategory objects. (`iamanikeev`_)
 
 Fixed
 ~~~~~
 
-- Initialization of array of objects from API calls
-
-...
+- Initialization of array of objects from API calls. (`iamanikeev`_)
 
 `0.6.0`_ - 2018-02-20
 ---------------------
