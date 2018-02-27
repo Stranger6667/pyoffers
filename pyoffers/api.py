@@ -6,7 +6,7 @@ import requests
 
 from .exceptions import HasOffersException, MaxRetriesExceeded
 from .logging import get_logger
-from .models import MODEL_MANAGERS
+from .models import MODEL_MANAGERS, ApplicationManager
 from .utils import prepare_query_params
 
 
@@ -67,7 +67,10 @@ class HasOffersAPI:
         self._managers = {}
         for manager_class in MODEL_MANAGERS:
             instance = manager_class(self)
-            setattr(self, instance.name, instance)
+            if not isinstance(instance, ApplicationManager) or instance.__class__ is ApplicationManager:
+                # Descendants of ``ApplicationManager`` shouldn't be present in API instance.  They are controlled by
+                # Application controller. The manager itself, on the other hand, should.
+                setattr(self, instance.name, instance)
             if instance.model:
                 self._managers[instance.model.__name__] = instance
 

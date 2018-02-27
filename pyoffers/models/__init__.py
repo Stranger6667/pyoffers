@@ -2,10 +2,10 @@
 from .advertiser import Advertiser, AdvertiserManager  # noqa
 from .affiliate import Affiliate, AffiliateManager, AffiliateUser, AffiliateUserManager  # noqa
 from .conversion import Conversion, ConversionManager  # noqa
-from .core import ModelManager  # noqa
+from .core import ApplicationManager, ModelManager  # noqa
 from .country import Country, CountryManager  # noqa
 from .goal import Goal, GoalManager  # noqa
-from .offer import Offer, OfferManager  # noqa
+from .offer import Offer, OfferCategory, OfferCategoryManager, OfferManager  # noqa
 from .raw_log import RawLogManager  # noqa
 
 
@@ -17,5 +17,7 @@ MODEL_MANAGERS = (
     OfferManager,
     RawLogManager,
     AffiliateManager,
-    AffiliateUserManager
+    AffiliateUserManager,
+    OfferCategoryManager,
+    ApplicationManager
 )

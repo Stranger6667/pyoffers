@@ -6,6 +6,11 @@ Changelog
 `Unreleased`_
 -------------
 
+Added
+~~~~~
+
+- Introduce Application model
+- Support managing of OfferCategory objects
 
 Fixed
 ~~~~~

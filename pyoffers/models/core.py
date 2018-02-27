@@ -65,6 +65,11 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
     """
     Proxy for API methods with predefined model.
     Used to structure API. Every manager works only with single model methods.
+
+    Class properties:
+        - model: model class
+        - name: a name by which a manager will be referenced in API instance
+        - generic_methods: what methods to inherit from base ``ModelManager``
     """
     model = None
     name = None
@@ -77,7 +82,11 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
         return self.model(manager=self, **data)
 
     def _call(self, method, **kwargs):
-        return self.api._call(self.model.__name__, method, **kwargs)
+        return self.api._call(self.target, method, **kwargs)
+
+    @property
+    def target(self):
+        return self.model.__name__
 
     @generic_method
     def create(self, **kwargs):
@@ -88,7 +97,7 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
         return self._call('update', id=id, data=kwargs)
 
     @generic_method
-    def delete(self, id, **kwargs):
+    def delete(self, id):
         return self.update(id=id, status='deleted')
 
     @generic_method
@@ -123,3 +132,30 @@ class RelatedManager:
     def find_all(self, **kwargs):
         kwargs[self.related_object_name] = self.id
         return self.base_manager.find_all(**kwargs)
+
+
+class Application(Model):
+    pass
+
+
+class ApplicationManager(ModelManager):
+    """
+    Manager for Application controller.
+
+    Ref: https://developers.tune.com/network/application/
+    """
+    name = 'application'
+    model = Application
+    target = 'Application'
+
+    def find_all_offer_categories(self, sort=(), fields=None, **kwargs):
+        assert fields is None or isinstance(fields, (tuple, list)), 'Fields should be a tuple or list'
+        return self._call(
+            'findAllOfferCategories',
+            filters=Filter(**kwargs),
+            sort=sort,
+            fields=fields, single_result=False
+        )
+
+    def find_all_offer_category_offer_ids(self, id):
+        return self._call('findAllOfferCategoryOfferIds', id=id, single_result=False, raw=True)

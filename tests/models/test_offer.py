@@ -2,7 +2,7 @@
 import pytest
 
 from pyoffers.exceptions import HasOffersException
-from pyoffers.models import Conversion, Country, Offer
+from pyoffers.models import Conversion, Country, Offer, OfferCategory
 
 
 CASSETTE_NAME = 'offer'
@@ -51,6 +51,16 @@ def test_add_target_country_success(offer):
 
 def test_add_category_success(offer):
     assert offer.add_category(1) is True
+
+
+def test_get_categories(offer):
+    categories = offer.get_categories()
+    assert len(categories) == 1
+    assert isinstance(categories[0], OfferCategory)
+
+
+def test_update_category(offer):
+    assert offer.get_categories()[0].update(status='deleted') is True
 
 
 def test_add_category_fail(offer):

@@ -1,6 +1,6 @@
 # coding: utf-8
 from .conversion import ConversionManager
-from .core import Model, ModelManager, RelatedManager
+from .core import ApplicationManager, Model, ModelManager, RelatedManager
 
 
 class RelatedConversionsManager(RelatedManager):
@@ -29,6 +29,9 @@ class Offer(Model):
     def block_affiliate(self, affiliate_id):
         return self._manager.block_affiliate(self.id, affiliate_id)
 
+    def get_categories(self):
+        return self._manager.get_categories(self.id)
+
 
 class OfferManager(ModelManager):
     model = Offer
@@ -52,3 +55,25 @@ class OfferManager(ModelManager):
 
     def block_affiliate(self, id, affiliate_id):
         return self._call('blockAffiliate', id=id, affiliate_id=affiliate_id)
+
+    def get_categories(self, id):
+        return self._call('getCategories', id=id, single_result=False)
+
+
+class OfferCategory(Model):
+    """"
+    Offer category
+    """
+    generic_methods = (
+        'update',
+    )
+
+
+class OfferCategoryManager(ApplicationManager):
+    """
+    This manager doesn't inherit any generic method, since it operates on an Application model
+    """
+    model = OfferCategory
+
+    def update(self, id, **kwargs):
+        return self._call('updateOfferCategory', id=id, data=kwargs)
