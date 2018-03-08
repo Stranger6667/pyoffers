@@ -19,6 +19,7 @@ Fixed
 ~~~~~
 
 - Initialization of array of objects from API calls. (`iamanikeev`_)
+- Initialization of singular objects from API calls. (`iamanikeev`_)
 
 `0.6.0`_ - 2018-02-20
 ---------------------

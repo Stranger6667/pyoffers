@@ -2,7 +2,7 @@
 import pytest
 
 from pyoffers.exceptions import HasOffersException
-from pyoffers.models import Conversion, Country, Offer, OfferCategory
+from pyoffers.models import Advertiser, Conversion, Country, Offer, OfferCategory
 
 
 CASSETTE_NAME = 'offer'
@@ -101,6 +101,10 @@ class TestContain:
         assert isinstance(offer, Offer)
         assert isinstance(offer.country, list)
         assert isinstance(offer.country[0], Country)
+
+    def test_find_by_id_single_instance(self, api):
+        offer = api.offers.find_by_id(438, contain=['Advertiser'])
+        assert isinstance(offer.advertiser, Advertiser)
 
 
 def test_find_all_ids(api):

@@ -147,11 +147,19 @@ class HasOffersAPI:
         target_object = self.init_single_object(target, data.pop(target))
         for key, item in data.items():
             if item:
-                instances = item.values()
-                if len(instances) > 1:
-                    children = [self.init_single_object(key, instance) for instance in instances]
+                # Item is an OrderedDict with 3 possible structure patterns:
+                #   - Just an OrderedDict with (key - value)'s
+                #   - OrderedDict with single (key - OrderedDict)
+                #   - OrderedDict with multiple (key - OrderedDict)'s
+                first_key = list(item.keys())[0]
+                if isinstance(item[first_key], OrderedDict):
+                    instances = item.values()
+                    if len(instances) > 1:
+                        children = [self.init_single_object(key, instance) for instance in instances]
+                    else:
+                        children = self.init_single_object(key, list(instances)[0])
                 else:
-                    children = self.init_single_object(key, list(instances)[0])
+                    children = self.init_single_object(key, item)
                 setattr(target_object, key.lower(), children)
             else:
                 setattr(target_object, key.lower(), None)
