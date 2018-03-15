@@ -125,3 +125,11 @@ def affiliate_with_user(api):
         'password_confirmation': '123qwe'
     }
     return api.affiliates.create_with_user(user_params, **AFFILIATE_KWARGS)
+
+
+@pytest.fixture(scope='session')
+def offer_file(api):
+    return api.offer_files.create(
+        'tests/files/test-thumbnail.jpg', display='TEST_FILE', type='offer thumbnail', width=200,
+        height=100, offer_id=438
+    )
