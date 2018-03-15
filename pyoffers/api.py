@@ -6,7 +6,7 @@ import requests
 
 from .exceptions import HasOffersException, MaxRetriesExceeded
 from .logging import get_logger
-from .models import MODEL_MANAGERS, ApplicationManager
+from .models import MANAGER_ALIASES, MODEL_MANAGERS, ApplicationManager
 from .utils import prepare_query_params
 
 
@@ -87,7 +87,7 @@ class HasOffersAPI:
         return self._session
 
     @retry
-    def _call(self, target, method, single_result=True, raw=False, **kwargs):
+    def _call(self, target, method, single_result=True, raw=False, files=None, **kwargs):
         """
         Low-level call to HasOffers API.
         """
@@ -98,8 +98,13 @@ class HasOffersAPI:
             Method=method,
             **kwargs
         )
+        kwargs = {'url': self.endpoint, 'params': params, 'verify': self.verify, 'method': 'GET'}
+        if files:
+            kwargs.update({'method': 'POST', 'files': files})
+
         self.logger.debug('Request parameters: %s', params)
-        response = self.session.get(self.endpoint, params=params, verify=self.verify)
+        response = self.session.request(**kwargs)
+
         self.logger.debug('Response [%s]: %s', response.status_code, response.text)
         response.raise_for_status()
         data = response.json(object_pairs_hook=OrderedDict)
@@ -146,6 +151,7 @@ class HasOffersAPI:
         """
         target_object = self.init_single_object(target, data.pop(target))
         for key, item in data.items():
+            key_alias = MANAGER_ALIASES.get(key, key)
             if item:
                 # Item is an OrderedDict with 3 possible structure patterns:
                 #   - Just an OrderedDict with (key - value)'s
@@ -155,11 +161,11 @@ class HasOffersAPI:
                 if isinstance(item[first_key], OrderedDict):
                     instances = item.values()
                     if len(instances) > 1:
-                        children = [self.init_single_object(key, instance) for instance in instances]
+                        children = [self.init_single_object(key_alias, instance) for instance in instances]
                     else:
-                        children = self.init_single_object(key, list(instances)[0])
+                        children = self.init_single_object(key_alias, list(instances)[0])
                 else:
-                    children = self.init_single_object(key, item)
+                    children = self.init_single_object(key_alias, item)
                 setattr(target_object, key.lower(), children)
             else:
                 setattr(target_object, key.lower(), None)

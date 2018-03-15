@@ -139,6 +139,7 @@ Managers
 - **Offer** - ``hasoffers.offers``
 - **Affiliate** - ``hasoffers.affiliates``
 - **AffiliateUser** - ``hasoffers.affiliate_users``
+- **OfferFile** - ``hasoffers.offer_files``
 
 
 Related managers
@@ -201,3 +202,16 @@ Also it is possible to get records for month or even for year. But it will take 
 
     >>> september_clicks = hasoffers.raw_logs.clicks.find_all('201609')
     >>> year_clicks = hasoffers.raw_logs.clicks.find_all('2016')
+
+
+Offer files (Creatives)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+``OfferFile`` provides and ability to upload offer file (aka "Creative" in Hasoffers terms). To do so, you can use
+``create`` method:
+
+.. code:: python
+
+    >>>hasoffers.offer_files.create(filename='/relative/or/absolute/path/test.png', display='TEST_FILE',
+        type='offer thumbnail', width=200,height=100, offer_id=438)
+    <OfferFile: 98>

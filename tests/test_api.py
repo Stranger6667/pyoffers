@@ -84,7 +84,7 @@ def test_raw(api):
 def test_session_recreation(api):
     session = api.session
     with pytest.raises(MaxRetriesExceeded), \
-            patch('requests.sessions.Session.get', side_effect=requests.exceptions.ConnectionError) as get:
+            patch('requests.sessions.Session.request', side_effect=requests.exceptions.ConnectionError) as get:
         isinstance(api.advertisers._call('findAllIds', raw=True), list)
         assert get.call_count == 3
         assert api.session is not session

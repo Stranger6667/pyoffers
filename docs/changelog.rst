@@ -6,6 +6,12 @@ Changelog
 `Unreleased`_
 -------------
 
+Added
+~~~~~
+
+- Support managing of OfferFile objects. (`iamanikeev`_)
+
+
 `0.6.2`_ - 2018-03-12
 ---------------------
 
