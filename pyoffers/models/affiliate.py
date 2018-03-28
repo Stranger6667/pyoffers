@@ -40,6 +40,9 @@ class Affiliate(Model):
     def block(self, reason=None):
         return self._manager.block(self.id, reason=reason)
 
+    def get_offer_files_with_creative_code(self, offer_id):
+        return self._manager.get_offer_files_with_creative_code(self.id, offer_id)
+
 
 class AffiliateManager(ModelManager):
     model = Affiliate
@@ -73,3 +76,9 @@ class AffiliateManager(ModelManager):
 
     def block(self, id, reason=None):
         return self._call('block', id=id, reason=reason)
+
+    def get_offer_files_with_creative_code(self, id, offer_id):
+        return self._call(
+            'getOfferFilesWithCreativeCode',
+            target='Offer', target_class='OfferFile', affiliate_id=id, offer_id=offer_id, single_result=False
+        )

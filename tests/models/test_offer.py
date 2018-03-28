@@ -125,3 +125,11 @@ def test_files_manager(offer):
     assert len(files) == 1
     assert isinstance(files[0], OfferFile)
     assert files[0].offer_id == offer.id
+
+
+def test_get_offer_files_with_creative_code(offer):
+    files = offer.get_offer_files_with_creative_code(20)
+    assert len(files) == 1
+    assert isinstance(files[0], OfferFile)
+    assert files[0].offer_id == offer.id
+    assert files[0].creativecode == 'http://www.example.com'

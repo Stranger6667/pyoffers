@@ -34,6 +34,9 @@ class Offer(Model):
     def get_categories(self):
         return self._manager.get_categories(self.id)
 
+    def get_offer_files_with_creative_code(self, affiliate_id):
+        return self._manager.get_offer_files_with_creative_code(self.id, affiliate_id)
+
 
 class OfferManager(ModelManager):
     model = Offer
@@ -60,6 +63,12 @@ class OfferManager(ModelManager):
 
     def get_categories(self, id):
         return self._call('getCategories', id=id, single_result=False)
+
+    def get_offer_files_with_creative_code(self, id, affiliate_id):
+        return self._call(
+            'getOfferFilesWithCreativeCode',
+            target_class='OfferFile', affiliate_id=affiliate_id, offer_id=id, single_result=False
+        )
 
 
 class OfferCategory(Model):

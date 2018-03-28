@@ -90,8 +90,10 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
     def init_instance(self, data):
         return self.model(manager=self, **data)
 
-    def _call(self, method, **kwargs):
-        return self.api._call(self.target, method, **kwargs)
+    def _call(self, method, target=None, **kwargs):
+        if target is None:
+            target = self.target
+        return self.api._call(target, method, **kwargs)
 
     @property
     def target(self):

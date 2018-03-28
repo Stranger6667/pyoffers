@@ -56,8 +56,15 @@ def test_delete(affiliate_with_user, api):
     assert api.affiliates.find_by_id(affiliate_with_user.id).status == 'deleted'
 
 
-def test_files_manager2(affiliate):
+def test_files_manager(affiliate):
     files = affiliate.files.find_all()
     assert len(files) == 1
     assert isinstance(files[0], OfferFile)
     assert files[0].account_id == affiliate.id
+
+
+def test_get_offer_files_with_creative_code(affiliate):
+    files = affiliate.get_offer_files_with_creative_code(44)
+    assert len(files) == 1
+    assert isinstance(files[0], OfferFile)
+    assert files[0].creativecode == 'http://www.example.com'

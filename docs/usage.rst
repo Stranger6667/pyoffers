@@ -216,6 +216,6 @@ Offer files (Creatives)
 
 .. code:: python
 
-    >>>hasoffers.offer_files.create(filename='/relative/or/absolute/path/test.png', display='TEST_FILE',
-        type='offer thumbnail', width=200,height=100, offer_id=438)
+    >>>hasoffers.offer_files.create('/relative/or/absolute/path/test.png', display='TEST_FILE',
+        type='offer thumbnail', width=200,height=100, offer_id=438, filename='custom_filename.png')
     <OfferFile: 98>

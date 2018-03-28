@@ -11,6 +11,7 @@ Added
 
 - New related managers ``Offer.files`` and ``Affiliate.files``. (`Stranger6667`_)
 - Support for ``CreativeCode`` in ``contains`` list. (`Stranger6667`_)
+- ``get_offer_files_with_creative_code`` method for ``Affiliate`` and ``Offer`` models. (`Stranger6667`_)
 
 `0.6.3`_ - 2018-03-15
 ---------------------
