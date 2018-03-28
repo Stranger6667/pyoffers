@@ -60,3 +60,8 @@ def test_custom_filename(api):
         height=100, offer_id=438
     )
     assert offer_file.filename == filename
+
+
+def test_contains_creative_code(api):
+    offer_file = api.offer_files.find_by_id(id=2, contain=['CreativeCode'])
+    assert offer_file.creativecode == 'http://www.example.com'

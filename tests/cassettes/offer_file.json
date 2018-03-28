@@ -691,6 +691,74 @@
         },
         "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=OfferFile&Method=create&data%5Bfilename%5D=another.jpg&data%5Bdisplay%5D=TEST_FILE&data%5Btype%5D=offer+thumbnail&data%5Bwidth%5D=200&data%5Bheight%5D=100&data%5Boffer_id%5D=438"
       }
+    },
+    {
+      "recorded_at": "2018-03-28T14:30:14",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=OfferFile&Method=findById&id=2&contain%5B%5D=CreativeCode"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAG6pu1oC/31Ry07DQAz8lWrPpQ1tBShHkBAcCociLgVVJnEa02Q37DpJC+LfsdOUh5B6Ws/Ya8/YH8bjW42BTfxhHsCvUSJzn2Xor6lAMzTXzpeg5GtwVvACfUMJCnEDoSsMwj7KQ5KPzUTQHXLr/ObBbVAp7t5v+jYVjlIh5si5U5SRTS93t8qR4tn0QsLEWQaSDktz5RGYGrxyKZrnz6HIDpWzAVV3YOA6mPh0aHLmatHDSRQNTQoMWvNjScCvGU751Z6YCU4pVAXsBF6ixYwG6l/4TL5aKNW3oEDvGkUa9tMMJCpQGN5VmmTc8gDUUksp5ya2dVGIQqR1zgeUqJ+4kx0/jZ/GbduOcAtlVeAocd3gAkK+asCH/WiyjD6D7gJ2v1BhIUlcbbkzsu9MYVV5aoAPQhNdIarRSXR6dhLNTqKLQTSNJ9M4OpN86VLK6F/BuRZ0q6p9cWheeWwI21Xt6bh6zuvyxQL1P+Vwfy555K+UovdObS+f+3iOIcAa+16fX4D6vLC9AgAA",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "499"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Wed, 28 Mar 2018 14:30:15 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "8f1d2644-6c55-4fc6-8378-6ad02d5de478"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=OfferFile&Method=findById&id=2&contain%5B%5D=CreativeCode"
+      }
     }
   ],
   "recorded_with": "betamax/0.8.1"
