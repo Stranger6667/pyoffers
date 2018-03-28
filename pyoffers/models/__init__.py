@@ -6,7 +6,7 @@ from .core import ApplicationManager, ModelManager  # noqa
 from .country import Country, CountryManager  # noqa
 from .goal import Goal, GoalManager  # noqa
 from .offer import Offer, OfferCategory, OfferCategoryManager, OfferManager  # noqa
-from .offer_file import OfferFileManager  # noqa
+from .offer_file import OfferFile, OfferFileManager  # noqa
 from .raw_log import RawLogManager  # noqa
 
 

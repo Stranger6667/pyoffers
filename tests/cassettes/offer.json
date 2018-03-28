@@ -1542,6 +1542,74 @@
         },
         "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&&NetworkId=id&Target=Offer&Method=findById&id=438&contain%5B%5D=Advertiser"
       }
+    },
+    {
+      "recorded_at": "2018-03-28T12:45:04",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=OfferFile&Method=findAll&filters%5Boffer_id%5D=196"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIACySu1oC/31SwU7DMAz9lalnYN2GBuyGkBAcgMMmLghNpnVXQ5qUxG2Baf9O7DKKQOLS+r08J88v2SYeXxsMnCxG22QFfoNSJndFgf6SDCYHo+TS+QqUfg7OCrNE31KGQl1BUHEQ/j7+KUoiPxV8i9w5/7JyL6gkazEsXOfCUi7UDXLpFBdk83NjhCzIsOwt7pwcsyaVTM7myW4XBR5D7WxAVQQGbkQ8iSslc73cE9M0jVQODCqsYYNfsqzxHq1MJ4rMNVrLiogufuDv7ql+h4gE9bZ06N8+pZVCbeBdmJWE3U+GFirNUHCgD61TBXvfCWRMrd4Cv9cqYHzjEWhkHeVcRs42xsjESJuSB5y5XDskicV43HXdEb5BVRs8ylylJgyEct2CJqw2yMa8C+jv1va3JDxkGk0/1tf+FNa1pxZ4MJ55jLDPIp3MD9Pjw/R0lM4W09ki1Sgql1NBfyUnIpmdiqTxZjik9tgSduvG0/+zcNlUTxZo37vb6QNB752O9/C4RzcYQv8Aet0nbehJIQUDAAA=",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "505"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Wed, 28 Mar 2018 12:45:05 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "2dc637ed-6aa1-46b5-9623-32ba6dd2aa32"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=OfferFile&Method=findAll&filters%5Boffer_id%5D=196"
+      }
     }
   ],
   "recorded_with": "betamax/0.8.0"

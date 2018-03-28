@@ -2,7 +2,7 @@
 import pytest
 
 from pyoffers.exceptions import HasOffersException
-from pyoffers.models import Affiliate, AffiliateUser
+from pyoffers.models import Affiliate, AffiliateUser, OfferFile
 
 
 CASSETTE_NAME = 'affiliate'
@@ -54,3 +54,10 @@ def test_block(affiliate):
 def test_delete(affiliate_with_user, api):
     affiliate_with_user.delete()
     assert api.affiliates.find_by_id(affiliate_with_user.id).status == 'deleted'
+
+
+def test_files_manager2(affiliate):
+    files = affiliate.files.find_all()
+    assert len(files) == 1
+    assert isinstance(files[0], OfferFile)
+    assert files[0].account_id == affiliate.id

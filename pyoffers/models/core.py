@@ -34,6 +34,7 @@ class Model(metaclass=SelectiveInheritanceMeta):
     Abstract model for HasOffers entity.
     """
     generic_methods = ()
+    related_object_name = None
 
     def __init__(self, manager, **kwargs):
         self._manager = manager
@@ -51,6 +52,14 @@ class Model(metaclass=SelectiveInheritanceMeta):
 
     def as_dict(self):
         return self._data
+
+    def _get_related_manager(self, base_manager_class, related_object_name=None):
+        return RelatedManager(
+            api=self._manager.api,
+            base_manager_class=base_manager_class,
+            related_object_name=related_object_name or self.related_object_name,
+            id=self.id
+        )
 
     @generic_method
     def update(self, **kwargs):
@@ -125,8 +134,9 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
 class RelatedManager:
     related_object_name = None
 
-    def __init__(self, api, base_manager_class, id):
+    def __init__(self, api, base_manager_class, related_object_name, id):
         self.base_manager = base_manager_class(api)
+        self.related_object_name = related_object_name
         self.id = id
 
     def find_all(self, **kwargs):

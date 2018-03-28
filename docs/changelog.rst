@@ -6,13 +6,18 @@ Changelog
 `Unreleased`_
 -------------
 
+Added
+~~~~~
+
+- New related managers ``Offer.files`` and ``Affiliate.files``. (`Stranger6667`_)
+
 `0.6.3`_ - 2018-03-15
 ---------------------
 
 Added
 ~~~~~
 
-- Support managing of OfferFile objects. (`iamanikeev`_)
+- Support managing of ``OfferFile`` objects. (`iamanikeev`_)
 
 `0.6.2`_ - 2018-03-12
 ---------------------
@@ -28,8 +33,8 @@ Fixed
 Added
 ~~~~~
 
-- Introduce Application model. (`iamanikeev`_)
-- Support managing of OfferCategory objects. (`iamanikeev`_)
+- Introduce ``Application`` model. (`iamanikeev`_)
+- Support managing of ``OfferCategory`` objects. (`iamanikeev`_)
 
 Fixed
 ~~~~~
@@ -42,8 +47,8 @@ Fixed
 Added
 ~~~~~
 
-- Support blockAffiliate method. (`iamanikeev`_)
-- Add Affiliate and AffiliateUser models. (`iamanikeev`_)
+- Support ``blockAffiliate`` method. (`iamanikeev`_)
+- Add ``Affiliate`` and ``AffiliateUser`` models. (`iamanikeev`_)
 - Recreate session in case of ConnectionReset errors. (`iamanikeev`_)
 
 `0.5.0`_ - 2016-09-20

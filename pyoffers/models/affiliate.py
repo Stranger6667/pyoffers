@@ -1,5 +1,6 @@
 # coding: utf-8
 from .core import Model, ModelManager
+from .offer_file import OfferFileManager
 
 
 class AffiliateUser(Model):
@@ -31,6 +32,10 @@ class Affiliate(Model):
             return AffiliateUserManager(self._manager.api).find_all(affiliate_id=self.id)[0]
         except IndexError:
             return None
+
+    @property
+    def files(self):
+        return self._get_related_manager(OfferFileManager, 'account_id')
 
     def block(self, reason=None):
         return self._manager.block(self.id, reason=reason)

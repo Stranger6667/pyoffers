@@ -1,10 +1,7 @@
 # coding: utf-8
 from .conversion import ConversionManager
-from .core import ApplicationManager, Model, ModelManager, RelatedManager
-
-
-class RelatedConversionsManager(RelatedManager):
-    related_object_name = 'offer_id'
+from .core import ApplicationManager, Model, ModelManager
+from .offer_file import OfferFileManager
 
 
 class Offer(Model):
@@ -12,10 +9,15 @@ class Offer(Model):
     An Offer.
     """
     generic_methods = ('update',)
+    related_object_name = 'offer_id'
 
     @property
     def conversions(self):
-        return RelatedConversionsManager(api=self._manager.api, base_manager_class=ConversionManager, id=self.id)
+        return self._get_related_manager(ConversionManager)
+
+    @property
+    def files(self):
+        return self._get_related_manager(OfferFileManager)
 
     def add_target_country(self, country_code):
         return self._manager.add_target_country(self.id, country_code)

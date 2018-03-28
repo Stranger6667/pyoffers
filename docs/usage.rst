@@ -152,6 +152,10 @@ Related managers
     >>> offer = hasoffers.offers.find_by_id(7)
     >>> conversions = offer.conversions.find_all()
 
+Other related managers:
+
+- ``Affiliate.files``
+- ``Offer.files``
 
 Raw logs
 ~~~~~~~~

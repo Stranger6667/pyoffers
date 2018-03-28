@@ -2,7 +2,7 @@
 import pytest
 
 from pyoffers.exceptions import HasOffersException
-from pyoffers.models import Advertiser, Conversion, Country, Offer, OfferCategory
+from pyoffers.models import Advertiser, Conversion, Country, Offer, OfferCategory, OfferFile
 
 
 CASSETTE_NAME = 'offer'
@@ -118,3 +118,10 @@ def test_conversions_manager(offer):
     assert len(conversions) == 1
     assert isinstance(conversions[0], Conversion)
     assert conversions[0].offer_id == offer.id
+
+
+def test_files_manager(offer):
+    files = offer.files.find_all()
+    assert len(files) == 1
+    assert isinstance(files[0], OfferFile)
+    assert files[0].offer_id == offer.id
