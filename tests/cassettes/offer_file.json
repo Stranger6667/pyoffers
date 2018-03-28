@@ -572,7 +572,7 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=***REMOVED***&NetworkId=***REMOVED***&Target=OfferFile&Method=findById&id=96"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=OfferFile&Method=findById&id=96"
       },
       "response": {
         "body": {
