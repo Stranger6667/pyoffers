@@ -51,3 +51,12 @@ def test_update_fail(offer_file):
 def test_delete(offer_file, api):
     offer_file.delete()
     assert api.offer_files.find_by_id(offer_file.id).status == 'deleted'
+
+
+def test_custom_filename(api):
+    filename = 'another.jpg'
+    offer_file = api.offer_files.create(
+        'tests/files/test-thumbnail.jpg', filename=filename, display='TEST_FILE', type='offer thumbnail', width=200,
+        height=100, offer_id=438
+    )
+    assert offer_file.filename == filename
