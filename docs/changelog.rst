@@ -6,6 +6,11 @@ Changelog
 `Unreleased`_
 -------------
 
+Fixed
+~~~~~
+
+- Removed internal dependency on ``pip.utils``, which makes the library compatible with pip 10. `#70`_ (`butorov`_, `Stranger6667`_)
+
 `0.6.4`_ - 2018-03-28
 ---------------------
 
@@ -264,6 +269,7 @@ Fixed
 .. _0.1.2: https://github.com/Stranger6667/pyoffers/compare/0.1.1...0.1.2
 .. _0.1.1: https://github.com/Stranger6667/pyoffers/compare/0.1.0...0.1.1
 
+.. _#70: https://github.com/Stranger6667/pyoffers/issues/70
 .. _#52: https://github.com/Stranger6667/pyoffers/issues/52
 .. _#51: https://github.com/Stranger6667/pyoffers/issues/51
 .. _#48: https://github.com/Stranger6667/pyoffers/issues/48
@@ -306,5 +312,6 @@ Fixed
 .. _#5: https://github.com/Stranger6667/pyoffers/issues/5
 .. _#3: https://github.com/Stranger6667/pyoffers/issues/3
 
-.. _Stranger6667: https://github.com/Stranger6667
 .. _iamanikeev: https://github.com/iamanikeev
+.. _butorov: https://github.com/butorov
+.. _Stranger6667: https://github.com/Stranger6667

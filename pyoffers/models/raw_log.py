@@ -3,8 +3,7 @@ from csv import DictReader
 from io import BytesIO, StringIO
 from zipfile import ZipFile
 
-from pip.utils import cached_property
-
+from ..utils import cached_property
 from .core import Model, ModelManager
 
 

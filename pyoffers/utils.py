@@ -2,6 +2,18 @@
 from functools import singledispatch
 
 
+class cached_property(object):
+
+    def __init__(self, func):
+        self.func = func
+
+    def __get__(self, obj, cls):
+        if obj is None:  # pragma: no cover
+            return self
+        value = obj.__dict__[self.func.__name__] = self.func(obj)
+        return value
+
+
 def prepare_query_params(**kwargs):
     """
     Prepares given parameters to be used in querystring.
