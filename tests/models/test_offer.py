@@ -2,7 +2,7 @@
 import pytest
 
 from pyoffers.exceptions import HasOffersException
-from pyoffers.models import Advertiser, Conversion, Country, Offer, OfferCategory, OfferFile
+from pyoffers.models import Advertiser, AffiliateOffer, Conversion, Country, Offer, OfferCategory, OfferFile
 
 
 CASSETTE_NAME = 'offer'
@@ -133,3 +133,32 @@ def test_get_offer_files_with_creative_code(offer):
     assert isinstance(files[0], OfferFile)
     assert files[0].offer_id == offer.id
     assert files[0].creativecode == 'http://www.example.com'
+
+
+def test_set_affiliate_approval_status(api):
+    assert api.offers.set_affiliate_approval_status(472, 20, 'approved') is True
+
+
+def test_offer_set_affiliate_approval_status(offer):
+    assert isinstance(offer.set_affiliate_approval_status(20, 'approved'), AffiliateOffer)
+    assert isinstance(offer.set_affiliate_approval_status(20, 'approved'), bool)
+
+
+def test_get_affiliate_approval_status(offer):
+    assert offer.get_affiliate_approval_status(20) == 'approved'
+
+
+def test_get_blocked_affiliate_ids(offer):
+    assert isinstance(offer.get_blocked_affiliate_ids(), list)
+
+
+def test_get_approved_affiliate_ids(offer):
+    assert isinstance(offer.get_approved_affiliate_ids(), list)
+
+
+def test_get_unapproved_affiliate_ids(offer):
+    assert isinstance(offer.get_unapproved_affiliate_ids(), list)
+
+
+def test_unblock_affiliate(offer):
+    assert offer.unblock_affiliate(20) is True

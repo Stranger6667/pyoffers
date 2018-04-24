@@ -6,6 +6,16 @@ Changelog
 `Unreleased`_
 -------------
 
+Added
+~~~~~
+
+- ``unblock_affiliate`` for ``Offer`` model. (`iamanikeev`_)
+- ``set_affiliate_approval_status`` for ``Offer`` model. (`iamanikeev`_)
+- ``get_affiliate_approval_status`` for ``Offer`` model. (`iamanikeev`_)
+- ``get_blocked_affiliate_ids`` for ``Offer`` model. (`iamanikeev`_)
+- ``get_approved_affiliate_ids`` for ``Offer`` model. (`iamanikeev`_)
+- ``get_unapproved_affiliate_ids`` for ``Offer`` model. (`iamanikeev`_)
+
 `0.6.5`_ - 2018-04-16
 ---------------------
 

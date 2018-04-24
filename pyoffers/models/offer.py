@@ -31,11 +31,29 @@ class Offer(Model):
     def block_affiliate(self, affiliate_id):
         return self._manager.block_affiliate(self.id, affiliate_id)
 
+    def unblock_affiliate(self, affiliate_id):
+        return self._manager.unblock_affiliate(self.id, affiliate_id)
+
     def get_categories(self):
         return self._manager.get_categories(self.id)
 
     def get_offer_files_with_creative_code(self, affiliate_id):
         return self._manager.get_offer_files_with_creative_code(self.id, affiliate_id)
+
+    def set_affiliate_approval_status(self, affiliate_id, status):
+        return self._manager.set_affiliate_approval_status(self.id, affiliate_id, status)
+
+    def get_affiliate_approval_status(self, affiliate_id):
+        return self._manager.get_affiliate_approval_status(self.id, affiliate_id)
+
+    def get_blocked_affiliate_ids(self):
+        return self._manager.get_blocked_affiliate_ids(self.id)
+
+    def get_approved_affiliate_ids(self):
+        return self._manager.get_approved_affiliate_ids(self.id)
+
+    def get_unapproved_affiliate_ids(self):
+        return self._manager.get_unapproved_affiliate_ids(self.id)
 
 
 class OfferManager(ModelManager):
@@ -61,6 +79,9 @@ class OfferManager(ModelManager):
     def block_affiliate(self, id, affiliate_id):
         return self._call('blockAffiliate', id=id, affiliate_id=affiliate_id)
 
+    def unblock_affiliate(self, id, affiliate_id):
+        return self._call('unblockAffiliate', id=id, affiliate_id=affiliate_id)
+
     def get_categories(self, id):
         return self._call('getCategories', id=id, single_result=False)
 
@@ -68,6 +89,39 @@ class OfferManager(ModelManager):
         return self._call(
             'getOfferFilesWithCreativeCode',
             target_class='OfferFile', affiliate_id=affiliate_id, offer_id=id, single_result=False
+        )
+
+    def set_affiliate_approval_status(self, id, affiliate_id, status):
+        return self._call(
+            'setAffiliateApproval',
+            id=id, affiliate_id=affiliate_id, status=status, target_class='AffiliateOffer'
+        )
+
+    def get_affiliate_approval_status(self, id, affiliate_id):
+        return self._call(
+            'getAffiliateApprovalStatus',
+            id=id, affiliate_id=affiliate_id, raw=True
+        )
+
+    def get_blocked_affiliate_ids(self, id):
+        return self._call(
+            'getBlockedAffiliateIds',
+            id=id,
+            raw=True
+        )
+
+    def get_approved_affiliate_ids(self, id):
+        return self._call(
+            'getApprovedAffiliateIds',
+            id=id,
+            raw=True
+        )
+
+    def get_unapproved_affiliate_ids(self, id):
+        return self._call(
+            'getUnapprovedAffiliateIds',
+            id=id,
+            raw=True
         )
 
 

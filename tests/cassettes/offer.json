@@ -416,7 +416,7 @@
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAAAAAAAAA2WQ3U7DMAyFXwX5upOSrmMjl8BgCG1M2viRJjRFrduVtkmXpAU09d1xyiouuLL95dg59gkMHhu0DsQJttJkSBk8pSkaCOBOm0p68GG1onqDps1jJLCQthdZoi8UcnoXEFK1QvepTbHVBXq0mm+P+Fq83be4virT6vG6nsbLerxun28X7E//kJC41aXVhhNdojtoj8jQjXSYaZOj/yz3MBrPoAvIuq21sui9WyddY0HwAA7O1ZtzGTIWQCKdBLE7/e51Hvftu/pp3NtQsvJ7zb8cGiVLIsNEkLHLW4R+Du5jgxR8X8j4bMTCUcguOBcsEtFkEDV18l/EpmJyKaIxibQ3so91o/x1OXTdewBojKaDit2QL9FamZEt1ZRl1/0AKaauAawBAAA=",
+          "base64_string": "H4sIAMGz3VoC/2VQy07DMBD8FbTnVHIepcVHoFCEUio1PKQKVVaySUMeTm0ngKL8O+vQiAOn3RnPjme3B4WnFrUB3kMkVIbUwVOaogIH7qSqhCU+tKwJ71B1eYxErIUeRZrYFyo5vXPwCG3QfEpVRLJAS21W0Qlfi7f7DrdXZVo9XjeLOGz8bfd8u2Z/+oeExHlCRIjmKC2iLDfCYCZVjvaf3JKBv4TBodS6kbVGG1sbYVoN3HXgaEyzO0OPMQcSYQTwff+70tnu206Nbq5NUIvKrrT6MqhqURIzOYKITd4hjD54iBVSsXMec5cz5s08duG6nAU8mE+itkn+i9iCzy954JNI2iCHWLa1PawLw/DuACol6ZZ8P/Uhai0yilW3ZTkMP8wuBs+nAQAA",
           "encoding": null
         },
         "headers": {
@@ -484,7 +484,7 @@
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAAAAAAAAA42Ra2vCMBSG/4rkc4WkcbPm4zY3x6YTdBeQIaE9amdtapJ2E+l/9xwvCLvAoJCct09OntNumYV1Cc4ztWVjbeeAO/Y0m4FlAbs1dqUp+HAmx3oEtkpjwKCn3R5ymL7gkuJ7xUKsBuA/jV2OzRIoGnTHa3hdvt1VMOxks9XDVdGO+4UcVs83PX7m7xOEK5M5YwWmffALQxEKXWsPc2NToMtSClsyYnWA6q4wuQNyd1770jElArbwvhgdy5DzgCXaa6Ym28Ncx3YbOrXvRvflekVjDfUm0ZvGo9E07qkn07FPK2D7TjCNLeBCJ0MuLptc4tPgHSWECuUJKovkO9QmSAolCTKkMo1NmdP3jXCeOvhTkJ8Nu18ebK6zf+pFTR42Q95AN95SrYtf9Q5QmyAplYh+6Am0ew8YWGvwj6vJad8H5/QctfIyy+p6B/uoGL9NAgAA",
+          "base64_string": "H4sIAMGz3VoC/42Ra2vCMBSG/4rkc4WkcbPm4zY3x6YTdBeQIaE9amdtapJ2E+l/9xwvCLvAIJCcN2/ePCfZMgvrEpxnasvG2s4BV+xpNgPLAnZr7EqT8OFMjvUIbJXGgEJPu73JofqCU4r7ioVYDcB/GrscmyWQNOiO1/C6fLurYNjJZquHq6Id9ws5rJ5vevzsv0/QnCYo9MEvDFXIcq09zI1Nge5JSWzJiNUBUrvC5A4I23ntS8eUCNjC+2J0LEPOA5Zor5mabA8tHeM2dGqfJjA21yvqaKg3id40Ho2mTk+ZTMc+rYDtk2AaW8CJToZcXDa5xNHgHSWECuXJVBbJd1ObTFIoSSZDKNPYlDk9bYT91MGfgPxM2P3yYHOd/RMvavKwGfIGsvGWal38incwtckkpRLRDzyBdO8BA2sNfraanNZ9cE7PESsvs6yudxXYZwVIAgAA",
           "encoding": null
         },
         "headers": {
@@ -552,7 +552,7 @@
       },
       "response": {
         "body": {
-          "base64_string": "H4sIAAAAAAAAA02PS0/DQAyE/4vPOSTlgMiNdxFKqdTwkBCHVeKkIdt4aztBqMp/x1sVwWlnvpm15QMw7kcUhfwApeMWTcFlCL6rnHY0QAJ3xDsX8acc/QZ56io0sHTy1DTIYvTFntjPYWFuhfpF3JfUY0Sr23KPr/3b/YTrC9/sHq/CeVWEs/X0fLNM//oPtZUn8kKcGS1QtxTRGGqneNx1baIl/ra4i1EWv1vq4gWiTkcxWqNHxRrmObELJdAg+L+QJbBVDZuTXaTp7xDlERNAZrKz8vePky5QxLU2Yxi9n+cf6FGC1zgBAAA=",
+          "base64_string": "H4sIAMGz3VoC/02PS0/DMBCE/8uec0jLAZEb76IqpVLDQ0IcrHiTpnFjd3cdhKr8d9ZVEZw888147T0C4SEiCxRHqAy1qAquQ3BdbaTzA2Tw4GlvEt7xyW+Qxq5GBQvDz02DxEpf9Uj9AubqVihfnvrK95jQ6r464Fv//jji+so1++VNuKzLcLEeX+4W+V//yWq5swpKlK1PLgZrBE/P3KpoPX1r3KVolm5qatLnWYxEVmrRoaCFacp0OQ5+YPxfmGWwFQmbs53n+e8QoYgZIJHXjYqPz7Mukdm0OmOIzk3TD+kwY3EzAQAA",
           "encoding": null
         },
         "headers": {
@@ -1433,7 +1433,7 @@
       },
       "response": {
         "body": {
-          "base64_string": "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",
+          "base64_string": "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",
           "encoding": null
         },
         "headers": {
@@ -1501,7 +1501,7 @@
       },
       "response": {
         "body": {
-          "base64_string": "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",
+          "base64_string": "H4sIAMGz3VoC/4VX627bOBZ+FcK/c5HspEmMItg0TbfFNDNBk51Z7Hgg0BRls5FIDknZcQd99/0OKdly1t0BejHP/X6O/ho5+WcrfRhN/xo9cbeQ+DX6paqkGx2NPhjXcAJ89Ubj/SjdSgkJwEfuI5EH9Ff8p4CfjsZ4/SzD2rjnJ/MsCfTz3dOf8rfnf/9zJR+u6qr56Z29EPd28rD61/uP2Y7+UwliVQJwL8PS0KtSuny3+UQwRe+zySV+CqMDVxD9++imXEkXlIetf3w/gifeGu0lueIDD60fTfOj0TIE+9g9x1l2NCp54ESTvMSPgfRSeVvzTcF3oqcjMnMHKCJ5DpjmDcXiicIHVumFUzakULxd5tfvd5C3s1MAZm6m6e9be/1eaWmY9KzVnAneWD5rs6zKOePs9uEzQ1KYqZwUkjVKOGMd4eUVHGuMZ6VkJSQ4wxI8t6o0bMN4zZQGjQ7yhN3VTFZSBLUyrK7lghO6MY3UAao1q6G5xYOzOdeCO8Uht2atb/HbkI6KCoBVSYVQ9RHzSjPLrawlrNCK8RWvpT+Bf3bo3m2UqxmyBQ/B5YOEJCiFAvKtBruoFagQA9vKEihvaiVU4I5Y9hwmW5YcP9l5ljHZOnCTsStTIy0kdpKxMjKU3LNGlopCQHLIhbaODhldI2aIEjmhEVqvSl6SbKlXCmpLI1qKDhcqZmOiYxBDF+NGQWTZOg4FOiXhEtnRbcBjQ55ZvjAxhnvWH5GBgvvoBiqIcevMnJdAeMmc5LX6xnfh5pDXJI1BCZ5iy/rgxgCjlr4gnu7Z/09hvZ1fP97ds9kpuwdeBqUXpH7eegGN6JEpWObX7LOCO4CcsAdnlmpO9WPbr4iCNY5KA+IFp4Q3CuGT/ojSvaIqEShoGd3fOukZKso5ks+CsmbRhaxSwgyqI9l313BVk/xk3iuD2DG7S+l4d/OELM9GkuhPtvQn0v8jOF5K/COepTsRCNfolY5HhbaLNt5yv5yDcHb6SQskF93Qx+BBOuiE5z9kFqkOSrWIbx/7hRrNYHbA7b8RtJcChyL3KHKhqGUOcM7d9Y4/PvtuGs6HUjm1QOHG4Fdco0SoZmVsbukoy5grPb2pU/RHR3HSKycLblF+aNtuivXgAEt8wXVZoGlLioBOA/QwIs5VP52dzk7X6/UJOtGblIrTyDA7hWzr5ErJddG6uuM4wAA6Q6P4b6lE65zUYjOa6rauaeJWvK1DYfnGtLSmshOMh4zGdcNfduDzk6wDw/FghOnVANIvihGnOSkBkS9WOU5eFtgUNODHWX51nI2Pxxkbj6fnV/hDO8kX1qlVIqFAJn1F2FiCCMuLqua0GYKSyP3AzB0M8ZG6lR3QIn1I5ZYyudnRHBAcvfwBD8oEo79IkY0ra3x+kfYnbTLoTqhO6gFMZMoOIFKetgha/kWMWBGWGABLU5e9HZVEeGFM/0bQfDsfLkpSMAQVNGATLrHsIat4rgxqQLQe0xJG1VgxO5OdrNKDfnPqwG3RKM/ntSywfMRz0XDs1t7NHSS52GnYOSm47WgbXCHLelMcRHaF0AFOsiHDIVyf4IMMB5EhXmrF3Jm1pyOsu1FiY8uBUVtMXZt1gT2I2Vz/mGAt5x47DrHUz/uYrpp6BJU78rwuUviLuBYQ1S1O+hiTpWmjdW8uxgOoajAX9gnGZxEfip5mj6wzhYpHGtQAzoYSoZlkeV9AZAttiVgGHbDU8lVVxEVS0IHkWtHPsfwgAlowc9Jxx25SYEtGBzEWFbbfYSbU6lfECXxblscE2nFpbHkhiwU8SWmMxZnM6HBeYtSh4Wm/ARvD3rmwND7Q3RmdSgWKw6hYGF77QmpKQn+e9uORcEV3q36WOHhucXKgmwcK0VFuY8NOo1UvsvbbYi9VpUhufp5fXU7ySX5JvLGP0khYL1E3g9hrE8diPLHprGFhKVmgWNrWWeNjKFovuxAUrk3Fk3Xgrk0WzrR2CO+7YQ+xV7YobrspaKwrATGONz2ZiG7HoV60QaTBftkN9jyf5mfTM4pbrSokpZGHW2+LPdj6W+yhPkf9xuUiy0GFlmata8PL4cgheKu7wTeXr1FhqRytExc2Xb1XyL7EJ9DgiwjfNdFTXpZRH3x9c5zlx/kl+Zrl0/PJwfW3/brBzrVcY9COfo1LOH4EldSR1HX38puaO679czr02NkOP+62gwrE/eD4krN0aSxSMz98ifJbHRxR3P6HTgBUiOu9/KasMGVcrHm3uZe4OekzbZxdXJyjBM9yWsIVf0nKuhroHjj+cbHUiIXferPNVuwu2FaE9I2aVIbG7gO4iBZirGi+2O5QUurVQre2UDZp22uPfPJmMr44w7fyx5svd++L7vO2uOd20LId8iap8APMcHHdfPjw6fOnm6e7Al/Rv/3y5afiHSJeDsm3GF5VqlaU8P+L7PP9ioAyWRZdDXSz6IXaNG7rWK3fUV7xwsfz9z+63/fINoKT5H3//l/PPHs+ThAAAA==",
           "encoding": null
         },
         "headers": {
@@ -1677,6 +1677,1026 @@
           "message": "OK"
         },
         "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=getOfferFilesWithCreativeCode&affiliate_id=20&offer_id=196"
+      }
+    },
+    {
+      "recorded_at": "2018-04-23T10:21:53",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=setAffiliateApproval&id=472&affiliate_id=20&status=approved"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAMGz3VoC/z2PMQvCQAyF/0vmG2oRhG4uooM6tLiISLCpnp69mqQ6SP+7uaJOyfte8uC9genRkygUb6iQz2QbbJuGGBwsIt8xgavE1nRJ/PQnMrBEGY/E6M6GN7+A3NSG9BX5VsUbJaTj/ONVbczXBtakl5iUkM6bxgePSvOu4/jEYL5P3nSWIvFnH0eYZ8ZEUXsxheML1TA46yJdbIVSmd/BxMFFtSu/Ms8yBzUqQqHckwNijlaj2B+++5pE8GwZbR/CMHwAJy16viIBAAA=",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "243"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Mon, 23 Apr 2018 10:21:53 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "64596442-9d66-4297-a8bf-e369ef2c229a"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=setAffiliateApproval&id=472&affiliate_id=20&status=approved"
+      }
+    },
+    {
+      "recorded_at": "2018-04-23T12:54:32",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=create&data%5Bname%5D=Test&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAInX3VoC/6VW247bOAz9lcLPmamTzBSdfMBi96Hbhw760haCItOxGllSdYknKObfS8qyo0w92AIbBIh1SFHU4SGdn5WDHxF8qHY/q0fuDoBP1ce2BVetqr+M6zkB373RuP4E7iQFIPA398nJI/oZfyTad9UGV/9CGIw7PpojEBTS7wz/0yAmGwQ+QOgMrYQDHgCRhgdOaWje0xGPlNWqMnQMi04h1IVgd1/ffn07DMMtPPHeKrgVpkc3H3iIHn0s6EbqA0LwZKXjAVNjDZ2A+dXb+ma9we+bzXZ3/4Bf9LMOThKG/zrj+XmFZHlrtAdKczpxvUp7PuXlpq4vVxmJxAdJN72viaBGeqv4mfHmBC5ITw5VjYYLwMhdR6VWL8howAsnbUh0jw5UP+mAcWudOXGVg01wANd7xnXDhEFiaCcmiSkuG8aYf8jIHxdHROdAi/MUv4GWRxWY5WcTSV/1bU0fdO350xKMdwtGmOmc/1dw6Zl18jS6pOjpQBbOlhBhOWsVJ76DBAdNkdAFQ4pAxzkCOAH6cqOpNslnIXC65it7GqybCGzk9qIELBPpA48eLTlo9bvl9T2pUqWJGpclzljoUN2dUfPmFvsyYjrTGmnzcV8IMN28hFgTR/6nLVfGNo2aQgYi+mB6TEtJH4qsHbTlCiNieSfpSM/3CphQUhxZz4UzOZECeeWegtvs2xsdOnVmi8ashgzc1uWGJdtU5cUNi8aQBi3bOzN4mqG5/1MHQ5HU3JBcKTOwHntGWvXCY9ybHAbYexkA+dTHa0vWVGnAWg9sLAE7cSeJ1tkGPpHSmZjS29wVoOxxPizaA5t8rtxyUNIPGJSBxI5Farb1ukyl51IlJWSw0fBSGJB8pPbBRRGK6/9uwGNw9Ly6j5T8HRmZPXRrsBvZARMcq5M0NwbPNg84x7CZHRdHtCYys0tnfKBJXeTacc8OhivPQBO1zXStPPvIxsbpfp0Cdog723A5x8onUH5WbiNbSdFu3m3W7x4e3t/V9MYZD8ltPnSogoJKbUIeFdFDvh9z8VJvgrO0D85EW+KTgq8MV0pDPdozo4EsBYZxvJ/cxnd7msYsBpEm8vr9TX13s9m+WW9293e7Lb0TlWyR8R6W22W2LrbrbF3qTdRceitc6EdVNWbQyvCmHBOER53n1R5emkInHb0HXDhnjbZYWqD/BOCcoSb48i0/f0DV80Ou6/PzL7zp8hNjCQAA",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "958"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Mon, 23 Apr 2018 12:54:32 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "ae4120e1-f86c-4e89-9d6c-86320fc810e9"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=create&data%5Bname%5D=Test&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com"
+      }
+    },
+    {
+      "recorded_at": "2018-04-23T12:54:33",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=setAffiliateApproval&id=196&affiliate_id=20&status=approved"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAInX3VoC/3WQP0/DMBDFv4vnDCFSl2wdQCDUVqIRDAhZp/rSmCa+4LuUoep355ykpRJist/vPd8fn0zErwFZTHkyFcQ96s1s6hqjycwDxQ4S+GQKqrcYj36HCh6BxxArfdXDq1+aQtUa5ZvioaIDJiTjecVPTpl3ClYoDSXFKMu69q0HwWXfRzpCq75P3iJPJeFi2xEWuTIWkIFVwfgEnTlnugv3FBjTMpfAXWYakX47yyLPM+NAIGWmcov8nx6UNrS3g8zj2b/d1dxHRGcFY8cWgrM7Cs6L/owGw9C2N+8DCV5pQywBuqnzhOz6vnrbvDzb3xGSoStijKS/Xr5/zPcVMsMe58D5B/sHvmbRAQAA",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "306"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Mon, 23 Apr 2018 12:54:32 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "fdfb0209-3ba2-4842-b88f-5e4bc4409446"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=setAffiliateApproval&id=196&affiliate_id=20&status=approved"
+      }
+    },
+    {
+      "recorded_at": "2018-04-23T13:09:37",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=setAffiliateApproval&id=196&affiliate_id=20&status=approved"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAMGz3VoC/z2PMQvCQAyF/0vmG2oRhG4uooM6tLiISLCpnp69mqQ6SP+7uaJOyfte8uC9genRkygUb6iQz2QbbJuGGBwsIt8xgavE1nRJ/PQnMrBEGY/E6M6GN7+A3NSG9BX5VsUbJaTj/ONVbczXBtakl5iUkM6bxgePSvOu4/jEYL5P3nSWIvFnH0eYZ8ZEUXsxheML1TA46yJdbIVSmd/BxMFFtSu/Ms8yBzUqQqHckwNijlaj2B+++5pE8GwZbR/CMHwAJy16viIBAAA=",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "306"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Mon, 23 Apr 2018 13:09:37 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "3aa312e3-d8e6-423f-8d8e-4dc69ae11c30"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=setAffiliateApproval&id=196&affiliate_id=20&status=approved"
+      }
+    },
+    {
+      "recorded_at": "2018-04-23T13:09:38",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=setAffiliateApproval&id=196&affiliate_id=20&status=approved"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIABLb3VoC/z2PMQ+CQAyF/0vnG5DowuZidEAHjYsxppECp8hhW3Qw/Hd7RJz63vfaJu8DTM+eRCH7wAG5IlOwK0ticLAK/MAIbhJa83vil7+SgTXKuCRGjza85Rmk5rak78D3Q7hTRDrOP94UxnxhICetQ3RCuixL33hUWnYdhxc2lvuYLZK5SZziywjTxJgoai/mcDyhAgZnXaQLrVAsMy3MHNSq3f5n0yRxUKAiZMo9OSDmYDWy0/mncxLByn60fdMMwxf0dwBGIgEAAA==",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "243"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Mon, 23 Apr 2018 13:09:37 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "f85a9fd7-b113-4f03-843c-2717c8719d06"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=setAffiliateApproval&id=196&affiliate_id=20&status=approved"
+      }
+    },
+    {
+      "recorded_at": "2018-04-24T18:14:35",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=create&data%5Bname%5D=Test&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAAx031oC/6VW227bOBD9lULPTio7TpH4A4rdh+4+NNiXbUHQ1MhiTZFcXqwYRf69MxQl06mCFljDgMUzw+HwzJmRv1cO/ovgQ7X7Xj1xdwB8qv5uW3DVqvpoXM8J+OaNxvVncCcpAIE/uE9OHtF/8EeifVdtcPUXhMG445M5AkEh/c7wnw1iskHgE4TO0Eo44AEQaXjglIbmPR3xRFmtKkPHsOgUQl0Idvfl/Zf3wzDcwjPvrYJbYXp084GH6NHHgm6kPiAEz1Y6HjA11tAJmF99V9+sN/h9t7nb3T/iF/2sg5OE4VdnvLyskCxvjfZAaU4nrldpz+e83NT15Sojkfgg6ab3ayKokd4qfma8OYEL0pNDVaPhAjBy11Gp1SsyGvDCSRsS3aMD1U86YNxaZ05c5WATHMD1nnHdMGGQGNqJSWKKy4Yx5m8y8tvFEdE50OI8xW+g5VEFZvnZRNJXfVvTB117/rwE492CEWY65/8VXHpmnTyNLil6OpCFsyVEWM5axYnvIMFBUyR0wZAi0HGOAE6Avtxoqk3yWQicrvnGngbrJgIbub0oActE+sCjR0sOWv1seXtPqlRposZliTMWOlR3Z9S8ucW+jJjOtEbafNwXAkw3LyHWxJH/acuVsU2jppCBiD6YHtNS0ociawdtucKIWN5JOtLzvQImlBRH1nPhTE6kQN64p+A2+/ZGh06d2aIxqyEDt3W5Yck2VXlxw6IxpEHL9s4MnmZo7v/UwVAkNTckV8oMrMeekVa98hj3JocB9l4GQD718dqSNVUasNYDG0vATtxJonW2gU+kdCam9DbbApQ9zodFe2CTz5VbDkr6AYMykNixSM1dvS5T6blUSQkZbDS8FgYkH6l9cFGE4vo/G/AYHD1v7iMlf0NGZg/dGuxGdsAEx+okzY3Bs80DzjFsZsfFEa2JzOzSGR9oUhe5dtyzg+HKM9BEbTNdK88+srFxul+ngB3izjZczrHyGZSfldvIVlK0mw+b9YfHx4dtTW+c8ZDc5kOHKiio1CbkURE95PsxFy/1JjhL++BMtCU+KfjKcKU01KM9MxrIUmAYx/vJbXy3p2nMYhBpIq8fburtzWb7bv2wW293d/fop2SLjPew3C6zdbFdZ+tSb6Lm0lvhQj+qqjGDVoY35ZggPOo8r/bw2hQ66eg94MI5a7TF0gL9JwDnDDXBv1/z8ydUPT/kur68/ACJHL9bYwkAAA==",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "958"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 24 Apr 2018 18:14:35 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "999ee414-4d71-42cd-a3c4-aef08ea01c16"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=create&data%5Bname%5D=Test&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com"
+      }
+    },
+    {
+      "recorded_at": "2018-04-24T18:14:36",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=getAffiliateApprovalStatus&id=196&affiliate_id=20"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAAx031oC/z2OPw/CQAjFvwvzDbWJy20uRofqoHExxhBL62ntVaA6mH53ufpngvfj8eAFTPeeRMG/YItck3WwripicDCPfMMELhJb0xviRziRgQXKaBKjOyvB5h5yUyvSZ+TrNl4pIR3rHy9LY6E0UJCeY1J2clZVoQmoNOs6jg9sNorap+yQHNNJCsaf6TjCPIPB2ffSxVYovS+fJT9xcFbtvhk+zzIHJSraEo75lO4Tc7T3/f7w7QsSwdqS2r5phuENs6ZXoRoBAAA=",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "243"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 24 Apr 2018 18:14:36 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "7945dcff-7c3e-4a95-be7e-12110cb5229c"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=getAffiliateApprovalStatus&id=196&affiliate_id=20"
+      }
+    },
+    {
+      "recorded_at": "2018-04-24T18:14:44",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=create&data%5Bname%5D=Test&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIABR031oC/6VW227bOBD9lULPTio7bpH4Axa7D90+NOhLWxA0NbJYUyTLixWjyL93hqJkOlWwBdYwYPHMcK5nRv5ZOfgRwYdq97N65O4A+FR9bFtw1ar6y7ieE/DdG43nT+BOUgACf3OflDyin/FHonxXbfD0L4TBuOOjOQJBIf3O8D8NYrJB4AOEztBJOOABEGl44BSG5j25eKSoVpUhNyw6hVAXgt19ffv17TAMt/DEe6vgVpge1XzgIXrUsaAbqQ8IwZOVjgcMjTXkAeOr7+qb9Qa/bzZ3u3cP+EU96+AkYfgvH8/PKyyWt0Z7oDAnj+tVuvMpHzd1fUllLCQ+SMr03XpLaUpvFT8z3pzABelJoapRcAEYqeuo1OpFMRrwwkkbUrlHBeqfdMC4tc6cuMrGJjiA6z3jumHCYGHoJgaJIS4LRpt/WJE/bo6IzoEW58l+Ay2PKjDLzyYSv+rbmj6o2vOnJRhzC0aYyc//a7j0zDp5GlWS9eSQhbMlRFjOWsWp3kGCg6YI6IJhiUDH2QI4AfqS0dSbpLNgOKX5yp0G+yYCG2t7YQK2ifiBrkdJNlr9Lnn9TupUKaLBZalmLHTI7s6o+XKLcxkxnOmMZfNxXxAwZV5CrIlj/acrV8I2rZqCBiL6YHoMS0kfiqgdtOUJLWJ7J+pIz/cKmFBSHFnPhTM5kAJ5JU/BbdbtjQ6dOrNFYWZDBm7r8sKSbOry4oVFYUiLlu2dGTzt0Dz/aYKhCGoeSK6UGViPMyOteqEx3k0KA+y9DID11MdrSeZUKcBeD2xsATtxJ6msswx8KkpnYgpvsy1A2eN+WJQHNulcqWWjxB8wSAOJE4uluavXZSg9lyoxIYONhpfEgKQjtQ8uilCk/7sA3eDqefUeMfk7VmTW0K3BaWQHDHDsTuLcaDzLPOAew2F2XBxRmoqZVTrjA23qItaOe3YwXHkGmkrbTGnl3UcyNm736xBwQtzZhosfK59A+Zm5jWwlWbt5v1m/f3i439b0xhmd5DEfOmRBUUptQl4V0UPOj7l46TfBmdoHZ6It8YnBV4IrpiEf7ZnRQpYCzTjeT2rjuz1tYxaDSBt5fX9Tb2822zfr+916u9sSdZRsseI9LI/LLF0c11m6NJvIufRWuJQfWdWYQSvDm3JNEB513ld7eCkKnXT0HnDhnDnaYmuB/hOAc4aG4Mu3/PwBWc8Pua/Pz78AccErEWMJAAA=",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "957"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 24 Apr 2018 18:14:44 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "edde6139-5520-4e1d-a443-f33dbf409afe"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=create&data%5Bname%5D=Test&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com"
+      }
+    },
+    {
+      "recorded_at": "2018-04-24T18:14:44",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=getBlockedAffiliateIds&id=196"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIABR031oC/0WOMQ+CQAyF/0vnG4DowqaDkQEdIC7G4cIVOEEOr0UHwn+3R4xOr+9r8/pm8PickBjSGUrtG5QJznWNHhQcnH/oAO7kBvEF+petUMBR03pEQi8iVvYpJOJOyG/nu9J1GBCv+sOZEWaNgBy5dcHJy33vqg7Nrq5tbzVjZkKuDdttvIFFSUsa3UAYahJrngjSWEHLPBZfm0SRAqNZQ3q9KUDvndT7zzkS6UYShqnvl+UDsMi3mvoAAAA=",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "229"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 24 Apr 2018 18:14:44 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "b976d808-8076-44f3-a260-0286e73df0f7"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=getBlockedAffiliateIds&id=196"
+      }
+    },
+    {
+      "recorded_at": "2018-04-24T18:14:51",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=create&data%5Bname%5D=Test&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIABt031oC/6VW227bOBD9lULPTio5TpD4Axa7D90+NNiX7YKgqZHFmiJZXqwYRf59ZyjKplMFW2ANAxbPDOd6ZuQflYPvEXyotj+qZ+72gE/V564DV62q34wbOAHfvNF4/gLuKAUg8Dv3Sckj+hf+SJRvqzWe/oQwGnd4NgcgKKTfM/xHi5hsEfgEoTd0Eg54AERaHjiFoflALp4pqlVlyA2LTiHUh2C3Xz9+/TiO4y288MEquBVmQDUfeIgedSzoVuo9QvBipeMBQ2MtecD46rv6plnj98P6bnv/hF/Usw6OEsb/8vH6usJieWu0Bwpz9tis0p0v+biu60sqUyHxQVKm980DpSm9VfzEeHsEF6QnhapGwQVgpK6jUqs3xWjBCydtSOWeFKh/0gHj1jpz5Cobm+EAbvCM65YJg4WhmxgkhrgsmGz+YkV+uTkiOgdanGb7LXQ8qsAsP5lI/Kpva/qg6sBflmDMLRhhZj//r+HSM+vkcVJJ1pNDFk6WEGE56xSnegcJDtoioAuGJQIdzxbACdCXjObeJJ0FwynNd+602DcR2FTbCxOwTcQPdD1JstHqZ8n7d1KnShENLks1Y6FHdvdGnS93OJcRw5nPWDYfdwUBU+YlxNo41X++ciXs0qopaCCiD2bAsJT0oYjaQVee0CK2d6aO9HyngAklxYENXDiTAymQd/IU3GbdwejQqxNbFGY2ZOC2Li8syeYuL15YFIa0aNnOmdHTDs3znyYYiqDOA8mVMiMbcGakVW80prtJYYSdlwGwnvpwLcmcKgXY65FNLWBH7iSV9SwDn4rSm5jCW28KUA64Hxblgc06V2rZKPEHDNJA4sRiae7qpgxl4FIlJmSw1fCWGJB0pPbBRRGK9H8WoBtcPe/eIyZ/w4qcNXRncBrZHgOcupM4NxnPMg+4x3CYHRcHlKZiZpXe+ECbuoi1557tDVeegabStnNaefeRjE3b/ToEnBB3suHix8oXUP7M3FZ2kqzdPKybh6enx01Nb5zJSR7zsUcWFKXUJuRVET3k/JiLl34TnKm9dybaEp8ZfCW4Yhry0Z4YLWQp0Izjw6w2vdvTNmYxiLSRm8ebenOz3nxoHrfNZnvfoJ6SHVZ8gOVxOUsXx/UsXZpN5Fx6K1zKj6xqzaiV4W25JgiPOu+rHbwVhV46eg+4cMoc7bC1QP8JwDlDQ/D3P/n5E7Ke73NfX1//BWP34RljCQAA",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "958"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 24 Apr 2018 18:14:51 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "f250994f-088c-4a11-a918-4dd8ca269759"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=create&data%5Bname%5D=Test&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com"
+      }
+    },
+    {
+      "recorded_at": "2018-04-24T18:14:51",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=getApprovedAffiliateIds&id=196"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIABt031oC/0WOMQ+CQAyF/0vnG4BEBzYdjAzoAHExDheuwAlyeC06EP67PWJ0en1fm9c3g8fnhMSQzlBq36BMcK5r9KDg4PxDB3AnN4gv0L9shQKOmtYjEnoRsbJPIRF3Qn4735Wuw4B41R/OjDBrBOTIrQtOXu57V3VodnVte6sZMxNybdhu4i0sSlrS6AbCUJNY80SQxgpa5rH42iSKFBjNGtLrTQF676Tef86RSDeSMEx9vywfGbY8GvoAAAA=",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "229"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 24 Apr 2018 18:14:51 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "aa6b657e-1461-4fca-a543-84f85cead9f1"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=getApprovedAffiliateIds&id=196"
+      }
+    },
+    {
+      "recorded_at": "2018-04-24T18:14:58",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=create&data%5Bname%5D=Test&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIACN031oC/6VW227bOBD9lULPTio7TpH4A4rdh+4+NNiXbUHQ1MhiTZFcXqwYRf69MxQl06mCFljDgMUzw7meGfl75eC/CD5Uu+/VE3cHwKfq77YFV62qj8b1nIBv3mg8fwZ3kgIQ+IP7pOQR/Qd/JMp31QZPf0EYjDs+mSMQFNLvDP/ZICYbBD5B6AydhAMeAJGGB05haN6TiyeKalUZcsOiUwh1Idjdl/df3g/DcAvPvLcKboXpUc0HHqJHHQu6kfqAEDxb6XjA0FhDHjC++q6+WW/w+25zt7t/xC/qWQcnCcOvfLy8rLBY3hrtgcKcPK5X6c7nfNzU9SWVsZD4ICnT+/UDpSm9VfzMeHMCF6QnhapGwQVgpK6jUqtXxWjACydtSOUeFah/0gHj1jpz4iobm+AArveM64YJg4WhmxgkhrgsGG3+ZkV+uzkiOgdanCf7DbQ8qsAsP5tI/Kpva/qgas+fl2DMLRhhJj//r+HSM+vkaVRJ1pNDFs6WEGE5axWnegcJDpoioAuGJQIdZwvgBOhLRlNvks6C4ZTmG3ca7JsIbKzthQnYJuIHuh4l2Wj1s+TtO6lTpYgGl6WasdAhuzuj5sstzmXEcKYzls3HfUHAlHkJsSaO9Z+uXAnbtGoKGojog+kxLCV9KKJ20JYntIjtnagjPd8rYEJJcWQ9F87kQArkjTwFt1m3Nzp06swWhZkNGbitywtLsqnLixcWhSEtWrZ3ZvC0Q/P8pwmGIqh5ILlSZmA9zoy06pXGeDcpDLD3MgDWUx+vJZlTpQB7PbCxBezEnaSyzjLwqSidiSm8zbYAZY/7YVEe2KRzpZaNEn/AIA0kTiyW5q5el6H0XKrEhAw2Gl4TA5KO1D64KEKR/s8CdIOr5817xORvWJFZQ7cGp5EdMMCxO4lzo/Es84B7DIfZcXFEaSpmVumMD7Spi1g77tnBcOUZaCptM6WVdx/J2Ljdr0PACXFnGy5+rHwG5WfmNrKVZO3mw2b94fHxYVvTG2d0ksd86JAFRSm1CXlVRA85P+bipd8EZ2ofnIm2xCcGXwmumIZ8tGdGC1kKNON4P6mN7/a0jVkMIm3k9cNNvb3ZbN+tH3br7e6e3olKtljxHpbHZZYujussXZpN5Fx6K1zKj6xqzKCV4U25JgiPOu+rPbwWhU46eg+4cM4cbbG1QP8JwDlDQ/Dv1/z8CVnPD7mvLy8/AAtvJS1jCQAA",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "958"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 24 Apr 2018 18:14:58 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "e3f0d570-e976-4027-9de5-a7e0db887a81"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=create&data%5Bname%5D=Test&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com"
+      }
+    },
+    {
+      "recorded_at": "2018-04-24T18:14:58",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=getUnapprovedAffiliateIds&id=196"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIACN031oC/0WOMQ+CQAyF/0vnG4DExLDpYGRAB4iLcbhwBU6Qw2vRgfDf7RGj0+v72ry+GTw+JySGdIZS+wZlgnNdowcFB+cfOoA7uUF8gf5lKxRw1LQekdCLiJV9Com4E/Lb+a50HQbEq/5wZoRZIyBHbl1w8nLfu6pDs6tr21vNmJmQa8N2E29hUdKSRjcQhprEmieCNFbQMo/F1yZRpMBo1pBebwrQeyf1/nOORLqRhGHq+2X5AMTDbi/6AAAA",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "229"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 24 Apr 2018 18:14:58 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "890c10a3-f74a-467b-82b0-c75c250fa783"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=getUnapprovedAffiliateIds&id=196"
+      }
+    },
+    {
+      "recorded_at": "2018-04-24T18:19:13",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=create&data%5Bname%5D=Test&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIACF131oC/6VW227bOBD9lULPTio7SZH4A4rdh24fEuzLdkHQ1MhiTZEsL1aMIv++MxQl04mCFljDgMUzw7meGfln5eBHBB+q7c/qibs94FP1tW3BVavqs3E9J+C7NxrPj+COUgACf3CflDyif+OPRPm22uDpLwiDcYcncwCCQvqd4T8bxGSDwBcInaGTcMADINLwwCkMzXty8URRrSpDblh0CqEuBLv99vHbx2EYruGZ91bBtTA9qvnAQ/SoY0E3Uu8RgmcrHQ8YGmvIA8ZX39RX6w1+P2xutncP+EU96+AoYfiVj5eXFRbLW6M9UJiTx/Uq3XnMx01dn1MZC4kPkjK929SUpvRW8RPjzRFckJ4UKhKcAUbqOiq1elWMBrxw0oZU7lGB+icdMG6tM0eusrEJDuB6z7humDBYGLqJQWKIy4LR5m9W5LebI6JzoMVpst9Ay6MKzPKTicSv+rqmD6r2/HkJxtyCEWby8/8aLj2zTh5HlWQ9OWThZAkRlrNWcap3kOCgKQI6Y1gi0HG2AE6APmc09SbpLBhOab5zp8G+icDG2p6ZgG0ifqDrUZKNVm8l799JnSpFNLgs1YyFDtndGTVfbnEuI4YznbFsPu4KAqbMS4g1caz/dOVC2KZVU9BARB9Mj2Ep6UMRtYO2PKFFbO9EHen5TgETSooD67lwJgdSIO/kKbjNur3RoVMntijMbMjAdV1eWJJNXV68sCgMadGynTODpx2a5z9NMBRBzQPJlTID63FmpFWvNMa7SWGAnZcBsJ76cCnJnCoF2OuBjS1gR+4klXWWgU9F6UxM4W1uC1D2uB8W5YFNOhdq2SjxBwzSQOLEYmlu6nUZSs+lSkzIYKPhNTEg6Ujtg4siFOm/FaAbXD3v3iMmf8eKzBq6NTiNbI8Bjt1JnBuNZ5kH3GM4zI6LA0pTMbNKZ3ygTV3E2nHP9oYrz0BTaZsprbz7SMbG7X4ZAk6IO9lw9mPlMyg/M7eRrSRrV582608PD/e3Nb1xRid5zIcOWVCUUpuQV0X0kPNjLp77TXCm9t6ZaEt8YvCF4IJpyEd7YrSQpUAzjveT2vhuT9uYxSDSRl7fX9W3V5vbD+v77fphu75BPSVbrHgPy+MySxfHdZYuzSZyLr0VzuVHVjVm0MrwplwThEed99UOXotCJx29B1w4ZY622Fqg/wTgnKEh+Off/PwFWc/3ua8vL/8Bdhbr32MJAAA=",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "957"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 24 Apr 2018 18:19:13 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "b46a6e28-175d-489d-857a-647afe0406c2"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=create&data%5Bname%5D=Test&data%5Boffer_url%5D=http%3A%2F%2Fwww.example.com&data%5Bstatus%5D=pending&data%5Bexpiration_date%5D=2030-12-12+23%3A59%3A59&data%5Bpreview_url%5D=http%3A%2F%2Fwww.example.com"
+      }
+    },
+    {
+      "recorded_at": "2018-04-24T18:19:13",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=unblockAffiliate&id=196&affiliate_id=20"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIACF131oC/z3OMQ7CMAwF0Lt4zlAqsWRjQTAAA4gFIWSoC6GlAduBAfXuOBUw2f85iv4bmB6JRMG/YYN8JttgVdfE4GAa+YYZrhI7y2viZziRwQxleCSmWxvB7h5KS0vSV+RmExvKpMP887wyC5XBgvQSc0rdsY2nZlLXoQ2oZLeQfVwWtuKPDwOa9c46yz12Qrm0KGoS8CMHF9X7+hvLonBQoSJ45UQOiDlaXb/bf/cFieDZ/uhS2/b9B9pNSTwKAQAA",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "234"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Tue, 24 Apr 2018 18:19:13 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "90671acd-67e3-426f-95d6-de5a96c9aa3f"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=unblockAffiliate&id=196&affiliate_id=20"
       }
     }
   ],

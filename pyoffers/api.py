@@ -152,7 +152,7 @@ class HasOffersAPI:
         """
         Initializes target object and assign extra objects to target as attributes
         """
-        target_object = self.init_single_object(target, data.pop(target))
+        target_object = self.init_single_object(target, data.pop(target, data))
         for key, item in data.items():
             key_alias = MANAGER_ALIASES.get(key, key)
             if item:

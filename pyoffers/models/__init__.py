@@ -1,6 +1,7 @@
 # coding: utf-8
 from .advertiser import Advertiser, AdvertiserManager  # noqa
 from .affiliate import Affiliate, AffiliateManager, AffiliateUser, AffiliateUserManager  # noqa
+from .affiliate_offer import AffiliateOffer, AffiliateOfferManager  # noqa
 from .conversion import Conversion, ConversionManager  # noqa
 from .core import ApplicationManager, ModelManager  # noqa
 from .country import Country, CountryManager  # noqa
@@ -21,7 +22,8 @@ MODEL_MANAGERS = (
     AffiliateUserManager,
     OfferCategoryManager,
     ApplicationManager,
-    OfferFileManager
+    OfferFileManager,
+    AffiliateOfferManager,
 )
 
 MANAGER_ALIASES = {
