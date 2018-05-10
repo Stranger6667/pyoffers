@@ -55,6 +55,9 @@ class Offer(Model):
     def get_unapproved_affiliate_ids(self):
         return self._manager.get_unapproved_affiliate_ids(self.id)
 
+    def generate_tracking_link(self, affiliate_id, tiny_url=False, **params):
+        return self._manager.generate_tracking_link(self.id, affiliate_id, tiny_url=tiny_url, **params)
+
 
 class OfferManager(ModelManager):
     model = Offer
@@ -121,6 +124,17 @@ class OfferManager(ModelManager):
         return self._call(
             'getUnapprovedAffiliateIds',
             id=id,
+            raw=True
+        )
+
+    def generate_tracking_link(self, id, affiliate_id, tiny_url=False, **params):
+        tiny_url = '1' if tiny_url else '0'
+        return self._call(
+            'generateTrackingLink',
+            offer_id=id,
+            affiliate_id=affiliate_id,
+            options={'tiny_url': tiny_url},
+            params=params,
             raw=True
         )
 

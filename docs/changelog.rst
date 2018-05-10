@@ -6,6 +6,10 @@ Changelog
 `Unreleased`_
 -------------
 
+Added
+~~~~~
+- ``generate_tracking_link`` method for ``Offer`` model. (`iamanikeev`_)
+
 `0.6.6`_ - 2018-04-24
 ---------------------
 

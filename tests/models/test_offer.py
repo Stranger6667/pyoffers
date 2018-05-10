@@ -162,3 +162,13 @@ def test_get_unapproved_affiliate_ids(offer):
 
 def test_unblock_affiliate(offer):
     assert offer.unblock_affiliate(20) is True
+
+
+def test_generate_tracking_link(offer):
+    result = offer.generate_tracking_link(94, file_id=727)
+    assert 'offer_id=472' in result['click_url']
+
+
+def test_generate_tracking_link_w_tiny_url(offer):
+    result = offer.generate_tracking_link(94, file_id=727, tiny_url=True)
+    assert 'offer_id=472' not in result['click_url']
