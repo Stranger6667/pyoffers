@@ -6,10 +6,12 @@ Changelog
 `Unreleased`_
 -------------
 
+`0.6.8`_ - 2018-06-15
+---------------------
+
 Added
 ~~~~~
 - Support of Tag controller. (`iamanikeev`_)
-
 
 `0.6.7`_ - 2018-05-11
 ---------------------
