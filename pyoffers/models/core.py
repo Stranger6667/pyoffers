@@ -77,12 +77,16 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
 
     Class properties:
         - model: model class
+        - model_aliases: possible names by which HO API might return instances of the model
         - name: a name by which a manager will be referenced in API instance
         - generic_methods: what methods to inherit from base ``ModelManager``
+        - forbid_registration: whether the manager shouldn't be accessible in API instance
     """
     model = None
+    model_aliases = None
     name = None
     generic_methods = ()
+    forbid_registration = False
 
     def __init__(self, api):
         self.api = api
@@ -131,6 +135,10 @@ class ModelManager(metaclass=SelectiveInheritanceMeta):
     @generic_method
     def find_all_ids(self, **kwargs):
         return self._call('findAllIds', filters=Filter(**kwargs), single_result=False, raw=True)
+
+
+class InvisibleModelManager(ModelManager):
+    forbid_registration = True
 
 
 class RelatedManager:

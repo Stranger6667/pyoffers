@@ -1,6 +1,16 @@
 # coding: utf-8
-from .core import Model, ModelManager
+from .core import InvisibleModelManager, Model, ModelManager
 from .offer_file import OfferFileManager
+
+
+class AffiliateOffer(Model):
+    """
+    Model that defines relation between Offer and Affiliate
+    """
+
+
+class AffiliateOfferManager(InvisibleModelManager):
+    model = AffiliateOffer
 
 
 class AffiliateUser(Model):

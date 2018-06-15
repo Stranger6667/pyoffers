@@ -133,3 +133,16 @@ def offer_file(api):
         'tests/files/test-thumbnail.jpg', display='TEST_FILE', type='offer thumbnail', width=200,
         height=100, offer_id=438
     )
+
+
+@pytest.fixture(scope='session')
+def tag(api):
+    return api.tags.create(
+        name='test_tag_2',
+        offer_applicable=1,
+        affiliate_applicable=1,
+        advertiser_applicable=1,
+        active=1,
+        pi_visible=1,
+        attribute='Custom'
+    )

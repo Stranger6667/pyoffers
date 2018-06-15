@@ -15,7 +15,7 @@ def is_empty(data):
 
 
 def is_paginated(data):
-    return 'pageCount' in data
+    return any(key in data for key in ('page', 'pageCount'))  # Apparently, there are two types of pagination HO
 
 
 def retry(method):
@@ -67,12 +67,16 @@ class HasOffersAPI:
         self._managers = {}
         for manager_class in MODEL_MANAGERS:
             instance = manager_class(self)
-            if not isinstance(instance, ApplicationManager) or instance.__class__ is ApplicationManager:
+            if not instance.forbid_registration \
+                    and not isinstance(instance, ApplicationManager) or instance.__class__ is ApplicationManager:
                 # Descendants of ``ApplicationManager`` shouldn't be present in API instance.  They are controlled by
                 # Application controller. The manager itself, on the other hand, should.
                 setattr(self, instance.name, instance)
             if instance.model:
                 self._managers[instance.model.__name__] = instance
+            if instance.model_aliases:
+                for alias in instance.model_aliases:
+                    self._managers[alias] = instance
 
     def __str__(self):
         return '%s: %s / %s' % (self.__class__.__name__, self.network_token, self.network_id)
@@ -126,7 +130,8 @@ class HasOffersAPI:
         if is_empty(data):
             return data
         elif is_paginated(data):
-            if not data['count']:
+            if 'count' in data and not data['count']:
+                # Response is paginated, but is empty
                 return data['data']
             data = data['data']
 
