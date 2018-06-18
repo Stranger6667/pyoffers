@@ -6,6 +6,11 @@ Changelog
 `Unreleased`_
 -------------
 
+Added
+~~~~~
+- ``find_all_affiliate_approvals``. (`iamanikeev`_)
+- Fix ``find_all_(offer|affiliate|advertiser)_tag_relations`` methods for Tag model. (`iamanikeev`_)
+
 `0.6.8`_ - 2018-06-15
 ---------------------
 

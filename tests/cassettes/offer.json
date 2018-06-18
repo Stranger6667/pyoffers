@@ -2834,6 +2834,74 @@
         },
         "url": "https://api.hasoffers.com/Apiv3/json?NetworkId=id&NetworkToken=token&Target=Offer&Method=generateTrackingLink&offer_id=196&affiliate_id=94&options%5Btiny_url%5D=0&params%5Bfile_id%5D=727"
       }
+    },
+    {
+      "recorded_at": "2018-06-15T12:46:42",
+      "request": {
+        "body": {
+          "base64_string": "",
+          "encoding": "utf-8"
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.18.4"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=findAllAffiliateApprovals&filters%5Boffer_id%5D=196"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAAAAAAAAA+1YX2/bNhD/KoZem6SS4jq234I2Q4e1abEEK7B1IBiKsllLpEpSdrwi3313pCjJiZL1YX1IIUOAxbvj8f7zB32LNP9ac2Oj5bfomuoVh7foQ55zHR1FvyhdUiR8MUrC+orrrWAcCG+pcUIGqH/AnwD+MkphdcntTunNtdpwJF1eXH+d15u3n6rp9dlFvJ+a6xW9ZO8u31yJ12ed/K8ZCG9VYZROgPqe27VCUi5kdl4U53kuCkEtP68qrba0wIOBZNEEMF2hMUTgjmk6j+7ujsAxUylpOLKNpbYGweQoWltbXTXLNI6PooxaijLpIsW/9iQfBKA4rcg9imhg+qMWc6DdOxqEGhNJOLWh8AyZK815RsDu0hAqM8KUzISF+IGgrIuit18qy1vqWhkraelP9iQCwf304fffSGcCMsD31gm0nzKmamlJSSVd9eSc65zQLOPOwziZH8evjuPpJH61TOJljB53PjArthwoFd2XHNQ5F4AhuZ2c9ehlSN1OaJT3a+LD7M/tgsdUWVG5hyW4ijqhEiECWQbZM0kbEb9Ow5oJuw/vmq9c8TUc9FSjvtd/Ym7sGnPoef+IiqmMh2W1VhJL+cU0jWfxbDpL4hj9yOltENnxGyNsu2NHpYWkFVxbdBzrdLcgEGkXvzhCYyARGlLXxdiIlawrIqrWmbaGrDjIRq5pnREXZ/CPGKY0P+RBXeBpQywtzMYpDORSZSIX3jL4HbtnEkNa8YkeHOfcInYNgV6r4jGjbgrFNo9JBfOeVBWEHtFkmK5vmoKuxC0vQqQhtP0KP+xO33g9l30xnx7H80kCxZwu04Wrqy1YJkzoV9SLPQWv5ytozBVkJZtclFQUk49vJhdXwM84mCQq6yecM+RrDZVNQpu2qffk4c6OMmHoTeFGwCMS2EKabwXfkVqjVpxUy88vP7/c7XYnfjSeQL+0I+e/pDKe07qwBBpT1TjF4xOsBDS2pLdDZHDIKqaC2sH257eV0BSNxpbmLtYpBDrFWKfp8tUCHpATBlIttl4k7pnjMtzQIABbf3sQRquGWCpp18WeDDK91YFwEvc3DPEgolzWfHjDIFPzDPLIbG+q9myFArnPAE+bsYMel9SNH2RAYe8IFhMphLEN0bpLltxotTPu8vJucc1weIakhGmmNoKTtaqdYDpFpTAIMSSBODtLe1RRVvqegNt133hfO1087b7CPLGKkrygOINxloB4VyUdrQlbQ6wND5FfaVVXpkcPAT5g3LelORv7sygwYlAlooIR0RVA2OoFmrEMUZWbwDmgwc5q765fwcA2TctDBU2C+/tdrlhtrCrJlmqBzdpu8tf3gD2ujwZTl0nust6ViYGshzQdZCr0hzBVQWEQt0OqYXBXQkIaq2tme6c/ZJBcQ+u7WA4wTX3zBfz2/F53uXYemNccel/zdi2chv40dG71SCSr/Whop3mfmTuoKVl7dftwQwUcBgrP4QrEBZcZdOlpnHTXqxfDdzhIrjpVWvdVh8J7WNdc5goSRlZwhO9FpyakAPNOWCHgbiop0yrUbEfxvdOAMmrISgEaJVz68X4465BHmhsmGsRwwRwwXu8raERN2QYs6i4/l2mnvemX3RoKvTdRQlH5aQFla0gpZN3DjggkvQXYlM0E0nVX4cEKwyGQvDMCOyREQHPELA4y1pa1d6yb+/Hczf0ZyBUih5CWfHi4ttzB4d5yH05yRPTpIn4SoccDCH36XBF6dIqWDiP00wkgmmS6TGY/FqFPHyD0F3FygM+j6DF07qHSMDb/TmT+U4LxNomLSTJHMJ5MRzA+gvERjI9gfATjIxgfwfgIxp8HGJ/PnwLj8/kAGJ89VzD+1OdyB8bTBJ4fC8ZnA2A8jf6fj+Uf330nJG8+lieIUaY/JT4fP5aP+HzE5yM+H/H5iM9HfD7i8+eJz+HSB2ylcKb99Xfz/h6cBUTboIK7fwGUnz7N+yMAAA==",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "1480"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Fri, 15 Jun 2018 12:46:42 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ],
+          "X-Request-Id": [
+            "61f90654-7969-4388-be73-bd6a2d2ffc76"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Offer&Method=findAllAffiliateApprovals&filters%5Boffer_id%5D=196"
+      }
     }
   ],
   "recorded_with": "betamax/0.8.1"

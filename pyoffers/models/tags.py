@@ -1,3 +1,5 @@
+from pyoffers.utils import Filter
+
 from .core import InvisibleModelManager, Model, ModelManager
 
 
@@ -51,13 +53,19 @@ class TagManager(ModelManager):
     )
 
     def find_all_offer_tag_relations(self, **kwargs):
-        return self._call('findAllOfferTagRelations', target_class='TagRelation', single_result=False, **kwargs)
+        return self._call(
+            'findAllOfferTagRelations', target_class='TagRelation', single_result=False, filters=Filter(**kwargs)
+        )
 
     def find_all_affiliate_tag_relations(self, **kwargs):
-        return self._call('findAllAffiliateTagRelations', target_class='TagRelation', single_result=False, **kwargs)
+        return self._call(
+            'findAllAffiliateTagRelations', target_class='TagRelation', single_result=False, filters=Filter(**kwargs)
+        )
 
     def find_all_advertiser_tag_relations(self, **kwargs):
-        return self._call('findAllAdvertiserTagRelations', target_class='TagRelation', single_result=False, **kwargs)
+        return self._call(
+            'findAllAdvertiserTagRelations', target_class='TagRelation', single_result=False, filters=Filter(**kwargs)
+        )
 
     def add_to_offer(self, tag_id, offer_id):
         return self._call('addToOffer', target_class='TagRelation', tag_id=tag_id, offer_id=offer_id)
