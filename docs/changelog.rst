@@ -6,6 +6,9 @@ Changelog
 `Unreleased`_
 -------------
 
+`0.6.9`_ - 2018-06-19
+---------------------
+
 Added
 ~~~~~
 - ``find_all_affiliate_approvals``. (`iamanikeev`_)
