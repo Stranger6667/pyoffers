@@ -172,3 +172,10 @@ def test_generate_tracking_link(offer):
 def test_generate_tracking_link_w_tiny_url(offer):
     result = offer.generate_tracking_link(94, file_id=727, tiny_url=True)
     assert 'offer_id=472' not in result['click_url']
+
+
+def test_find_all_affiliate_approvals(offer):
+    result = offer.find_all_affiliate_approvals()
+    assert isinstance(result, list)
+    assert all(isinstance(item, AffiliateOffer) for item in result)
+    assert len(set(item.offer_id for item in result)) == 1  # Check that all results have the same offer_id

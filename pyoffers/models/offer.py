@@ -1,4 +1,6 @@
 # coding: utf-8
+from pyoffers.utils import Filter
+
 from .conversion import ConversionManager
 from .core import ApplicationManager, Model, ModelManager
 from .offer_file import OfferFileManager
@@ -57,6 +59,10 @@ class Offer(Model):
 
     def generate_tracking_link(self, affiliate_id, tiny_url=False, **params):
         return self._manager.generate_tracking_link(self.id, affiliate_id, tiny_url=tiny_url, **params)
+
+    def find_all_affiliate_approvals(self, sort=(), limit=None, page=None, fields=None, **kwargs):
+        kwargs['offer_id'] = self.id
+        return self._manager.find_all_affiliate_approvals(sort=(), limit=None, page=None, fields=None, **kwargs)
 
 
 class OfferManager(ModelManager):
@@ -136,6 +142,18 @@ class OfferManager(ModelManager):
             options={'tiny_url': tiny_url},
             params=params,
             raw=True
+        )
+
+    def find_all_affiliate_approvals(self, sort=(), limit=None, page=None, fields=None, **kwargs):
+        return self._call(
+            'findAllAffiliateApprovals',
+            sort=sort,
+            limit=limit,
+            page=page,
+            fields=fields,
+            single_result=False,
+            target_class='AffiliateOffer',
+            filters=Filter(**kwargs)
         )
 
 

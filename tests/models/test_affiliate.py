@@ -1,8 +1,10 @@
 # coding: utf-8
+from unittest.mock import Mock
+
 import pytest
 
 from pyoffers.exceptions import HasOffersException
-from pyoffers.models import Affiliate, AffiliateUser, OfferFile
+from pyoffers.models import Affiliate, AffiliateOffer, AffiliateUser, OfferFile
 
 
 CASSETTE_NAME = 'affiliate'
@@ -68,3 +70,9 @@ def test_get_offer_files_with_creative_code(affiliate):
     assert len(files) == 1
     assert isinstance(files[0], OfferFile)
     assert files[0].creativecode == 'http://www.example.com'
+
+
+def test_affiliate_offer_str():
+    affiliate_offer = AffiliateOffer(manager=Mock())
+    affiliate_offer.approval_status = 'approved'
+    assert str(affiliate_offer) == 'AffiliateOffer: approved'
