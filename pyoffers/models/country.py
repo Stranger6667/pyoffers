@@ -3,7 +3,7 @@ from .core import Model, ModelManager
 
 
 class Country(Model):
-    pass
+    display_attribute = 'code'
 
 
 class CountryManager(ModelManager):

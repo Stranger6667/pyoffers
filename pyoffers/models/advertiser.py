@@ -7,6 +7,7 @@ class Advertiser(Model):
     An Advertiser account.
     """
     generic_methods = ('update',)
+    display_attribute = 'company'
 
     def block(self, reason=''):
         return self._manager.block(self.id, reason)

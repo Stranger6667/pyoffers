@@ -1,15 +1,23 @@
 # coding: utf-8
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 import pytest
 
-
-def test_str(advertiser):
-    assert str(advertiser) == 'Advertiser: 114'
+from pyoffers.models import Offer
 
 
-def test_repr(advertiser):
-    assert repr(advertiser) == '<Advertiser: 114>'
+def test_str(advertiser, conversion):
+    offer = Offer(manager=Mock(), id=1)
+    assert str(advertiser) == 'Advertiser: Test'
+    assert str(conversion) == 'Conversion: 99630'
+    assert str(offer) == 'Offer: 1'
+
+
+def test_repr(advertiser, conversion):
+    offer = Offer(manager=Mock(), id=1)
+    assert repr(advertiser) == '<Advertiser: Test>'
+    assert repr(conversion) == '<Conversion: 99630>'
+    assert repr(offer) == '<Offer: 1>'
 
 
 @pytest.mark.parametrize(

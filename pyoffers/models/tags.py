@@ -21,6 +21,7 @@ class TagRelationManager(InvisibleModelManager):
 
 class Tag(Model):
     generic_methods = ('update', 'delete')
+    display_attribute = 'name'
 
     def add_to_offer(self, offer_id):
         return self._manager.add_to_offer(self.id, offer_id=offer_id)

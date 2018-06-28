@@ -35,6 +35,7 @@ class Model(metaclass=SelectiveInheritanceMeta):
     """
     generic_methods = ()
     related_object_name = None
+    display_attribute = 'id'
 
     def __init__(self, manager, **kwargs):
         self._manager = manager
@@ -42,7 +43,7 @@ class Model(metaclass=SelectiveInheritanceMeta):
         self.__dict__.update(kwargs)
 
     def __str__(self):
-        return '%s: %s' % (self.__class__.__name__, self._data.get('id'))
+        return '%s: %s' % (self.__class__.__name__, self._data.get(self.display_attribute, self._data.get('id')))
 
     def __repr__(self):
         return '<%s>' % self

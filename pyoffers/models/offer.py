@@ -12,6 +12,7 @@ class Offer(Model):
     """
     generic_methods = ('update',)
     related_object_name = 'offer_id'
+    display_attribute = 'name'
 
     @property
     def conversions(self):

@@ -7,8 +7,7 @@ class AffiliateOffer(Model):
     """
     Model that defines relation between Offer and Affiliate
     """
-    def __str__(self):
-        return '{}: {}'.format(self.__class__.__name__, self.approval_status)
+    display_attribute = 'approval_status'
 
 
 class AffiliateOfferManager(InvisibleModelManager):

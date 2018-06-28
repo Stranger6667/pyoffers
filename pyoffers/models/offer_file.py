@@ -5,6 +5,7 @@ from .core import Model, ModelManager
 
 class OfferFile(Model):
     generic_methods = ('update', 'delete')
+    display_attribute = 'filename'
 
 
 class OfferFileManager(ModelManager):

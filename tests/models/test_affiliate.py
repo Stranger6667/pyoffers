@@ -73,6 +73,5 @@ def test_get_offer_files_with_creative_code(affiliate):
 
 
 def test_affiliate_offer_str():
-    affiliate_offer = AffiliateOffer(manager=Mock())
-    affiliate_offer.approval_status = 'approved'
+    affiliate_offer = AffiliateOffer(manager=Mock(), approval_status='approved')
     assert str(affiliate_offer) == 'AffiliateOffer: approved'

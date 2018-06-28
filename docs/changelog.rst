@@ -6,6 +6,11 @@ Changelog
 `Unreleased`_
 -------------
 
+Added
+~~~~~
+- ``display_attribute`` property to models, that defines what property will be displayed in __str__ representation. (`iamanikeev`_)
+
+
 `0.6.9`_ - 2018-06-19
 ---------------------
 
