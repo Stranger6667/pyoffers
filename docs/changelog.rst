@@ -291,8 +291,8 @@ Fixed
 
 - Initial release.
 
-.. _Unreleased: https://github.com/Stranger6667/pyoffers/compare/0.7.0...HEAD
-.. _0.7.0: https://github.com/Stranger6667/pyoffers/compare/0.6.9...0.7.0
+.. _Unreleased: https://github.com/Stranger6667/pyoffers/compare/v0.7.0...HEAD
+.. _0.7.0: https://github.com/Stranger6667/pyoffers/compare/0.6.9...v0.7.0
 .. _0.6.9: https://github.com/Stranger6667/pyoffers/compare/0.6.8...0.6.9
 .. _0.6.8: https://github.com/Stranger6667/pyoffers/compare/0.6.7...0.6.8
 .. _0.6.7: https://github.com/Stranger6667/pyoffers/compare/0.6.6...0.6.7
