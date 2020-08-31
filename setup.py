@@ -11,7 +11,7 @@ with open(path.join(this_directory, "README.rst")) as fd:
 setup(
     name="pyoffers",
     url="https://github.com/Stranger6667/pyoffers",
-    version="0.6.9",
+    version="0.7.0",
     license="MIT",
     author="Dmitry Dygalo",
     author_email="dadygalo@gmail.com",

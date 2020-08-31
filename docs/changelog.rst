@@ -6,10 +6,13 @@ Changelog
 `Unreleased`_
 -------------
 
+`0.7.0`_ - 2020-08-31
+---------------------
+
 Added
 ~~~~~
 - ``display_attribute`` property to models, that defines what property will be displayed in __str__ representation. (`iamanikeev`_)
-
+- Support for Python 3.7, 3.8 and PyPy3
 
 `0.6.9`_ - 2018-06-19
 ---------------------
@@ -288,7 +291,13 @@ Fixed
 
 - Initial release.
 
-.. _Unreleased: https://github.com/Stranger6667/pyoffers/compare/0.6.4...HEAD
+.. _Unreleased: https://github.com/Stranger6667/pyoffers/compare/0.7.0...HEAD
+.. _0.7.0: https://github.com/Stranger6667/pyoffers/compare/0.6.9...0.7.0
+.. _0.6.9: https://github.com/Stranger6667/pyoffers/compare/0.6.8...0.6.9
+.. _0.6.8: https://github.com/Stranger6667/pyoffers/compare/0.6.7...0.6.8
+.. _0.6.7: https://github.com/Stranger6667/pyoffers/compare/0.6.6...0.6.7
+.. _0.6.6: https://github.com/Stranger6667/pyoffers/compare/0.6.5...0.6.6
+.. _0.6.5: https://github.com/Stranger6667/pyoffers/compare/0.6.4...0.6.5
 .. _0.6.4: https://github.com/Stranger6667/pyoffers/compare/0.6.3...0.6.4
 .. _0.6.3: https://github.com/Stranger6667/pyoffers/compare/0.6.2...0.6.3
 .. _0.6.2: https://github.com/Stranger6667/pyoffers/compare/0.6.1...0.6.2
