@@ -1,17 +1,7 @@
 PyOffers
 ========
 
-.. image:: https://travis-ci.org/Stranger6667/pyoffers.svg?branch=master
-   :target: https://travis-ci.org/Stranger6667/pyoffers
-   :alt: Build Status
-
-.. image:: https://codecov.io/github/Stranger6667/pyoffers/coverage.svg?branch=master
-   :target: https://codecov.io/github/Stranger6667/pyoffers?branch=master
-   :alt: Coverage Status
-
-.. image:: https://readthedocs.org/projects/pyoffers/badge/?version=latest
-   :target: http://pyoffers.readthedocs.io/en/latest/?badge=latest
-   :alt: Documentation Status
+|Build| |Coverage| |Version| |Python versions| |License|
 
 Python client library for `HasOffers API <http://developers.hasoffers.com/>`_.
 
@@ -69,4 +59,15 @@ Or you can look at the docs/ directory in the repository.
 Python support
 ==============
 
-PyOffers supports Python 3.4+.
+PyOffers supports Python 3.5+.
+
+.. |Build| image:: https://github.com/Stranger6667/pyoffers/workflows/build/badge.svg
+   :target: https://github.com/Stranger6667/pyoffers/actions
+.. |Coverage| image:: https://codecov.io/github/Stranger6667/pyoffers/coverage.svg?branch=master
+    :target: https://codecov.io/github/Stranger6667/pyoffers?branch=master
+.. |Version| image:: https://img.shields.io/pypi/v/pyoffers.svg
+   :target: https://pypi.org/project/pyoffers/
+.. |Python versions| image:: https://img.shields.io/pypi/pyversions/pyoffers.svg
+   :target: https://pypi.org/project/pyoffers/
+.. |License| image:: https://img.shields.io/pypi/l/pyoffers.svg
+   :target: https://opensource.org/licenses/MIT
