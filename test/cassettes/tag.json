@@ -362,7 +362,7 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=addToOffer&tag_id=284&offer_id=196"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=addToOffer&tag_id=284&offer_id=568"
       },
       "response": {
         "body": {
@@ -405,7 +405,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=addToOffer&tag_id=284&offer_id=196"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=addToOffer&tag_id=284&offer_id=568"
       }
     },
     {
@@ -498,7 +498,7 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=addToAffiliate&tag_id=284&affiliate_id=82"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=addToAffiliate&tag_id=284&affiliate_id=208"
       },
       "response": {
         "body": {
@@ -541,7 +541,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=addToAffiliate&tag_id=284&affiliate_id=82"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=addToAffiliate&tag_id=284&affiliate_id=208"
       }
     },
     {
@@ -634,7 +634,7 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=addToAdvertiser&tag_id=284&advertiser_id=114"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=addToAdvertiser&tag_id=284&advertiser_id=238"
       },
       "response": {
         "body": {
@@ -677,7 +677,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=addToAdvertiser&tag_id=284&advertiser_id=114"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=addToAdvertiser&tag_id=284&advertiser_id=238"
       }
     },
     {
@@ -702,7 +702,7 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=removeFromOffer&tag_id=284&offer_id=196"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=removeFromOffer&tag_id=284&offer_id=568"
       },
       "response": {
         "body": {
@@ -745,7 +745,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=removeFromOffer&tag_id=284&offer_id=196"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=removeFromOffer&tag_id=284&offer_id=568"
       }
     },
     {
@@ -770,7 +770,7 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=removeFromAffiliate&tag_id=284&affiliate_id=82"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=removeFromAffiliate&tag_id=284&affiliate_id=208"
       },
       "response": {
         "body": {
@@ -813,7 +813,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=removeFromAffiliate&tag_id=284&affiliate_id=82"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=removeFromAffiliate&tag_id=284&affiliate_id=208"
       }
     },
     {
@@ -838,7 +838,7 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=removeFromAdvertiser&tag_id=284&advertiser_id=114"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=removeFromAdvertiser&tag_id=284&advertiser_id=238"
       },
       "response": {
         "body": {
@@ -881,7 +881,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=removeFromAdvertiser&tag_id=284&advertiser_id=114"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=removeFromAdvertiser&tag_id=284&advertiser_id=238"
       }
     },
     {
@@ -906,7 +906,7 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=setForOffer&tag_ids%5B%5D=286&tag_ids%5B%5D=288&offer_id=196"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=setForOffer&tag_ids%5B%5D=286&tag_ids%5B%5D=288&offer_id=568"
       },
       "response": {
         "body": {
@@ -949,7 +949,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=setForOffer&tag_ids%5B%5D=286&tag_ids%5B%5D=288&offer_id=196"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=setForOffer&tag_ids%5B%5D=286&tag_ids%5B%5D=288&offer_id=568"
       }
     },
     {
@@ -974,7 +974,7 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=setForAffiliate&tag_ids%5B%5D=286&tag_ids%5B%5D=288&affiliate_id=82"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=setForAffiliate&tag_ids%5B%5D=286&tag_ids%5B%5D=288&affiliate_id=208"
       },
       "response": {
         "body": {
@@ -1017,7 +1017,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=setForAffiliate&tag_ids%5B%5D=286&tag_ids%5B%5D=288&affiliate_id=82"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=setForAffiliate&tag_ids%5B%5D=286&tag_ids%5B%5D=288&affiliate_id=208"
       }
     },
     {
@@ -1042,7 +1042,7 @@
           ]
         },
         "method": "GET",
-        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=setForAdvertiser&tag_ids%5B%5D=286&tag_ids%5B%5D=288&advertiser_id=114"
+        "uri": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=setForAdvertiser&tag_ids%5B%5D=286&tag_ids%5B%5D=288&advertiser_id=238"
       },
       "response": {
         "body": {
@@ -1085,7 +1085,7 @@
           "code": 200,
           "message": "OK"
         },
-        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=setForAdvertiser&tag_ids%5B%5D=286&tag_ids%5B%5D=288&advertiser_id=114"
+        "url": "https://api.hasoffers.com/Apiv3/json?NetworkToken=token&NetworkId=id&Target=Tag&Method=setForAdvertiser&tag_ids%5B%5D=286&tag_ids%5B%5D=288&advertiser_id=238"
       }
     },
     {

@@ -262,6 +262,71 @@
         },
         "url": "https://api.hasoffers.com/Apiv3/json?data%5Bstatus%5D=pending&data%5Bcompany%5D=Test&data%5Bzipcode%5D=123456&data%5Bcountry%5D=CZ&NetworkToken=token&NetworkId=id&Method=create&Target=Advertiser"
       }
+    },
+    {
+      "recorded_at": "2016-08-29T09:54:43",
+      "request": {
+        "body": {
+          "encoding": "utf-8",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "*/*"
+          ],
+          "Accept-Encoding": [
+            "gzip, deflate"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "User-Agent": [
+            "python-requests/2.11.1"
+          ]
+        },
+        "method": "GET",
+        "uri": "https://api.hasoffers.com/Apiv3/json?Target=Conversion&data%5Bstatus_code%5D=22&data%5Bstatus%5D=pending&data%5Brevenue%5D=1&NetworkToken=token&data%5Baffiliate_id%5D=1&data%5Boffer_id%5D=1&data%5Bpayout%5D=1&NetworkId=id&Method=create"
+      },
+      "response": {
+        "body": {
+          "base64_string": "H4sIAAWxhloC/22US2+bQBCA/0q1Z1NhwDRwjVQ1qpIeYvXQqkJjGMgmsEv34dSK/N87y5sEX7zzzczOk31jCv9a1Ialb+wIqkI6sVspzqg0l4Lt2FepGnD0WXfyI6ozz5HAN9A/ypIMif4c7FMWkFSAAXejNmCsznJZOPvAqXpEUoui4KIipPCMwjqLPUlQlrzmYDDjxYCkizKLLVykNZ1w3bEHNK9SvRzlC7rwpvuf8J1zIs8du0fzJJ2UK6TbnatC3UqhcU6VpfsdezKmfRzEwPfnchZ9IanLJ0ni0HdZF31+dOTCoBJQZyM7neBLtI8jryiL0ItiOp3iHL2Q6A0AYpQk24VDQfEM11R9AwKqsQv+Wjez6YoP5u96WElKcFJ2LeFnzKxaUquNbJaXaGmVG72wdb1KWJRyv42DbRxu42gbHya8KJr4iGlAaHjTLZm/jz3/xguST/4hPURpFLrEUbuxZbNh7ziv0mff/dbbuGDUvMmH/8M6WyHejqcx0IJ8XPitzwJqzKCRVpjR0boqaYgzyZ1aXUbHu4cjeZ6UfF0tAde0ec80u6ZzHZYly6FpgVdiuUEznDbg3cLQFBasb1dmLq2Ln7eQlTW9DVPTNjS5VQpFfnHPyq/v7EqfHSol6dFIf/8ZzvfUNCq0L/N6/Q+nmzr0lQQAAA==",
+          "encoding": null
+        },
+        "headers": {
+          "Access-Control-Allow-Headers": [
+            "X-Requested-With"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "Content-Encoding": [
+            "gzip"
+          ],
+          "Content-Length": [
+            "539"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "Date": [
+            "Mon, 29 Aug 2016 09:54:43 GMT"
+          ],
+          "Server": [
+            "Apache"
+          ],
+          "Vary": [
+            "Accept-Encoding"
+          ]
+        },
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "url": "https://api.hasoffers.com/Apiv3/json?Target=Conversion&data%5Bstatus_code%5D=22&data%5Bstatus%5D=pending&data%5Brevenue%5D=1&NetworkToken=token&data%5Baffiliate_id%5D=1&data%5Boffer_id%5D=1&data%5Bpayout%5D=1&NetworkId=id&Method=create"
+      }
     }
   ],
   "recorded_with": "betamax/0.8.0"

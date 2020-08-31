@@ -1,5 +1,7 @@
 [run]
 branch = true
+parallel = true
+source = pyoffers
 
 [report]
 show_missing = true

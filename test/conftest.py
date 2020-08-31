@@ -28,13 +28,13 @@ def pytest_unconfigure(config):
         replace_real_credentials(CASSETTE_DIR, NETWORK_TOKEN, DEFAULT_NETWORK_TOKEN, NETWORK_ID, DEFAULT_NETWORK_ID)
 
 
-@pytest.yield_fixture(autouse=True, scope="module")
+@pytest.fixture(autouse=True, scope="module")
 def betamax_recorder(request, api):
     """Module level Betamax recorder."""
     if request.config.getoption("--record"):
         record_mode = "new_episodes"
     else:
-        record_mode = "none" if os.environ.get("TRAVIS") else "once"
+        record_mode = "none"
     cassette_name = getattr(request.node._obj, "CASSETTE_NAME", "default")
     vcr = Betamax(
         api.session,
@@ -50,44 +50,43 @@ def betamax_recorder(request, api):
         yield
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="module")
 def api():
     return HasOffersAPI(
         endpoint="https://api.hasoffers.com/Apiv3/json", network_token=NETWORK_TOKEN, network_id=NETWORK_ID
     )
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="module")
 def advertiser(api):
     return api.advertisers.create(status="pending", company="Test", country="CZ", zipcode="123456")
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="module")
 def offer(api):
     return api.offers.create(
         name="Test", offer_url=URL, status="pending", expiration_date="2030-12-12 23:59:59", preview_url=URL
     )
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="module")
 def conversion(api):
     return api.conversions.create(
         status="pending", payout="1", revenue="1", affiliate_id="1", offer_id="1", status_code="22"
     )
 
 
-@pytest.fixture(scope="session")
-def goal(api):
-    offer_instance = offer(api)
-    return api.goals.create(name="Test", description="String", status="deleted", offer_id=offer_instance.id)
+@pytest.fixture(scope="module")
+def goal(api, offer):
+    return api.goals.create(name="Test", description="String", status="deleted", offer_id=offer.id)
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="module")
 def date_dirs(api):
     return api.raw_logs.clicks.list_date_dirs()
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="module")
 def log_file(api):
     return api.raw_logs.clicks.list_logs("20160909")[0]
 
@@ -100,12 +99,12 @@ AFFILIATE_KWARGS = {
 }
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="module")
 def affiliate(api):
     return api.affiliates.create(**AFFILIATE_KWARGS)
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="module")
 def affiliate_with_user(api):
     """Returns fixture method in order to call it explicitly in tests.
 
@@ -122,7 +121,7 @@ def affiliate_with_user(api):
     return api.affiliates.create_with_user(user_params, **AFFILIATE_KWARGS)
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="module")
 def offer_file(api):
     return api.offer_files.create(
         "test/files/test-thumbnail.jpg",
@@ -134,7 +133,7 @@ def offer_file(api):
     )
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="module")
 def tag(api):
     return api.tags.create(
         name="test_tag_2",
