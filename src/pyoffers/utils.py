@@ -1,4 +1,3 @@
-# coding: utf-8
 from functools import singledispatch
 
 
@@ -54,7 +53,7 @@ class Sort(list):
             if value.startswith("-"):
                 value = value[1:]
                 direction = "-"
-            value = "%s%s.%s" % (direction, model, value)
+            value = "{}{}.{}".format(direction, model, value)
         return value
 
 
@@ -81,7 +80,7 @@ def expand(value, key):
 @expand.register(dict)
 def expand_dict(value, key):
     for dict_key, dict_value in value.items():
-        yield "%s[%s]" % (key, dict_key), dict_value
+        yield "{}[{}]".format(key, dict_key), dict_value
 
 
 @expand.register(Filter)
@@ -89,16 +88,16 @@ def expand_filter(value, key):
     for dict_key, dict_value in value.items():
         if isinstance(dict_value, (list, tuple, set)):
             for sub_value in dict_value:
-                yield "%s[%s][]" % (key, dict_key), sub_value
+                yield "{}[{}][]".format(key, dict_key), sub_value
         else:
             try:
                 field_name, operator = dict_key.split("__")
-                param_name = "%s[%s][%s]" % (key, field_name, OPERATORS[operator])
+                param_name = "{}[{}][{}]".format(key, field_name, OPERATORS[operator])
             except ValueError:
                 if value.connector == "OR":
-                    param_name = "%s[%s][%s]" % (key, value.connector, dict_key)
+                    param_name = "{}[{}][{}]".format(key, value.connector, dict_key)
                 else:
-                    param_name = "%s[%s]" % (key, dict_key)
+                    param_name = "{}[{}]".format(key, dict_key)
             yield param_name, dict_value
 
 
@@ -109,7 +108,7 @@ def expand_sort(value, key):
         if field_name.startswith("-"):
             order = "desc"
             field_name = field_name[1:]
-        yield "%s[%s]" % (key, field_name), order
+        yield "{}[{}]".format(key, field_name), order
 
 
 @expand.register(list)

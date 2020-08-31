@@ -1,4 +1,3 @@
-# coding: utf-8
 from csv import DictReader
 from io import BytesIO, StringIO
 from zipfile import ZipFile
@@ -18,7 +17,7 @@ class DateDir(LogItem):
     """Directory with log files."""
 
     def __str__(self):
-        return "%s: %s (%s)" % (self.__class__.__name__, self.displayName, self.dirName)
+        return "{}: {} ({})".format(self.__class__.__name__, self.displayName, self.dirName)
 
     def list_logs(self):
         return self._manager.list_logs(dir_name=self.dirName)
@@ -28,7 +27,7 @@ class LogFile(LogItem):
     """Log file."""
 
     def __str__(self):
-        return "%s: %s (%s)" % (self.__class__.__name__, self.displayName, self.filename)
+        return "{}: {} ({})".format(self.__class__.__name__, self.displayName, self.filename)
 
     @cached_property
     def download_link(self):
@@ -53,7 +52,7 @@ class LogRecord(LogItem):
     """Log record with all data about clicks / conversions / impressions."""
 
     def __str__(self):
-        return "%s: %s (%s)" % (self.__class__.__name__, self.offer_id, self.transaction_id)
+        return "{}: {} ({})".format(self.__class__.__name__, self.offer_id, self.transaction_id)
 
 
 class LogItemManager(ModelManager):

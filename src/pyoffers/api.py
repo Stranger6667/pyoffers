@@ -1,4 +1,3 @@
-# coding: utf-8
 import time
 from collections import OrderedDict
 
@@ -80,7 +79,7 @@ class HasOffersAPI:
                     self._managers[alias] = instance
 
     def __str__(self):
-        return "%s: %s / %s" % (self.__class__.__name__, self.network_token, self.network_id)
+        return "{}: {} / {}".format(self.__class__.__name__, self.network_token, self.network_id)
 
     def __repr__(self):
         return "<%s>" % self

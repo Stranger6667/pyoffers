@@ -3,6 +3,11 @@ branch = true
 parallel = true
 source = pyoffers
 
+[paths]
+source =
+   src/pyoffers
+   .tox/*/lib/python*/site-packages/pyoffers
+
 [report]
 show_missing = true
 precision = 2

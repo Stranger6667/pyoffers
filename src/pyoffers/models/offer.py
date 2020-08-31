@@ -1,4 +1,3 @@
-# coding: utf-8
 from pyoffers.utils import Filter
 
 from .conversion import ConversionManager

@@ -1,4 +1,3 @@
-# coding: utf-8
 from collections import defaultdict
 
 from ..utils import Filter, Sort
@@ -39,7 +38,7 @@ class Model(metaclass=SelectiveInheritanceMeta):
         self.__dict__.update(kwargs)
 
     def __str__(self):
-        return "%s: %s" % (self.__class__.__name__, self._data.get(self.display_attribute, self._data.get("id")))
+        return "{}: {}".format(self.__class__.__name__, self._data.get(self.display_attribute, self._data.get("id")))
 
     def __repr__(self):
         return "<%s>" % self

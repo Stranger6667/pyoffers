@@ -1,4 +1,3 @@
-# coding: utf-8
 import pytest
 
 from pyoffers.exceptions import HasOffersException
@@ -176,4 +175,4 @@ def test_find_all_affiliate_approvals(offer):
     result = offer.find_all_affiliate_approvals()
     assert isinstance(result, list)
     assert all(isinstance(item, AffiliateOffer) for item in result)
-    assert len(set(item.offer_id for item in result)) == 1  # Check that all results have the same offer_id
+    assert len({item.offer_id for item in result}) == 1  # Check that all results have the same offer_id

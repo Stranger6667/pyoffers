@@ -1,13 +1,17 @@
 # coding: utf-8
-from setuptools import setup
+from os import path
 
-import pyoffers
+from setuptools import find_packages, setup
+
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, "README.rst")) as fd:
+    long_description = fd.read()
+
 
 setup(
     name="pyoffers",
     url="https://github.com/Stranger6667/pyoffers",
-    version=pyoffers.__version__,
-    packages=["pyoffers", "pyoffers.models"],
+    version="0.6.9",
     license="MIT",
     author="Dmitry Dygalo",
     author_email="dadygalo@gmail.com",
@@ -15,6 +19,8 @@ setup(
     maintainer_email="dadygalo@gmail.com",
     keywords=["hasoffers", "api", "client"],
     description="Python client library for HasOffers API",
+    long_description=long_description,
+    long_description_content_type="text/x-rst",
     classifiers=[
         "Development Status :: 4 - Beta",
         "Environment :: Console",
@@ -29,5 +35,7 @@ setup(
         "Programming Language :: Python :: Implementation :: CPython",
     ],
     include_package_data=True,
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     install_requires=["requests"],
 )

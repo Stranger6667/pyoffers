@@ -1,4 +1,3 @@
-# coding: utf-8
 from .advertiser import Advertiser, AdvertiserManager  # noqa
 from .affiliate import (  # noqa
     Affiliate,

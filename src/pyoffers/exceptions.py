@@ -1,12 +1,9 @@
-# coding: utf-8
-
-
 def format_error(error):
     if "publicMessage" in error and len(error) == 1:
         return error["publicMessage"]
     if "publicMessage" not in error:
-        return "Error code: %s. %s" % (error["err_code"], error["err_msg"])
-    return "Error code: %s. %s %s" % (error["err_code"], error["publicMessage"], error["err_msg"])
+        return "Error code: {}. {}".format(error["err_code"], error["err_msg"])
+    return "Error code: {}. {} {}".format(error["err_code"], error["publicMessage"], error["err_msg"])
 
 
 class HasOffersException(BaseException):

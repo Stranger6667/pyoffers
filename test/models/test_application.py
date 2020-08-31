@@ -1,4 +1,3 @@
-# coding: utf-8
 from pyoffers.models import OfferCategory
 
 CASSETTE_NAME = "application"

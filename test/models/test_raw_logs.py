@@ -1,4 +1,3 @@
-# coding: utf-8
 from pyoffers.models.raw_log import DateDir, LogFile, LogRecord
 
 CASSETTE_NAME = "raw_log"
