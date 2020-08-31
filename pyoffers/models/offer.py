@@ -7,12 +7,11 @@ from .offer_file import OfferFileManager
 
 
 class Offer(Model):
-    """
-    An Offer.
-    """
-    generic_methods = ('update',)
-    related_object_name = 'offer_id'
-    display_attribute = 'name'
+    """An Offer."""
+
+    generic_methods = ("update",)
+    related_object_name = "offer_id"
+    display_attribute = "name"
 
     @property
     def conversions(self):
@@ -62,116 +61,98 @@ class Offer(Model):
         return self._manager.generate_tracking_link(self.id, affiliate_id, tiny_url=tiny_url, **params)
 
     def find_all_affiliate_approvals(self, sort=(), limit=None, page=None, fields=None, **kwargs):
-        kwargs['offer_id'] = self.id
+        kwargs["offer_id"] = self.id
         return self._manager.find_all_affiliate_approvals(sort=(), limit=None, page=None, fields=None, **kwargs)
 
 
 class OfferManager(ModelManager):
     model = Offer
-    name = 'offers'
+    name = "offers"
     generic_methods = (
-        'create',
-        'update',
-        'find_by_id',
-        'find_all',
-        'find_all_ids',
+        "create",
+        "update",
+        "find_by_id",
+        "find_all",
+        "find_all_ids",
     )
 
     def add_target_country(self, id, country_code):
-        return self._call('addTargetCountry', id=id, country_code=country_code)
+        return self._call("addTargetCountry", id=id, country_code=country_code)
 
     def get_target_countries(self, id):
-        return self._call('getTargetCountries', id=id, single_result=False)
+        return self._call("getTargetCountries", id=id, single_result=False)
 
     def add_category(self, id, category_id):
-        return self._call('addCategory', id=id, category_id=category_id)
+        return self._call("addCategory", id=id, category_id=category_id)
 
     def block_affiliate(self, id, affiliate_id):
-        return self._call('blockAffiliate', id=id, affiliate_id=affiliate_id)
+        return self._call("blockAffiliate", id=id, affiliate_id=affiliate_id)
 
     def unblock_affiliate(self, id, affiliate_id):
-        return self._call('unblockAffiliate', id=id, affiliate_id=affiliate_id)
+        return self._call("unblockAffiliate", id=id, affiliate_id=affiliate_id)
 
     def get_categories(self, id):
-        return self._call('getCategories', id=id, single_result=False)
+        return self._call("getCategories", id=id, single_result=False)
 
     def get_offer_files_with_creative_code(self, id, affiliate_id):
         return self._call(
-            'getOfferFilesWithCreativeCode',
-            target_class='OfferFile', affiliate_id=affiliate_id, offer_id=id, single_result=False
+            "getOfferFilesWithCreativeCode",
+            target_class="OfferFile",
+            affiliate_id=affiliate_id,
+            offer_id=id,
+            single_result=False,
         )
 
     def set_affiliate_approval_status(self, id, affiliate_id, status):
         return self._call(
-            'setAffiliateApproval',
-            id=id, affiliate_id=affiliate_id, status=status, target_class='AffiliateOffer'
+            "setAffiliateApproval", id=id, affiliate_id=affiliate_id, status=status, target_class="AffiliateOffer"
         )
 
     def get_affiliate_approval_status(self, id, affiliate_id):
-        return self._call(
-            'getAffiliateApprovalStatus',
-            id=id, affiliate_id=affiliate_id, raw=True
-        )
+        return self._call("getAffiliateApprovalStatus", id=id, affiliate_id=affiliate_id, raw=True)
 
     def get_blocked_affiliate_ids(self, id):
-        return self._call(
-            'getBlockedAffiliateIds',
-            id=id,
-            raw=True
-        )
+        return self._call("getBlockedAffiliateIds", id=id, raw=True)
 
     def get_approved_affiliate_ids(self, id):
-        return self._call(
-            'getApprovedAffiliateIds',
-            id=id,
-            raw=True
-        )
+        return self._call("getApprovedAffiliateIds", id=id, raw=True)
 
     def get_unapproved_affiliate_ids(self, id):
-        return self._call(
-            'getUnapprovedAffiliateIds',
-            id=id,
-            raw=True
-        )
+        return self._call("getUnapprovedAffiliateIds", id=id, raw=True)
 
     def generate_tracking_link(self, id, affiliate_id, tiny_url=False, **params):
-        tiny_url = '1' if tiny_url else '0'
+        tiny_url = "1" if tiny_url else "0"
         return self._call(
-            'generateTrackingLink',
+            "generateTrackingLink",
             offer_id=id,
             affiliate_id=affiliate_id,
-            options={'tiny_url': tiny_url},
+            options={"tiny_url": tiny_url},
             params=params,
-            raw=True
+            raw=True,
         )
 
     def find_all_affiliate_approvals(self, sort=(), limit=None, page=None, fields=None, **kwargs):
         return self._call(
-            'findAllAffiliateApprovals',
+            "findAllAffiliateApprovals",
             sort=sort,
             limit=limit,
             page=page,
             fields=fields,
             single_result=False,
-            target_class='AffiliateOffer',
-            filters=Filter(**kwargs)
+            target_class="AffiliateOffer",
+            filters=Filter(**kwargs),
         )
 
 
 class OfferCategory(Model):
-    """"
-    Offer category
-    """
-    generic_methods = (
-        'update',
-    )
+    """Offer category."""
+
+    generic_methods = ("update",)
 
 
 class OfferCategoryManager(ApplicationManager):
-    """
-    This manager doesn't inherit any generic method, since it operates on an Application model
-    """
+
     model = OfferCategory
 
     def update(self, id, **kwargs):
-        return self._call('updateOfferCategory', id=id, data=kwargs)
+        return self._call("updateOfferCategory", id=id, data=kwargs)

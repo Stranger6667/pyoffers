@@ -6,13 +6,12 @@ import pytest
 from pyoffers.exceptions import MaxRetriesExceeded
 from pyoffers.models import Conversion
 
-
-CASSETTE_NAME = 'conversion'
+CASSETTE_NAME = "conversion"
 
 
 def test_create_success(conversion):
     assert isinstance(conversion, Conversion)
-    assert conversion.revenue == '1.00000'
+    assert conversion.revenue == "1.00000"
 
 
 def test_find_by_id_success(api, conversion):
@@ -38,7 +37,7 @@ def test_find_all_not_paginated(api):
 
 
 def test_find_all_single_result(api):
-    result = api.conversions.find_all(offer_id=7, source='FP', status='approved', session_ip='127.0.0.1')
+    result = api.conversions.find_all(offer_id=7, source="FP", status="approved", session_ip="127.0.0.1")
     assert len(result) == 1
     assert isinstance(result[0], Conversion)
 
@@ -53,28 +52,27 @@ def test_find_all_not_found(api):
 
 def test_update_success(conversion):
     new_instance = conversion.update(revenue=2)
-    assert new_instance.revenue == '2.00000'
+    assert new_instance.revenue == "2.00000"
     assert new_instance == conversion
 
 
 def test_find_all_fields(api):
-    conversion = api.conversions.find_all(offer_id=7, fields=['datetime', 'country_code'], limit=1)[0]
-    assert conversion.as_dict() == {'country_code': 'CZ', 'datetime': '2016-02-22 04:29:09'}
+    conversion = api.conversions.find_all(offer_id=7, fields=["datetime", "country_code"], limit=1)[0]
+    assert conversion.as_dict() == {"country_code": "CZ", "datetime": "2016-02-22 04:29:09"}
 
 
 class TestRateLimit:
-
     @pytest.yield_fixture
     def sleep(self):
-        with patch('pyoffers.api.time.sleep') as patched:
+        with patch("pyoffers.api.time.sleep") as patched:
             yield patched
 
     def test_single_retry(self, api, sleep):
-        api.conversions.find_all(offer_id=13, fields=['datetime', 'country_code'], limit=1)
+        api.conversions.find_all(offer_id=13, fields=["datetime", "country_code"], limit=1)
         sleep.assert_called_once_with(3)
 
     def test_limit_exceeded(self, api, sleep):
         with pytest.raises(MaxRetriesExceeded) as exc:
-            api.conversions.find_all(offer_id=14, fields=['datetime', 'country_code'], limit=1)
-        assert str(exc.value) == 'Max retries exceeded'
+            api.conversions.find_all(offer_id=14, fields=["datetime", "country_code"], limit=1)
+        assert str(exc.value) == "Max retries exceeded"
         assert sleep.call_count == 2

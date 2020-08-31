@@ -1,13 +1,12 @@
 # coding: utf-8
 from pyoffers.models import Goal
 
-
-CASSETTE_NAME = 'goal'
+CASSETTE_NAME = "goal"
 
 
 def test_create_success(goal):
     assert isinstance(goal, Goal)
-    assert goal.description == 'String'
+    assert goal.description == "String"
 
 
 def test_find_by_id_success(api, goal):
@@ -27,6 +26,6 @@ def test_find_all(api):
 
 
 def test_update_success(goal):
-    new_instance = goal.update(description='Another')
-    assert new_instance.description == 'Another'
+    new_instance = goal.update(description="Another")
+    assert new_instance.description == "Another"
     assert new_instance == goal

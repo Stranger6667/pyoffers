@@ -1,8 +1,7 @@
 # coding: utf-8
 from pyoffers.models import OfferCategory
 
-
-CASSETTE_NAME = 'application'
+CASSETTE_NAME = "application"
 
 
 def test_find_all_offer_categories(api):

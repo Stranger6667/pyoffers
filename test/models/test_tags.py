@@ -3,8 +3,7 @@ import pytest
 from pyoffers.models import Tag
 from pyoffers.models.tags import TagRelation
 
-
-CASSETTE_NAME = 'tag'
+CASSETTE_NAME = "tag"
 
 
 def test_create_success(tag):
@@ -78,11 +77,11 @@ def test_remove_from_advertiser_by_relational_id(api):
     assert api.tags.remove_from_advertiser_by_relational_id(8)
 
 
-@pytest.mark.skip(reason='Method does not work in HO')
+@pytest.mark.skip(reason="Method does not work in HO")
 def test_remove_from_offer_by_relational_id(api):
     assert api.tags.remove_from_offer_by_relational_id(196)
 
 
-@pytest.mark.skip(reason='Method does not work in HO')
+@pytest.mark.skip(reason="Method does not work in HO")
 def test_remove_from_affiliate_by_relational_id(api):
     assert api.tags.remove_from_affiliate_by_relational_id(82)

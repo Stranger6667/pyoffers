@@ -15,13 +15,11 @@ def is_empty(data):
 
 
 def is_paginated(data):
-    return any(key in data for key in ('page', 'pageCount'))  # Apparently, there are two types of pagination HO
+    return any(key in data for key in ("page", "pageCount"))  # Apparently, there are two types of pagination HO
 
 
 def retry(method):
-    """
-    Allows to retry method execution few times.
-    """
+    """Allows to retry method execution few times."""
 
     def inner(self, *args, **kwargs):
         attempt_number = 1
@@ -29,13 +27,13 @@ def retry(method):
             try:
                 return method(self, *args, **kwargs)
             except HasOffersException as exc:
-                if 'API usage exceeded rate limit' not in str(exc):
+                if "API usage exceeded rate limit" not in str(exc):
                     raise exc
-                self.logger.debug('Retrying due: %s', exc)
+                self.logger.debug("Retrying due: %s", exc)
                 time.sleep(self.retry_timeout)
             except requests.exceptions.ConnectionError:
                 # This happens when the session gets expired
-                self.logger.debug('Recreating session due to ConnectionError')
+                self.logger.debug("Recreating session due to ConnectionError")
                 self._session = requests.Session()
             attempt_number += 1
         raise MaxRetriesExceeded
@@ -44,12 +42,11 @@ def retry(method):
 
 
 class HasOffersAPI:
-    """
-    Client to communicate with HasOffers API.
-    """
+    """Client to communicate with HasOffers API."""
 
-    def __init__(self, endpoint=None, network_token=None, network_id=None, verify=True, retries=3, retry_timeout=3,
-                 verbosity=0):
+    def __init__(
+        self, endpoint=None, network_token=None, network_id=None, verify=True, retries=3, retry_timeout=3, verbosity=0
+    ):
         self.endpoint = endpoint
         self.network_token = network_token
         self.network_id = network_id
@@ -61,14 +58,18 @@ class HasOffersAPI:
         self.setup_managers()
 
     def setup_managers(self):
-        """
-        Allows to access manager by model name - it is convenient, because HasOffers returns model names in responses.
+        """Allows to access manager by model name.
+
+        It is convenient because HasOffers returns model names in responses.
         """
         self._managers = {}
         for manager_class in MODEL_MANAGERS:
             instance = manager_class(self)
-            if not instance.forbid_registration \
-                    and not isinstance(instance, ApplicationManager) or instance.__class__ is ApplicationManager:
+            if (
+                not instance.forbid_registration
+                and not isinstance(instance, ApplicationManager)
+                or instance.__class__ is ApplicationManager
+            ):
                 # Descendants of ``ApplicationManager`` shouldn't be present in API instance.  They are controlled by
                 # Application controller. The manager itself, on the other hand, should.
                 setattr(self, instance.name, instance)
@@ -79,10 +80,10 @@ class HasOffersAPI:
                     self._managers[alias] = instance
 
     def __str__(self):
-        return '%s: %s / %s' % (self.__class__.__name__, self.network_token, self.network_id)
+        return "%s: %s / %s" % (self.__class__.__name__, self.network_token, self.network_id)
 
     def __repr__(self):
-        return '<%s>' % self
+        return "<%s>" % self
 
     @property
     def session(self):
@@ -92,61 +93,55 @@ class HasOffersAPI:
 
     @retry
     def _call(self, target, method, target_class=None, single_result=True, raw=False, files=None, **kwargs):
-        """
-        Low-level call to HasOffers API.
+        """Low-level call to HasOffers API.
+
         :param target_class: type of resulting object/objects.
         """
         if target_class is None:
             target_class = target
         params = prepare_query_params(
-            NetworkToken=self.network_token,
-            NetworkId=self.network_id,
-            Target=target,
-            Method=method,
-            **kwargs
+            NetworkToken=self.network_token, NetworkId=self.network_id, Target=target, Method=method, **kwargs
         )
-        kwargs = {'url': self.endpoint, 'params': params, 'verify': self.verify, 'method': 'GET'}
+        kwargs = {"url": self.endpoint, "params": params, "verify": self.verify, "method": "GET"}
         if files:
-            kwargs.update({'method': 'POST', 'files': files})
+            kwargs.update({"method": "POST", "files": files})
 
-        self.logger.debug('Request parameters: %s', params)
+        self.logger.debug("Request parameters: %s", params)
         response = self.session.request(**kwargs)
 
-        self.logger.debug('Response [%s]: %s', response.status_code, response.text)
+        self.logger.debug("Response [%s]: %s", response.status_code, response.text)
         response.raise_for_status()
         data = response.json(object_pairs_hook=OrderedDict)
         return self.handle_response(data, target=target_class, single_result=single_result, raw=raw)
 
     def handle_response(self, content, target=None, single_result=True, raw=False):
-        """
-        Parses response, checks it.
-        """
-        response = content['response']
+        """Parses response, checks it."""
+        response = content["response"]
 
         self.check_errors(response)
 
-        data = response.get('data')
+        data = response.get("data")
 
         if is_empty(data):
             return data
-        elif is_paginated(data):
-            if 'count' in data and not data['count']:
+        if is_paginated(data):
+            if "count" in data and not data["count"]:
                 # Response is paginated, but is empty
-                return data['data']
-            data = data['data']
+                return data["data"]
+            data = data["data"]
 
         if raw:
             return data
         return self.init_all_objects(data, target=target, single_result=single_result)
 
     def check_errors(self, response):
-        errors = response.get('errors')
+        errors = response.get("errors")
         if errors:
             raise HasOffersException(errors)
 
     def init_all_objects(self, data, target=None, single_result=True):
-        """
-        Initializes model instances from given data.
+        """Initializes model instances from given data.
+
         Returns single instance if single_result=True.
         """
         if single_result:
@@ -154,9 +149,7 @@ class HasOffersAPI:
         return list(self.expand_models(target, data))
 
     def init_target_object(self, target, data):
-        """
-        Initializes target object and assign extra objects to target as attributes
-        """
+        """Initializes target object and assign extra objects to target as attributes."""
         target_object = self.init_single_object(target, data.pop(target, data))
         for key, item in data.items():
             key_alias = MANAGER_ALIASES.get(key, key)
@@ -188,9 +181,7 @@ class HasOffersAPI:
             return self._managers[target].init_instance(data)
 
     def expand_models(self, target, data):
-        """
-        Generates all objects from given data.
-        """
+        """Generates all objects from given data."""
         if isinstance(data, dict):
             data = data.values()
         for chunk in data:

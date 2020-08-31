@@ -8,33 +8,27 @@ from .core import Model, ModelManager
 
 
 class LogItem(Model):
-    """
-    Log entities have no id field, because they should be compared in a different way.
-    """
+    """Log entities have no id field, because they should be compared in a different way."""
 
     def __eq__(self, other):
         return isinstance(other, self.__class__) and self._data == other._data
 
 
 class DateDir(LogItem):
-    """
-    Directory with log files.
-    """
+    """Directory with log files."""
 
     def __str__(self):
-        return '%s: %s (%s)' % (self.__class__.__name__, self.displayName, self.dirName)
+        return "%s: %s (%s)" % (self.__class__.__name__, self.displayName, self.dirName)
 
     def list_logs(self):
         return self._manager.list_logs(dir_name=self.dirName)
 
 
 class LogFile(LogItem):
-    """
-    Log file.
-    """
+    """Log file."""
 
     def __str__(self):
-        return '%s: %s (%s)' % (self.__class__.__name__, self.displayName, self.filename)
+        return "%s: %s (%s)" % (self.__class__.__name__, self.displayName, self.filename)
 
     @cached_property
     def download_link(self):
@@ -42,9 +36,7 @@ class LogFile(LogItem):
 
     @cached_property
     def content(self):
-        """
-        Returns raw CSV content of the log file.
-        """
+        """Returns raw CSV content of the log file."""
         raw_content = self._manager.api.session.get(self.download_link).content
         data = BytesIO(raw_content)
         archive = ZipFile(data)
@@ -58,50 +50,45 @@ class LogFile(LogItem):
 
 
 class LogRecord(LogItem):
-    """
-    Log record with all data about clicks / conversions / impressions.
-    """
+    """Log record with all data about clicks / conversions / impressions."""
 
     def __str__(self):
-        return '%s: %s (%s)' % (self.__class__.__name__, self.offer_id, self.transaction_id)
+        return "%s: %s (%s)" % (self.__class__.__name__, self.offer_id, self.transaction_id)
 
 
 class LogItemManager(ModelManager):
-    """
-    Works with exact type of log.
-    """
+    """Works with exact type of log."""
 
     def __init__(self, *args, log_type, **kwargs):
         self.log_type = log_type
         super().__init__(*args, **kwargs)
 
     def _call(self, method, **kwargs):
-        return self.api._call('RawLog', method, log_type=self.log_type, **kwargs)
+        return self.api._call("RawLog", method, log_type=self.log_type, **kwargs)
 
     def list_date_dirs(self):
-        response = self._call('listDateDirs', raw=True)
-        return [DateDir(manager=self, **kwargs) for kwargs in response['dateDirs']]
+        response = self._call("listDateDirs", raw=True)
+        return [DateDir(manager=self, **kwargs) for kwargs in response["dateDirs"]]
 
     def list_logs(self, dir_name):
-        response = self._call('listLogs', date_dir=dir_name, raw=True)
-        return [LogFile(manager=self, **kwargs) for kwargs in response['logFiles']]
+        response = self._call("listLogs", date_dir=dir_name, raw=True)
+        return [LogFile(manager=self, **kwargs) for kwargs in response["logFiles"]]
 
     def get_download_link(self, log_filename):
-        return self._call('getDownloadLink', log_filename=log_filename, raw=True)['link']
+        return self._call("getDownloadLink", log_filename=log_filename, raw=True)["link"]
 
     def find_all(self, date):
         return sum([log_file.records for log_file in self.list_logs(date)], [])
 
 
 class RawLogManager(ModelManager):
-    """
-    Works as proxy for other managers.
-    """
-    name = 'raw_logs'
+    """Works as proxy for other managers."""
+
+    name = "raw_logs"
     log_types = (
-        'clicks',
-        'conversions',
-        'impressions',
+        "clicks",
+        "conversions",
+        "impressions",
     )
 
     def __init__(self, *args, **kwargs):

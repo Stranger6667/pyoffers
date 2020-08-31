@@ -7,17 +7,16 @@ import os
 
 
 class Record:
-
     def __init__(self, data):
         self.data = data
 
     @property
     def is_gzip(self):
-        return self.data['response']['headers'].get('Content-Encoding') == ['gzip']
+        return self.data["response"]["headers"].get("Content-Encoding") == ["gzip"]
 
     @property
     def body(self):
-        value = base64.b64decode(self.data['response']['body']['base64_string'].encode())
+        value = base64.b64decode(self.data["response"]["body"]["base64_string"].encode())
         if self.is_gzip:
             value = gzip.decompress(value)
         return value
@@ -26,27 +25,26 @@ class Record:
     def body(self, value):
         if self.is_gzip:
             value = gzip.compress(value)
-        self.data['response']['body']['base64_string'] = base64.b64encode(value).decode()
+        self.data["response"]["body"]["base64_string"] = base64.b64encode(value).decode()
 
     @property
     def request_uri(self):
-        return self.data['request']['uri'].encode()
+        return self.data["request"]["uri"].encode()
 
     @request_uri.setter
     def request_uri(self, value):
-        self.data['request']['uri'] = value.decode()
+        self.data["request"]["uri"] = value.decode()
 
     @property
     def response_url(self):
-        return self.data['response']['url'].encode()
+        return self.data["response"]["url"].encode()
 
     @response_url.setter
     def response_url(self, value):
-        self.data['response']['url'] = value.decode()
+        self.data["response"]["url"] = value.decode()
 
 
 class Cleaner:
-
     def __init__(self, path, old_token, new_token, old_id, new_id):
         self.path = path
         self.rewrite = False
@@ -65,24 +63,21 @@ class Cleaner:
     def clean(self):
         with open(self.path) as fp:
             data = json.load(fp)
-        for chunk in data['http_interactions']:
+        for chunk in data["http_interactions"]:
             record = Record(chunk)
-            for attribute in ('body', 'request_uri', 'response_url'):
+            for attribute in ("body", "request_uri", "response_url"):
                 value = getattr(record, attribute)
                 if self.contains_real_credentials(value):
                     setattr(record, attribute, self.clean_value(value))
         return data, self.rewrite
 
     def write(self, data):
-        with open(self.path, 'w') as fp:
-            json.dump(data, fp, sort_keys=True, indent=2, separators=(',', ': '))
+        with open(self.path, "w") as fp:
+            json.dump(data, fp, sort_keys=True, indent=2, separators=(",", ": "))
 
 
 def replace_real_credentials(cassette_dir, old_token, new_token, old_id, new_id):
-    """
-    HasOffers response body contains NetworkId & NetworkToken and they should be replaced with test values.
-    """
-    cassettes = glob.glob(os.path.join(cassette_dir, '*.json'))
+    cassettes = glob.glob(os.path.join(cassette_dir, "*.json"))
     for cassette_path in cassettes:
         cleaner = Cleaner(cassette_path, old_token, new_token, old_id, new_id)
         cleaned_data, rewrite_required = cleaner.clean()

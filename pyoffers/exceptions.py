@@ -2,17 +2,16 @@
 
 
 def format_error(error):
-    if 'publicMessage' in error and len(error) == 1:
-        return error['publicMessage']
-    elif 'publicMessage' not in error:
-        return 'Error code: %s. %s' % (error['err_code'], error['err_msg'])
-    return 'Error code: %s. %s %s' % (error['err_code'], error['publicMessage'], error['err_msg'])
+    if "publicMessage" in error and len(error) == 1:
+        return error["publicMessage"]
+    if "publicMessage" not in error:
+        return "Error code: %s. %s" % (error["err_code"], error["err_msg"])
+    return "Error code: %s. %s %s" % (error["err_code"], error["publicMessage"], error["err_msg"])
 
 
 class HasOffersException(BaseException):
-
     def __str__(self):
-        return '\n'.join(format_error(error) for error in self.errors)
+        return "\n".join(format_error(error) for error in self.errors)
 
     @property
     def errors(self):
@@ -23,6 +22,5 @@ class HasOffersException(BaseException):
 
 
 class MaxRetriesExceeded(HasOffersException):
-
     def __str__(self):
-        return 'Max retries exceeded'
+        return "Max retries exceeded"

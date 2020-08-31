@@ -3,26 +3,25 @@ from .core import Model, ModelManager
 
 
 class Advertiser(Model):
-    """
-    An Advertiser account.
-    """
-    generic_methods = ('update',)
-    display_attribute = 'company'
+    """An Advertiser account."""
 
-    def block(self, reason=''):
+    generic_methods = ("update",)
+    display_attribute = "company"
+
+    def block(self, reason=""):
         return self._manager.block(self.id, reason)
 
 
 class AdvertiserManager(ModelManager):
     model = Advertiser
-    name = 'advertisers'
+    name = "advertisers"
     generic_methods = (
-        'create',
-        'update',
-        'find_by_id',
-        'find_all',
-        'find_all_ids',
+        "create",
+        "update",
+        "find_by_id",
+        "find_all",
+        "find_all_ids",
     )
 
-    def block(self, id, reason=''):
-        return self._call('block', id=id, reason=reason)
+    def block(self, id, reason=""):
+        return self._call("block", id=id, reason=reason)

@@ -1,0 +1,11 @@
+[tool.black]
+line-length = 120
+target_version = ["py37"]
+
+[tool.isort]
+line_length = 120
+multi_line_output = 3
+default_section = "THIRDPARTY"
+include_trailing_comma = true
+known_first_party = "pyoffers"
+known_third_party =["betamax", "betamax_serializers", "pytest", "requests", "setuptools", "sphinx_rtd_theme"]
